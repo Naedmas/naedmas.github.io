@@ -7,12 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
         body { font-family: 'Inter', system_ui, sans-serif; }
         .logo-font { font-family: 'Space Grotesk', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(16px); }
+        .note-card { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .note-card:hover { transform: translateY(-4px); }
     </style>
 </head>
 <body class="bg-zinc-950 text-white min-h-screen flex">
@@ -20,22 +23,20 @@
     <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
         <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
             <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
-            <div>
-                <span class="text-3xl font-semibold tracking-tighter logo-font">naedmas</span>
-            </div>
+            <span class="text-3xl font-semibold tracking-tighter logo-font">naedmas</span>
         </div>
 
         <div class="flex-1 overflow-y-auto py-6 px-3">
-            <div class="px-3 mb-2 text-xs uppercase tracking-widest text-zinc-500 font-medium">Core</div>
-            <a href="#" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
+            <div onclick="switchTab(0)" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 cursor-pointer">
                 <i class="fas fa-home w-5"></i><span>Dashboard</span>
-            </a>
-            <!-- Add more links as needed -->
+            </div>
+            <div onclick="switchTab(1)" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 cursor-pointer">
+                <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
+            </div>
         </div>
 
         <div class="p-4 border-t border-white/10">
-            <button onclick="logout()" 
-                    class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
+            <button onclick="logout()" class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
                 <i class="fas fa-sign-out-alt"></i> Logout
             </button>
         </div>
@@ -44,26 +45,72 @@
     <!-- Main Content -->
     <div class="flex-1 ml-72">
         <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
-            <div class="flex-1"></div>
-            <div id="userInfo" class="flex items-center gap-x-3 text-sm"></div>
+            <div class="flex-1 flex items-center gap-4">
+                <input id="globalSearch" 
+                       onkeyup="if(event.key==='Enter') filterNotes()"
+                       class="bg-zinc-800 border border-white/10 focus:border-violet-400 rounded-3xl py-3 px-5 pl-12 w-96 outline-none text-sm" 
+                       placeholder="Search notes...">
+                <i class="fas fa-search absolute ml-5 text-zinc-500"></i>
+            </div>
+            <div id="userInfo" class="flex items-center gap-x-3"></div>
         </header>
 
         <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
-            <h1 class="text-5xl font-semibold tracking-tight logo-font mb-2">Welcome back</h1>
-            <p id="welcomeText" class="text-zinc-400 text-xl"></p>
+            <!-- Dashboard Home Tab -->
+            <div id="tab-0" class="tab-content">
+                <h1 class="text-5xl font-semibold tracking-tight logo-font mb-8">Welcome to your portal</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="glass border border-white/10 rounded-3xl p-8">
+                        <h3 class="text-xl font-medium mb-4">Knowledge Base</h3>
+                        <p class="text-5xl font-semibold text-violet-400" id="noteCount">0</p>
+                        <p class="text-zinc-400">notes stored</p>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Your existing dashboard content goes here -->
-            <div class="mt-12 glass border border-white/10 rounded-3xl p-8">
-                <h2 class="text-2xl font-semibold mb-6">Protected Dashboard</h2>
-                <p class="text-zinc-400">This page is now secured with Firebase Authentication.</p>
-                <!-- Add your previous dashboard sections here -->
+            <!-- Knowledge Base Tab -->
+            <div id="tab-1" class="tab-content hidden">
+                <div class="flex justify-between items-center mb-8">
+                    <h1 class="text-4xl font-semibold tracking-tight">Knowledge Base</h1>
+                    <button onclick="newNote()" 
+                            class="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-2xl flex items-center gap-2">
+                        <i class="fas fa-plus"></i> New Note
+                    </button>
+                </div>
+
+                <!-- Notes List -->
+                <div id="notesList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+                <!-- Note Editor Modal -->
+                <div id="noteEditorModal" class="hidden fixed inset-0 bg-black/90 backdrop-blur-xl z-[200] flex items-center justify-center">
+                    <div class="glass border border-white/10 rounded-3xl w-full max-w-2xl mx-4 p-8">
+                        <input id="noteTitle" 
+                               class="w-full bg-transparent text-3xl font-semibold outline-none mb-6" 
+                               placeholder="Note Title">
+                        
+                        <div class="flex gap-2 mb-6">
+                            <input id="noteTags" 
+                                   class="flex-1 bg-zinc-900 border border-white/20 rounded-2xl px-5 py-3 outline-none text-sm" 
+                                   placeholder="Tags (comma separated)">
+                        </div>
+
+                        <textarea id="noteContent" rows="12"
+                                  class="w-full bg-zinc-900 border border-white/20 rounded-3xl p-6 outline-none resize-y min-h-[300px]"></textarea>
+
+                        <div class="flex justify-end gap-4 mt-8">
+                            <button onclick="closeNoteEditor()" 
+                                    class="px-8 py-4 text-zinc-400 hover:text-white">Cancel</button>
+                            <button onclick="saveNote()" 
+                                    class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-2xl">Save Note</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
 
     <script>
-        // Your Firebase Config
-        const firebaseConfig = {
+        const firebaseConfig = { /* your config */ 
             apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
             authDomain: "naedmas-ab1c9.firebaseapp.com",
             projectId: "naedmas-ab1c9",
@@ -74,34 +121,139 @@
 
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
+        const db = firebase.firestore();
 
-        // Check authentication status
-        function checkAuth() {
-            auth.onAuthStateChanged(user => {
-                if (!user) {
-                    // Not logged in → redirect to login
-                    window.location.href = "index.html";
-                } else {
-                    // User is logged in
-                    document.getElementById('welcomeText').textContent = `Signed in as ${user.email}`;
-                    document.getElementById('userInfo').innerHTML = `
-                        <span class="text-emerald-400">${user.email}</span>
-                        <div class="w-8 h-8 bg-zinc-700 rounded-2xl flex items-center justify-center text-lg">👤</div>
-                    `;
-                }
+        let currentUser = null;
+        let currentEditingNoteId = null;
+        let allNotes = [];
+
+        // Auth Protection
+        auth.onAuthStateChanged(user => {
+            if (!user) {
+                window.location.href = "index.html";
+            } else {
+                currentUser = user;
+                document.getElementById('userInfo').innerHTML = `
+                    <span class="text-emerald-400">${user.email}</span>
+                `;
+                loadNotes();
+            }
+        });
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+            document.getElementById(`tab-${tab}`).classList.remove('hidden');
+            document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+            document.querySelectorAll('.sidebar-link')[tab].classList.add('active');
+        }
+
+        // Notes Functions
+        async function loadNotes() {
+            const snapshot = await db.collection('notes').where('userId', '==', currentUser.uid).get();
+            allNotes = [];
+            snapshot.forEach(doc => {
+                allNotes.push({ id: doc.id, ...doc.data() });
+            });
+            renderNotes(allNotes);
+            document.getElementById('noteCount').textContent = allNotes.length;
+        }
+
+        function renderNotes(notes) {
+            const container = document.getElementById('notesList');
+            container.innerHTML = '';
+
+            if (notes.length === 0) {
+                container.innerHTML = `<p class="col-span-3 text-center text-zinc-400 py-12">No notes yet. Create your first one!</p>`;
+                return;
+            }
+
+            notes.forEach(note => {
+                const tagsHtml = note.tags ? note.tags.map(t => `<span class="text-xs bg-white/10 px-3 py-1 rounded-full">${t}</span>`).join(' ') : '';
+                const card = document.createElement('div');
+                card.className = "glass border border-white/10 rounded-3xl p-6 note-card cursor-pointer";
+                card.innerHTML = `
+                    <div class="font-semibold text-lg mb-2">${note.title || 'Untitled'}</div>
+                    <div class="text-zinc-400 text-sm line-clamp-3 mb-4">${note.content ? note.content.substring(0, 120) : ''}...</div>
+                    <div class="flex flex-wrap gap-2">${tagsHtml}</div>
+                `;
+                card.onclick = () => editNote(note);
+                container.appendChild(card);
             });
         }
 
-        function logout() {
-            if (confirm("Sign out of naedmas.com?")) {
-                auth.signOut().then(() => {
-                    window.location.href = "index.html";
-                });
+        function filterNotes() {
+            const term = document.getElementById('globalSearch').value.toLowerCase().trim();
+            if (!term) {
+                renderNotes(allNotes);
+                return;
+            }
+            const filtered = allNotes.filter(note => 
+                (note.title && note.title.toLowerCase().includes(term)) ||
+                (note.content && note.content.toLowerCase().includes(term)) ||
+                (note.tags && note.tags.some(t => t.toLowerCase().includes(term)))
+            );
+            renderNotes(filtered);
+        }
+
+        function newNote() {
+            currentEditingNoteId = null;
+            document.getElementById('noteTitle').value = '';
+            document.getElementById('noteContent').value = '';
+            document.getElementById('noteTags').value = '';
+            document.getElementById('noteEditorModal').classList.remove('hidden');
+            document.getElementById('noteTitle').focus();
+        }
+
+        function editNote(note) {
+            currentEditingNoteId = note.id;
+            document.getElementById('noteTitle').value = note.title || '';
+            document.getElementById('noteContent').value = note.content || '';
+            document.getElementById('noteTags').value = note.tags ? note.tags.join(', ') : '';
+            document.getElementById('noteEditorModal').classList.remove('hidden');
+        }
+
+        function closeNoteEditor() {
+            document.getElementById('noteEditorModal').classList.add('hidden');
+        }
+
+        async function saveNote() {
+            const title = document.getElementById('noteTitle').value.trim();
+            const content = document.getElementById('noteContent').value.trim();
+            const tagsStr = document.getElementById('noteTags').value.trim();
+            const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(Boolean) : [];
+
+            if (!title) {
+                alert("Title is required");
+                return;
+            }
+
+            const noteData = {
+                userId: currentUser.uid,
+                title,
+                content,
+                tags,
+                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+            };
+
+            try {
+                if (currentEditingNoteId) {
+                    await db.collection('notes').doc(currentEditingNoteId).update(noteData);
+                } else {
+                    await db.collection('notes').add(noteData);
+                }
+                closeNoteEditor();
+                loadNotes();
+            } catch (e) {
+                alert("Error saving note");
             }
         }
 
+        function logout() {
+            if (confirm("Sign out?")) auth.signOut().then(() => window.location.href = "index.html");
+        }
+
         // Initialize
-        window.onload = checkAuth;
+        window.onload = () => switchTab(0);
     </script>
 </body>
 </html>
