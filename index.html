@@ -272,42 +272,46 @@
     </div>
 
     <script>
-        function initTailwind() {
-            // Tailwind script already loaded via CDN
-        }
-        
         function showLoginModal() {
-            document.getElementById('loginModal').classList.remove('hidden');
-            document.getElementById('loginModal').classList.add('flex');
+            const modal = document.getElementById('loginModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
         }
         
         function hideLoginModal() {
             const modal = document.getElementById('loginModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-function handleLogin() {
-    const username = document.getElementById('username').value;
-    hideLoginModal();
-    
-    const msg = document.createElement('div');
-    msg.innerHTML = `
-        <div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[200]">
-            <div class="text-center">
-                <div class="text-6xl mb-6 animate-bounce">✅</div>
-                <div class="text-4xl font-semibold mb-3">Welcome back, ${username}!</div>
-                <div class="text-zinc-400">Redirecting to dashboard...</div>
-            </div>
-        </div>
-    `;
-    document.body.appendChild(msg);
-    
-    setTimeout(() => {
-        window.location.href = "dashboard.html";
-    }, 1400);
-}
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+        
+        function handleLogin() {
+            const username = document.getElementById('username') ? document.getElementById('username').value : 'Naedmas';
+            hideLoginModal();
+            
+            // Success overlay
+            const successHTML = `
+                <div id="successOverlay" class="fixed inset-0 bg-black/90 flex items-center justify-center z-[200]">
+                    <div class="text-center">
+                        <div class="text-6xl mb-6 animate-bounce">✅</div>
+                        <div class="text-4xl font-semibold mb-3">Welcome back, ${username}!</div>
+                        <div class="text-zinc-400 mb-10">Redirecting to your dashboard...</div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', successHTML);
+            
+            // Redirect to dashboard
+            setTimeout(() => {
+                window.location.href = "dashboard.html";
+            }, 1400);
+        }
         
         function fakeLogin() {
-            alert("🔓 In a real deployment this would trigger authentication.\n\nDemo credentials are pre-filled in the login modal.");
             showLoginModal();
         }
         
@@ -316,23 +320,31 @@ function handleLogin() {
         }
         
         function showSection(section) {
-            // Simple smooth scroll for demo
-            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+            const el = document.getElementById(section);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
         }
         
         // Keyboard support
         document.addEventListener('keydown', function(e) {
             if (e.key === "Escape") {
-                const modal = document.getElementById('loginModal');
-                if (!modal.classList.contains('hidden')) {
-                    hideLoginModal();
-                }
+                hideLoginModal();
             }
         });
         
         // Initialize
         window.onload = function() {
-            console.log('%c✅ naedmas.com landing page ready for GitHub Pages', 'color: #a5b4fc; font-size: 13px;');
+            console.log('%c✅ naedmas.com landing page ready', 'color: #a5b4fc; font-size: 13px;');
+            
+            // Auto-focus username on modal open (optional enhancement)
+            const modal = document.getElementById('loginModal');
+            if (modal) {
+                modal.addEventListener('transitionend', () => {
+                    const usernameInput = document.getElementById('username');
+                    if (usernameInput) usernameInput.focus();
+                });
+            }
         };
     </script>
 </body>
