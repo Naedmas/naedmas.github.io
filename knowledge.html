@@ -7,18 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
         body { font-family: 'Inter', system_ui, sans-serif; }
         .logo-font { font-family: 'Space Grotesk', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(16px); }
-        .wiki-content img { max-width: 100%; border-radius: 12px; margin: 1rem 0; }
+        .wiki-content { line-height: 1.8; max-width: 800px; }
     </style>
 </head>
 <body class="bg-zinc-950 text-white min-h-screen flex">
-    <!-- Sidebar (same as dashboard) -->
+    <!-- Sidebar -->
     <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
         <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
             <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
@@ -44,55 +43,41 @@
     <!-- Main Content -->
     <div class="flex-1 ml-72">
         <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
-            <div class="flex-1">
-                <input id="globalSearch" onkeyup="if(event.key==='Enter') filterNotes()" 
-                       class="bg-zinc-800 border border-white/10 focus:border-violet-400 rounded-3xl py-3 px-5 pl-12 w-96 outline-none" 
-                       placeholder="Search articles...">
-            </div>
-            <div id="userInfo" class="flex items-center gap-x-3"></div>
+            <div id="userInfo" class="ml-auto flex items-center gap-x-3"></div>
         </header>
 
         <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
-            <div class="flex justify-between items-center mb-8">
-                <h1 class="text-4xl font-semibold tracking-tight">Knowledge Base</h1>
-                <button onclick="newNote()" class="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-2xl flex items-center gap-2">
-                    <i class="fas fa-plus"></i> New Article
-                </button>
-            </div>
+            <div class="glass border border-white/10 rounded-3xl p-12 wiki-content mx-auto">
+                <h1 class="text-5xl font-semibold tracking-tight mb-10">Knowledge Base</h1>
+                
+                <p class="text-zinc-400 mb-12">This is your private knowledge repository.</p>
 
-            <div id="notesList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                <!-- You can freely edit everything below this line -->
+                <h2 class="text-3xl font-semibold mt-12 mb-6">Section 1: Title</h2>
+                <p class="text-zinc-300 mb-8">
+                    Write your content here. This is a simple static page.
+                </p>
+
+                <h2 class="text-3xl font-semibold mt-12 mb-6">Section 2: Another Topic</h2>
+                <p class="text-zinc-300 mb-8">
+                    Add as many sections as you want. You can use HTML tags like &lt;strong&gt;, &lt;em&gt;, lists, etc.
+                </p>
+
+                <ul class="list-disc pl-6 text-zinc-300 space-y-3 mb-8">
+                    <li>Example bullet point</li>
+                    <li>Another point</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold mt-12 mb-6">Section 3</h2>
+                <p class="text-zinc-300">
+                    Replace all this placeholder text with your own notes, guides, or anything else.
+                </p>
+            </div>
         </main>
     </div>
 
-    <!-- Article Modal -->
-    <div id="noteModal" class="hidden fixed inset-0 bg-black/95 backdrop-blur-xl z-[200] flex items-center justify-center">
-        <div class="glass border border-white/10 rounded-3xl w-full max-w-4xl mx-4 max-h-[92vh] overflow-hidden flex flex-col">
-            <div class="p-6 border-b border-white/10 flex justify-between">
-                <input id="noteTitle" class="flex-1 bg-transparent text-3xl font-semibold outline-none" placeholder="Article Title">
-                <div class="flex gap-4">
-                    <button onclick="deleteCurrentNote()" class="text-red-400 hover:text-red-500"><i class="fas fa-trash"></i></button>
-                    <button onclick="closeNoteModal()" class="text-3xl text-zinc-400 hover:text-white">×</button>
-                </div>
-            </div>
-
-            <div class="px-8 pt-4">
-                <input id="noteImage" type="url" class="w-full bg-zinc-900 border border-white/20 rounded-2xl px-5 py-3 text-sm" placeholder="Featured Image URL (optional)">
-            </div>
-
-            <div class="flex-1 p-8 overflow-auto">
-                <textarea id="noteContent" class="w-full h-full bg-transparent outline-none text-lg resize-none" 
-                          placeholder="Write your article here..."></textarea>
-            </div>
-
-            <div class="p-6 border-t border-white/10 flex justify-end gap-4">
-                <button onclick="closeNoteModal()" class="px-8 py-4 text-zinc-400">Cancel</button>
-                <button onclick="saveNote()" class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-2xl">Save Article</button>
-            </div>
-        </div>
-    </div>
-
     <script>
-        const firebaseConfig = { /* same as above */ 
+        const firebaseConfig = {
             apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
             authDomain: "naedmas-ab1c9.firebaseapp.com",
             projectId: "naedmas-ab1c9",
@@ -103,32 +88,22 @@
 
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
-        const db = firebase.firestore();
-
-        let currentUser = null;
-        let currentNoteId = null;
-        let allNotes = [];
 
         auth.onAuthStateChanged(user => {
-            if (!user) window.location.href = "index.html";
-            else {
-                currentUser = user;
-                document.getElementById('userInfo').innerHTML = `<span class="text-emerald-400">${user.email}</span>`;
-                loadNotes();
+            if (!user) {
+                window.location.href = "index.html";
+            } else {
+                document.getElementById('userInfo').innerHTML = `
+                    <span class="text-emerald-400">${user.email}</span>
+                `;
             }
         });
 
-        // ... (the rest of the script is the same as the previous knowledge base version I gave you)
-
-        async function loadNotes() { /* same as before */ }
-        function renderNotes(notes) { /* same */ }
-        function filterNotes() { /* same */ }
-        function newNote() { /* same */ }
-        function openNote(note) { /* same */ }
-        function closeNoteModal() { /* same */ }
-        async function saveNote() { /* same */ }
-        async function deleteCurrentNote() { /* same */ }
-        function logout() { /* same */ }
+        function logout() {
+            if (confirm("Sign out?")) {
+                auth.signOut().then(() => window.location.href = "index.html");
+            }
+        }
     </script>
 </body>
 </html>
