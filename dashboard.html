@@ -7,19 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
         body { font-family: 'Inter', system_ui, sans-serif; }
         .logo-font { font-family: 'Space Grotesk', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(16px); }
-        .wiki-content { line-height: 1.8; }
-        .wiki-content img { max-width: 100%; border-radius: 12px; margin: 1.5rem 0; }
     </style>
 </head>
 <body class="bg-zinc-950 text-white min-h-screen flex">
-    <!-- Sidebar (same) -->
+    <!-- Sidebar -->
     <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
         <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
             <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
@@ -27,12 +24,12 @@
         </div>
 
         <div class="flex-1 overflow-y-auto py-6 px-3">
-            <div onclick="switchTab(0)" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 cursor-pointer">
+            <a href="dashboard.html" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
                 <i class="fas fa-home w-5"></i><span>Dashboard</span>
-            </div>
-            <div onclick="switchTab(1)" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 cursor-pointer">
+            </a>
+            <a href="knowledge.html" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
                 <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
-            </div>
+            </a>
         </div>
 
         <div class="p-4 border-t border-white/10">
@@ -45,64 +42,13 @@
     <!-- Main Content -->
     <div class="flex-1 ml-72">
         <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
-            <div class="flex-1">
-                <input id="globalSearch" onkeyup="if(event.key==='Enter') filterNotes()" 
-                       class="bg-zinc-800 border border-white/10 focus:border-violet-400 rounded-3xl py-3 px-5 pl-12 w-96 outline-none" 
-                       placeholder="Search knowledge base...">
-            </div>
-            <div id="userInfo" class="flex items-center gap-x-3"></div>
+            <div id="userInfo" class="ml-auto flex items-center gap-x-3"></div>
         </header>
 
         <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
-            <div id="tab-0" class="tab-content">
-                <h1 class="text-5xl font-semibold tracking-tight logo-font mb-8">Welcome to your portal</h1>
-            </div>
-
-            <div id="tab-1" class="tab-content hidden">
-                <div class="flex justify-between items-center mb-8">
-                    <h1 class="text-4xl font-semibold tracking-tight">Knowledge Base</h1>
-                    <button onclick="newNote()" class="px-6 py-3 bg-violet-600 hover:bg-violet-500 rounded-2xl flex items-center gap-2">
-                        <i class="fas fa-plus"></i> New Article
-                    </button>
-                </div>
-                <div id="notesList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-            </div>
+            <h1 class="text-5xl font-semibold tracking-tight logo-font mb-8">Welcome to your portal</h1>
+            <p class="text-zinc-400 text-xl">Select a section from the sidebar to begin.</p>
         </main>
-    </div>
-
-    <!-- Article Modal (Wikipedia-style) -->
-    <div id="noteModal" class="hidden fixed inset-0 bg-black/95 backdrop-blur-xl z-[200] flex items-center justify-center">
-        <div class="glass border border-white/10 rounded-3xl w-full max-w-4xl mx-4 max-h-[92vh] overflow-hidden flex flex-col">
-            <!-- Header -->
-            <div class="p-6 border-b border-white/10 flex items-center justify-between">
-                <input id="noteTitle" class="flex-1 bg-transparent text-3xl font-semibold outline-none" placeholder="Article Title">
-                <div class="flex items-center gap-4">
-                    <button onclick="deleteCurrentNote()" class="text-red-400 hover:text-red-500 px-4"><i class="fas fa-trash"></i></button>
-                    <button onclick="closeNoteModal()" class="text-3xl leading-none text-zinc-400 hover:text-white">×</button>
-                </div>
-            </div>
-
-            <!-- Featured Image -->
-            <div class="px-8 pt-6">
-                <input id="noteImage" type="url" 
-                       class="w-full bg-zinc-900 border border-white/20 rounded-2xl px-5 py-3 text-sm outline-none" 
-                       placeholder="Featured image URL (optional)">
-            </div>
-
-            <!-- Content -->
-            <div class="flex-1 p-8 overflow-auto">
-                <textarea id="noteContent" 
-                          class="w-full h-full bg-transparent outline-none text-lg wiki-content resize-none" 
-                          placeholder="Write your article here... 
-You can paste image URLs like: https://example.com/image.jpg"></textarea>
-            </div>
-
-            <!-- Footer -->
-            <div class="p-6 border-t border-white/10 flex justify-end gap-4">
-                <button onclick="closeNoteModal()" class="px-8 py-4 text-zinc-400">Cancel</button>
-                <button onclick="saveNote()" class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-2xl">Save Article</button>
-            </div>
-        </div>
     </div>
 
     <script>
@@ -117,123 +63,20 @@ You can paste image URLs like: https://example.com/image.jpg"></textarea>
 
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
-        const db = firebase.firestore();
-
-        let currentUser = null;
-        let currentNoteId = null;
-        let allNotes = [];
 
         auth.onAuthStateChanged(user => {
             if (!user) {
                 window.location.href = "index.html";
             } else {
-                currentUser = user;
-                document.getElementById('userInfo').innerHTML = `<span class="text-emerald-400">${user.email}</span>`;
-                loadNotes();
+                document.getElementById('userInfo').innerHTML = `
+                    <span class="text-emerald-400">${user.email}</span>
+                `;
             }
         });
-
-        function switchTab(tab) {
-            document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
-            document.getElementById(`tab-${tab}`).classList.remove('hidden');
-        }
-
-        async function loadNotes() {
-            const snapshot = await db.collection('notes').where('userId', '==', currentUser.uid).get();
-            allNotes = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            renderNotes(allNotes);
-        }
-
-        function renderNotes(notes) {
-            const container = document.getElementById('notesList');
-            container.innerHTML = notes.length === 0 
-                ? `<p class="col-span-3 text-center text-zinc-400 py-20">No articles yet.</p>` 
-                : '';
-
-            notes.forEach(note => {
-                const card = document.createElement('div');
-                card.className = "glass border border-white/10 rounded-3xl p-6 cursor-pointer hover:border-violet-400/50 transition-colors";
-                card.innerHTML = `
-                    <div class="font-semibold text-xl mb-2">${note.title || 'Untitled'}</div>
-                    <div class="text-zinc-400 text-sm line-clamp-3">${(note.content || '').substring(0, 160)}...</div>
-                `;
-                card.onclick = () => openNote(note);
-                container.appendChild(card);
-            });
-        }
-
-        function filterNotes() {
-            const term = document.getElementById('globalSearch').value.toLowerCase();
-            const filtered = allNotes.filter(n => 
-                (n.title || '').toLowerCase().includes(term) || 
-                (n.content || '').toLowerCase().includes(term)
-            );
-            renderNotes(filtered);
-        }
-
-        function newNote() {
-            currentNoteId = null;
-            document.getElementById('noteTitle').value = '';
-            document.getElementById('noteContent').value = '';
-            document.getElementById('noteImage').value = '';
-            document.getElementById('noteModal').classList.remove('hidden');
-        }
-
-        function openNote(note) {
-            currentNoteId = note.id;
-            document.getElementById('noteTitle').value = note.title || '';
-            document.getElementById('noteContent').value = note.content || '';
-            document.getElementById('noteImage').value = note.imageUrl || '';
-            document.getElementById('noteModal').classList.remove('hidden');
-        }
-
-        function closeNoteModal() {
-            document.getElementById('noteModal').classList.add('hidden');
-        }
-
-        async function saveNote() {
-            const title = document.getElementById('noteTitle').value.trim();
-            const content = document.getElementById('noteContent').value.trim();
-            const imageUrl = document.getElementById('noteImage').value.trim();
-
-            if (!title) {
-                alert("Article title is required");
-                return;
-            }
-
-            const noteData = {
-                userId: currentUser.uid,
-                title,
-                content,
-                imageUrl: imageUrl || null,
-                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-            };
-
-            try {
-                if (currentNoteId) {
-                    await db.collection('notes').doc(currentNoteId).update(noteData);
-                } else {
-                    await db.collection('notes').add(noteData);
-                }
-                closeNoteModal();
-                loadNotes();
-            } catch (e) {
-                alert("Error saving article");
-            }
-        }
-
-        async function deleteCurrentNote() {
-            if (!currentNoteId || !confirm("Delete this article permanently?")) return;
-            await db.collection('notes').doc(currentNoteId).delete();
-            closeNoteModal();
-            loadNotes();
-        }
 
         function logout() {
             if (confirm("Sign out?")) auth.signOut().then(() => window.location.href = "index.html");
         }
-
-        window.onload = () => switchTab(0);
     </script>
 </body>
 </html>
