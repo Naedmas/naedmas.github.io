@@ -285,33 +285,26 @@
             const modal = document.getElementById('loginModal');
             modal.classList.add('hidden');
             modal.classList.remove('flex');
-        }
-        
-        function handleLogin() {
-            const username = document.getElementById('username').value;
-            hideLoginModal();
-            
-            const successHTML = `
-                <div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[200]">
-                    <div class="text-center">
-                        <div class="text-6xl mb-6 animate-bounce">✅</div>
-                        <div class="text-4xl font-semibold mb-3">Welcome back, ${username}!</div>
-                        <div class="text-zinc-400 mb-10">Redirecting to your dashboard...</div>
-                        <div onclick="window.location.reload()" 
-                             class="inline-block px-8 py-4 border border-white/30 hover:bg-white/10 rounded-2xl cursor-pointer">
-                            Back to Landing
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            document.body.insertAdjacentHTML('beforeend', successHTML);
-            
-            // Auto redirect simulation
-            setTimeout(() => {
-                alert("🎉 This is a static demo. In a real site you'd redirect to /dashboard or similar.");
-            }, 1800);
-        }
+function handleLogin() {
+    const username = document.getElementById('username').value;
+    hideLoginModal();
+    
+    const msg = document.createElement('div');
+    msg.innerHTML = `
+        <div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[200]">
+            <div class="text-center">
+                <div class="text-6xl mb-6 animate-bounce">✅</div>
+                <div class="text-4xl font-semibold mb-3">Welcome back, ${username}!</div>
+                <div class="text-zinc-400">Redirecting to dashboard...</div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(msg);
+    
+    setTimeout(() => {
+        window.location.href = "dashboard.html";
+    }, 1400);
+}
         
         function fakeLogin() {
             alert("🔓 In a real deployment this would trigger authentication.\n\nDemo credentials are pre-filled in the login modal.");
