@@ -3,140 +3,554 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Access Portal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <meta name="description" content="naedmas — a vigil kept in the shadow of The Rock.">
+    <meta name="theme-color" content="#050806">
+    <title>naedmas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        .hero-bg { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); }
+        :root {
+            --void: #050806;
+            --near-black: #080c09;
+            --da-deep: #0b3d20;
+            --da-green: #123d26;
+            --da-mid: #1a5c38;
+            --da-lit: #2d7a4c;
+            --bone: #e8dcc0;
+            --bone-dim: #c4b896;
+            --deathwing: #d4c4a0;
+            --gold: #c9a227;
+            --gold-muted: #a6893a;
+            --gold-dim: #7a6528;
+            --raven: #0a0a0a;
+            --ink: #9aa894;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--void);
+            color: var(--bone);
+            font-family: "Source Sans 3", "Segoe UI", sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; }
+
+        .skip {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: var(--gold);
+            color: var(--void);
+            padding: 0.5rem 1rem;
+            z-index: 200;
+        }
+        .skip:focus { left: 0.75rem; top: 0.75rem; }
+
+        /* --- Atmosphere --- */
+        .atmosphere {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% -10%, rgba(18, 61, 38, 0.55), transparent 60%),
+                radial-gradient(ellipse 40% 30% at 80% 80%, rgba(11, 61, 32, 0.25), transparent 55%),
+                radial-gradient(ellipse 30% 30% at 15% 70%, rgba(11, 61, 32, 0.2), transparent 50%),
+                var(--void);
+        }
+
+        .atmosphere::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.07;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E");
+            background-size: 180px 180px;
+        }
+
+        .wrap {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Nav --- */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.9rem 1.5rem;
+            background: linear-gradient(to bottom, rgba(5, 8, 6, 0.92), rgba(5, 8, 6, 0.55) 70%, transparent);
+            border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            text-decoration: none;
+            color: var(--bone);
+        }
+
+        .brand-mark {
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+        }
+
+        .brand-name {
+            font-family: Cinzel, "Times New Roman", serif;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        .signin {
+            font-family: Cinzel, "Times New Roman", serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--bone-dim);
+            border: 1px solid rgba(201, 162, 39, 0.35);
+            padding: 0.45rem 0.9rem;
+            transition: color 0.2s, border-color 0.2s, background 0.2s;
+        }
+
+        .signin:hover,
+        .signin:focus-visible {
+            color: var(--gold);
+            border-color: var(--gold);
+            background: rgba(201, 162, 39, 0.08);
+            outline: none;
+        }
+
+        /* --- Hero --- */
+        .hero {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6.5rem 1.25rem 4rem;
+            position: relative;
+        }
+
+        .hero-emblem {
+            width: min(220px, 48vw);
+            height: auto;
+            margin-bottom: 1.4rem;
+            filter: drop-shadow(0 0 28px rgba(18, 61, 38, 0.9)) drop-shadow(0 0 8px rgba(201, 162, 39, 0.25));
+        }
+
+        .hero-latin {
+            font-family: Cinzel, "Times New Roman", serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.42em;
+            text-transform: uppercase;
+            color: var(--gold-muted);
+            margin-bottom: 0.85rem;
+        }
+
+        .hero h1 {
+            font-family: Cinzel, "Times New Roman", serif;
+            font-weight: 700;
+            font-size: clamp(3rem, 11vw, 7.2rem);
+            letter-spacing: 0.16em;
+            line-height: 0.95;
+            color: var(--bone);
+            text-transform: uppercase;
+            text-shadow: 0 0 40px rgba(11, 61, 32, 0.8);
+        }
+
+        .rule {
+            width: min(280px, 60vw);
+            height: 1px;
+            margin: 1.4rem auto 1.15rem;
+            background: linear-gradient(to right, transparent, var(--gold-muted), var(--gold), var(--gold-muted), transparent);
+            position: relative;
+        }
+
+        .rule::before,
+        .rule::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            background: var(--gold);
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .rule::before { left: 18%; }
+        .rule::after { right: 18%; }
+
+        .tagline {
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: clamp(1.35rem, 3.2vw, 2.15rem);
+            color: var(--bone);
+            letter-spacing: 0.04em;
+        }
+
+        .subline {
+            margin-top: 0.7rem;
+            margin-bottom: 3.5rem;
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--bone-dim);
+            letter-spacing: 0.06em;
+        }
+
+        .scroll-cue {
+            position: absolute;
+            bottom: 1.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Cinzel, serif;
+            font-size: 0.58rem;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--gold-dim);
+            text-decoration: none;
+        }
+
+        .scroll-cue span {
+            display: block;
+            margin: 0.35rem auto 0;
+            width: 1px;
+            height: 28px;
+            background: linear-gradient(to bottom, var(--gold-muted), transparent);
+        }
+
+        /* --- Rock silhouette at base of hero --- */
+        .rock {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 18vh;
+            pointer-events: none;
+            background:
+                linear-gradient(to top, var(--void) 0%, transparent 100%);
+        }
+
+        .rock svg {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(1100px, 140%);
+            height: auto;
+            opacity: 0.55;
+        }
+
+        /* --- Sections --- */
+        section.content {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 4.5rem 1.4rem;
+        }
+
+        .section-kicker {
+            font-family: Cinzel, serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.38em;
+            text-transform: uppercase;
+            color: var(--gold-muted);
+            text-align: center;
+            margin-bottom: 0.7rem;
+        }
+
+        .content h2 {
+            font-family: Cinzel, serif;
+            font-weight: 600;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            letter-spacing: 0.12em;
+            text-align: center;
+            color: var(--bone);
+            margin-bottom: 1.6rem;
+        }
+
+        .lead {
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+            line-height: 1.75;
+            color: var(--bone-dim);
+            text-align: center;
+            max-width: 38rem;
+            margin: 0 auto;
+        }
+
+        .divider {
+            width: 64px;
+            height: 1px;
+            margin: 0 auto 3.5rem;
+            background: var(--gold-dim);
+        }
+
+        /* --- Three wings --- */
+        .wings {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            margin-top: 2.75rem;
+        }
+
+        .wing {
+            border: 1px solid rgba(201, 162, 39, 0.18);
+            padding: 1.6rem 1.3rem 1.7rem;
+            background: linear-gradient(180deg, rgba(18, 61, 38, 0.28), rgba(8, 12, 9, 0.7));
+            position: relative;
+        }
+
+        .wing::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 1.2rem;
+            right: 1.2rem;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold-muted), transparent);
+        }
+
+        .wing.deathwing {
+            background: linear-gradient(180deg, rgba(212, 196, 160, 0.08), rgba(8, 12, 9, 0.75));
+            border-color: rgba(232, 220, 192, 0.22);
+        }
+
+        .wing.ravenwing {
+            background: linear-gradient(180deg, rgba(20, 20, 20, 0.9), rgba(5, 8, 6, 0.95));
+            border-color: rgba(201, 162, 39, 0.14);
+        }
+
+        .wing h3 {
+            font-family: Cinzel, serif;
+            font-size: 1.05rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin: 0.4rem 0 0.7rem;
+            color: var(--bone);
+        }
+
+        .wing p {
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: 1.08rem;
+            line-height: 1.65;
+            color: var(--bone-dim);
+        }
+
+        .wing-swatch {
+            width: 28px;
+            height: 4px;
+            margin-bottom: 0.85rem;
+        }
+
+        .wing-swatch.green { background: var(--da-lit); box-shadow: 0 0 10px rgba(45, 122, 76, 0.5); }
+        .wing-swatch.bone { background: var(--deathwing); }
+        .wing-swatch.black { background: #1a1a1a; border: 1px solid rgba(201, 162, 39, 0.35); height: 4px; }
+
+        /* --- Footer --- */
+        footer {
+            border-top: 1px solid rgba(201, 162, 39, 0.16);
+            padding: 2.2rem 1.4rem 2.6rem;
+            text-align: center;
+            background: linear-gradient(to top, #040605, transparent);
+        }
+
+        footer .foot-name {
+            font-family: Cinzel, serif;
+            letter-spacing: 0.28em;
+            font-size: 0.8rem;
+            margin-bottom: 0.7rem;
+            color: var(--bone);
+        }
+
+        footer .disclaimer {
+            font-size: 0.75rem;
+            color: #7d8578;
+            max-width: 36rem;
+            margin: 0 auto;
+            line-height: 1.55;
+        }
+
+        footer .foot-links {
+            margin-top: 1rem;
+        }
+
+        footer .foot-links a {
+            font-family: Cinzel, serif;
+            font-size: 0.62rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--gold-dim);
+            text-decoration: none;
+        }
+
+        footer .foot-links a:hover { color: var(--gold); }
+
+        @media (max-width: 760px) {
+            .wings { grid-template-columns: 1fr; }
+            nav { padding: 0.8rem 1rem; }
+            .hero { padding-top: 5.5rem; }
+            .hero-emblem { width: min(160px, 52vw); margin-bottom: 1rem; }
+        }
+
+        @media (max-height: 820px) {
+            .hero-emblem { width: min(170px, 42vw); }
+            .hero { padding-top: 5.5rem; padding-bottom: 3.2rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
     </style>
 </head>
-<body class="bg-zinc-950 text-white font-sans">
-    <!-- Navbar + Hero (unchanged) -->
-    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-lg">
-        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-x-3">
-                <div class="w-8 h-8 bg-zinc-700 rounded-2xl flex items-center justify-center text-xl font-bold">N</div>
-                <span class="text-2xl font-semibold tracking-tight">naedmas</span>
+<body>
+    <a class="skip" href="#unforgiven">Skip to content</a>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <div class="wrap">
+        <nav>
+            <a class="brand" href="/">
+                <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
+                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
+                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
+                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
+                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                </svg>
+                <span class="brand-name">naedmas</span>
+            </a>
+            <a class="signin" href="login.html">Sign in</a>
+        </nav>
+
+        <header class="hero">
+            <svg class="hero-emblem" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Winged sword emblem">
+                <defs>
+                    <linearGradient id="goldG" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#e8dcc0"/>
+                        <stop offset="45%" stop-color="#c9a227"/>
+                        <stop offset="100%" stop-color="#7a6528"/>
+                    </linearGradient>
+                    <linearGradient id="bladeG" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#8a7d5c"/>
+                        <stop offset="50%" stop-color="#e8dcc0"/>
+                        <stop offset="100%" stop-color="#8a7d5c"/>
+                    </linearGradient>
+                    <linearGradient id="wingG" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#e8dcc0"/>
+                        <stop offset="100%" stop-color="#9aa878"/>
+                    </linearGradient>
+                    <filter id="soft">
+                        <feGaussianBlur stdDeviation="1.2" result="b"/>
+                        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                </defs>
+                <circle cx="200" cy="200" r="186" fill="none" stroke="#c9a227" stroke-width="1.4" opacity="0.45"/>
+                <circle cx="200" cy="200" r="174" fill="none" stroke="#c9a227" stroke-width="0.6" opacity="0.28"/>
+                <circle cx="200" cy="200" r="128" fill="rgba(11,61,32,0.35)" stroke="#1a5c38" stroke-width="0.8" opacity="0.9"/>
+
+                <!-- Left wing -->
+                <path fill="url(#wingG)" opacity="0.95" d="M188 168
+                    C150 150 110 128 72 118
+                    C90 132 96 150 90 172
+                    C70 168 48 174 28 190
+                    C52 186 74 198 86 218
+                    C68 230 58 252 62 278
+                    C88 248 124 230 168 214
+                    C176 200 184 184 188 168 Z"/>
+                <path fill="none" stroke="#c9a227" stroke-width="0.8" opacity="0.5" d="M188 168 C150 150 110 128 72 118 M90 172 C70 168 48 174 28 190 M86 218 C68 230 58 252 62 278"/>
+
+                <!-- Right wing -->
+                <path fill="url(#wingG)" opacity="0.95" d="M212 168
+                    C250 150 290 128 328 118
+                    C310 132 304 150 310 172
+                    C330 168 352 174 372 190
+                    C348 186 326 198 314 218
+                    C332 230 342 252 338 278
+                    C312 248 276 230 232 214
+                    C224 200 216 184 212 168 Z"/>
+                <path fill="none" stroke="#c9a227" stroke-width="0.8" opacity="0.5" d="M212 168 C250 150 290 128 328 118 M310 172 C330 168 352 174 372 190 M314 218 C332 230 342 252 338 278"/>
+
+                <!-- Sword -->
+                <polygon points="200,36 208,58 200,66 192,58" fill="url(#goldG)"/>
+                <rect x="196.2" y="62" width="7.6" height="42" rx="1" fill="url(#goldG)"/>
+                <path d="M170 108 L230 108 L238 118 L162 118 Z" fill="url(#goldG)"/>
+                <path d="M176 118 L224 118 L218 126 L182 126 Z" fill="#7a6528"/>
+                <path d="M191 126 L209 126 L204 330 L200 352 L196 330 Z" fill="url(#bladeG)"/>
+                <path d="M200 130 L200 336" stroke="#7a6528" stroke-width="1.1" opacity="0.7"/>
+            </svg>
+
+            <p class="hero-latin">For the Lion · The Unforgiven</p>
+            <h1>naedmas</h1>
+            <div class="rule" aria-hidden="true"></div>
+            <p class="tagline">Repent! For tomorrow you die.</p>
+            <p class="subline">A vigil kept in the shadow of The Rock.</p>
+
+            <div class="rock" aria-hidden="true">
+                <svg viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+                    <path fill="#07140c" d="M0 220 L0 170 L80 150 L160 165 L240 100 L300 120 L360 70 L420 90 L500 40 L560 80 L620 30 L700 85 L760 55 L840 110 L920 75 L1000 140 L1080 120 L1200 165 L1200 220 Z"/>
+                    <path fill="#0a1f14" d="M0 220 L0 190 L140 175 L250 130 L340 150 L430 110 L540 145 L650 95 L760 140 L880 120 L1020 170 L1200 185 L1200 220 Z"/>
+                    <path fill="none" stroke="#c9a227" stroke-width="0.6" opacity="0.2" d="M500 40 L505 70 L560 80"/>
+                </svg>
             </div>
-            <button onclick="showLoginModal()" class="px-8 py-3 text-sm font-medium bg-white text-zinc-900 rounded-2xl hover:bg-zinc-200 transition-all">Sign In</button>
-        </div>
-    </nav>
 
-    <section class="hero-bg min-h-screen flex items-center">
-        <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <div class="max-w-md mx-auto">
-                <div class="mx-auto w-20 h-20 bg-zinc-800 rounded-3xl flex items-center justify-center text-5xl mb-10">🔒</div>
-                <h1 class="text-6xl font-semibold tracking-tighter mb-6">Secure Access</h1>
-                <p class="text-zinc-400 text-lg mb-12">Authorized personnel only.</p>
-                <button onclick="showLoginModal()" class="w-full py-6 bg-white text-zinc-900 font-semibold text-xl rounded-3xl hover:bg-zinc-100 transition-all active:scale-95">Proceed to Login</button>
+            <a class="scroll-cue" href="#unforgiven">The Hunt<span></span></a>
+        </header>
+
+        <div class="divider"></div>
+
+        <section class="content" id="unforgiven">
+            <p class="section-kicker">The First Legion</p>
+            <h2>The Unforgiven</h2>
+            <p class="lead">
+                They are the First. From the fortress-monastery called The Rock they keep a vigil older than memory, and a hunt that will not end until every silent debt is paid. Loyalty here is a blade kept close, and truth a thing spoken only in the inner dark.
+            </p>
+        </section>
+
+        <section class="content" id="wings" style="padding-top: 0;">
+            <p class="section-kicker">Three faces of one oath</p>
+            <h2>Wings of the Chapter</h2>
+            <div class="wings">
+                <article class="wing">
+                    <div class="wing-swatch green" aria-hidden="true"></div>
+                    <h3>Dark Angels</h3>
+                    <p>In deep forest green they stand the line. The chapter’s public face: steadfast, monastic, and unyielding beneath the Calibanite shadow.</p>
+                </article>
+                <article class="wing deathwing">
+                    <div class="wing-swatch bone" aria-hidden="true"></div>
+                    <h3>Deathwing</h3>
+                    <p>Clad in bone and silence, the First Company walks where the hunt runs deepest. Few return unchanged from that pale brotherhood.</p>
+                </article>
+                <article class="wing ravenwing">
+                    <div class="wing-swatch black" aria-hidden="true"></div>
+                    <h3>Ravenwing</h3>
+                    <p>In black they ride the void and the storm, swift as a drawn secret. Where the Ravenwing passes, the trail of the Fallen is not far behind.</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Login Modal -->
-    <div id="loginModal" class="hidden fixed inset-0 bg-black/95 backdrop-blur-xl z-[100] flex items-center justify-center">
-        <div class="glass border border-white/10 rounded-3xl w-full max-w-md p-10 relative">
-            <button onclick="hideLoginModal()" class="absolute top-6 right-6 text-4xl text-zinc-400 hover:text-white leading-none">×</button>
-            
-            <div class="text-center mb-10">
-                <div class="mx-auto w-16 h-16 bg-zinc-700 rounded-2xl flex items-center justify-center text-4xl mb-6">🔑</div>
-                <h3 class="text-3xl font-semibold">Sign In</h3>
-                <p class="text-zinc-500 mt-2">Restricted Area</p>
-            </div>
-
-            <div class="space-y-6">
-                <button onclick="signInWithGoogle()" class="w-full py-5 bg-white text-zinc-900 font-medium rounded-3xl hover:bg-zinc-100 flex items-center justify-center gap-3">
-                    <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" class="w-5 h-5" alt="Google">
-                    Continue with Google
-                </button>
-
-                <div class="relative text-center text-xs uppercase text-zinc-500">
-                    <div class="border-t border-white/20"></div>
-                    <span class="bg-zinc-900 px-4">or</span>
-                </div>
-
-                <div>
-                    <label class="block text-xs uppercase tracking-widest text-zinc-500 mb-2">Email</label>
-                    <input id="email" type="email" class="w-full bg-zinc-900 border border-white/20 rounded-2xl px-6 py-5 outline-none focus:border-white text-lg" placeholder="you@email.com">
-                </div>
-                <div>
-                    <label class="block text-xs uppercase tracking-widest text-zinc-500 mb-2">Password</label>
-                    <input id="password" type="password" class="w-full bg-zinc-900 border border-white/20 rounded-2xl px-6 py-5 outline-none focus:border-white text-lg" placeholder="Password">
-                </div>
-
-                <button onclick="handleEmailLogin()" class="w-full py-6 bg-white text-zinc-950 font-semibold text-lg rounded-3xl hover:bg-zinc-200 transition-all">Sign In with Email</button>
-            </div>
-        </div>
+        <footer>
+            <p class="foot-name">naedmas</p>
+            <p class="disclaimer">Unofficial fan page. Warhammer 40,000 and Dark Angels are trademarks of Games Workshop.</p>
+            <p class="foot-links"><a href="login.html">Sign in</a></p>
+        </footer>
     </div>
-
-    <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
-            authDomain: "naedmas-ab1c9.firebaseapp.com",
-            projectId: "naedmas-ab1c9",
-            storageBucket: "naedmas-ab1c9.firebasestorage.app",
-            messagingSenderId: "818829278172",
-            appId: "1:818829278172:web:cebd2284efb823ae832d19"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
-
-        // Enable "Remember Me" (local persistence)
-        auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
-
-        function showLoginModal() {
-            document.getElementById('loginModal').classList.remove('hidden');
-            document.getElementById('loginModal').classList.add('flex');
-        }
-
-        function hideLoginModal() {
-            document.getElementById('loginModal').classList.add('hidden');
-            document.getElementById('loginModal').classList.remove('flex');
-        }
-
-        function loginSuccess() {
-            hideLoginModal();
-            const overlay = document.createElement('div');
-            overlay.innerHTML = `<div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[200]"><div class="text-center"><div class="text-6xl mb-8 animate-bounce">✅</div><div class="text-3xl font-medium">Access Granted</div><div class="text-zinc-400 mt-3">Redirecting...</div></div></div>`;
-            document.body.appendChild(overlay.firstElementChild);
-            setTimeout(() => window.location.href = "dashboard.html", 1300);
-        }
-
-        // Google Login
-        function signInWithGoogle() {
-            const provider = new firebase.auth.GoogleAuthProvider();
-            auth.signInWithPopup(provider)
-                .then(() => loginSuccess())
-                .catch(err => alert("Google login failed: " + err.message));
-        }
-
-        // Email Login
-        async function handleEmailLogin() {
-            const email = document.getElementById('email').value.trim();
-            const password = document.getElementById('password').value;
-
-            if (!email || !password) return alert("Enter email and password");
-
-            try {
-                await auth.signInWithEmailAndPassword(email, password);
-                loginSuccess();
-            } catch (err) {
-                alert("Invalid email or password");
-            }
-        }
-
-        // Keyboard support
-        document.addEventListener('keydown', (e) => {
-            if (e.key === "Enter") {
-                const modal = document.getElementById('loginModal');
-                if (!modal.classList.contains('hidden')) handleEmailLogin();
-            }
-            if (e.key === "Escape") hideLoginModal();
-        });
-    </script>
 </body>
 </html>

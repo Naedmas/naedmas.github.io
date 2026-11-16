@@ -66,7 +66,7 @@
 
         auth.onAuthStateChanged(user => {
             if (!user) {
-                window.location.href = "index.html";
+                window.location.href = "login.html";
             } else {
                 document.getElementById('userInfo').innerHTML = `
                     <span class="text-emerald-400">${user.email}</span>
@@ -75,7 +75,7 @@
         });
 
         function logout() {
-            if (confirm("Sign out?")) auth.signOut().then(() => window.location.href = "index.html");
+            if (confirm("Sign out?")) auth.signOut().then(() => window.location.href = "login.html");
         }
     </script>
 </body>

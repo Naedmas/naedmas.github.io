@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        .hero-bg { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white font-sans">
+    <!-- Navbar + Hero (unchanged) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-lg">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-8 h-8 bg-zinc-700 rounded-2xl flex items-center justify-center text-xl font-bold">N</div>
+                <span class="text-2xl font-semibold tracking-tight">naedmas</span>
+            </div>
+            <button onclick="showLoginModal()" class="px-8 py-3 text-sm font-medium bg-white text-zinc-900 rounded-2xl hover:bg-zinc-200 transition-all">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="hero-bg min-h-screen flex items-center">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center">
+            <div class="max-w-md mx-auto">
+                <div class="mx-auto w-20 h-20 bg-zinc-800 rounded-3xl flex items-center justify-center text-5xl mb-10">🔒</div>
+                <h1 class="text-6xl font-semibold tracking-tighter mb-6">Secure Access</h1>
+                <p class="text-zinc-400 text-lg mb-12">Authorized personnel only.</p>
+                <button onclick="showLoginModal()" class="w-full py-6 bg-white text-zinc-900 font-semibold text-xl rounded-3xl hover:bg-zinc-100 transition-all active:scale-95">Proceed to Login</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="hidden fixed inset-0 bg-black/95 backdrop-blur-xl z-[100] flex items-center justify-center">
+        <div class="glass border border-white/10 rounded-3xl w-full max-w-md p-10 relative">
+            <button onclick="hideLoginModal()" class="absolute top-6 right-6 text-4xl text-zinc-400 hover:text-white leading-none">×</button>
+            
+            <div class="text-center mb-10">
+                <div class="mx-auto w-16 h-16 bg-zinc-700 rounded-2xl flex items-center justify-center text-4xl mb-6">🔑</div>
+                <h3 class="text-3xl font-semibold">Sign In</h3>
+                <p class="text-zinc-500 mt-2">Restricted Area</p>
+            </div>
+
+            <div class="space-y-6">
+                <button onclick="signInWithGoogle()" class="w-full py-5 bg-white text-zinc-900 font-medium rounded-3xl hover:bg-zinc-100 flex items-center justify-center gap-3">
+                    <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" class="w-5 h-5" alt="Google">
+                    Continue with Google
+                </button>
+
+                <div class="relative text-center text-xs uppercase text-zinc-500">
+                    <div class="border-t border-white/20"></div>
+                    <span class="bg-zinc-900 px-4">or</span>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-zinc-500 mb-2">Email</label>
+                    <input id="email" type="email" class="w-full bg-zinc-900 border border-white/20 rounded-2xl px-6 py-5 outline-none focus:border-white text-lg" placeholder="you@email.com">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-zinc-500 mb-2">Password</label>
+                    <input id="password" type="password" class="w-full bg-zinc-900 border border-white/20 rounded-2xl px-6 py-5 outline-none focus:border-white text-lg" placeholder="Password">
+                </div>
+
+                <button onclick="handleEmailLogin()" class="w-full py-6 bg-white text-zinc-950 font-semibold text-lg rounded-3xl hover:bg-zinc-200 transition-all">Sign In with Email</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
+            authDomain: "naedmas-ab1c9.firebaseapp.com",
+            projectId: "naedmas-ab1c9",
+            storageBucket: "naedmas-ab1c9.firebasestorage.app",
+            messagingSenderId: "818829278172",
+            appId: "1:818829278172:web:cebd2284efb823ae832d19"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        // Enable "Remember Me" (local persistence)
+        auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+
+        function showLoginModal() {
+            document.getElementById('loginModal').classList.remove('hidden');
+            document.getElementById('loginModal').classList.add('flex');
+        }
+
+        function hideLoginModal() {
+            document.getElementById('loginModal').classList.add('hidden');
+            document.getElementById('loginModal').classList.remove('flex');
+        }
+
+        function loginSuccess() {
+            hideLoginModal();
+            const overlay = document.createElement('div');
+            overlay.innerHTML = `<div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[200]"><div class="text-center"><div class="text-6xl mb-8 animate-bounce">✅</div><div class="text-3xl font-medium">Access Granted</div><div class="text-zinc-400 mt-3">Redirecting...</div></div></div>`;
+            document.body.appendChild(overlay.firstElementChild);
+            setTimeout(() => window.location.href = "dashboard.html", 1300);
+        }
+
+        // Google Login
+        function signInWithGoogle() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider)
+                .then(() => loginSuccess())
+                .catch(err => alert("Google login failed: " + err.message));
+        }
+
+        // Email Login
+        async function handleEmailLogin() {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+
+            if (!email || !password) return alert("Enter email and password");
+
+            try {
+                await auth.signInWithEmailAndPassword(email, password);
+                loginSuccess();
+            } catch (err) {
+                alert("Invalid email or password");
+            }
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Enter") {
+                const modal = document.getElementById('loginModal');
+                if (!modal.classList.contains('hidden')) handleEmailLogin();
+            }
+            if (e.key === "Escape") hideLoginModal();
+        });
+    </script>
+</body>
+</html>
