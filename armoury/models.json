@@ -1,0 +1,495 @@
+{
+  "updatedAt": "2026-11-16T21:26:19+10:00",
+  "source": "My Individual Models",
+  "count": 18,
+  "models": [
+    {
+      "id": "azrael-002",
+      "name": "Azrael-002",
+      "unit": "Azrael",
+      "faction": "Dark Angels",
+      "status": "NIB (New in Box)",
+      "kit": "Dark Angels - Azrael",
+      "squad": null,
+      "wargear": [],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-24",
+      "images": [
+        "img/azrael-002.jpg"
+      ],
+      "thumbs": [
+        "img/azrael-002-thumb.jpg"
+      ],
+      "image": "img/azrael-002.jpg",
+      "thumb": "img/azrael-002-thumb.jpg"
+    },
+    {
+      "id": "belial-002",
+      "name": "Belial-002",
+      "unit": "Belial",
+      "faction": "Dark Angels",
+      "status": "NIB (New in Box)",
+      "kit": "Dark Angels - Belial, Grand Master of the Deathwing",
+      "squad": null,
+      "wargear": [],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-31",
+      "images": [
+        "img/belial-002.jpg"
+      ],
+      "thumbs": [
+        "img/belial-002-thumb.jpg"
+      ],
+      "image": "img/belial-002.jpg",
+      "thumb": "img/belial-002-thumb.jpg"
+    },
+    {
+      "id": "bgv-001",
+      "name": "BGV-001",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Dark Angels Combat Patrol",
+      "squad": "Bladeguard Veteran Squad (1)",
+      "wargear": [
+        "Master-crafted Power Sword",
+        "Storm Shield"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Bladeguard Veteran Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-001.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-001-thumb.jpg"
+      ],
+      "image": "img/bgv-001.jpg",
+      "thumb": "img/bgv-001-thumb.jpg"
+    },
+    {
+      "id": "bgv-002",
+      "name": "BGV-002",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Dark Angels Combat Patrol",
+      "squad": "Bladeguard Veteran Squad (1)",
+      "wargear": [
+        "Master-crafted Power Sword",
+        "Storm Shield"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Bladeguard Veteran Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-002.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-002-thumb.jpg"
+      ],
+      "image": "img/bgv-002.jpg",
+      "thumb": "img/bgv-002-thumb.jpg"
+    },
+    {
+      "id": "bgv-003",
+      "name": "BGV-003",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Dark Angels Combat Patrol",
+      "squad": "Bladeguard Veteran Squad (1)",
+      "wargear": [
+        "Plasma Pistol",
+        "Storm Shield"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Bladeguard Veteran Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-003.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-003-thumb.jpg"
+      ],
+      "image": "img/bgv-003.jpg",
+      "thumb": "img/bgv-003-thumb.jpg"
+    },
+    {
+      "id": "bgv-004",
+      "name": "BGV-004",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Undercoat / Prime",
+      "kit": "Warhammer 40,000: Indomitus Box Set",
+      "squad": "Bladeguard Veteran Squad (2)",
+      "wargear": [],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-004.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-004-thumb.jpg"
+      ],
+      "image": "img/bgv-004.jpg",
+      "thumb": "img/bgv-004-thumb.jpg"
+    },
+    {
+      "id": "bgv-005",
+      "name": "BGV-005",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Undercoat / Prime",
+      "kit": "Warhammer 40,000: Indomitus Box Set",
+      "squad": "Bladeguard Veteran Squad (2)",
+      "wargear": [],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-005.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-005-thumb.jpg"
+      ],
+      "image": "img/bgv-005.jpg",
+      "thumb": "img/bgv-005-thumb.jpg"
+    },
+    {
+      "id": "bgv-006",
+      "name": "BGV-006",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Undercoat / Prime",
+      "kit": "Warhammer 40,000: Indomitus Box Set",
+      "squad": "Bladeguard Veteran Squad (2)",
+      "wargear": [],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-006.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-006-thumb.jpg"
+      ],
+      "image": "img/bgv-006.jpg",
+      "thumb": "img/bgv-006-thumb.jpg"
+    },
+    {
+      "id": "bgv-007",
+      "name": "BGV-007",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Bladeguard Veterans",
+      "squad": "Bladeguard Veteran Squad (3)",
+      "wargear": [
+        "Master-crafted Power Sword",
+        "Storm Shield"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Bladeguard Veteran Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/bgv-007.jpg"
+      ],
+      "thumbs": [
+        "img/bgv-007-thumb.jpg"
+      ],
+      "image": "img/bgv-007.jpg",
+      "thumb": "img/bgv-007-thumb.jpg"
+    },
+    {
+      "id": "bgv-008",
+      "name": "BGV-008",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Undercoat / Prime",
+      "kit": "Space Marines - Bladeguard Veterans",
+      "squad": "Bladeguard Veteran Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Bladeguard Veteran Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "bgv-009",
+      "name": "BGV-009",
+      "unit": "Bladeguard Veteran",
+      "faction": "Adeptus Astartes",
+      "status": "Undercoat / Prime",
+      "kit": "Space Marines - Bladeguard Veterans",
+      "squad": "Bladeguard Veteran Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Bladeguard Veteran Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "gvc-001",
+      "name": "GVC-001",
+      "unit": "Captain in Gravis Armour",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Dark Angels Combat Patrol",
+      "squad": "Captain in Gravis Armour (1)",
+      "wargear": [
+        "Master-crafted Power Sword",
+        "Boltstorm Gauntlet"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Gravis",
+        "Captain",
+        "Grenades"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/gvc-001.jpg"
+      ],
+      "thumbs": [
+        "img/gvc-001-thumb.jpg"
+      ],
+      "image": "img/gvc-001.jpg",
+      "thumb": "img/gvc-001-thumb.jpg"
+    },
+    {
+      "id": "gvc-002",
+      "name": "GVC-002",
+      "unit": "Captain in Gravis Armour",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Captain in Gravis Armour",
+      "squad": "Captain in Gravis Armour (2)",
+      "wargear": [
+        "Relic Chainsword",
+        "Boltstorm Gauntlet"
+      ],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-16",
+      "images": [
+        "img/gvc-002.jpg"
+      ],
+      "thumbs": [
+        "img/gvc-002-thumb.jpg"
+      ],
+      "image": "img/gvc-002.jpg",
+      "thumb": "img/gvc-002-thumb.jpg"
+    },
+    {
+      "id": "icc-001",
+      "name": "ICC-001",
+      "unit": "Inner Circle Companions",
+      "faction": "Dark Angels",
+      "status": "Painted",
+      "kit": "Dark Angels - Inner Circle Companions",
+      "squad": "Inner Circle Companions (1)",
+      "wargear": [
+        "Calibanite Greatsword",
+        "Heavy Bolt Pistol"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Deathwing",
+        "Grenades",
+        "Inner Circle Companions"
+      ],
+      "created": "2026-11-15",
+      "images": [
+        "img/icc-001.jpg"
+      ],
+      "thumbs": [
+        "img/icc-001-thumb.jpg"
+      ],
+      "image": "img/icc-001.jpg",
+      "thumb": "img/icc-001-thumb.jpg"
+    },
+    {
+      "id": "icc-002",
+      "name": "ICC-002",
+      "unit": "Inner Circle Companions",
+      "faction": "Dark Angels",
+      "status": "Painted",
+      "kit": "Dark Angels - Inner Circle Companions",
+      "squad": "Inner Circle Companions (1)",
+      "wargear": [
+        "Calibanite Greatsword",
+        "Heavy Bolt Pistol"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Deathwing",
+        "Grenades",
+        "Inner Circle Companions"
+      ],
+      "created": "2026-11-15",
+      "images": [
+        "img/icc-002.jpg"
+      ],
+      "thumbs": [
+        "img/icc-002-thumb.jpg"
+      ],
+      "image": "img/icc-002.jpg",
+      "thumb": "img/icc-002-thumb.jpg"
+    },
+    {
+      "id": "ich",
+      "name": "ICH",
+      "unit": "Interrogator-Chaplain (2015)",
+      "faction": null,
+      "status": "Painted",
+      "kit": "Dark Angels - Interrogator-Chaplain",
+      "squad": "Interrogator-Chaplain (1)",
+      "wargear": [
+        "Crozius Arcanum",
+        "Powerfist"
+      ],
+      "type": null,
+      "baseSize": null,
+      "keywords": [],
+      "created": "2026-10-16",
+      "images": [
+        "img/ich.jpg"
+      ],
+      "thumbs": [
+        "img/ich-thumb.jpg"
+      ],
+      "image": "img/ich.jpg",
+      "thumb": "img/ich-thumb.jpg"
+    },
+    {
+      "id": "hlb-001",
+      "name": "HLB-001",
+      "unit": "Primaris Hellblaster",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Dark Angels Combat Patrol",
+      "squad": "Hellblaster Squad (1)",
+      "wargear": [
+        "Heavy Plasma Incinerator"
+      ],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Hellblaster Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/hlb-001.jpg"
+      ],
+      "thumbs": [
+        "img/hlb-001-thumb.jpg"
+      ],
+      "image": "img/hlb-001.jpg",
+      "thumb": "img/hlb-001-thumb.jpg"
+    },
+    {
+      "id": "int-001",
+      "name": "INT-001",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Dark Angels Combat Patrol",
+      "squad": "Intercessor Squad (1)",
+      "wargear": [
+        "Bolt Rifle",
+        "Bolt Pistol"
+      ],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": "2026-10-16",
+      "images": [
+        "img/int-001.jpg"
+      ],
+      "thumbs": [
+        "img/int-001-thumb.jpg"
+      ],
+      "image": "img/int-001.jpg",
+      "thumb": "img/int-001-thumb.jpg"
+    }
+  ]
+}

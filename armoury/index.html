@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050806">
+    <meta name="description" content="A gallery of Warhammer models kept by naedmas.">
+    <title>Armoury • naedmas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/theme.css">
+</head>
+<body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <div class="wrap">
+        <nav class="site-nav">
+            <a class="brand" href="/">
+                <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
+                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
+                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
+                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
+                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                </svg>
+                <span class="brand-name">naedmas</span>
+            </a>
+            <div class="nav-right">
+                <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/armoury/" aria-current="page" class="is-active">Armoury</a>
+                <a href="/about/">About</a>
+                <a href="/blog/">Librarium</a>
+                <a href="/contact/">Logisticiam</a>
+                </div>
+                <a class="signin" href="/dashboard.html">Sign in</a>
+            </div>
+        </nav>
+        <main class="page gallery-page" id="content">
+            <header class="gallery-header">
+                <p class="section-kicker">The Host</p>
+                <h1 class="page-title">Armoury</h1>
+                <div class="rule" aria-hidden="true"></div>
+                <p class="lead">A gallery of the models in the keep — painted, primed, and still in their boxes.</p>
+            </header>
+
+            <div class="gallery-tools">
+                <div class="gallery-search">
+                    <label for="modelSearch">Search</label>
+                    <input id="modelSearch" type="search" placeholder="Search name, unit, kit, wargear…" autocomplete="off">
+                </div>
+                <div class="chip-row" id="factionChips"></div>
+                <div class="chip-row" id="unitChips"></div>
+                <div class="chip-row" id="statusChips"></div>
+                <p class="gallery-count" id="galleryCount"></p>
+            </div>
+
+            <div class="model-grid" id="modelGrid"></div>
+            <p class="gallery-empty hidden" id="galleryEmpty">No models match this search of the armoury.</p>
+        </main>
+        <footer>
+            <p class="foot-name">naedmas</p>
+            <p class="disclaimer">Unofficial fan page. Warhammer 40,000 and Dark Angels are trademarks of Games Workshop.</p>
+            <p class="foot-links"><a href="/dashboard.html">Sign in</a></p>
+        </footer>
+    </div>
+
+    <div class="lightbox hidden" id="lightbox" hidden>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+            <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+            <div class="lightbox-art" id="lightboxArt"></div>
+            <div class="lightbox-body">
+                <p class="section-kicker" id="lightboxKicker">The Host</p>
+                <h2 id="lightboxTitle"></h2>
+                <div class="rule" aria-hidden="true"></div>
+                <dl class="detail-list" id="lightboxFields"></dl>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    (function () {
+        const PLACEHOLDER = "/armoury/img/placeholder.svg";
+        const state = {
+            models: [],
+            query: "",
+            faction: "",
+            unit: "",
+            status: "",
+            openId: null
+        };
+
+        const grid = document.getElementById("modelGrid");
+        const empty = document.getElementById("galleryEmpty");
+        const countEl = document.getElementById("galleryCount");
+        const searchEl = document.getElementById("modelSearch");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxArt = document.getElementById("lightboxArt");
+        const lightboxTitle = document.getElementById("lightboxTitle");
+        const lightboxKicker = document.getElementById("lightboxKicker");
+        const lightboxFields = document.getElementById("lightboxFields");
+        const lightboxClose = document.getElementById("lightboxClose");
+
+        function statusClass(status) {
+            const key = (status || "").toLowerCase();
+            if (key.indexOf("painted") !== -1) return "is-painted";
+            if (key.indexOf("undercoat") !== -1 || key.indexOf("prime") !== -1) return "is-primed";
+            if (key.indexOf("built") !== -1) return "is-built";
+            if (key.indexOf("nib") !== -1) return "is-nib";
+            if (key.indexOf("nos") !== -1) return "is-nos";
+            return "is-not-started";
+        }
+
+        function uniqueSorted(values) {
+            return Array.from(new Set(values.filter(Boolean))).sort(function (a, b) {
+                return a.localeCompare(b);
+            });
+        }
+
+        function artTag(src, alt, isPlaceholder) {
+            if (isPlaceholder) {
+                return '<img class="model-placeholder" src="' + PLACEHOLDER + '" alt="">';
+            }
+            return '<img src="' + src + '" alt="' + escapeHtml(alt) + '">';
+        }
+
+        function escapeHtml(value) {
+            return String(value == null ? "" : value)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;");
+        }
+
+        function haystack(model) {
+            return [
+                model.name, model.unit, model.faction, model.status, model.kit,
+                model.squad, model.type, model.baseSize,
+                (model.wargear || []).join(" "),
+                (model.keywords || []).join(" ")
+            ].join(" ").toLowerCase();
+        }
+
+        function filtered() {
+            const q = state.query.trim().toLowerCase();
+            return state.models.filter(function (model) {
+                if (state.faction && model.faction !== state.faction) return false;
+                if (state.unit && model.unit !== state.unit) return false;
+                if (state.status && model.status !== state.status) return false;
+                if (q && haystack(model).indexOf(q) === -1) return false;
+                return true;
+            });
+        }
+
+        function renderChips(containerId, key, values, label) {
+            const el = document.getElementById(containerId);
+            const buttons = ['<span class="chip-label">' + escapeHtml(label) + '</span>'];
+            buttons.push(
+                '<button type="button" class="chip' + (state[key] === "" ? " is-active" : "") +
+                '" data-filter="' + key + '" data-value="">All</button>'
+            );
+            values.forEach(function (value) {
+                const active = state[key] === value ? " is-active" : "";
+                buttons.push(
+                    '<button type="button" class="chip' + active +
+                    '" data-filter="' + key + '" data-value="' + escapeHtml(value) + '">' +
+                    escapeHtml(value) + "</button>"
+                );
+            });
+            el.innerHTML = buttons.join("");
+        }
+
+        function renderFilters() {
+            renderChips("factionChips", "faction", uniqueSorted(state.models.map(function (m) { return m.faction; })), "Faction");
+            renderChips("unitChips", "unit", uniqueSorted(state.models.map(function (m) { return m.unit; })), "Unit");
+            renderChips("statusChips", "status", uniqueSorted(state.models.map(function (m) { return m.status; })), "Status");
+        }
+
+        function renderGrid() {
+            const models = filtered();
+            countEl.textContent = "Showing " + models.length + " of " + state.models.length;
+            if (!models.length) {
+                grid.innerHTML = "";
+                empty.classList.remove("hidden");
+                return;
+            }
+            empty.classList.add("hidden");
+            grid.innerHTML = models.map(function (model) {
+                const src = model.thumb || model.image;
+                const missing = !src;
+                return (
+                    '<button type="button" class="model-card" data-id="' + escapeHtml(model.id) + '">' +
+                        '<div class="model-card-art">' +
+                            artTag(src ? "/" + "armoury/" + src : PLACEHOLDER, model.name, missing) +
+                        "</div>" +
+                        '<div class="model-card-body">' +
+                            "<h2>" + escapeHtml(model.name) + "</h2>" +
+                            '<p class="model-unit">' + escapeHtml(model.unit || "") + "</p>" +
+                            (model.status
+                                ? '<span class="status-badge ' + statusClass(model.status) + '">' +
+                                  escapeHtml(model.status) + "</span>"
+                                : "") +
+                        "</div>" +
+                    "</button>"
+                );
+            }).join("");
+        }
+
+        function fieldRow(label, valueHtml) {
+            if (!valueHtml) return "";
+            return (
+                "<div>" +
+                    '<dt class="detail-kicker">' + escapeHtml(label) + "</dt>" +
+                    '<dd class="detail-value">' + valueHtml + "</dd>" +
+                "</div>"
+            );
+        }
+
+        function formatDate(iso) {
+            if (!iso) return "";
+            const parts = iso.split("-");
+            if (parts.length !== 3) return escapeHtml(iso);
+            const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const month = months[parseInt(parts[1], 10) - 1];
+            return (month ? month + " " : "") + parseInt(parts[2], 10) + ", " + parts[0];
+        }
+
+        function openLightbox(id) {
+            const model = state.models.find(function (m) { return m.id === id; });
+            if (!model) return;
+            state.openId = id;
+            const src = model.image || model.thumb;
+            lightboxArt.innerHTML = artTag(src ? "/" + "armoury/" + src : PLACEHOLDER, model.name, !src);
+            lightboxTitle.textContent = model.name;
+            lightboxKicker.textContent = model.unit || "The Host";
+            const wargear = (model.wargear || []).map(function (item) {
+                return '<span class="wargear-tag">' + escapeHtml(item) + "</span>";
+            }).join("");
+            const rows = [
+                fieldRow("Unit", escapeHtml(model.unit)),
+                fieldRow("Faction", escapeHtml(model.faction)),
+                fieldRow("Status", model.status
+                    ? '<span class="status-badge ' + statusClass(model.status) + '">' + escapeHtml(model.status) + "</span>"
+                    : ""),
+                fieldRow("Kit", escapeHtml(model.kit)),
+                fieldRow("Squad", escapeHtml(model.squad)),
+                fieldRow("Wargear", wargear ? '<div class="wargear-list">' + wargear + "</div>" : ""),
+                fieldRow("Type", escapeHtml(model.type)),
+                fieldRow("Base", escapeHtml(model.baseSize)),
+                fieldRow("Keywords", (model.keywords || []).map(escapeHtml).join(", ")),
+                fieldRow("Added", formatDate(model.created))
+            ].join("");
+            lightboxFields.innerHTML = rows;
+            lightbox.classList.remove("hidden");
+            lightbox.hidden = false;
+            lightboxClose.focus();
+            if (location.hash !== "#" + id) {
+                history.replaceState(null, "", "#" + id);
+            }
+        }
+
+        function closeLightbox() {
+            state.openId = null;
+            lightbox.classList.add("hidden");
+            lightbox.hidden = true;
+            if (location.hash) {
+                history.replaceState(null, "", location.pathname + location.search);
+            }
+        }
+
+        function applyHash() {
+            const id = (location.hash || "").replace(/^#/, "");
+            if (id) openLightbox(id);
+            else if (state.openId) closeLightbox();
+        }
+
+        document.getElementById("factionChips").addEventListener("click", onChip);
+        document.getElementById("unitChips").addEventListener("click", onChip);
+        document.getElementById("statusChips").addEventListener("click", onChip);
+
+        function onChip(event) {
+            const btn = event.target.closest(".chip");
+            if (!btn) return;
+            const key = btn.getAttribute("data-filter");
+            const value = btn.getAttribute("data-value") || "";
+            state[key] = state[key] === value ? "" : value;
+            renderFilters();
+            renderGrid();
+        }
+
+        searchEl.addEventListener("input", function () {
+            state.query = searchEl.value;
+            renderGrid();
+        });
+
+        grid.addEventListener("click", function (event) {
+            const card = event.target.closest(".model-card");
+            if (card) openLightbox(card.getAttribute("data-id"));
+        });
+
+        lightboxClose.addEventListener("click", closeLightbox);
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) closeLightbox();
+        });
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && state.openId) closeLightbox();
+        });
+        window.addEventListener("hashchange", applyHash);
+
+        fetch("models.json")
+            .then(function (res) {
+                if (!res.ok) throw new Error("Could not load models.json");
+                return res.json();
+            })
+            .then(function (data) {
+                state.models = data.models || [];
+                renderFilters();
+                renderGrid();
+                applyHash();
+            })
+            .catch(function (err) {
+                countEl.textContent = "The gallery could not be loaded.";
+                empty.textContent = "The armoury records could not be read.";
+                empty.classList.remove("hidden");
+                console.error(err);
+            });
+    })();
+    </script>
+</body>
+</html>

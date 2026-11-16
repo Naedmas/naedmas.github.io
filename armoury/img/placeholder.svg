@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" role="img" aria-label="No likeness yet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#123d26"/>
+      <stop offset="100%" stop-color="#080c09"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcc0"/>
+      <stop offset="45%" stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#7a6528"/>
+    </linearGradient>
+    <linearGradient id="bladeG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a7d5c"/>
+      <stop offset="50%" stop-color="#e8dcc0"/>
+      <stop offset="100%" stop-color="#8a7d5c"/>
+    </linearGradient>
+    <linearGradient id="wingG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcc0"/>
+      <stop offset="100%" stop-color="#9aa878"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="520" fill="url(#bg)"/>
+  <rect x="18" y="18" width="364" height="484" fill="none" stroke="#c9a227" stroke-width="1" opacity="0.28"/>
+  <circle cx="200" cy="230" r="128" fill="none" stroke="#c9a227" stroke-width="1.2" opacity="0.4"/>
+  <circle cx="200" cy="230" r="116" fill="none" stroke="#c9a227" stroke-width="0.5" opacity="0.22"/>
+  <!-- Left wing -->
+  <path fill="url(#wingG)" opacity="0.85" d="M188 198
+    C150 180 110 158 72 148
+    C90 162 96 180 90 202
+    C70 198 48 204 28 220
+    C52 216 74 228 86 248
+    C68 260 58 282 62 308
+    C88 278 124 260 168 244
+    C176 230 184 214 188 198 Z"/>
+  <!-- Right wing -->
+  <path fill="url(#wingG)" opacity="0.85" d="M212 198
+    C250 180 290 158 328 148
+    C310 162 304 180 310 202
+    C330 198 352 204 372 220
+    C348 216 326 228 314 248
+    C332 260 342 282 338 308
+    C312 278 276 260 232 244
+    C224 230 216 214 212 198 Z"/>
+  <!-- Blade -->
+  <path fill="url(#bladeG)" d="M194 78 L206 78 L210 250 L200 268 L190 250 Z"/>
+  <path fill="url(#goldG)" d="M188 248 L212 248 L208 262 L200 272 L192 262 Z"/>
+  <path fill="url(#goldG)" d="M176 242 H224 L218 250 H182 Z"/>
+  <circle cx="200" cy="238" r="7" fill="#050806" stroke="#c9a227" stroke-width="1.2"/>
+  <!-- Empty plinth -->
+  <path fill="none" stroke="#c9a227" stroke-width="1.1" opacity="0.55"
+        d="M130 400 L200 372 L270 400 L200 428 Z"/>
+  <path fill="rgba(201,162,39,0.08)" stroke="#c9a227" stroke-width="1" opacity="0.7"
+        d="M130 400 L270 400 L258 448 L142 448 Z"/>
+  <text x="200" y="478" text-anchor="middle" fill="#c4b896" font-family="Cinzel, 'Times New Roman', serif"
+        font-size="13" letter-spacing="2.4">No likeness yet</text>
+</svg>

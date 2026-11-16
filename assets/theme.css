@@ -942,10 +942,11 @@ textarea.editor {
         grid-area: links;
         width: 100%;
         justify-content: space-between;
-        gap: 0.4rem;
-        letter-spacing: 0.12em;
+        gap: 0.35rem 0.55rem;
+        flex-wrap: wrap;
+        letter-spacing: 0.1em;
     }
-    .nav-links a { letter-spacing: 0.12em; }
+    .nav-links a { letter-spacing: 0.1em; font-size: 0.62rem; }
     .hero { padding-top: 7.25rem; }
     .hero-emblem { width: min(160px, 52vw); margin-bottom: 1rem; }
     .page { padding-top: 8.6rem; }
@@ -989,4 +990,396 @@ textarea.editor {
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
+}
+
+
+/* --- Armoury gallery --- */
+.page.gallery-page {
+    max-width: 1120px;
+    text-align: left;
+    padding-top: 6.35rem;
+    padding-bottom: 4.5rem;
+}
+
+.page.gallery-page .page-title {
+    font-size: clamp(1.85rem, 4vw, 2.5rem);
+}
+
+.page.gallery-page .section-kicker { margin-bottom: 0.4rem; }
+
+.page.gallery-page .rule {
+    margin: 0.7rem auto 0.8rem;
+}
+
+.page.gallery-page .lead {
+    margin-bottom: 0;
+    font-size: 1.18rem;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 0.95rem;
+}
+
+.gallery-header .lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin: 0 0 0.95rem;
+}
+
+.gallery-search {
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+.gallery-search label {
+    display: block;
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-muted);
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+.gallery-search input {
+    width: 100%;
+    background: rgba(8, 12, 9, 0.72);
+    border: 1px solid rgba(201, 162, 39, 0.28);
+    color: var(--bone);
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    font-size: 1rem;
+    padding: 0.55rem 0.85rem;
+    outline: none;
+}
+
+.gallery-search input::placeholder { color: #7d8578; }
+
+.gallery-search input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.25);
+}
+
+.chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+}
+
+.chip-label {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.56rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-right: 0.25rem;
+    min-width: 4.6rem;
+}
+
+.chip {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bone-dim);
+    background: transparent;
+    border: 1px solid rgba(201, 162, 39, 0.22);
+    padding: 0.35rem 0.65rem;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.chip:hover,
+.chip:focus-visible {
+    color: var(--gold);
+    border-color: var(--gold);
+    outline: none;
+}
+
+.chip.is-active {
+    color: var(--void);
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+.gallery-count {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic;
+    color: var(--ink);
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.15rem;
+}
+
+.model-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid rgba(201, 162, 39, 0.16);
+    background: linear-gradient(180deg, rgba(18, 61, 38, 0.28), rgba(8, 12, 9, 0.88));
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.model-card:hover,
+.model-card:focus-visible {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.28);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.model-card-art {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #080c09;
+}
+
+.model-card-art img,
+.model-card-art .model-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.model-placeholder {
+    object-fit: cover;
+}
+
+.model-card-body {
+    padding: 0.7rem 0.85rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.22rem;
+    min-height: 0;
+}
+
+.model-card-body h2 {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 1.02rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bone);
+}
+
+.model-unit {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.05rem;
+    color: var(--ink);
+    line-height: 1.35;
+}
+
+.status-badge {
+    align-self: flex-start;
+    margin-top: 0.35rem;
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.5rem;
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    color: var(--bone-dim);
+}
+
+.status-badge.is-painted {
+    color: #cfe8d4;
+    border-color: rgba(45, 122, 76, 0.7);
+    background: rgba(18, 61, 38, 0.55);
+}
+
+.status-badge.is-primed,
+.status-badge.is-built {
+    color: #d7e4f2;
+    border-color: rgba(90, 130, 170, 0.55);
+    background: rgba(20, 32, 48, 0.55);
+}
+
+.status-badge.is-nib,
+.status-badge.is-nos,
+.status-badge.is-not-started {
+    color: var(--deathwing);
+    border-color: rgba(212, 196, 160, 0.35);
+    background: rgba(20, 18, 12, 0.45);
+}
+
+.gallery-empty {
+    text-align: center;
+    color: var(--ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 2.5rem 1rem;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: rgba(5, 8, 6, 0.86);
+}
+
+.lightbox.hidden { display: none !important; }
+
+.lightbox-panel {
+    width: min(960px, 100%);
+    max-height: calc(100vh - 2.5rem);
+    overflow: auto;
+    background: linear-gradient(180deg, #10291c, #080c09 55%);
+    border: 1px solid rgba(201, 162, 39, 0.28);
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 0.95fr);
+}
+
+.lightbox-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1.4rem;
+    right: 1.4rem;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold-muted), transparent);
+}
+
+.lightbox-art {
+    background: #080c09;
+    min-height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-art img,
+.lightbox-art .model-placeholder {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 2.7rem);
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-body {
+    padding: 2rem 1.5rem 1.6rem;
+}
+
+.lightbox-body .section-kicker { margin-bottom: 0.35rem; }
+
+.lightbox-body h2 {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: var(--bone);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 1px solid rgba(201, 162, 39, 0.35);
+    background: rgba(5, 8, 6, 0.6);
+    color: var(--bone);
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus-visible {
+    color: var(--gold);
+    border-color: var(--gold);
+    outline: none;
+}
+
+.detail-list {
+    list-style: none;
+    margin: 1.1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.detail-list li {
+    display: grid;
+    grid-template-columns: 7.2rem 1fr;
+    gap: 0.6rem;
+    align-items: start;
+}
+
+.detail-list dt,
+.detail-kicker {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.56rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-muted);
+    padding-top: 0.2rem;
+}
+
+.detail-list dd,
+.detail-value {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.12rem;
+    color: var(--bone);
+    line-height: 1.4;
+}
+
+.wargear-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.wargear-tag {
+    border: 1px solid rgba(201, 162, 39, 0.28);
+    padding: 0.15rem 0.45rem;
+    font-family: Cinzel, serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bone-dim);
+}
+
+@media (max-width: 760px) {
+    .page.gallery-page { padding-top: 8.8rem; }
+    .model-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.8rem; }
+    .model-card-body { min-height: 0; padding: 0.7rem 0.7rem 0.85rem; }
+    .lightbox { padding: 0.5rem; }
+    .lightbox-panel {
+        grid-template-columns: 1fr;
+        max-height: calc(100vh - 1rem);
+    }
+    .lightbox-art { min-height: 16rem; }
+    .lightbox-art img { max-height: 50vh; }
+    .detail-list li { grid-template-columns: 1fr; gap: 0.15rem; }
 }
