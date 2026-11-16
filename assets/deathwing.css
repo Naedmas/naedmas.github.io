@@ -233,3 +233,68 @@ body.theme-deathwing .kb-size-track {
 body.theme-deathwing .kb-size.is-over #sizeLabel {
     color: #f0d4d2;
 }
+
+
+body.theme-deathwing .kb-rail {
+    border-color: rgba(196, 163, 90, 0.22);
+    background: rgba(8, 7, 5, 0.55);
+}
+
+body.theme-deathwing #articleSearch {
+    background: rgba(8, 7, 5, 0.88);
+    border-color: rgba(196, 163, 90, 0.32);
+    color: var(--bone);
+}
+
+body.theme-deathwing .kb-tag {
+    border-color: rgba(196, 163, 90, 0.32);
+    color: var(--bone-dim);
+}
+
+body.theme-deathwing .kb-tag.is-active,
+body.theme-deathwing .kb-tag:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+body.theme-deathwing .kb-article-item.is-active,
+body.theme-deathwing .kb-article-item:hover {
+    color: var(--gold);
+}
+
+body.theme-deathwing .wiki-body a.kb-wiki-link.is-missing {
+    color: var(--gold);
+}
+
+body.theme-deathwing .kb-backlinks {
+    border-top-color: rgba(196, 163, 90, 0.2);
+}
+
+body.theme-deathwing .kb-wiki-picker,
+body.theme-deathwing .kb-rail-toggle,
+body.theme-deathwing .kb-history {
+    border-color: rgba(196, 163, 90, 0.28);
+}
+
+body.theme-deathwing .kb-history {
+    background: #120e0a;
+}
+
+body.theme-deathwing .kb-history-backdrop {
+    background: rgba(8, 7, 5, 0.78);
+}
+
+body.theme-deathwing .kb-history-item.is-active,
+body.theme-deathwing .kb-history-item:hover {
+    border-color: rgba(196, 163, 90, 0.45);
+}
+
+body.theme-deathwing .kb-diff-add { background: rgba(50, 70, 40, 0.4); }
+body.theme-deathwing .kb-diff-del { background: rgba(90, 22, 26, 0.5); }
+
+@media (max-width: 900px) {
+    body.theme-deathwing.kb-editing .kb-sticky-edit {
+        background: rgba(12, 10, 8, 0.97);
+        border-top-color: rgba(196, 163, 90, 0.32);
+    }
+}

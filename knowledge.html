@@ -145,83 +145,157 @@
                 <div id="userInfo" class="user-email"></div>
             </header>
             <main class="private-content knowledge-layout">
-                <div class="panel">
-                    <div class="panel-head">
-                        <div>
-                            <h1>Knowledge Base</h1>
-                            <p id="lastSaved" class="last-saved"></p>
+                <div class="kb-shell">
+                    <aside class="kb-rail" id="kbRail">
+                        <div class="kb-rail-head">
+                            <p class="kb-rail-heading">Articles</p>
+                            <button type="button" class="kb-rail-toggle" id="railToggle" aria-expanded="false" aria-controls="articleList">Articles</button>
+                            <button type="button" class="btn btn-solid" id="newArticleBtn">New</button>
                         </div>
-                        <div id="viewActions" class="actions">
-                            <button type="button" class="btn" id="backupBtn">Backup</button>
-                            <button type="button" class="btn btn-solid" id="editBtn">Edit</button>
-                        </div>
-                        <div id="editActions" class="actions hidden">
-                            <button type="button" class="btn" id="backupBtnEdit">Backup</button>
-                            <button type="button" class="btn" id="cancelBtn">Cancel</button>
-                            <button type="button" class="btn btn-solid" id="saveBtn">Save</button>
-                        </div>
-                    </div>
+                        <label class="skip" for="articleSearch">Search articles</label>
+                        <input id="articleSearch" type="search" placeholder="Search titles and tags" autocomplete="off">
+                        <div id="tagFilters" class="kb-tag-filters" hidden></div>
+                        <nav id="articleList" class="kb-article-list" aria-label="Articles"></nav>
+                    </aside>
 
-                    <div id="draftBanner" class="kb-banner hidden" role="status">
-                        <p id="draftBannerText">A local draft was found.</p>
-                        <div class="kb-banner-actions">
-                            <button type="button" class="btn btn-solid" id="draftRestoreBtn">Restore</button>
-                            <button type="button" class="btn" id="draftDiscardBtn">Discard</button>
-                        </div>
-                    </div>
-
-                    <div id="conflictBanner" class="kb-banner kb-banner-warn hidden" role="alert">
-                        <p>These notes were saved elsewhere since you started editing. Reload the server copy, or overwrite it with what you have now.</p>
-                        <div class="kb-banner-actions">
-                            <button type="button" class="btn" id="conflictReloadBtn">Reload server copy</button>
-                            <button type="button" class="btn btn-solid" id="conflictOverwriteBtn">Overwrite</button>
-                        </div>
-                    </div>
-
-                    <div id="errorBox" class="auth-error hidden" role="alert"></div>
-
-                    <div id="viewPane">
-                        <div class="kb-tools" id="kbTools">
-                            <div class="kb-search">
-                                <label class="skip" for="searchInput">Search these notes</label>
-                                <input id="searchInput" type="search" placeholder="Search these notes" autocomplete="off">
-                                <span id="searchCount" class="kb-search-count" aria-live="polite"></span>
-                                <button type="button" class="btn kb-search-btn" id="searchPrev">Prev</button>
-                                <button type="button" class="btn kb-search-btn" id="searchNext">Next</button>
+                    <div class="panel" id="articlePanel">
+                        <div class="panel-head">
+                            <div class="kb-title-block">
+                                <h1 id="articleTitle">Knowledge Base</h1>
+                                <p id="lastSaved" class="last-saved"></p>
+                                <div id="articleTags" class="kb-tag-list"></div>
+                            </div>
+                            <div id="viewActions" class="actions">
+                                <button type="button" class="btn" id="backupAllBtn">Backup all</button>
+                                <button type="button" class="btn" id="backupBtn">Backup</button>
+                                <button type="button" class="btn" id="historyBtn">History</button>
+                                <button type="button" class="btn" id="renameBtn">Rename</button>
+                                <button type="button" class="btn" id="deleteBtn">Delete</button>
+                                <button type="button" class="btn btn-solid" id="editBtn">Edit</button>
+                            </div>
+                            <div id="editActions" class="actions hidden">
+                                <button type="button" class="btn" id="backupBtnEdit">Backup</button>
+                                <button type="button" class="btn" id="cancelBtn">Cancel</button>
+                                <button type="button" class="btn btn-solid" id="saveBtn">Save</button>
                             </div>
                         </div>
-                        <div id="emptyState" class="empty-state hidden">
-                            <p>No notes yet</p>
-                            <button type="button" class="btn btn-solid" id="emptyEditBtn">Edit</button>
-                        </div>
-                        <div class="kb-view" id="kbView">
-                            <aside class="kb-toc" id="kbToc">
-                                <p class="kb-toc-heading">Contents</p>
-                                <button type="button" class="kb-toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="tocNav">Contents</button>
-                                <nav class="kb-toc-nav" id="tocNav" aria-label="Contents"></nav>
-                            </aside>
-                            <div id="rendered" class="wiki-body"></div>
-                        </div>
-                    </div>
 
-                    <div id="editPane" class="hidden">
-                        <div class="kb-edit-toolbar">
-                            <button type="button" class="btn kb-preview-toggle" id="previewToggle" aria-pressed="false">Preview</button>
-                            <div id="sizeMeter" class="kb-size" aria-live="polite">
-                                <div class="kb-size-track" aria-hidden="true"><span id="sizeBar" class="kb-size-bar"></span></div>
-                                <span id="sizeLabel">0 B of 1 MB</span>
+                        <div id="draftBanner" class="kb-banner hidden" role="status">
+                            <p id="draftBannerText">A local draft was found.</p>
+                            <div class="kb-banner-actions">
+                                <button type="button" class="btn btn-solid" id="draftRestoreBtn">Restore</button>
+                                <button type="button" class="btn" id="draftDiscardBtn">Discard</button>
                             </div>
                         </div>
-                        <div class="kb-edit-split" id="editSplit">
-                            <label for="editor" class="skip">Notes markdown</label>
-                            <textarea id="editor" class="editor" spellcheck="true"></textarea>
-                            <div id="editPreview" class="wiki-body kb-preview" aria-live="polite"></div>
+
+                        <div id="conflictBanner" class="kb-banner kb-banner-warn hidden" role="alert">
+                            <p>These notes were saved elsewhere since you started editing. Reload the server copy, or overwrite it with what you have now.</p>
+                            <div class="kb-banner-actions">
+                                <button type="button" class="btn" id="conflictReloadBtn">Reload server copy</button>
+                                <button type="button" class="btn btn-solid" id="conflictOverwriteBtn">Overwrite</button>
+                            </div>
+                        </div>
+
+                        <div id="errorBox" class="auth-error hidden" role="alert"></div>
+
+                        <div id="editMeta" class="kb-edit-meta hidden">
+                            <div class="field">
+                                <label for="titleInput">Title</label>
+                                <input id="titleInput" type="text" maxlength="160" autocomplete="off">
+                            </div>
+                            <div class="field">
+                                <label for="tagInput">Tags</label>
+                                <input id="tagInput" type="text" placeholder="comma, separated, tags" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div id="viewPane">
+                            <div class="kb-tools" id="kbTools">
+                                <div class="kb-search">
+                                    <label class="skip" for="searchInput">Search this article</label>
+                                    <input id="searchInput" type="search" placeholder="Search this article" autocomplete="off">
+                                    <span id="searchCount" class="kb-search-count" aria-live="polite"></span>
+                                    <button type="button" class="btn kb-search-btn" id="searchPrev">Prev</button>
+                                    <button type="button" class="btn kb-search-btn" id="searchNext">Next</button>
+                                </div>
+                            </div>
+                            <div id="emptyState" class="empty-state hidden">
+                                <p id="emptyStateText">No articles yet</p>
+                                <button type="button" class="btn btn-solid" id="emptyEditBtn">New article</button>
+                            </div>
+                            <div class="kb-view" id="kbView">
+                                <aside class="kb-toc" id="kbToc">
+                                    <p class="kb-toc-heading">Contents</p>
+                                    <button type="button" class="kb-toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="tocNav">Contents</button>
+                                    <nav class="kb-toc-nav" id="tocNav" aria-label="Contents"></nav>
+                                </aside>
+                                <div class="kb-article-body">
+                                    <div id="rendered" class="wiki-body"></div>
+                                    <div id="backlinks" class="kb-backlinks hidden">
+                                        <p class="kb-backlinks-heading">Referenced in</p>
+                                        <nav id="backlinkList" class="kb-backlink-list"></nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="editPane" class="hidden">
+                            <div class="kb-edit-toolbar">
+                                <div class="kb-format" id="formatBar" role="toolbar" aria-label="Formatting">
+                                    <button type="button" class="btn kb-format-btn" data-fmt="heading" title="Heading">H</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="bold" title="Bold"><strong>B</strong></button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="italic" title="Italic">I</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="ul" title="Bulleted list">•</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="ol" title="Numbered list">1.</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="link" title="Link">Link</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="code" title="Code">&lt;/&gt;</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="quote" title="Quote">“</button>
+                                    <button type="button" class="btn kb-format-btn" data-fmt="wikilink" title="Link to an article">[[ ]]</button>
+                                </div>
+                                <button type="button" class="btn kb-preview-toggle" id="previewToggle" aria-pressed="false">Preview</button>
+                                <div id="sizeMeter" class="kb-size" aria-live="polite">
+                                    <div class="kb-size-track" aria-hidden="true"><span id="sizeBar" class="kb-size-bar"></span></div>
+                                    <span id="sizeLabel">0 B of 1 MB</span>
+                                </div>
+                            </div>
+                            <div id="wikiPicker" class="kb-wiki-picker hidden" hidden></div>
+                            <div class="kb-edit-split" id="editSplit">
+                                <label for="editor" class="skip">Article markdown</label>
+                                <textarea id="editor" class="editor" spellcheck="true"></textarea>
+                                <div id="editPreview" class="wiki-body kb-preview" aria-live="polite"></div>
+                            </div>
+                            <div class="kb-sticky-edit" id="stickyEdit">
+                                <button type="button" class="btn kb-preview-toggle" id="previewToggleSticky" aria-pressed="false">Preview</button>
+                                <span id="stickySize" class="kb-sticky-size"></span>
+                                <button type="button" class="btn" id="cancelBtnSticky">Cancel</button>
+                                <button type="button" class="btn btn-solid" id="saveBtnSticky">Save</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
+
         </div>
     </div>
 
+    <div id="historyBackdrop" class="kb-history-backdrop hidden" hidden></div>
+    <aside id="historyPanel" class="kb-history hidden" hidden role="dialog" aria-labelledby="historyHeading">
+        <div class="kb-history-head">
+            <h2 id="historyHeading">History</h2>
+            <button type="button" class="btn" id="historyCloseBtn">Close</button>
+        </div>
+        <p id="historyEmpty" class="kb-history-empty hidden">No earlier versions yet. Saves are kept here, up to the last 20.</p>
+        <div class="kb-history-layout">
+            <nav id="historyList" class="kb-history-list" aria-label="Versions"></nav>
+            <div class="kb-history-detail">
+                <div id="historyActions" class="kb-history-actions hidden">
+                    <button type="button" class="btn" id="historyDiffBtn">Diff</button>
+                    <button type="button" class="btn" id="historyPreviewBtn">Preview</button>
+                    <button type="button" class="btn btn-solid" id="historyRestoreBtn">Restore</button>
+                </div>
+                <div id="historyContent" class="kb-history-content wiki-body"></div>
+            </div>
+        </div>
+    </aside>
 </body>
 </html>
