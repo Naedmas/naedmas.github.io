@@ -448,6 +448,23 @@ footer .foot-links a:hover { color: var(--gold); }
 
 .page .rule { margin-top: 1.1rem; }
 
+
+.mail-link {
+    color: var(--gold-muted);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 162, 39, 0.45);
+    font-family: Cinzel, "Times New Roman", serif;
+    letter-spacing: 0.06em;
+    font-size: 0.95em;
+}
+.mail-link:hover,
+.mail-link:focus-visible {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+    outline: none;
+}
+
+
 /* --- Auth gate & sign-in --- */
 .auth-gate {
     position: fixed;
