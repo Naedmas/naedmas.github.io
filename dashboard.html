@@ -3,93 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard • Naedmas</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#050806">
+    <meta name="description" content="Command — the private keep of naedmas.">
+    <title>Command • naedmas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/theme.css">
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .logo-font { font-family: 'Space Grotesk', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(16px); }
-    </style>
+    <script src="/assets/auth.js" defer></script>
 </head>
-<body class="bg-zinc-950 text-white min-h-screen">
-    <div id="authGate" class="fixed inset-0 z-[200] bg-zinc-950 flex items-center justify-center">
-        <p class="text-zinc-500 text-lg">Checking access…</p>
+<body>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <div id="authGate" class="auth-gate">
+        <p>Checking access…</p>
     </div>
 
-    <div id="appShell" class="hidden min-h-screen flex">
-        <!-- Sidebar -->
-        <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
-            <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
-                <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
-                <span class="text-3xl font-semibold tracking-tight logo-font">naedmas</span>
+    <div id="signInPanel" class="wrap hidden">
+        <nav class="site-nav">
+            <a class="brand" href="/">
+                <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
+                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
+                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
+                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
+                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                </svg>
+                <span class="brand-name">naedmas</span>
+            </a>
+            <div class="nav-right">
+                <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact/">Contact</a>
+                </div>
+                <a class="signin" href="/dashboard.html">Sign in</a>
             </div>
-
-            <div class="flex-1 overflow-y-auto py-6 px-3">
-                <a href="dashboard.html" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 bg-white/10">
-                    <i class="fas fa-home w-5"></i><span>Dashboard</span>
-                </a>
-                <a href="knowledge.html" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
-                    <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
-                </a>
+        </nav>
+        <main class="sign-main">
+            <div class="sign-card">
+                <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
+                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
+                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
+                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
+                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                </svg>
+                <p class="section-kicker">Restricted</p>
+                <h1>Sign in</h1>
+                <p class="lead">The inner dark is not for all eyes.</p>
+                <div id="deniedMsg" class="auth-error hidden" role="alert">Access denied.</div>
+                <div id="authError" class="auth-error hidden" role="alert"></div>
+                <button type="button" class="btn btn-solid btn-block" id="googleBtn">Continue with Google</button>
+                <div class="or-rule">or</div>
+                <form id="emailForm">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="username" placeholder="you@email.com">
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-block">Sign in with Email</button>
+                </form>
             </div>
+        </main>
+        <footer>
+            <p class="foot-name">naedmas</p>
+            <p class="disclaimer">Unofficial fan page. Warhammer 40,000 and Dark Angels are trademarks of Games Workshop.</p>
+            <p class="foot-links"><a href="/dashboard.html">Sign in</a></p>
+        </footer>
+    </div>
 
-            <div class="p-4 border-t border-white/10">
-                <button onclick="logout()" class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </button>
+    <div id="appShell" class="private-shell hidden">
+        <aside class="sidebar">
+            <a class="sidebar-brand" href="/dashboard.html">
+                <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
+                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
+                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
+                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
+                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
+                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                </svg>
+                <span class="brand-name">naedmas</span>
+            </a>
+            <nav class="sidebar-links">
+                <a href="/dashboard.html" class="is-active" aria-current="page">Dashboard</a>
+                <a href="/knowledge.html">Knowledge Base</a>
+                <a href="/">Home</a>
+            </nav>
+            <div class="sidebar-foot">
+                <button type="button" class="btn" onclick="logout()">Logout</button>
+                <p class="disclaimer">Unofficial fan page. Warhammer 40,000 and Dark Angels are trademarks of Games Workshop.</p>
             </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="flex-1 ml-72">
-            <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
-                <div id="userInfo" class="ml-auto flex items-center gap-x-3 text-emerald-400"></div>
+        </aside>
+        <div class="private-main">
+            <header class="private-top">
+                <div id="userInfo" class="user-email"></div>
             </header>
-
-            <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
-                <h1 class="text-5xl font-semibold tracking-tight logo-font mb-8">Welcome to your portal</h1>
-                <p class="text-zinc-400 text-xl">Select a section from the sidebar to begin.</p>
+            <main class="private-content">
+                <p class="section-kicker">Restricted</p>
+                <h1 class="page-title">Command</h1>
+                <div class="rule" aria-hidden="true"></div>
+                <p class="lead">The inner keep is open to you.</p>
+                <a class="command-card" href="/knowledge.html">
+                    <p class="section-kicker">Private records</p>
+                    <h2>Knowledge Base</h2>
+                    <p>Notes held in the inner dark, seen only by the authorized account.</p>
+                </a>
             </main>
         </div>
     </div>
 
     <script>
-        const ALLOWED_EMAIL = "naedmas112@gmail.com";
-        const firebaseConfig = {
-            apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
-            authDomain: "naedmas-ab1c9.firebaseapp.com",
-            projectId: "naedmas-ab1c9",
-            storageBucket: "naedmas-ab1c9.firebasestorage.app",
-            messagingSenderId: "818829278172",
-            appId: "1:818829278172:web:cebd2284efb823ae832d19"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
-
-        auth.onAuthStateChanged(user => {
-            if (!user) {
-                window.location.href = "login.html";
-                return;
-            }
-            if (!user.email || user.email.toLowerCase() !== ALLOWED_EMAIL) {
-                auth.signOut().finally(() => {
-                    window.location.href = "login.html";
-                });
-                return;
-            }
-            document.getElementById("userInfo").textContent = user.email;
-            document.getElementById("authGate").classList.add("hidden");
-            document.getElementById("appShell").classList.remove("hidden");
+        document.addEventListener("DOMContentLoaded", function () {
+            NaedmasAuth.initAuth();
         });
-
-        function logout() {
-            if (confirm("Sign out?")) auth.signOut().then(() => window.location.href = "login.html");
-        }
     </script>
 </body>
 </html>
