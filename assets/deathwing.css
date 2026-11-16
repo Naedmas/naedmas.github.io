@@ -1,0 +1,186 @@
+/* Deathwing / Inner Circle theme for private pages.
+   Add class "theme-deathwing" to <body> and link this stylesheet after theme.css.
+   Public pages stay on the standard Dark Angels green. */
+
+body.theme-deathwing {
+    --void: #080705;
+    --near-black: #0c0b09;
+    --da-deep: #3a1214;
+    --da-green: #4a1618;
+    --da-mid: #6b1c22;
+    --da-lit: #e4d4b0;
+    --bone: #f0e6d0;
+    --bone-dim: #d4c6a8;
+    --deathwing: #e8dcc0;
+    --gold: #c4a35a;
+    --gold-muted: #b08a3e;
+    --gold-dim: #8a6f2c;
+    --raven: #0a0908;
+    --ink: #b7ab94;
+    --dw-red: #8b1d24;
+    --dw-red-deep: #3d1014;
+    --dw-ivory: #efe6d2;
+}
+
+body.theme-deathwing .atmosphere {
+    background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(139, 29, 36, 0.28), transparent 60%),
+        radial-gradient(ellipse 45% 32% at 82% 82%, rgba(232, 220, 192, 0.08), transparent 55%),
+        radial-gradient(ellipse 32% 30% at 14% 72%, rgba(74, 16, 20, 0.38), transparent 50%),
+        var(--void);
+}
+
+body.theme-deathwing .site-nav {
+    background: linear-gradient(to bottom, rgba(8, 7, 5, 0.97), rgba(8, 7, 5, 0.88) 78%, rgba(8, 7, 5, 0.4));
+    border-bottom-color: rgba(196, 163, 90, 0.2);
+}
+
+body.theme-deathwing footer {
+    background: linear-gradient(to top, #060504, transparent);
+    border-top-color: rgba(196, 163, 90, 0.2);
+}
+
+body.theme-deathwing footer .disclaimer,
+body.theme-deathwing .sidebar-foot .disclaimer {
+    color: #9a8f7a;
+}
+
+body.theme-deathwing .auth-gate {
+    background: var(--void);
+}
+
+body.theme-deathwing .sign-card,
+body.theme-deathwing .command-card,
+body.theme-deathwing .panel {
+    border-color: rgba(196, 163, 90, 0.28);
+    background: linear-gradient(180deg, rgba(232, 220, 192, 0.12), rgba(12, 11, 9, 0.94));
+}
+
+body.theme-deathwing .command-card:hover,
+body.theme-deathwing .command-card:focus-visible {
+    border-color: var(--gold);
+    background: linear-gradient(180deg, rgba(232, 220, 192, 0.18), rgba(12, 11, 9, 0.96));
+}
+
+body.theme-deathwing .sign-card::before,
+body.theme-deathwing .command-card::before,
+body.theme-deathwing .panel::before {
+    background: linear-gradient(to right, transparent, var(--dw-red), var(--gold-muted), var(--dw-red), transparent);
+}
+
+body.theme-deathwing .sidebar {
+    background: linear-gradient(180deg, rgba(232, 220, 192, 0.08), rgba(8, 7, 5, 0.98));
+    border-right-color: rgba(196, 163, 90, 0.22);
+}
+
+body.theme-deathwing .sidebar-brand,
+body.theme-deathwing .sidebar-foot {
+    border-color: rgba(196, 163, 90, 0.18);
+}
+
+body.theme-deathwing .sidebar-links a.is-active {
+    color: var(--void);
+    background: var(--bone);
+    border-color: var(--bone);
+}
+
+body.theme-deathwing .sidebar-links a:hover,
+body.theme-deathwing .sidebar-links a:focus-visible {
+    color: var(--gold);
+    background: rgba(232, 220, 192, 0.08);
+}
+
+body.theme-deathwing .sidebar-links a.is-active:hover,
+body.theme-deathwing .sidebar-links a.is-active:focus-visible {
+    color: var(--void);
+    background: var(--dw-ivory);
+    border-color: var(--gold);
+}
+
+body.theme-deathwing .private-top {
+    border-bottom-color: rgba(196, 163, 90, 0.16);
+    background: linear-gradient(to bottom, rgba(8, 7, 5, 0.8), transparent);
+}
+
+body.theme-deathwing .user-email {
+    color: var(--bone-dim);
+}
+
+body.theme-deathwing .field input,
+body.theme-deathwing .field textarea,
+body.theme-deathwing textarea.editor {
+    background: rgba(8, 7, 5, 0.88);
+    border-color: rgba(196, 163, 90, 0.32);
+    color: var(--bone);
+    caret-color: var(--gold);
+}
+
+body.theme-deathwing .field input::placeholder,
+body.theme-deathwing .field textarea::placeholder,
+body.theme-deathwing textarea.editor::placeholder {
+    color: #9a8f7a;
+}
+
+body.theme-deathwing .wiki-body {
+    color: var(--bone-dim);
+}
+
+body.theme-deathwing .wiki-body h1,
+body.theme-deathwing .wiki-body h2,
+body.theme-deathwing .wiki-body h3,
+body.theme-deathwing .wiki-body th {
+    color: var(--bone);
+}
+
+body.theme-deathwing .wiki-body a { color: var(--gold); }
+body.theme-deathwing .wiki-body a:hover { color: var(--dw-ivory); }
+
+body.theme-deathwing .wiki-body code {
+    background: rgba(232, 220, 192, 0.1);
+    color: var(--bone);
+}
+
+body.theme-deathwing .wiki-body pre {
+    background: rgba(8, 7, 5, 0.92);
+    border-color: rgba(196, 163, 90, 0.22);
+}
+
+body.theme-deathwing .wiki-body blockquote {
+    border-left-color: var(--dw-red);
+    color: var(--ink);
+}
+
+body.theme-deathwing .wiki-body hr,
+body.theme-deathwing .wiki-body th,
+body.theme-deathwing .wiki-body td {
+    border-color: rgba(196, 163, 90, 0.22);
+}
+
+body.theme-deathwing .auth-error {
+    border-color: rgba(139, 29, 36, 0.55);
+    background: rgba(61, 16, 20, 0.72);
+    color: #f0d4d2;
+}
+
+@media (max-width: 1279px) {
+    body.theme-deathwing .site-nav {
+        background: linear-gradient(to bottom, rgba(8, 7, 5, 0.96), rgba(8, 7, 5, 0.7) 70%, transparent);
+    }
+    body.theme-deathwing .site-nav.is-open {
+        background: var(--void);
+        border-bottom-color: rgba(196, 163, 90, 0.24);
+    }
+    body.theme-deathwing .nav-links {
+        background: var(--near-black);
+        border-bottom-color: rgba(196, 163, 90, 0.24);
+    }
+    body.theme-deathwing .nav-links a {
+        border-bottom-color: rgba(196, 163, 90, 0.14);
+    }
+}
+
+@media (max-width: 760px) {
+    body.theme-deathwing .sidebar {
+        border-bottom-color: rgba(196, 163, 90, 0.22);
+    }
+}

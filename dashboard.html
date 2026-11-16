@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#050806">
+    <meta name="theme-color" content="#080705">
     <meta name="description" content="Command — the private keep of naedmas.">
     <title>Command • naedmas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/theme.css">
+    <link rel="stylesheet" href="/assets/deathwing.css">
     <script src="/assets/nav.js" defer></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
     <script src="/assets/auth.js" defer></script>
 </head>
-<body>
+<body class="theme-deathwing">
     <div class="atmosphere" aria-hidden="true"></div>
     <div id="authGate" class="auth-gate">
         <p>Checking access…</p>
@@ -25,13 +26,20 @@
         <nav class="site-nav">
             <a class="brand" href="/">
                 <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
-                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
-                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
-                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
-                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
-                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
-                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c4a35a" stroke-width="1.2"/>
+                    <circle cx="32" cy="30" r="8" fill="#4a1216"/>
+                    <path fill="#efe6d2" d="M29 25 L13 16 L8 20 L11 28 L22 34 L29 31 Z"/>
+                    <path fill="#d9ccb0" d="M29 31 L19 34 L8 41 L12 45 L23 38 L30 33 Z"/>
+                    <path fill="#cfc0a0" d="M29 34 L21 40 L16 51 L21 52 L30 38 Z"/>
+                    <path fill="#efe6d2" d="M35 25 L51 16 L56 20 L53 28 L42 34 L35 31 Z"/>
+                    <path fill="#d9ccb0" d="M35 31 L45 34 L56 41 L52 45 L41 38 L34 33 Z"/>
+                    <path fill="#cfc0a0" d="M35 34 L43 40 L48 51 L43 52 L34 38 Z"/>
+                    <path fill="#f3ead6" d="M30.6 7.5 L33.4 7.5 L34.4 22.6 L29.8 21.8 Z"/>
+                    <path fill="#c4a35a" d="M29.2 22.2 L34.8 23.2 L33.6 25.6 L28.8 24.4 Z"/>
+                    <path fill="#e8dcc0" d="M30.4 25.8 L34.2 26.6 L33.4 47.5 L31 47.5 Z"/>
+                    <path fill="#c4a35a" d="M22.5 26.6 H41.5 L40.4 30 H23.6 Z"/>
+                    <circle cx="32" cy="28.3" r="2.15" fill="#8b1d24"/>
+                    <path fill="#c4a35a" d="M32 47.5 L29.2 51.8 H34.8 Z"/>
                 </svg>
                 <span class="brand-name">naedmas</span>
             </a>
@@ -54,13 +62,20 @@
         <main class="sign-main">
             <div class="sign-card">
                 <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
-                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
-                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
-                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
-                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
-                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
-                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c4a35a" stroke-width="1.2"/>
+                    <circle cx="32" cy="30" r="8" fill="#4a1216"/>
+                    <path fill="#efe6d2" d="M29 25 L13 16 L8 20 L11 28 L22 34 L29 31 Z"/>
+                    <path fill="#d9ccb0" d="M29 31 L19 34 L8 41 L12 45 L23 38 L30 33 Z"/>
+                    <path fill="#cfc0a0" d="M29 34 L21 40 L16 51 L21 52 L30 38 Z"/>
+                    <path fill="#efe6d2" d="M35 25 L51 16 L56 20 L53 28 L42 34 L35 31 Z"/>
+                    <path fill="#d9ccb0" d="M35 31 L45 34 L56 41 L52 45 L41 38 L34 33 Z"/>
+                    <path fill="#cfc0a0" d="M35 34 L43 40 L48 51 L43 52 L34 38 Z"/>
+                    <path fill="#f3ead6" d="M30.6 7.5 L33.4 7.5 L34.4 22.6 L29.8 21.8 Z"/>
+                    <path fill="#c4a35a" d="M29.2 22.2 L34.8 23.2 L33.6 25.6 L28.8 24.4 Z"/>
+                    <path fill="#e8dcc0" d="M30.4 25.8 L34.2 26.6 L33.4 47.5 L31 47.5 Z"/>
+                    <path fill="#c4a35a" d="M22.5 26.6 H41.5 L40.4 30 H23.6 Z"/>
+                    <circle cx="32" cy="28.3" r="2.15" fill="#8b1d24"/>
+                    <path fill="#c4a35a" d="M32 47.5 L29.2 51.8 H34.8 Z"/>
                 </svg>
                 <p class="section-kicker">Restricted</p>
                 <h1>Sign in</h1>
@@ -93,13 +108,20 @@
         <aside class="sidebar">
             <a class="sidebar-brand" href="/dashboard.html">
                 <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="1.2"/>
-                    <path d="M32 8 L34.2 20 L32 22 L29.8 20 Z" fill="#c9a227"/>
-                    <path d="M18 26 C14 22 10 24 8 28 C16 26 24 30 29 34 L32 30 Z" fill="#e8dcc0"/>
-                    <path d="M46 26 C50 22 54 24 56 28 C48 26 40 30 35 34 L32 30 Z" fill="#e8dcc0"/>
-                    <path d="M32 14 L33.4 22 L32 48 L30.6 22 Z" fill="#c9a227"/>
-                    <path d="M27 22 H37 L35.5 24.5 H28.5 Z" fill="#e8dcc0"/>
-                    <path d="M32 48 L29 44 H35 Z" fill="#c9a227"/>
+                    <circle cx="32" cy="32" r="30" fill="none" stroke="#c4a35a" stroke-width="1.2"/>
+                    <circle cx="32" cy="30" r="8" fill="#4a1216"/>
+                    <path fill="#efe6d2" d="M29 25 L13 16 L8 20 L11 28 L22 34 L29 31 Z"/>
+                    <path fill="#d9ccb0" d="M29 31 L19 34 L8 41 L12 45 L23 38 L30 33 Z"/>
+                    <path fill="#cfc0a0" d="M29 34 L21 40 L16 51 L21 52 L30 38 Z"/>
+                    <path fill="#efe6d2" d="M35 25 L51 16 L56 20 L53 28 L42 34 L35 31 Z"/>
+                    <path fill="#d9ccb0" d="M35 31 L45 34 L56 41 L52 45 L41 38 L34 33 Z"/>
+                    <path fill="#cfc0a0" d="M35 34 L43 40 L48 51 L43 52 L34 38 Z"/>
+                    <path fill="#f3ead6" d="M30.6 7.5 L33.4 7.5 L34.4 22.6 L29.8 21.8 Z"/>
+                    <path fill="#c4a35a" d="M29.2 22.2 L34.8 23.2 L33.6 25.6 L28.8 24.4 Z"/>
+                    <path fill="#e8dcc0" d="M30.4 25.8 L34.2 26.6 L33.4 47.5 L31 47.5 Z"/>
+                    <path fill="#c4a35a" d="M22.5 26.6 H41.5 L40.4 30 H23.6 Z"/>
+                    <circle cx="32" cy="28.3" r="2.15" fill="#8b1d24"/>
+                    <path fill="#c4a35a" d="M32 47.5 L29.2 51.8 H34.8 Z"/>
                 </svg>
                 <span class="brand-name">naedmas</span>
             </a>
