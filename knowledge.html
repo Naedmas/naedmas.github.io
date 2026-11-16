@@ -7,76 +7,106 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.5/dist/purify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-        body { font-family: 'Inter', system_ui, sans-serif; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
         .logo-font { font-family: 'Space Grotesk', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(16px); }
         .wiki-content { line-height: 1.8; max-width: 800px; }
+        .wiki-body h1 { font-size: 2rem; font-weight: 600; margin: 1.75rem 0 0.75rem; letter-spacing: -0.02em; }
+        .wiki-body h2 { font-size: 1.5rem; font-weight: 600; margin: 1.75rem 0 0.75rem; }
+        .wiki-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.4rem 0 0.55rem; }
+        .wiki-body p { margin: 0 0 1rem; color: #d4d4d8; }
+        .wiki-body ul, .wiki-body ol { margin: 0 0 1rem 1.5rem; color: #d4d4d8; }
+        .wiki-body li { margin: 0.25rem 0; }
+        .wiki-body a { color: #34d399; text-decoration: underline; }
+        .wiki-body code { background: rgba(255, 255, 255, 0.08); padding: 0.15rem 0.4rem; border-radius: 0.35rem; font-size: 0.9em; }
+        .wiki-body pre { background: #18181b; border: 1px solid rgba(255, 255, 255, 0.08); padding: 1rem 1.15rem; border-radius: 1rem; overflow-x: auto; margin: 0 0 1rem; }
+        .wiki-body pre code { background: none; padding: 0; }
+        .wiki-body blockquote { border-left: 3px solid rgba(255, 255, 255, 0.2); padding-left: 1rem; color: #a1a1aa; margin: 0 0 1rem; }
+        .wiki-body img { max-width: 100%; border-radius: 0.75rem; }
+        .wiki-body hr { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin: 1.5rem 0; }
+        .wiki-body table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; }
+        .wiki-body th, .wiki-body td { border: 1px solid rgba(255, 255, 255, 0.1); padding: 0.5rem 0.75rem; text-align: left; }
+        .wiki-body th { color: #e4e4e7; }
     </style>
 </head>
-<body class="bg-zinc-950 text-white min-h-screen flex">
-    <!-- Sidebar -->
-    <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
-        <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
-            <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
-            <span class="text-3xl font-semibold tracking-tighter logo-font">naedmas</span>
-        </div>
-
-        <div class="flex-1 overflow-y-auto py-6 px-3">
-            <a href="dashboard.html" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
-                <i class="fas fa-home w-5"></i><span>Dashboard</span>
-            </a>
-            <a href="knowledge.html" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
-                <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
-            </a>
-        </div>
-
-        <div class="p-4 border-t border-white/10">
-            <button onclick="logout()" class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
-                <i class="fas fa-sign-out-alt"></i> Logout
-            </button>
-        </div>
+<body class="bg-zinc-950 text-white min-h-screen">
+    <div id="authGate" class="fixed inset-0 z-[200] bg-zinc-950 flex items-center justify-center">
+        <p class="text-zinc-500 text-lg">Checking access…</p>
     </div>
 
-    <!-- Main Content -->
-    <div class="flex-1 ml-72">
-        <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
-            <div id="userInfo" class="ml-auto flex items-center gap-x-3"></div>
-        </header>
-
-        <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
-            <div class="glass border border-white/10 rounded-3xl p-12 wiki-content mx-auto">
-                <h1 class="text-5xl font-semibold tracking-tight mb-10">Knowledge Base</h1>
-                
-                <p class="text-zinc-400 mb-12">This is your private knowledge repository.</p>
-
-                <!-- You can freely edit everything below this line -->
-                <h2 class="text-3xl font-semibold mt-12 mb-6">Section 1: Title</h2>
-                <p class="text-zinc-300 mb-8">
-                    Write your content here. This is a simple static page.
-                </p>
-
-                <h2 class="text-3xl font-semibold mt-12 mb-6">Section 2: Another Topic</h2>
-                <p class="text-zinc-300 mb-8">
-                    Add as many sections as you want. You can use HTML tags like &lt;strong&gt;, &lt;em&gt;, lists, etc.
-                </p>
-
-                <ul class="list-disc pl-6 text-zinc-300 space-y-3 mb-8">
-                    <li>Example bullet point</li>
-                    <li>Another point</li>
-                </ul>
-
-                <h2 class="text-3xl font-semibold mt-12 mb-6">Section 3</h2>
-                <p class="text-zinc-300">
-                    Replace all this placeholder text with your own notes, guides, or anything else.
-                </p>
+    <div id="appShell" class="hidden min-h-screen flex">
+        <!-- Sidebar -->
+        <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
+            <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
+                <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
+                <span class="text-3xl font-semibold tracking-tighter logo-font">naedmas</span>
             </div>
-        </main>
+
+            <div class="flex-1 overflow-y-auto py-6 px-3">
+                <a href="dashboard.html" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
+                    <i class="fas fa-home w-5"></i><span>Dashboard</span>
+                </a>
+                <a href="knowledge.html" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 bg-white/10">
+                    <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
+                </a>
+            </div>
+
+            <div class="p-4 border-t border-white/10">
+                <button onclick="logout()" class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 ml-72">
+            <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
+                <div id="userInfo" class="ml-auto flex items-center gap-x-3 text-emerald-400"></div>
+            </header>
+
+            <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
+                <div class="glass border border-white/10 rounded-3xl p-12 wiki-content mx-auto">
+                    <div class="flex flex-wrap items-start justify-between gap-4 mb-8">
+                        <div>
+                            <h1 class="text-5xl font-semibold tracking-tight">Knowledge Base</h1>
+                            <p id="lastSaved" class="text-zinc-500 text-sm mt-3"></p>
+                        </div>
+                        <div id="viewActions" class="flex items-center gap-3 pt-2">
+                            <button type="button" id="editBtn" class="px-5 py-2.5 text-sm font-medium border border-white/20 rounded-2xl hover:bg-white/10 transition-all">Edit</button>
+                        </div>
+                        <div id="editActions" class="hidden items-center gap-3 pt-2">
+                            <button type="button" id="cancelBtn" class="px-5 py-2.5 text-sm font-medium text-zinc-300 border border-white/10 rounded-2xl hover:bg-white/10 transition-all">Cancel</button>
+                            <button type="button" id="saveBtn" class="px-5 py-2.5 text-sm font-semibold bg-white text-zinc-950 rounded-2xl hover:bg-zinc-200 transition-all">Save</button>
+                        </div>
+                    </div>
+
+                    <div id="errorBox" class="hidden mb-8 rounded-2xl border border-red-500/30 bg-red-500/10 px-5 py-4 text-red-300" role="alert"></div>
+
+                    <div id="viewPane">
+                        <div id="emptyState" class="hidden py-8 text-center">
+                            <p class="text-zinc-400 text-xl mb-6">No notes yet</p>
+                            <button type="button" id="emptyEditBtn" class="px-6 py-3 text-sm font-medium bg-white text-zinc-950 rounded-2xl hover:bg-zinc-200 transition-all">Edit</button>
+                        </div>
+                        <div id="rendered" class="wiki-body"></div>
+                    </div>
+
+                    <div id="editPane" class="hidden">
+                        <label for="editor" class="sr-only">Notes markdown</label>
+                        <textarea id="editor" class="w-full min-h-[28rem] bg-zinc-900 border border-white/20 rounded-2xl px-6 py-5 outline-none focus:border-white text-zinc-200 font-mono text-sm leading-relaxed" spellcheck="true"></textarea>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
 
     <script>
+        const ALLOWED_EMAIL = "naedmas112@gmail.com";
         const firebaseConfig = {
             apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
             authDomain: "naedmas-ab1c9.firebaseapp.com",
@@ -88,15 +118,181 @@
 
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
+        const db = firebase.firestore();
+        const notesRef = db.collection("private").doc("knowledge");
+
+        marked.setOptions({ gfm: true, breaks: true });
+
+        let currentMarkdown = "";
+        let currentUpdatedAt = null;
+        let saving = false;
+
+        const authGate = document.getElementById("authGate");
+        const appShell = document.getElementById("appShell");
+        const userInfo = document.getElementById("userInfo");
+        const lastSavedEl = document.getElementById("lastSaved");
+        const errorBox = document.getElementById("errorBox");
+        const viewPane = document.getElementById("viewPane");
+        const editPane = document.getElementById("editPane");
+        const viewActions = document.getElementById("viewActions");
+        const editActions = document.getElementById("editActions");
+        const emptyState = document.getElementById("emptyState");
+        const rendered = document.getElementById("rendered");
+        const editor = document.getElementById("editor");
+        const saveBtn = document.getElementById("saveBtn");
+
+        function isAllowed(user) {
+            return !!(user && user.email && user.email.toLowerCase() === ALLOWED_EMAIL);
+        }
+
+        function revealApp(user) {
+            userInfo.textContent = user.email;
+            authGate.classList.add("hidden");
+            appShell.classList.remove("hidden");
+        }
+
+        function denyAndRedirect() {
+            auth.signOut().finally(() => {
+                window.location.href = "login.html";
+            });
+        }
+
+        function formatSaved(ts) {
+            if (!ts) return "";
+            const date = typeof ts.toDate === "function" ? ts.toDate() : new Date(ts);
+            if (Number.isNaN(date.getTime())) return "";
+            const formatted = date.toLocaleString("en-AU", {
+                dateStyle: "medium",
+                timeStyle: "short"
+            });
+            return "Last saved " + formatted;
+        }
+
+        function updateLastSaved() {
+            lastSavedEl.textContent = formatSaved(currentUpdatedAt);
+        }
+
+        function showError(err, action) {
+            const code = err && err.code ? String(err.code) : "";
+            const message = err && err.message ? String(err.message) : String(err);
+            const denied = code === "permission-denied" || /permission/i.test(message);
+            let text = denied
+                ? "Access denied. Firestore refused to " + (action || "load") + " these notes. You may not be signed in with the authorized account."
+                : "Could not " + (action || "load") + " your notes.";
+            if (message) text += " (" + (code ? code + ": " : "") + message + ")";
+            errorBox.textContent = text;
+            errorBox.classList.remove("hidden");
+        }
+
+        function hideError() {
+            errorBox.classList.add("hidden");
+            errorBox.textContent = "";
+        }
+
+        function renderMarkdown(markdown) {
+            const raw = marked.parse(markdown || "", { async: false });
+            rendered.innerHTML = DOMPurify.sanitize(raw);
+        }
+
+        function showEmpty() {
+            rendered.innerHTML = "";
+            emptyState.classList.remove("hidden");
+        }
+
+        function showDocument(markdown) {
+            emptyState.classList.add("hidden");
+            if (!markdown || !markdown.trim()) {
+                showEmpty();
+                return;
+            }
+            renderMarkdown(markdown);
+        }
+
+        function enterViewMode() {
+            editPane.classList.add("hidden");
+            viewPane.classList.remove("hidden");
+            editActions.classList.add("hidden");
+            editActions.classList.remove("flex");
+            viewActions.classList.remove("hidden");
+            showDocument(currentMarkdown);
+            updateLastSaved();
+        }
+
+        function enterEditMode() {
+            hideError();
+            editor.value = currentMarkdown;
+            viewPane.classList.add("hidden");
+            editPane.classList.remove("hidden");
+            viewActions.classList.add("hidden");
+            editActions.classList.remove("hidden");
+            editActions.classList.add("flex");
+            editor.focus();
+        }
+
+        async function loadNotes() {
+            hideError();
+            try {
+                const snap = await notesRef.get();
+                if (!snap.exists) {
+                    currentMarkdown = "";
+                    currentUpdatedAt = null;
+                } else {
+                    const data = snap.data() || {};
+                    currentMarkdown = typeof data.markdown === "string" ? data.markdown : "";
+                    currentUpdatedAt = data.updatedAt || null;
+                }
+                enterViewMode();
+            } catch (err) {
+                currentMarkdown = "";
+                currentUpdatedAt = null;
+                emptyState.classList.add("hidden");
+                rendered.innerHTML = "";
+                viewActions.classList.add("hidden");
+                editActions.classList.add("hidden");
+                showError(err, "load");
+            }
+        }
+
+        async function saveNotes() {
+            if (saving) return;
+            saving = true;
+            saveBtn.disabled = true;
+            saveBtn.textContent = "Saving…";
+            hideError();
+            try {
+                await notesRef.set({
+                    markdown: editor.value,
+                    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+                }, { merge: true });
+                await loadNotes();
+            } catch (err) {
+                showError(err, "save");
+            } finally {
+                saving = false;
+                saveBtn.disabled = false;
+                saveBtn.textContent = "Save";
+            }
+        }
+
+        document.getElementById("editBtn").addEventListener("click", enterEditMode);
+        document.getElementById("emptyEditBtn").addEventListener("click", enterEditMode);
+        document.getElementById("cancelBtn").addEventListener("click", () => {
+            hideError();
+            enterViewMode();
+        });
+        saveBtn.addEventListener("click", saveNotes);
 
         auth.onAuthStateChanged(user => {
             if (!user) {
                 window.location.href = "login.html";
-            } else {
-                document.getElementById('userInfo').innerHTML = `
-                    <span class="text-emerald-400">${user.email}</span>
-                `;
+                return;
             }
+            if (!isAllowed(user)) {
+                denyAndRedirect();
+                return;
+            }
+            revealApp(user);
+            loadNotes();
         });
 
         function logout() {

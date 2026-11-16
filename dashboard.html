@@ -10,48 +10,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-        body { font-family: 'Inter', system_ui, sans-serif; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
         .logo-font { font-family: 'Space Grotesk', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(16px); }
     </style>
 </head>
-<body class="bg-zinc-950 text-white min-h-screen flex">
-    <!-- Sidebar -->
-    <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
-        <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
-            <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
-            <span class="text-3xl font-semibold tracking-tighter logo-font">naedmas</span>
-        </div>
-
-        <div class="flex-1 overflow-y-auto py-6 px-3">
-            <a href="dashboard.html" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
-                <i class="fas fa-home w-5"></i><span>Dashboard</span>
-            </a>
-            <a href="knowledge.html" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
-                <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
-            </a>
-        </div>
-
-        <div class="p-4 border-t border-white/10">
-            <button onclick="logout()" class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
-                <i class="fas fa-sign-out-alt"></i> Logout
-            </button>
-        </div>
+<body class="bg-zinc-950 text-white min-h-screen">
+    <div id="authGate" class="fixed inset-0 z-[200] bg-zinc-950 flex items-center justify-center">
+        <p class="text-zinc-500 text-lg">Checking access…</p>
     </div>
 
-    <!-- Main Content -->
-    <div class="flex-1 ml-72">
-        <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
-            <div id="userInfo" class="ml-auto flex items-center gap-x-3"></div>
-        </header>
+    <div id="appShell" class="hidden min-h-screen flex">
+        <!-- Sidebar -->
+        <div class="w-72 bg-zinc-900 border-r border-white/10 h-screen fixed flex flex-col">
+            <div class="p-6 flex items-center gap-x-3 border-b border-white/10">
+                <div class="w-10 h-10 bg-violet-600 rounded-2xl flex items-center justify-center text-3xl font-bold">N</div>
+                <span class="text-3xl font-semibold tracking-tight logo-font">naedmas</span>
+            </div>
 
-        <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
-            <h1 class="text-5xl font-semibold tracking-tight logo-font mb-8">Welcome to your portal</h1>
-            <p class="text-zinc-400 text-xl">Select a section from the sidebar to begin.</p>
-        </main>
+            <div class="flex-1 overflow-y-auto py-6 px-3">
+                <a href="dashboard.html" class="sidebar-link active flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1 bg-white/10">
+                    <i class="fas fa-home w-5"></i><span>Dashboard</span>
+                </a>
+                <a href="knowledge.html" class="sidebar-link flex items-center gap-x-3 px-6 py-3.5 rounded-2xl text-lg font-medium mb-1">
+                    <i class="fas fa-book w-5"></i><span>Knowledge Base</span>
+                </a>
+            </div>
+
+            <div class="p-4 border-t border-white/10">
+                <button onclick="logout()" class="w-full py-3 text-red-400 hover:bg-red-500/10 rounded-2xl transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 ml-72">
+            <header class="h-16 border-b border-white/10 bg-zinc-900/80 backdrop-blur-lg fixed right-0 left-72 z-50 flex items-center px-8">
+                <div id="userInfo" class="ml-auto flex items-center gap-x-3 text-emerald-400"></div>
+            </header>
+
+            <main class="pt-24 pb-12 px-8 max-w-screen-2xl mx-auto">
+                <h1 class="text-5xl font-semibold tracking-tight logo-font mb-8">Welcome to your portal</h1>
+                <p class="text-zinc-400 text-xl">Select a section from the sidebar to begin.</p>
+            </main>
+        </div>
     </div>
 
     <script>
+        const ALLOWED_EMAIL = "naedmas112@gmail.com";
         const firebaseConfig = {
             apiKey: "AIzaSyBgBh6tl0HSqWTeWxqll2Pd8vKKr-HV7-A",
             authDomain: "naedmas-ab1c9.firebaseapp.com",
@@ -67,11 +74,17 @@
         auth.onAuthStateChanged(user => {
             if (!user) {
                 window.location.href = "login.html";
-            } else {
-                document.getElementById('userInfo').innerHTML = `
-                    <span class="text-emerald-400">${user.email}</span>
-                `;
+                return;
             }
+            if (!user.email || user.email.toLowerCase() !== ALLOWED_EMAIL) {
+                auth.signOut().finally(() => {
+                    window.location.href = "login.html";
+                });
+                return;
+            }
+            document.getElementById("userInfo").textContent = user.email;
+            document.getElementById("authGate").classList.add("hidden");
+            document.getElementById("appShell").classList.remove("hidden");
         });
 
         function logout() {
