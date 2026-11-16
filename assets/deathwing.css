@@ -184,3 +184,52 @@ body.theme-deathwing .auth-error {
         border-bottom-color: rgba(196, 163, 90, 0.22);
     }
 }
+
+body.theme-deathwing .kb-banner {
+    border-color: rgba(196, 163, 90, 0.32);
+    background: rgba(232, 220, 192, 0.08);
+    color: var(--bone);
+}
+
+body.theme-deathwing .kb-banner-warn {
+    border-color: rgba(139, 29, 36, 0.55);
+    background: rgba(61, 16, 20, 0.72);
+    color: #f0d4d2;
+}
+
+body.theme-deathwing .kb-search input[type="search"] {
+    background: rgba(8, 7, 5, 0.88);
+    border-color: rgba(196, 163, 90, 0.32);
+    color: var(--bone);
+}
+
+body.theme-deathwing .kb-toc-toggle,
+body.theme-deathwing .kb-preview {
+    border-color: rgba(196, 163, 90, 0.28);
+}
+
+body.theme-deathwing .kb-preview {
+    background: rgba(8, 7, 5, 0.72);
+}
+
+body.theme-deathwing .kb-toc.is-open .kb-toc-nav {
+    border-color: rgba(196, 163, 90, 0.2);
+}
+
+body.theme-deathwing mark.kb-hit {
+    background: rgba(196, 163, 90, 0.38);
+    color: var(--bone);
+}
+
+body.theme-deathwing mark.kb-hit.is-current {
+    background: var(--gold);
+    color: var(--void);
+}
+
+body.theme-deathwing .kb-size-track {
+    background: rgba(196, 163, 90, 0.18);
+}
+
+body.theme-deathwing .kb-size.is-over #sizeLabel {
+    color: #f0d4d2;
+}

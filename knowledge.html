@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.5/dist/purify.min.js"></script>
     <script src="/assets/auth.js" defer></script>
+    <script src="/assets/knowledge.js" defer></script>
 </head>
 <body class="theme-deathwing">
     <div class="atmosphere" aria-hidden="true"></div>
@@ -143,7 +144,7 @@
             <header class="private-top">
                 <div id="userInfo" class="user-email"></div>
             </header>
-            <main class="private-content">
+            <main class="private-content knowledge-layout">
                 <div class="panel">
                     <div class="panel-head">
                         <div>
@@ -151,182 +152,76 @@
                             <p id="lastSaved" class="last-saved"></p>
                         </div>
                         <div id="viewActions" class="actions">
-                            <button type="button" class="btn" id="editBtn">Edit</button>
+                            <button type="button" class="btn" id="backupBtn">Backup</button>
+                            <button type="button" class="btn btn-solid" id="editBtn">Edit</button>
                         </div>
                         <div id="editActions" class="actions hidden">
+                            <button type="button" class="btn" id="backupBtnEdit">Backup</button>
                             <button type="button" class="btn" id="cancelBtn">Cancel</button>
                             <button type="button" class="btn btn-solid" id="saveBtn">Save</button>
+                        </div>
+                    </div>
+
+                    <div id="draftBanner" class="kb-banner hidden" role="status">
+                        <p id="draftBannerText">A local draft was found.</p>
+                        <div class="kb-banner-actions">
+                            <button type="button" class="btn btn-solid" id="draftRestoreBtn">Restore</button>
+                            <button type="button" class="btn" id="draftDiscardBtn">Discard</button>
+                        </div>
+                    </div>
+
+                    <div id="conflictBanner" class="kb-banner kb-banner-warn hidden" role="alert">
+                        <p>These notes were saved elsewhere since you started editing. Reload the server copy, or overwrite it with what you have now.</p>
+                        <div class="kb-banner-actions">
+                            <button type="button" class="btn" id="conflictReloadBtn">Reload server copy</button>
+                            <button type="button" class="btn btn-solid" id="conflictOverwriteBtn">Overwrite</button>
                         </div>
                     </div>
 
                     <div id="errorBox" class="auth-error hidden" role="alert"></div>
 
                     <div id="viewPane">
+                        <div class="kb-tools" id="kbTools">
+                            <div class="kb-search">
+                                <label class="skip" for="searchInput">Search these notes</label>
+                                <input id="searchInput" type="search" placeholder="Search these notes" autocomplete="off">
+                                <span id="searchCount" class="kb-search-count" aria-live="polite"></span>
+                                <button type="button" class="btn kb-search-btn" id="searchPrev">Prev</button>
+                                <button type="button" class="btn kb-search-btn" id="searchNext">Next</button>
+                            </div>
+                        </div>
                         <div id="emptyState" class="empty-state hidden">
                             <p>No notes yet</p>
                             <button type="button" class="btn btn-solid" id="emptyEditBtn">Edit</button>
                         </div>
-                        <div id="rendered" class="wiki-body"></div>
+                        <div class="kb-view" id="kbView">
+                            <aside class="kb-toc" id="kbToc">
+                                <p class="kb-toc-heading">Contents</p>
+                                <button type="button" class="kb-toc-toggle" id="tocToggle" aria-expanded="false" aria-controls="tocNav">Contents</button>
+                                <nav class="kb-toc-nav" id="tocNav" aria-label="Contents"></nav>
+                            </aside>
+                            <div id="rendered" class="wiki-body"></div>
+                        </div>
                     </div>
 
                     <div id="editPane" class="hidden">
-                        <label for="editor" class="skip">Notes markdown</label>
-                        <textarea id="editor" class="editor" spellcheck="true"></textarea>
+                        <div class="kb-edit-toolbar">
+                            <button type="button" class="btn kb-preview-toggle" id="previewToggle" aria-pressed="false">Preview</button>
+                            <div id="sizeMeter" class="kb-size" aria-live="polite">
+                                <div class="kb-size-track" aria-hidden="true"><span id="sizeBar" class="kb-size-bar"></span></div>
+                                <span id="sizeLabel">0 B of 1 MB</span>
+                            </div>
+                        </div>
+                        <div class="kb-edit-split" id="editSplit">
+                            <label for="editor" class="skip">Notes markdown</label>
+                            <textarea id="editor" class="editor" spellcheck="true"></textarea>
+                            <div id="editPreview" class="wiki-body kb-preview" aria-live="polite"></div>
+                        </div>
                     </div>
                 </div>
             </main>
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const db = firebase.firestore();
-            const notesRef = db.collection("private").doc("knowledge");
-            marked.setOptions({ gfm: true, breaks: true });
-
-            let currentMarkdown = "";
-            let currentUpdatedAt = null;
-            let saving = false;
-
-            const lastSavedEl = document.getElementById("lastSaved");
-            const errorBox = document.getElementById("errorBox");
-            const viewPane = document.getElementById("viewPane");
-            const editPane = document.getElementById("editPane");
-            const viewActions = document.getElementById("viewActions");
-            const editActions = document.getElementById("editActions");
-            const emptyState = document.getElementById("emptyState");
-            const rendered = document.getElementById("rendered");
-            const editor = document.getElementById("editor");
-            const saveBtn = document.getElementById("saveBtn");
-
-            function formatSaved(ts) {
-                if (!ts) return "";
-                const date = typeof ts.toDate === "function" ? ts.toDate() : new Date(ts);
-                if (Number.isNaN(date.getTime())) return "";
-                return "Last saved " + date.toLocaleString("en-AU", {
-                    dateStyle: "medium",
-                    timeStyle: "short"
-                });
-            }
-
-            function updateLastSaved() {
-                lastSavedEl.textContent = formatSaved(currentUpdatedAt);
-            }
-
-            function showError(err, action) {
-                const code = err && err.code ? String(err.code) : "";
-                const message = err && err.message ? String(err.message) : String(err);
-                const denied = code === "permission-denied" || /permission/i.test(message);
-                let text = denied
-                    ? "Access denied. Firestore refused to " + (action || "load") + " these notes. You may not be signed in with the authorized account."
-                    : "Could not " + (action || "load") + " your notes.";
-                if (message) text += " (" + (code ? code + ": " : "") + message + ")";
-                errorBox.textContent = text;
-                errorBox.classList.remove("hidden");
-            }
-
-            function hideError() {
-                errorBox.classList.add("hidden");
-                errorBox.textContent = "";
-            }
-
-            function renderMarkdown(markdown) {
-                const raw = marked.parse(markdown || "", { async: false });
-                rendered.innerHTML = DOMPurify.sanitize(raw);
-            }
-
-            function showEmpty() {
-                rendered.innerHTML = "";
-                emptyState.classList.remove("hidden");
-            }
-
-            function showDocument(markdown) {
-                emptyState.classList.add("hidden");
-                if (!markdown || !markdown.trim()) {
-                    showEmpty();
-                    return;
-                }
-                renderMarkdown(markdown);
-            }
-
-            function enterViewMode() {
-                editPane.classList.add("hidden");
-                viewPane.classList.remove("hidden");
-                editActions.classList.add("hidden");
-                viewActions.classList.remove("hidden");
-                showDocument(currentMarkdown);
-                updateLastSaved();
-            }
-
-            function enterEditMode() {
-                hideError();
-                editor.value = currentMarkdown;
-                viewPane.classList.add("hidden");
-                editPane.classList.remove("hidden");
-                viewActions.classList.add("hidden");
-                editActions.classList.remove("hidden");
-                editor.focus();
-            }
-
-            async function loadNotes() {
-                hideError();
-                try {
-                    const snap = await notesRef.get();
-                    if (!snap.exists) {
-                        currentMarkdown = "";
-                        currentUpdatedAt = null;
-                    } else {
-                        const data = snap.data() || {};
-                        currentMarkdown = typeof data.markdown === "string" ? data.markdown : "";
-                        currentUpdatedAt = data.updatedAt || null;
-                    }
-                    enterViewMode();
-                } catch (err) {
-                    currentMarkdown = "";
-                    currentUpdatedAt = null;
-                    emptyState.classList.add("hidden");
-                    rendered.innerHTML = "";
-                    viewActions.classList.add("hidden");
-                    editActions.classList.add("hidden");
-                    showError(err, "load");
-                }
-            }
-
-            async function saveNotes() {
-                if (saving) return;
-                saving = true;
-                saveBtn.disabled = true;
-                saveBtn.textContent = "Saving…";
-                hideError();
-                try {
-                    await notesRef.set({
-                        markdown: editor.value,
-                        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-                    }, { merge: true });
-                    await loadNotes();
-                } catch (err) {
-                    showError(err, "save");
-                } finally {
-                    saving = false;
-                    saveBtn.disabled = false;
-                    saveBtn.textContent = "Save";
-                }
-            }
-
-            document.getElementById("editBtn").addEventListener("click", enterEditMode);
-            document.getElementById("emptyEditBtn").addEventListener("click", enterEditMode);
-            document.getElementById("cancelBtn").addEventListener("click", function () {
-                hideError();
-                enterViewMode();
-            });
-            saveBtn.addEventListener("click", saveNotes);
-
-            NaedmasAuth.initAuth({
-                onAuthorized: function () {
-                    loadNotes();
-                }
-            });
-        });
-    </script>
 </body>
 </html>
