@@ -2666,3 +2666,152 @@ body.lightbox-open { overflow: hidden; }
 .book-lightbox .lightbox-art picture img {
     object-fit: contain;
 }
+
+/* Apothecarion bit catalogue */
+.bit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.15rem;
+}
+
+.bit-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid rgba(201, 162, 39, 0.16);
+    background: linear-gradient(180deg, rgba(18, 61, 38, 0.28), rgba(8, 12, 9, 0.88));
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.bit-card:hover,
+.bit-card:focus-visible {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.28);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.bit-card-art {
+    position: relative;
+    aspect-ratio: 5 / 4;
+    overflow: hidden;
+    background: #080c09;
+}
+
+.bit-card-art img,
+.bit-card-art .bit-placeholder,
+.lightbox-art .bit-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bit-card-art picture,
+.bit-lightbox .lightbox-art picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bit-card-art picture img,
+.bit-lightbox .lightbox-art picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.bit-card-body {
+    padding: 0.7rem 0.85rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.22rem;
+    min-height: 0;
+}
+
+.bit-card-body h2 {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bone);
+    line-height: 1.35;
+}
+
+.bit-kit {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.02rem;
+    color: var(--ink);
+    line-height: 1.35;
+}
+
+.bit-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.35rem;
+}
+
+.bit-armour {
+    align-self: flex-start;
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.5rem;
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    color: var(--bone-dim);
+}
+
+.bit-lightbox.lightbox-panel {
+    align-items: stretch;
+}
+
+.bit-lightbox .lightbox-art {
+    background: #080c09;
+    max-height: 70vh;
+}
+
+.bit-lightbox .lightbox-art img,
+.bit-lightbox .lightbox-art picture img {
+    object-fit: contain;
+    max-height: 70vh;
+}
+
+.bit-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.15rem;
+}
+
+.bit-list li {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.08rem;
+}
+
+@media (max-width: 720px) {
+    .bit-lightbox.lightbox-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

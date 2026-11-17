@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" role="img" aria-label="No likeness yet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#123d26"/>
+      <stop offset="100%" stop-color="#080c09"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8dcc0"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#bg)"/>
+  <rect x="18" y="18" width="464" height="364" fill="none" stroke="#c9a227" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="250" cy="200" r="118" fill="none" stroke="#c9a227" stroke-width="1" opacity="0.28"/>
+  <path d="M226 92 H274 L266 112 V148 C266 196 284 222 250 258 C216 222 234 196 234 148 V112 Z" fill="none" stroke="url(#goldG)" stroke-width="2"/>
+  <path d="M238 120 H262" stroke="#e8dcc0" stroke-width="1.4"/>
+  <path d="M240 150 C252 158 252 174 240 182 C228 190 228 206 240 214" fill="none" stroke="#e8dcc0" stroke-width="1.6"/>
+  <path d="M260 150 C248 158 248 174 260 182 C272 190 272 206 260 214" fill="none" stroke="#c9a227" stroke-width="1.6"/>
+  <circle cx="250" cy="238" r="4.2" fill="#c9a227"/>
+  <path d="M148 268 L176 250 L214 262 L198 286 L162 292 Z" fill="none" stroke="#e8dcc0" stroke-width="1.2" opacity="0.7"/>
+  <path d="M320 256 L348 244 L372 268 L350 286 L318 278 Z" fill="none" stroke="#e8dcc0" stroke-width="1.2" opacity="0.7"/>
+  <text x="250" y="332" text-anchor="middle" font-family="Cinzel, Times New Roman, serif" font-size="16" letter-spacing="4" fill="#e8dcc0">RECLAIMED</text>
+</svg>
