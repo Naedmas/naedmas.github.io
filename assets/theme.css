@@ -2453,3 +2453,183 @@ mark.kb-hit.is-current {
     }
     .actions { justify-content: flex-start; }
 }
+
+
+/* --- Librarium booklist --- */
+.librarium-page .lead {
+    max-width: 40rem;
+}
+
+.librarium-page .gallery-tools { gap: 0.4rem; }
+.librarium-page .chip-row { gap: 0.3rem; }
+.librarium-page .chip-label { min-width: 4.2rem; margin-right: 0.15rem; }
+.librarium-page .chip {
+    padding: 0.28rem 0.5rem;
+    font-size: 0.54rem;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.15rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid rgba(201, 162, 39, 0.16);
+    background: linear-gradient(180deg, rgba(18, 61, 38, 0.28), rgba(8, 12, 9, 0.88));
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover,
+.book-card:focus-visible {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.28);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.book-card-art {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    background: #080c09;
+}
+
+.book-card-art img,
+.book-card-art .book-placeholder,
+.lightbox-art .book-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.book-card-body {
+    padding: 0.7rem 0.8rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.18rem;
+    min-height: 7.2rem;
+}
+
+.book-card-body h2 {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bone);
+    line-height: 1.35;
+}
+
+.book-author {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.05rem;
+    color: var(--bone-dim);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.book-series {
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    font-size: 0.82rem;
+    color: var(--ink);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.book-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+    margin-top: 0.35rem;
+}
+
+.book-type {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-muted);
+    border: 1px solid rgba(201, 162, 39, 0.28);
+    padding: 0.18rem 0.42rem;
+}
+
+.status-badge.is-read {
+    color: #cfe8d4;
+    border-color: rgba(45, 122, 76, 0.7);
+    background: rgba(18, 61, 38, 0.55);
+}
+
+.status-badge.is-reading {
+    color: #d7e4f2;
+    border-color: rgba(90, 130, 170, 0.55);
+    background: rgba(20, 32, 48, 0.55);
+}
+
+.status-badge.is-on-hold {
+    color: var(--gold);
+    border-color: rgba(201, 162, 39, 0.45);
+    background: rgba(32, 28, 12, 0.55);
+}
+
+.status-badge.is-abandoned {
+    color: #e8c4c4;
+    border-color: rgba(170, 70, 70, 0.55);
+    background: rgba(70, 14, 14, 0.4);
+}
+
+.book-lightbox.lightbox-panel {
+    grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr);
+    grid-template-areas:
+        "art body";
+}
+
+.book-lightbox .lightbox-art {
+    max-height: 70vh;
+    background: #080c09;
+}
+
+.book-lightbox .lightbox-art img {
+    object-fit: contain;
+    max-height: 70vh;
+}
+
+.book-character-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.7rem;
+}
+
+.book-character-list li {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.08rem;
+    color: var(--bone);
+}
+
+body.lightbox-open { overflow: hidden; }
+
+@media (max-width: 760px) {
+    .book-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.8rem; }
+    .book-card-body { min-height: 0; padding: 0.6rem 0.65rem 0.75rem; }
+    .book-lightbox.lightbox-panel {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "art"
+            "body";
+    }
+    .book-lightbox .lightbox-art { min-height: 16rem; max-height: 42vh; }
+    .book-lightbox .lightbox-art img { max-height: 42vh; }
+}

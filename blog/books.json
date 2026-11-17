@@ -1,0 +1,391 @@
+{
+  "updatedAt": "2026-11-17T11:11:59+10:00",
+  "source": "Novels",
+  "sourceId": "4b946981-c4b0-4470-b957-75ddf336ff23",
+  "dataSourceId": "a84528f4-1192-4f59-aef1-e4524e679e8e",
+  "count": 15,
+  "books": [
+    {
+      "id": "descent-of-angels",
+      "title": "Descent of Angels",
+      "author": "Gav Thorpe",
+      "series": "Horus Heresy",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels",
+        "Horus Heresy"
+      ],
+      "status": "Not started",
+      "edition": "Any",
+      "summary": "Great Crusade-era Dark Angels; Caliban and the early cracks that become the Fallen.",
+      "officialLink": null,
+      "characters": [
+        "Lion El'Jonson",
+        "Astelan"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "fallen-angels",
+      "title": "Fallen Angels",
+      "author": "Mike Lee",
+      "series": "Horus Heresy",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels",
+        "Horus Heresy",
+        "Fallen"
+      ],
+      "status": "Not started",
+      "edition": "Any",
+      "summary": "Caliban’s fall and Luther’s betrayal during the Heresy.",
+      "officialLink": null,
+      "characters": [
+        "Lion El'Jonson",
+        "Luther",
+        "Astelan"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "the-unforgiven",
+      "title": "The Unforgiven",
+      "author": "Gav Thorpe",
+      "series": "Legacy of Caliban",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels",
+        "Unforgiven"
+      ],
+      "status": "Not started",
+      "edition": "Any",
+      "summary": "Azrael and the Unforgiven pursue the Fallen across a multi-book arc.",
+      "officialLink": null,
+      "characters": [
+        "Azrael",
+        "Sapphon",
+        "Astelan",
+        "Asmodai",
+        "Cypher"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "angels-of-darkness",
+      "title": "Angels of Darkness",
+      "author": "Gav Thorpe",
+      "series": "Legends of the Dark Angels",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Interrogator-Chaplain Boreas investigates heresy on a Dark Angels recruiting world; foundational Fallen lore.",
+      "officialLink": null,
+      "characters": [
+        "Asmodai",
+        "Boreas",
+        "Damas",
+        "Hephaestus",
+        "Nestor",
+        "Thumiel",
+        "Zaul",
+        "Samiel",
+        "Sapphon",
+        "Astelan",
+        "Cypher"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "azrael-protector-of-secrets",
+      "title": "Azrael: Protector of Secrets",
+      "author": "C Z Dunn",
+      "series": "Legends of the Dark Angels",
+      "type": "Short story",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Short story focused on Supreme Grand Master Azrael and the burden of the Chapter’s secrets.",
+      "officialLink": null,
+      "characters": [
+        "Azrael",
+        "Balthasar",
+        "Mendrion"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "dark-vengeance",
+      "title": "Dark Vengeance",
+      "author": "C Z Dunn",
+      "series": "Legends of the Dark Angels",
+      "type": "Novella",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Novella tied to the Dark Vengeance starter set; Dark Angels vs Chaos Space Marines.",
+      "officialLink": null,
+      "characters": [
+        "Balthasar",
+        "Turmiel",
+        "Seraphicus",
+        "Raphael",
+        "Arion",
+        "Barachiel",
+        "Mendrion"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "easy-prey",
+      "title": "Easy Prey",
+      "author": "C Z Dunn",
+      "series": "Legends of the Dark Angels",
+      "type": "Short story",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Short story included in the Legends of the Dark Angels omnibus.",
+      "officialLink": null,
+      "characters": [
+        "Terach"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "legends-of-the-dark-angels",
+      "title": "Legends of the Dark Angels",
+      "author": "Gav Thorpe & C Z Dunn",
+      "series": "Legends of the Dark Angels",
+      "type": "Anthology",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Omnibus collecting Dark Angels novels and shorts: Angels of Darkness, The Purging of Kadillus, Azrael, Azrael: Protector of Secrets, The Eye of Ezekiel, Dark Vengeance, Easy Prey, and Malediction.",
+      "officialLink": "https://wh40k.lexicanum.com/wiki/Legends_of_the_Dark_Angels_(Anthology)",
+      "characters": [
+        "Azrael"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "malediction",
+      "title": "Malediction",
+      "author": "C Z Dunn",
+      "series": "Legends of the Dark Angels",
+      "type": "Short story",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Short story / novelette included in the Legends of the Dark Angels omnibus.",
+      "officialLink": null,
+      "characters": [
+        "Tigrane",
+        "Cypher"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "the-eye-of-ezekiel",
+      "title": "The Eye of Ezekiel",
+      "author": "C Z Dunn",
+      "series": "Legends of the Dark Angels / Space Marine Battles",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Chief Librarian Ezekiel leads Dark Angels against Chaos on Honoria; core Ezekiel characterisation.",
+      "officialLink": null,
+      "characters": [
+        "Ezekiel",
+        "Balthasar",
+        "Turmiel",
+        "Puriel",
+        "Rephial",
+        "Danatheum",
+        "Zadakiel"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "the-purging-of-kadillus",
+      "title": "The Purging of Kadillus",
+      "author": "Gav Thorpe",
+      "series": "Legends of the Dark Angels / Space Marine Battles",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Dark Angels defend Piscina IV against Orks in the Space Marine Battles novel; Belial and the Chapter feature heavily.",
+      "officialLink": null,
+      "characters": [
+        "Belial",
+        "Boreas",
+        "Nestor",
+        "Naaman",
+        "Aquila"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "azrael",
+      "title": "Azrael",
+      "author": "Gav Thorpe",
+      "series": "Legends of the Dark Angels / Space Marine Legends",
+      "type": "Novel",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Supreme Grand Master Azrael’s rise and burdens of command.",
+      "officialLink": null,
+      "characters": [
+        "Azrael",
+        "Asmodai",
+        "Sammael",
+        "Belial",
+        "Ezekiel"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "cypher-lord-of-the-fallen",
+      "title": "Cypher: Lord of the Fallen",
+      "author": "John French",
+      "series": null,
+      "type": "Novel",
+      "focus": [
+        "Fallen",
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Cypher and a band of Fallen escape imprisonment on Terra and are hunted through the Imperial Palace.",
+      "officialLink": "https://wh40k.lexicanum.com/wiki/Cypher:_Lord_of_the_Fallen_(Novel)",
+      "characters": [
+        "Cypher"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "luther-first-of-the-fallen",
+      "title": "Luther: First of the Fallen",
+      "author": "Gav Thorpe",
+      "series": null,
+      "type": "Novel",
+      "focus": [
+        "Fallen",
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "Luther’s captivity and interrogation aboard the Rock.",
+      "officialLink": null,
+      "characters": [
+        "Luther"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    },
+    {
+      "id": "the-lion-son-of-the-forest",
+      "title": "The Lion: Son of the Forest",
+      "author": "Mike Brooks",
+      "series": null,
+      "type": "Novel",
+      "focus": [
+        "Dark Angels"
+      ],
+      "status": "Read",
+      "edition": "Any",
+      "summary": "The Lion wakes in Imperium Nihilus and rebuilds his legion’s purpose in the present setting.",
+      "officialLink": "https://wh40k.lexicanum.com/wiki/The_Lion:_Son_of_the_Forest_(Novel)",
+      "characters": [
+        "Lion El'Jonson",
+        "Zabriel",
+        "Lohoc",
+        "Kai",
+        "Aphkar",
+        "Borz",
+        "Launciel",
+        "Galad",
+        "Bevedan",
+        "Guain",
+        "Ectorael",
+        "Asbiel",
+        "Lamor",
+        "Kuziel",
+        "Meriant",
+        "Breunan",
+        "Cadaran",
+        "Perziel",
+        "Rufarel",
+        "Seraphax",
+        "Baelor",
+        "Dante"
+      ],
+      "images": [],
+      "thumbs": [],
+      "image": null,
+      "thumb": null
+    }
+  ]
+}
