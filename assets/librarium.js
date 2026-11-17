@@ -1,6 +1,6 @@
 (function () {
-    const PLACEHOLDER = "/blog/img/placeholder.svg";
-    const DATA_URL = "/blog/books.json";
+    const PLACEHOLDER = "/librarium/img/placeholder.svg";
+    const DATA_URL = "/librarium/books.json";
 
     const grid = document.getElementById("bookGrid");
     const empty = document.getElementById("galleryEmpty");
@@ -50,7 +50,7 @@
     }
 
     function asset(rel) {
-        return rel ? "/blog/" + rel : "";
+        return rel ? "/librarium/" + rel : "";
     }
 
     function artTag(book, kind) {

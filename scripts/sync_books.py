@@ -30,9 +30,9 @@ Raw data (kept outside the public repo by default):
 
 Writes into the site repo (this script's parent / ..):
 
-    blog/books.json
-    blog/img/<slug>.webp          and .jpg fallback
-    blog/img/<slug>-thumb.webp    and .jpg fallback
+    librarium/books.json
+    librarium/img/<slug>.webp          and .jpg fallback
+    librarium/img/<slug>-thumb.webp    and .jpg fallback
 
 Cover policy
 ------------
@@ -40,7 +40,7 @@ Notion file URLs expire, so each Cover is downloaded (from a Notion file
 or an external URL, including Lexicanum / Black Library hosts) and
 cached in orig/, then resized to WebP plus a JPEG fallback.
 Titles with no Cover, or whose download fails, use the original
-placeholder SVG at blog/img/placeholder.svg. The public page credits
+placeholder SVG at librarium/img/placeholder.svg. The public page credits
 cover art to its respective publishers.
 
 Property policy — Novels
@@ -55,7 +55,7 @@ Property policy — Novels
   Summary (text)            INCLUDE  (public lore blurbs)
   Official link (url)       INCLUDE  when it is a public lore/wiki link,
                                      not a shop / purchase location
-  Cover (files)             INCLUDE  downloaded into blog/img (any host);
+  Cover (files)             INCLUDE  downloaded into librarium/img (any host);
                                      placeholder if missing or download fails
   Characters (relation)     INCLUDE  resolved character names only
   url (system)              EXCLUDE  (private Notion page links)
@@ -79,8 +79,8 @@ Weekly refresh (same cadence as the Armoury, personal Notion only, read-only):
   3. Fetch each book page with file URLs and store Cover lists in
      covers.json or pages/<Title>.json (Notion file URLs expire).
   4. From the site repo: python3 scripts/sync_books.py
-     (downloads any host into orig/, writes webp + jpeg under blog/img/).
-  5. If blog/books.json or images changed, commit, push main,
+     (downloads any host into orig/, writes webp + jpeg under librarium/img/).
+  5. If librarium/books.json or images changed, commit, push main,
      and confirm the GitHub Pages build.
   6. Never modify Notion. Never use the Vemag Australia workspace.
 """
@@ -112,7 +112,7 @@ BROWSER_UA = (
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RAW = Path("/workspace/notion-books-raw")
-OUT_DIR = REPO_ROOT / "blog"
+OUT_DIR = REPO_ROOT / "librarium"
 IMG_DIR = OUT_DIR / "img"
 
 SOURCE_NAME = "Novels"
