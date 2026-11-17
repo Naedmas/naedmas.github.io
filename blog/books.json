@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T11:11:59+10:00",
+  "updatedAt": "2026-11-17T11:30:29+10:00",
   "source": "Novels",
   "sourceId": "4b946981-c4b0-4470-b957-75ddf336ff23",
   "dataSourceId": "a84528f4-1192-4f59-aef1-e4524e679e8e",
@@ -23,10 +23,22 @@
         "Lion El'Jonson",
         "Astelan"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/descent-of-angels.jpg"
+      ],
+      "thumbs": [
+        "img/descent-of-angels-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/descent-of-angels.webp"
+      ],
+      "thumbsWebp": [
+        "img/descent-of-angels-thumb.webp"
+      ],
+      "image": "img/descent-of-angels.jpg",
+      "thumb": "img/descent-of-angels-thumb.jpg",
+      "imageWebp": "img/descent-of-angels.webp",
+      "thumbWebp": "img/descent-of-angels-thumb.webp"
     },
     {
       "id": "fallen-angels",
@@ -48,10 +60,22 @@
         "Luther",
         "Astelan"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/fallen-angels.jpg"
+      ],
+      "thumbs": [
+        "img/fallen-angels-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/fallen-angels.webp"
+      ],
+      "thumbsWebp": [
+        "img/fallen-angels-thumb.webp"
+      ],
+      "image": "img/fallen-angels.jpg",
+      "thumb": "img/fallen-angels-thumb.jpg",
+      "imageWebp": "img/fallen-angels.webp",
+      "thumbWebp": "img/fallen-angels-thumb.webp"
     },
     {
       "id": "the-unforgiven",
@@ -74,10 +98,22 @@
         "Asmodai",
         "Cypher"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/the-unforgiven.jpg"
+      ],
+      "thumbs": [
+        "img/the-unforgiven-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/the-unforgiven.webp"
+      ],
+      "thumbsWebp": [
+        "img/the-unforgiven-thumb.webp"
+      ],
+      "image": "img/the-unforgiven.jpg",
+      "thumb": "img/the-unforgiven-thumb.jpg",
+      "imageWebp": "img/the-unforgiven.webp",
+      "thumbWebp": "img/the-unforgiven-thumb.webp"
     },
     {
       "id": "angels-of-darkness",
@@ -105,10 +141,22 @@
         "Astelan",
         "Cypher"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/angels-of-darkness.jpg"
+      ],
+      "thumbs": [
+        "img/angels-of-darkness-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/angels-of-darkness.webp"
+      ],
+      "thumbsWebp": [
+        "img/angels-of-darkness-thumb.webp"
+      ],
+      "image": "img/angels-of-darkness.jpg",
+      "thumb": "img/angels-of-darkness-thumb.jpg",
+      "imageWebp": "img/angels-of-darkness.webp",
+      "thumbWebp": "img/angels-of-darkness-thumb.webp"
     },
     {
       "id": "azrael-protector-of-secrets",
@@ -128,10 +176,22 @@
         "Balthasar",
         "Mendrion"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/azrael-protector-of-secrets.jpg"
+      ],
+      "thumbs": [
+        "img/azrael-protector-of-secrets-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/azrael-protector-of-secrets.webp"
+      ],
+      "thumbsWebp": [
+        "img/azrael-protector-of-secrets-thumb.webp"
+      ],
+      "image": "img/azrael-protector-of-secrets.jpg",
+      "thumb": "img/azrael-protector-of-secrets-thumb.jpg",
+      "imageWebp": "img/azrael-protector-of-secrets.webp",
+      "thumbWebp": "img/azrael-protector-of-secrets-thumb.webp"
     },
     {
       "id": "dark-vengeance",
@@ -155,10 +215,22 @@
         "Barachiel",
         "Mendrion"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/dark-vengeance.jpg"
+      ],
+      "thumbs": [
+        "img/dark-vengeance-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/dark-vengeance.webp"
+      ],
+      "thumbsWebp": [
+        "img/dark-vengeance-thumb.webp"
+      ],
+      "image": "img/dark-vengeance.jpg",
+      "thumb": "img/dark-vengeance-thumb.jpg",
+      "imageWebp": "img/dark-vengeance.webp",
+      "thumbWebp": "img/dark-vengeance-thumb.webp"
     },
     {
       "id": "easy-prey",
@@ -176,10 +248,22 @@
       "characters": [
         "Terach"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/easy-prey.jpg"
+      ],
+      "thumbs": [
+        "img/easy-prey-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/easy-prey.webp"
+      ],
+      "thumbsWebp": [
+        "img/easy-prey-thumb.webp"
+      ],
+      "image": "img/easy-prey.jpg",
+      "thumb": "img/easy-prey-thumb.jpg",
+      "imageWebp": "img/easy-prey.webp",
+      "thumbWebp": "img/easy-prey-thumb.webp"
     },
     {
       "id": "legends-of-the-dark-angels",
@@ -197,10 +281,22 @@
       "characters": [
         "Azrael"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/legends-of-the-dark-angels.jpg"
+      ],
+      "thumbs": [
+        "img/legends-of-the-dark-angels-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/legends-of-the-dark-angels.webp"
+      ],
+      "thumbsWebp": [
+        "img/legends-of-the-dark-angels-thumb.webp"
+      ],
+      "image": "img/legends-of-the-dark-angels.jpg",
+      "thumb": "img/legends-of-the-dark-angels-thumb.jpg",
+      "imageWebp": "img/legends-of-the-dark-angels.webp",
+      "thumbWebp": "img/legends-of-the-dark-angels-thumb.webp"
     },
     {
       "id": "malediction",
@@ -219,10 +315,22 @@
         "Tigrane",
         "Cypher"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/malediction.jpg"
+      ],
+      "thumbs": [
+        "img/malediction-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/malediction.webp"
+      ],
+      "thumbsWebp": [
+        "img/malediction-thumb.webp"
+      ],
+      "image": "img/malediction.jpg",
+      "thumb": "img/malediction-thumb.jpg",
+      "imageWebp": "img/malediction.webp",
+      "thumbWebp": "img/malediction-thumb.webp"
     },
     {
       "id": "the-eye-of-ezekiel",
@@ -246,10 +354,22 @@
         "Danatheum",
         "Zadakiel"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/the-eye-of-ezekiel.jpg"
+      ],
+      "thumbs": [
+        "img/the-eye-of-ezekiel-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/the-eye-of-ezekiel.webp"
+      ],
+      "thumbsWebp": [
+        "img/the-eye-of-ezekiel-thumb.webp"
+      ],
+      "image": "img/the-eye-of-ezekiel.jpg",
+      "thumb": "img/the-eye-of-ezekiel-thumb.jpg",
+      "imageWebp": "img/the-eye-of-ezekiel.webp",
+      "thumbWebp": "img/the-eye-of-ezekiel-thumb.webp"
     },
     {
       "id": "the-purging-of-kadillus",
@@ -271,10 +391,22 @@
         "Naaman",
         "Aquila"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/the-purging-of-kadillus.jpg"
+      ],
+      "thumbs": [
+        "img/the-purging-of-kadillus-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/the-purging-of-kadillus.webp"
+      ],
+      "thumbsWebp": [
+        "img/the-purging-of-kadillus-thumb.webp"
+      ],
+      "image": "img/the-purging-of-kadillus.jpg",
+      "thumb": "img/the-purging-of-kadillus-thumb.jpg",
+      "imageWebp": "img/the-purging-of-kadillus.webp",
+      "thumbWebp": "img/the-purging-of-kadillus-thumb.webp"
     },
     {
       "id": "azrael",
@@ -296,10 +428,22 @@
         "Belial",
         "Ezekiel"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/azrael.jpg"
+      ],
+      "thumbs": [
+        "img/azrael-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/azrael.webp"
+      ],
+      "thumbsWebp": [
+        "img/azrael-thumb.webp"
+      ],
+      "image": "img/azrael.jpg",
+      "thumb": "img/azrael-thumb.jpg",
+      "imageWebp": "img/azrael.webp",
+      "thumbWebp": "img/azrael-thumb.webp"
     },
     {
       "id": "cypher-lord-of-the-fallen",
@@ -318,10 +462,22 @@
       "characters": [
         "Cypher"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/cypher-lord-of-the-fallen.jpg"
+      ],
+      "thumbs": [
+        "img/cypher-lord-of-the-fallen-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/cypher-lord-of-the-fallen.webp"
+      ],
+      "thumbsWebp": [
+        "img/cypher-lord-of-the-fallen-thumb.webp"
+      ],
+      "image": "img/cypher-lord-of-the-fallen.jpg",
+      "thumb": "img/cypher-lord-of-the-fallen-thumb.jpg",
+      "imageWebp": "img/cypher-lord-of-the-fallen.webp",
+      "thumbWebp": "img/cypher-lord-of-the-fallen-thumb.webp"
     },
     {
       "id": "luther-first-of-the-fallen",
@@ -340,10 +496,22 @@
       "characters": [
         "Luther"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/luther-first-of-the-fallen.jpg"
+      ],
+      "thumbs": [
+        "img/luther-first-of-the-fallen-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/luther-first-of-the-fallen.webp"
+      ],
+      "thumbsWebp": [
+        "img/luther-first-of-the-fallen-thumb.webp"
+      ],
+      "image": "img/luther-first-of-the-fallen.jpg",
+      "thumb": "img/luther-first-of-the-fallen-thumb.jpg",
+      "imageWebp": "img/luther-first-of-the-fallen.webp",
+      "thumbWebp": "img/luther-first-of-the-fallen-thumb.webp"
     },
     {
       "id": "the-lion-son-of-the-forest",
@@ -382,10 +550,22 @@
         "Baelor",
         "Dante"
       ],
-      "images": [],
-      "thumbs": [],
-      "image": null,
-      "thumb": null
+      "images": [
+        "img/the-lion-son-of-the-forest.jpg"
+      ],
+      "thumbs": [
+        "img/the-lion-son-of-the-forest-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/the-lion-son-of-the-forest.webp"
+      ],
+      "thumbsWebp": [
+        "img/the-lion-son-of-the-forest-thumb.webp"
+      ],
+      "image": "img/the-lion-son-of-the-forest.jpg",
+      "thumb": "img/the-lion-son-of-the-forest-thumb.jpg",
+      "imageWebp": "img/the-lion-son-of-the-forest.webp",
+      "thumbWebp": "img/the-lion-son-of-the-forest-thumb.webp"
     }
   ]
 }

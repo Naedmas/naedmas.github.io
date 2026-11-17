@@ -25,24 +25,23 @@ Raw data (kept outside the public repo by default):
         covers.json              Optional title -> list of cover URLs
                                  (from page fetches with include_file_urls)
         pages/*.json             Optional notion-fetch dumps of each row
-        orig/                    Already-downloaded originals that are
-                                 allowed (never official / wiki cover art):
+        orig/                    Cached original cover files:
                                  <Title>__<index>__<original-filename>.<ext>
 
 Writes into the site repo (this script's parent / ..):
 
     blog/books.json
-    blog/img/<slug>.jpg
-    blog/img/<slug>-thumb.jpg
+    blog/img/<slug>.webp          and .jpg fallback
+    blog/img/<slug>-thumb.webp    and .jpg fallback
 
 Cover policy
 ------------
-Notion file URLs expire, so any allowed cover is downloaded and committed.
-Official Black Library / Games Workshop / Lexicanum / wiki cover art is
-NOT downloaded or published (standing site rule: no official artwork).
-Those titles use the original placeholder SVG at blog/img/placeholder.svg.
-If a later export has a user-uploaded file (e.g. a Notion-hosted image
-or another allowed host), it is resized with Pillow and committed.
+Notion file URLs expire, so each Cover is downloaded (from a Notion file
+or an external URL, including Lexicanum / Black Library hosts) and
+cached in orig/, then resized to WebP plus a JPEG fallback.
+Titles with no Cover, or whose download fails, use the original
+placeholder SVG at blog/img/placeholder.svg. The public page credits
+cover art to its respective publishers.
 
 Property policy — Novels
 ------------------------
@@ -56,7 +55,8 @@ Property policy — Novels
   Summary (text)            INCLUDE  (public lore blurbs)
   Official link (url)       INCLUDE  when it is a public lore/wiki link,
                                      not a shop / purchase location
-  Cover (files)             INCLUDE  only if the URL is allowed; else placeholder
+  Cover (files)             INCLUDE  downloaded into blog/img (any host);
+                                     placeholder if missing or download fails
   Characters (relation)     INCLUDE  resolved character names only
   url (system)              EXCLUDE  (private Notion page links)
   createdTime (system)      EXCLUDE  (when the row was added, not a pub date)
@@ -76,10 +76,11 @@ Weekly refresh (same cadence as the Armoury, personal Notion only, read-only):
   2. Query Characters for url + Name
      (collection://338d1568-be75-411f-94a2-2bfab5254ef4)
      and write characters.json.
-  3. Optionally fetch each book page with file URLs and store Cover
-     lists in covers.json or pages/<Title>.json.
+  3. Fetch each book page with file URLs and store Cover lists in
+     covers.json or pages/<Title>.json (Notion file URLs expire).
   4. From the site repo: python3 scripts/sync_books.py
-  5. If blog/books.json or allowed images changed, commit, push main,
+     (downloads any host into orig/, writes webp + jpeg under blog/img/).
+  5. If blog/books.json or images changed, commit, push main,
      and confirm the GitHub Pages build.
   6. Never modify Notion. Never use the Vemag Australia workspace.
 """
@@ -103,6 +104,11 @@ BRISBANE = ZoneInfo("Australia/Brisbane")
 FULL_EDGE = 1200
 THUMB_EDGE = 500
 JPEG_QUALITY = 85
+WEBP_QUALITY = 80
+BROWSER_UA = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RAW = Path("/workspace/notion-books-raw")
@@ -112,18 +118,6 @@ IMG_DIR = OUT_DIR / "img"
 SOURCE_NAME = "Novels"
 SOURCE_DB_ID = "4b946981-c4b0-4470-b957-75ddf336ff23"
 SOURCE_DS_ID = "a84528f4-1192-4f59-aef1-e4524e679e8e"
-
-# Official / wiki cover art must not be downloaded or committed.
-BLOCKED_COVER_HOSTS = (
-    "lexicanum.com",
-    "games-workshop.com",
-    "warhammer.com",
-    "warhammer40000.com",
-    "blacklibrary.com",
-    "forgeworld.com",
-    "gw-media.com",
-    "gamesworkshop.com",
-)
 
 # Official-link hosts that look like shops rather than public lore pages.
 BLOCKED_LINK_HOSTS = (
@@ -227,9 +221,10 @@ def is_blocked_host(url: str, blocked: tuple[str, ...]) -> bool:
 
 
 def cover_allowed(url: str) -> bool:
-    if not url or not url.startswith("http"):
+    """Any http(s) Cover URL may be used, including Lexicanum and publisher hosts."""
+    if not url or not isinstance(url, str):
         return False
-    return not is_blocked_host(url, BLOCKED_COVER_HOSTS)
+    return url.startswith("http://") or url.startswith("https://")
 
 
 def official_link_allowed(url: str) -> str | None:
@@ -303,19 +298,27 @@ def download_missing(raw_dir: Path, title: str) -> list[Path]:
         return existing
     urls = [u for u in extract_cover_urls(raw_dir, title) if cover_allowed(u)]
     if not urls:
-        skipped = extract_cover_urls(raw_dir, title)
-        if skipped:
-            print(f"  skip official/blocked cover for {title}")
         return []
     orig_dir = raw_dir / "orig"
     orig_dir.mkdir(parents=True, exist_ok=True)
     saved: list[Path] = []
     for index, url in enumerate(urls):
         dest = orig_dir / f"{title}__{index}__{filename_from_url(url, slugify(title))}"
-        request = urllib.request.Request(url, headers={"User-Agent": "naedmas-books-sync/1.0"})
+        headers = {
+            "User-Agent": BROWSER_UA,
+            "Accept": "image/jpeg,image/png,image/webp,image/*,*/*;q=0.8",
+        }
+        host = host_of(url)
+        if host:
+            scheme = "https" if url.startswith("https") else "http"
+            headers["Referer"] = f"{scheme}://{host}/"
+        request = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(request, timeout=60) as resp:
-                dest.write_bytes(resp.read())
+                data = resp.read()
+            if len(data) < 32:
+                raise ValueError(f"suspiciously small response ({len(data)} bytes)")
+            dest.write_bytes(data)
             saved.append(dest)
             print(f"  downloaded {dest.name} ({dest.stat().st_size} bytes)")
         except Exception as exc:
@@ -323,20 +326,26 @@ def download_missing(raw_dir: Path, title: str) -> list[Path]:
     return saved
 
 
-def resize_to_jpeg(src: Path, dest: Path, max_edge: int) -> None:
-    with Image.open(src) as im:
-        im = ImageOps.exif_transpose(im)
-        if im.mode not in ("RGB", "L"):
-            im = im.convert("RGB")
-        elif im.mode == "L":
-            im = im.convert("RGB")
-        w, h = im.size
-        long_edge = max(w, h)
-        if long_edge > max_edge:
-            scale = max_edge / long_edge
-            im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.Resampling.LANCZOS)
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        im.save(dest, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+def prepared_image(src: Path, max_edge: int) -> Image.Image:
+    im = Image.open(src)
+    im = ImageOps.exif_transpose(im)
+    if im.mode not in ("RGB", "L"):
+        im = im.convert("RGB")
+    elif im.mode == "L":
+        im = im.convert("RGB")
+    w, h = im.size
+    long_edge = max(w, h)
+    if long_edge > max_edge:
+        scale = max_edge / long_edge
+        im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.Resampling.LANCZOS)
+    return im
+
+
+def resize_cover(src: Path, dest_jpg: Path, dest_webp: Path, max_edge: int) -> None:
+    dest_jpg.parent.mkdir(parents=True, exist_ok=True)
+    with prepared_image(src, max_edge) as im:
+        im.save(dest_jpg, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+        im.save(dest_webp, "WEBP", quality=WEBP_QUALITY, method=6)
 
 
 def resolve_characters(row: dict[str, Any], lookup: dict[str, dict[str, Any]]) -> list[str]:
@@ -357,6 +366,8 @@ def build_record(
     characters: list[str],
     image_files: list[str],
     thumb_files: list[str],
+    image_webp: list[str],
+    thumb_webp: list[str],
 ) -> dict[str, Any]:
     title = (row.get("Title") or "").strip()
     return {
@@ -373,8 +384,12 @@ def build_record(
         "characters": characters,
         "images": image_files,
         "thumbs": thumb_files,
+        "imagesWebp": image_webp,
+        "thumbsWebp": thumb_webp,
         "image": image_files[0] if image_files else None,
         "thumb": thumb_files[0] if thumb_files else None,
+        "imageWebp": image_webp[0] if image_webp else None,
+        "thumbWebp": thumb_webp[0] if thumb_webp else None,
     }
 
 
@@ -394,37 +409,51 @@ def main() -> int:
     characters = index_by_url(load_results(characters_path))
 
     IMG_DIR.mkdir(parents=True, exist_ok=True)
-    for stale in IMG_DIR.glob("*.jpg"):
+    for stale in list(IMG_DIR.glob("*.jpg")) + list(IMG_DIR.glob("*.webp")):
         stale.unlink()
 
     records: list[dict[str, Any]] = []
     used_ids: dict[str, int] = {}
     with_images = 0
-    skipped_covers = 0
+    failed_covers: list[str] = []
     for row in novels:
         title = (row.get("Title") or "").strip()
         if not title:
             continue
         originals = download_missing(raw_dir, title) or find_originals(raw_dir, title)
-        if not originals and extract_cover_urls(raw_dir, title):
-            skipped_covers += 1
         image_files: list[str] = []
         thumb_files: list[str] = []
+        image_webp: list[str] = []
+        thumb_webp: list[str] = []
         base = slugify(title)
         used_ids[base] = used_ids.get(base, 0) + 1
         slug = base if used_ids[base] == 1 else f"{base}-{used_ids[base]}"
+        if extract_cover_urls(raw_dir, title) and not originals:
+            failed_covers.append(title)
         for index, src in enumerate(originals):
             suffix = "" if index == 0 else f"-{index + 1}"
             full_rel = f"img/{slug}{suffix}.jpg"
             thumb_rel = f"img/{slug}{suffix}-thumb.jpg"
-            print(f"  resize {title} {src.name} -> {full_rel}")
-            resize_to_jpeg(src, IMG_DIR / f"{slug}{suffix}.jpg", FULL_EDGE)
-            resize_to_jpeg(src, IMG_DIR / f"{slug}{suffix}-thumb.jpg", THUMB_EDGE)
+            full_webp_rel = f"img/{slug}{suffix}.webp"
+            thumb_webp_rel = f"img/{slug}{suffix}-thumb.webp"
+            print(f"  resize {title} {src.name} -> {full_webp_rel} + jpeg")
+            try:
+                resize_cover(src, IMG_DIR / f"{slug}{suffix}.jpg", IMG_DIR / f"{slug}{suffix}.webp", FULL_EDGE)
+                resize_cover(src, IMG_DIR / f"{slug}{suffix}-thumb.jpg", IMG_DIR / f"{slug}{suffix}-thumb.webp", THUMB_EDGE)
+            except Exception as exc:
+                print(f"  FAIL resize for {title}: {exc}", file=sys.stderr)
+                failed_covers.append(title)
+                continue
             image_files.append(full_rel)
             thumb_files.append(thumb_rel)
+            image_webp.append(full_webp_rel)
+            thumb_webp.append(thumb_webp_rel)
         if image_files:
             with_images += 1
-        rec = build_record(row, resolve_characters(row, characters), image_files, thumb_files)
+        rec = build_record(
+            row, resolve_characters(row, characters),
+            image_files, thumb_files, image_webp, thumb_webp,
+        )
         rec["id"] = slug
         records.append(rec)
 
@@ -440,9 +469,11 @@ def main() -> int:
     out_json = OUT_DIR / "books.json"
     out_json.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
     print(
-        f"Wrote {out_json} ({len(records)} books, {with_images} with images, "
-        f"{skipped_covers} official covers skipped)"
+        f"Wrote {out_json} ({len(records)} books, {with_images} with covers, "
+        f"{len(failed_covers)} failed)"
     )
+    if failed_covers:
+        print("Failed covers: " + "; ".join(failed_covers), file=sys.stderr)
     return 0
 
 

@@ -12,6 +12,7 @@
     const lightboxKicker = document.getElementById("lightboxKicker");
     const lightboxFields = document.getElementById("lightboxFields");
     const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxCredit = document.getElementById("lightboxCredit");
 
     const state = {
         books: [],
@@ -48,16 +49,22 @@
         return "";
     }
 
-    function artTag(src, alt, isPlaceholder) {
-        if (isPlaceholder || !src) {
-            return '<img class="book-placeholder" src="' + PLACEHOLDER + '" alt="">';
-        }
-        return '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt || "") + '">';
+    function asset(rel) {
+        return rel ? "/blog/" + rel : "";
     }
 
-    function imageSrc(book) {
-        const rel = book.thumb || book.image;
-        return rel ? "/blog/" + rel : "";
+    function artTag(book, kind) {
+        const jpgRel = kind === "full" ? (book.image || book.thumb) : (book.thumb || book.image);
+        const webpRel = kind === "full" ? (book.imageWebp || book.thumbWebp) : (book.thumbWebp || book.imageWebp);
+        if (!jpgRel && !webpRel) {
+            return '<img class="book-placeholder" src="' + PLACEHOLDER + '" alt="">';
+        }
+        const alt = escapeHtml(book.title || "");
+        let html = '<picture>';
+        if (webpRel) html += '<source type="image/webp" srcset="' + escapeHtml(asset(webpRel)) + '">';
+        html += '<img src="' + escapeHtml(asset(jpgRel || webpRel)) + '" alt="' + alt + '">';
+        html += "</picture>";
+        return html;
     }
 
     function haystack(book) {
@@ -127,11 +134,10 @@
         }
         empty.classList.add("hidden");
         grid.innerHTML = books.map(function (book) {
-            const src = imageSrc(book);
             return (
                 '<button type="button" class="book-card" data-id="' + escapeHtml(book.id) + '">' +
                     '<div class="book-card-art">' +
-                        artTag(src, book.title, !src) +
+                        artTag(book, "thumb") +
                     "</div>" +
                     '<div class="book-card-body">' +
                         "<h2>" + escapeHtml(book.title) + "</h2>" +
@@ -164,8 +170,11 @@
         const book = state.books.find(function (b) { return b.id === id; });
         if (!book) return;
         state.openId = id;
-        const src = book.image ? "/blog/" + book.image : imageSrc(book);
-        lightboxArt.innerHTML = artTag(src, book.title, !src);
+        lightboxArt.innerHTML = artTag(book, "full");
+        if (lightboxCredit) {
+            const hasCover = !!(book.image || book.imageWebp);
+            lightboxCredit.classList.toggle("hidden", !hasCover);
+        }
         lightboxKicker.textContent = book.type || "The Shelf";
         lightboxTitle.textContent = book.title;
         const focusHtml = (book.focus || []).map(function (f) {
