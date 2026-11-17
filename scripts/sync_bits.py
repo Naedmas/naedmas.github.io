@@ -45,7 +45,7 @@ Bits (source database):
   Model (relation)          INCLUDE  resolved model name(s) only;
                                      Faction from the model catalog
   Euro (number)             EXCLUDE  (price)
-  Qty (number)              EXCLUDE  (private inventory quantity)
+  Qty (number)              INCLUDE  as qty (integer); omitted if blank
   Bitz Box Code (text)      EXCLUDE  (private storage location)
   url (system)              EXCLUDE  (private Notion page links)
   createdTime (system)      EXCLUDE
@@ -376,6 +376,30 @@ def resolve_faction(row: dict[str, Any], lookup: dict[str, dict[str, Any]]) -> s
     return None
 
 
+def parse_qty(value: Any) -> int | None:
+    """Return Qty as an int, or None when the field is blank or invalid."""
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        if value != value or value in (float("inf"), float("-inf")):
+            return None
+        return int(value) if value == int(value) else int(round(value))
+    if isinstance(value, str):
+        text = value.strip()
+        if not text:
+            return None
+        try:
+            number = float(text)
+        except ValueError:
+            return None
+        if number != number or number in (float("inf"), float("-inf")):
+            return None
+        return int(number) if number == int(number) else int(round(number))
+    return None
+
+
 def build_record(
     name: str,
     bit_id: str,
@@ -383,12 +407,13 @@ def build_record(
     kits: list[str],
     models: list[str],
     faction: str | None,
+    qty: int | None,
     image_files: list[str],
     thumb_files: list[str],
     image_webp: list[str],
     thumb_webp: list[str],
 ) -> dict[str, Any]:
-    return {
+    record = {
         "id": bit_id,
         "name": name,
         "armourType": armour,
@@ -404,6 +429,9 @@ def build_record(
         "imageWebp": image_webp[0] if image_webp else None,
         "thumbWebp": thumb_webp[0] if thumb_webp else None,
     }
+    if qty is not None:
+        record["qty"] = qty
+    return record
 
 
 def main() -> int:
@@ -483,6 +511,7 @@ def main() -> int:
 
         records.append(build_record(
             name, bit_id, armour, kit_names, model_names, faction,
+            parse_qty(row.get("Qty") if "Qty" in row else row.get("q")),
             image_files, thumb_files, image_webp, thumb_webp,
         ))
 

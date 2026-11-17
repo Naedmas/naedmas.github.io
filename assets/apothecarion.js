@@ -19,6 +19,7 @@
         armourType: "",
         faction: "",
         kit: "",
+        sort: "name",
         openId: null
     };
 
@@ -65,14 +66,27 @@
         ].join(" ").toLowerCase();
     }
 
+    function byName(a, b) {
+        return (a.name || "").localeCompare(b.name || "", "en", { sensitivity: "base" });
+    }
+
     function filtered() {
         const q = state.query.trim().toLowerCase();
-        return state.bits.filter(function (bit) {
+        const bits = state.bits.filter(function (bit) {
             if (state.armourType && (bit.armourType || "Unspecified") !== state.armourType) return false;
             if (state.faction && bit.faction !== state.faction) return false;
             if (state.kit && (bit.kits || []).indexOf(state.kit) === -1) return false;
             if (q && haystack(bit).indexOf(q) === -1) return false;
             return true;
+        });
+        if (state.sort !== "qty-desc") return bits;
+        return bits.slice().sort(function (a, b) {
+            const aHas = typeof a.qty === "number";
+            const bHas = typeof b.qty === "number";
+            if (aHas && bHas && b.qty !== a.qty) return b.qty - a.qty;
+            if (aHas && !bHas) return -1;
+            if (!aHas && bHas) return 1;
+            return byName(a, b);
         });
     }
 
@@ -97,6 +111,23 @@
         renderChips("armourChips", "Armour", "armourType", armour);
         renderChips("factionChips", "Faction", "faction", factions);
         renderChips("kitChips", "Kit", "kit", kits);
+        renderSort();
+    }
+
+    function renderSort() {
+        const row = document.getElementById("sortChips");
+        if (!row) return;
+        const current = state.sort || "name";
+        const options = [
+            { value: "name", label: "Name" },
+            { value: "qty-desc", label: "Quantity" }
+        ];
+        let html = '<span class="chip-label">Sort</span>';
+        options.forEach(function (option) {
+            html += '<button type="button" class="chip' + (current === option.value ? " is-active" : "") +
+                '" data-sort="' + option.value + '">' + escapeHtml(option.label) + "</button>";
+        });
+        row.innerHTML = html;
     }
 
     function renderGrid() {
@@ -106,8 +137,11 @@
         grid.innerHTML = bits.map(function (bit) {
             const subtitle = (bit.kits && bit.kits[0]) || (bit.models && bit.models[0]) || "";
             const armour = bit.armourType ? '<span class="bit-armour">' + escapeHtml(bit.armourType) + "</span>" : "";
+            const qtyBadge = typeof bit.qty === "number"
+                ? '<span class="bit-qty" aria-label="Quantity ' + bit.qty + '">x' + bit.qty + "</span>"
+                : "";
             return '<button type="button" class="bit-card" data-id="' + escapeHtml(bit.id) + '">' +
-                '<span class="bit-card-art">' + artTag(bit, "thumb") + "</span>" +
+                '<span class="bit-card-art">' + artTag(bit, "thumb") + qtyBadge + "</span>" +
                 '<span class="bit-card-body">' +
                 "<h2>" + escapeHtml(bit.name) + "</h2>" +
                 (subtitle ? '<span class="bit-kit">' + escapeHtml(subtitle) + "</span>" : "") +
@@ -136,6 +170,7 @@
             : "";
         lightboxFields.innerHTML =
             fieldRow("Armour type", bit.armourType ? escapeHtml(bit.armourType) : "") +
+            fieldRow("Quantity", typeof bit.qty === "number" ? String(bit.qty) : "") +
             fieldRow("Kit", kitHtml) +
             fieldRow("Model", modelHtml) +
             fieldRow("Faction", bit.faction ? escapeHtml(bit.faction) : "");
@@ -164,6 +199,13 @@
     function onChipClick(event) {
         const btn = event.target.closest(".chip");
         if (!btn) return;
+        const sort = btn.getAttribute("data-sort");
+        if (sort) {
+            state.sort = sort;
+            renderSort();
+            renderGrid();
+            return;
+        }
         const key = btn.getAttribute("data-filter");
         const value = btn.getAttribute("data-value") || "";
         state[key] = state[key] === value ? "" : value;

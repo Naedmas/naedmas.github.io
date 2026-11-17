@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T20:05:23+10:00",
+  "updatedAt": "2026-11-17T20:21:44+10:00",
   "source": "Bits",
   "sourceId": "3ee2db47-2d73-8028-a9fd-f1ed0879e636",
   "dataSourceId": "3ee2db47-2d73-8011-9a38-000bd87f21bf",
@@ -31,7 +31,8 @@
       "image": "img/accessories.jpg",
       "thumb": "img/accessories-thumb.jpg",
       "imageWebp": "img/accessories.webp",
-      "thumbWebp": "img/accessories-thumb.webp"
+      "thumbWebp": "img/accessories-thumb.webp",
+      "qty": 2
     },
     {
       "id": "armageddon-captain-bare-head-a",
@@ -59,7 +60,8 @@
       "image": "img/armageddon-captain-bare-head-a.jpg",
       "thumb": "img/armageddon-captain-bare-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-captain-bare-head-a.webp",
-      "thumbWebp": "img/armageddon-captain-bare-head-a-thumb.webp"
+      "thumbWebp": "img/armageddon-captain-bare-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-captain-head-a",
@@ -87,7 +89,8 @@
       "image": "img/armageddon-captain-head-a.jpg",
       "thumb": "img/armageddon-captain-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-captain-head-a.webp",
-      "thumbWebp": "img/armageddon-captain-head-a-thumb.webp"
+      "thumbWebp": "img/armageddon-captain-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-captain-head-b",
@@ -115,7 +118,8 @@
       "image": "img/armageddon-captain-head-b.jpg",
       "thumb": "img/armageddon-captain-head-b-thumb.jpg",
       "imageWebp": "img/armageddon-captain-head-b.webp",
-      "thumbWebp": "img/armageddon-captain-head-b-thumb.webp"
+      "thumbWebp": "img/armageddon-captain-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-land-speeder-spares",
@@ -143,7 +147,8 @@
       "image": "img/armageddon-land-speeder-spares.jpg",
       "thumb": "img/armageddon-land-speeder-spares-thumb.jpg",
       "imageWebp": "img/armageddon-land-speeder-spares.webp",
-      "thumbWebp": "img/armageddon-land-speeder-spares-thumb.webp"
+      "thumbWebp": "img/armageddon-land-speeder-spares-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-librarian-bare-head-a",
@@ -171,7 +176,8 @@
       "image": "img/armageddon-librarian-bare-head-a.jpg",
       "thumb": "img/armageddon-librarian-bare-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-librarian-bare-head-a.webp",
-      "thumbWebp": "img/armageddon-librarian-bare-head-a-thumb.webp"
+      "thumbWebp": "img/armageddon-librarian-bare-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-librarian-head-a",
@@ -199,7 +205,8 @@
       "image": "img/armageddon-librarian-head-a.jpg",
       "thumb": "img/armageddon-librarian-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-librarian-head-a.webp",
-      "thumbWebp": "img/armageddon-librarian-head-a-thumb.webp"
+      "thumbWebp": "img/armageddon-librarian-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-bare-head-a",
@@ -227,7 +234,8 @@
       "image": "img/armageddon-space-marine-bare-head-a.jpg",
       "thumb": "img/armageddon-space-marine-bare-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-bare-head-a.webp",
-      "thumbWebp": "img/armageddon-space-marine-bare-head-a-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-bare-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-bolt-rifle",
@@ -255,7 +263,8 @@
       "image": "img/armageddon-space-marine-bolt-rifle.jpg",
       "thumb": "img/armageddon-space-marine-bolt-rifle-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-bolt-rifle.webp",
-      "thumbWebp": "img/armageddon-space-marine-bolt-rifle-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-bolt-rifle-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-chainsword",
@@ -283,7 +292,8 @@
       "image": "img/armageddon-space-marine-chainsword.jpg",
       "thumb": "img/armageddon-space-marine-chainsword-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-chainsword.webp",
-      "thumbWebp": "img/armageddon-space-marine-chainsword-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-chainsword-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-head-a",
@@ -311,7 +321,8 @@
       "image": "img/armageddon-space-marine-head-a.jpg",
       "thumb": "img/armageddon-space-marine-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-a.webp",
-      "thumbWebp": "img/armageddon-space-marine-head-a-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-head-b",
@@ -339,7 +350,8 @@
       "image": "img/armageddon-space-marine-head-b.jpg",
       "thumb": "img/armageddon-space-marine-head-b-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-b.webp",
-      "thumbWebp": "img/armageddon-space-marine-head-b-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-head-c",
@@ -367,7 +379,8 @@
       "image": "img/armageddon-space-marine-head-c.jpg",
       "thumb": "img/armageddon-space-marine-head-c-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-c.webp",
-      "thumbWebp": "img/armageddon-space-marine-head-c-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-head-c-thumb.webp",
+      "qty": 4
     },
     {
       "id": "armageddon-space-marine-head-d",
@@ -395,7 +408,8 @@
       "image": "img/armageddon-space-marine-head-d.jpg",
       "thumb": "img/armageddon-space-marine-head-d-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-d.webp",
-      "thumbWebp": "img/armageddon-space-marine-head-d-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-head-d-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-head-e",
@@ -423,7 +437,8 @@
       "image": "img/armageddon-space-marine-head-e.jpg",
       "thumb": "img/armageddon-space-marine-head-e-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-e.webp",
-      "thumbWebp": "img/armageddon-space-marine-head-e-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-head-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "armageddon-space-marine-head-f",
@@ -451,7 +466,8 @@
       "image": "img/armageddon-space-marine-head-f.jpg",
       "thumb": "img/armageddon-space-marine-head-f-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-f.webp",
-      "thumbWebp": "img/armageddon-space-marine-head-f-thumb.webp"
+      "thumbWebp": "img/armageddon-space-marine-head-f-thumb.webp",
+      "qty": 1
     },
     {
       "id": "auto-bolt-rifle-chamber",
@@ -479,7 +495,8 @@
       "image": "img/auto-bolt-rifle-chamber.jpg",
       "thumb": "img/auto-bolt-rifle-chamber-thumb.jpg",
       "imageWebp": "img/auto-bolt-rifle-chamber.webp",
-      "thumbWebp": "img/auto-bolt-rifle-chamber-thumb.webp"
+      "thumbWebp": "img/auto-bolt-rifle-chamber-thumb.webp",
+      "qty": 14
     },
     {
       "id": "bare-head-a",
@@ -507,7 +524,8 @@
       "image": "img/bare-head-a.jpg",
       "thumb": "img/bare-head-a-thumb.jpg",
       "imageWebp": "img/bare-head-a.webp",
-      "thumbWebp": "img/bare-head-a-thumb.webp"
+      "thumbWebp": "img/bare-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bare-head-a-3ee2db472d7380d5a149e3bd195eda57",
@@ -535,7 +553,8 @@
       "image": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57.jpg",
       "thumb": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57-thumb.jpg",
       "imageWebp": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57.webp",
-      "thumbWebp": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57-thumb.webp"
+      "thumbWebp": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57-thumb.webp",
+      "qty": 4
     },
     {
       "id": "bare-head-b",
@@ -563,7 +582,8 @@
       "image": "img/bare-head-b.jpg",
       "thumb": "img/bare-head-b-thumb.jpg",
       "imageWebp": "img/bare-head-b.webp",
-      "thumbWebp": "img/bare-head-b-thumb.webp"
+      "thumbWebp": "img/bare-head-b-thumb.webp",
+      "qty": 3
     },
     {
       "id": "bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9",
@@ -591,7 +611,8 @@
       "image": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9.jpg",
       "thumb": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9-thumb.jpg",
       "imageWebp": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9.webp",
-      "thumbWebp": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9-thumb.webp"
+      "thumbWebp": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bare-head-c",
@@ -619,7 +640,8 @@
       "image": "img/bare-head-c.jpg",
       "thumb": "img/bare-head-c-thumb.jpg",
       "imageWebp": "img/bare-head-c.webp",
-      "thumbWebp": "img/bare-head-c-thumb.webp"
+      "thumbWebp": "img/bare-head-c-thumb.webp",
+      "qty": 4
     },
     {
       "id": "bare-head-d",
@@ -647,7 +669,8 @@
       "image": "img/bare-head-d.jpg",
       "thumb": "img/bare-head-d-thumb.jpg",
       "imageWebp": "img/bare-head-d.webp",
-      "thumbWebp": "img/bare-head-d-thumb.webp"
+      "thumbWebp": "img/bare-head-d-thumb.webp",
+      "qty": 4
     },
     {
       "id": "bare-head-e",
@@ -675,7 +698,8 @@
       "image": "img/bare-head-e.jpg",
       "thumb": "img/bare-head-e-thumb.jpg",
       "imageWebp": "img/bare-head-e.webp",
-      "thumbWebp": "img/bare-head-e-thumb.webp"
+      "thumbWebp": "img/bare-head-e-thumb.webp",
+      "qty": 4
     },
     {
       "id": "bare-head-f",
@@ -703,7 +727,8 @@
       "image": "img/bare-head-f.jpg",
       "thumb": "img/bare-head-f-thumb.jpg",
       "imageWebp": "img/bare-head-f.webp",
-      "thumbWebp": "img/bare-head-f-thumb.webp"
+      "thumbWebp": "img/bare-head-f-thumb.webp",
+      "qty": 3
     },
     {
       "id": "black-templars-crusader-squad-accessory-a",
@@ -731,7 +756,8 @@
       "image": "img/black-templars-crusader-squad-accessory-a.jpg",
       "thumb": "img/black-templars-crusader-squad-accessory-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-accessory-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-accessory-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-accessory-b",
@@ -759,7 +785,8 @@
       "image": "img/black-templars-crusader-squad-accessory-b.jpg",
       "thumb": "img/black-templars-crusader-squad-accessory-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-accessory-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-accessory-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-accessory-c",
@@ -787,7 +814,8 @@
       "image": "img/black-templars-crusader-squad-accessory-c.jpg",
       "thumb": "img/black-templars-crusader-squad-accessory-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-accessory-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-accessory-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-accessory-d",
@@ -815,7 +843,8 @@
       "image": "img/black-templars-crusader-squad-accessory-d.jpg",
       "thumb": "img/black-templars-crusader-squad-accessory-d-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-d.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-accessory-d-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-accessory-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-bare-head-a",
@@ -843,7 +872,8 @@
       "image": "img/black-templars-crusader-squad-bare-head-a.jpg",
       "thumb": "img/black-templars-crusader-squad-bare-head-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bare-head-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-bare-head-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-bare-head-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-bare-head-b",
@@ -871,7 +901,8 @@
       "image": "img/black-templars-crusader-squad-bare-head-b.jpg",
       "thumb": "img/black-templars-crusader-squad-bare-head-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bare-head-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-bare-head-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-bare-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-bare-head-c",
@@ -899,7 +930,8 @@
       "image": "img/black-templars-crusader-squad-bare-head-c.jpg",
       "thumb": "img/black-templars-crusader-squad-bare-head-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bare-head-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-bare-head-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-bare-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-bolt-rifle-a-3",
@@ -927,7 +959,8 @@
       "image": "img/black-templars-crusader-squad-bolt-rifle-a-3.jpg",
       "thumb": "img/black-templars-crusader-squad-bolt-rifle-a-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bolt-rifle-a-3.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-a-3-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-a-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-bolt-rifle-b-3",
@@ -955,7 +988,8 @@
       "image": "img/black-templars-crusader-squad-bolt-rifle-b-3.jpg",
       "thumb": "img/black-templars-crusader-squad-bolt-rifle-b-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bolt-rifle-b-3.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-b-3-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-b-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-bolt-rifle-c-3",
@@ -983,7 +1017,8 @@
       "image": "img/black-templars-crusader-squad-bolt-rifle-c-3.jpg",
       "thumb": "img/black-templars-crusader-squad-bolt-rifle-c-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bolt-rifle-c-3.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-c-3-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-c-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-chainsword-a",
@@ -1011,7 +1046,8 @@
       "image": "img/black-templars-crusader-squad-chainsword-a.jpg",
       "thumb": "img/black-templars-crusader-squad-chainsword-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-chainsword-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-chainsword-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-chainsword-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-chainsword-b",
@@ -1039,7 +1075,8 @@
       "image": "img/black-templars-crusader-squad-chainsword-b.jpg",
       "thumb": "img/black-templars-crusader-squad-chainsword-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-chainsword-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-chainsword-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-chainsword-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-chainsword-c",
@@ -1067,7 +1104,8 @@
       "image": "img/black-templars-crusader-squad-chainsword-c.jpg",
       "thumb": "img/black-templars-crusader-squad-chainsword-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-chainsword-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-chainsword-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-chainsword-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-head-a",
@@ -1095,7 +1133,8 @@
       "image": "img/black-templars-crusader-squad-head-a.jpg",
       "thumb": "img/black-templars-crusader-squad-head-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-head-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-head-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-head-b",
@@ -1123,7 +1162,8 @@
       "image": "img/black-templars-crusader-squad-head-b.jpg",
       "thumb": "img/black-templars-crusader-squad-head-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-head-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-head-c",
@@ -1151,7 +1191,8 @@
       "image": "img/black-templars-crusader-squad-head-c.jpg",
       "thumb": "img/black-templars-crusader-squad-head-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-head-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-head-d",
@@ -1179,7 +1220,8 @@
       "image": "img/black-templars-crusader-squad-head-d.jpg",
       "thumb": "img/black-templars-crusader-squad-head-d-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-d.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-head-d-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-head-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-heavy-bolt-pistol-a",
@@ -1207,7 +1249,8 @@
       "image": "img/black-templars-crusader-squad-heavy-bolt-pistol-a.jpg",
       "thumb": "img/black-templars-crusader-squad-heavy-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-heavy-bolt-pistol-b",
@@ -1235,7 +1278,8 @@
       "image": "img/black-templars-crusader-squad-heavy-bolt-pistol-b.jpg",
       "thumb": "img/black-templars-crusader-squad-heavy-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-heavy-bolt-pistol-c",
@@ -1263,7 +1307,8 @@
       "image": "img/black-templars-crusader-squad-heavy-bolt-pistol-c.jpg",
       "thumb": "img/black-templars-crusader-squad-heavy-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-holster",
@@ -1291,7 +1336,8 @@
       "image": "img/black-templars-crusader-squad-holster.jpg",
       "thumb": "img/black-templars-crusader-squad-holster-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-holster.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-holster-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-holster-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-left-arm",
@@ -1319,7 +1365,8 @@
       "image": "img/black-templars-crusader-squad-left-arm.jpg",
       "thumb": "img/black-templars-crusader-squad-left-arm-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-left-arm.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-left-arm-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-left-arm-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-a",
@@ -1347,7 +1394,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bare-head-a.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-b",
@@ -1375,7 +1423,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bare-head-b.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-c",
@@ -1403,7 +1452,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bare-head-c.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-d",
@@ -1431,7 +1481,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bare-head-d.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-d-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-d.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-d-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-carbine-a-2",
@@ -1459,7 +1510,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-carbine-b-3",
@@ -1487,7 +1539,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-carbine-c-3",
@@ -1515,7 +1568,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-pistol-a",
@@ -1543,7 +1597,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-pistol-b",
@@ -1571,7 +1626,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-pistol-c",
@@ -1599,7 +1655,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "black-templars-crusader-squad-neophyte-chainsword-a",
@@ -1627,7 +1684,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-chainsword-a.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-chainsword-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-chainsword-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-chainsword-b",
@@ -1655,7 +1713,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-chainsword-b.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-chainsword-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-chainsword-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "black-templars-crusader-squad-neophyte-chainsword-c",
@@ -1683,7 +1742,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-chainsword-c.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-chainsword-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-chainsword-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-neophyte-shoulder-pad",
@@ -1711,7 +1771,8 @@
       "image": "img/black-templars-crusader-squad-neophyte-shoulder-pad.jpg",
       "thumb": "img/black-templars-crusader-squad-neophyte-shoulder-pad-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-shoulder-pad.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-neophyte-shoulder-pad-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-neophyte-shoulder-pad-thumb.webp",
+      "qty": 8
     },
     {
       "id": "black-templars-crusader-squad-parchment",
@@ -1739,7 +1800,8 @@
       "image": "img/black-templars-crusader-squad-parchment.jpg",
       "thumb": "img/black-templars-crusader-squad-parchment-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-parchment.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-parchment-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-parchment-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-power-axe",
@@ -1767,7 +1829,8 @@
       "image": "img/black-templars-crusader-squad-power-axe.jpg",
       "thumb": "img/black-templars-crusader-squad-power-axe-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-power-axe.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-power-axe-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-power-axe-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-power-sword-3",
@@ -1795,7 +1858,8 @@
       "image": "img/black-templars-crusader-squad-power-sword-3.jpg",
       "thumb": "img/black-templars-crusader-squad-power-sword-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-power-sword-3.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-power-sword-3-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-power-sword-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-powerfist",
@@ -1823,7 +1887,8 @@
       "image": "img/black-templars-crusader-squad-powerfist.jpg",
       "thumb": "img/black-templars-crusader-squad-powerfist-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-powerfist.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-powerfist-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-powerfist-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-purity-seal-a",
@@ -1851,7 +1916,8 @@
       "image": "img/black-templars-crusader-squad-purity-seal-a.jpg",
       "thumb": "img/black-templars-crusader-squad-purity-seal-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-purity-seal-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-purity-seal-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-purity-seal-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-purity-seal-b",
@@ -1879,7 +1945,8 @@
       "image": "img/black-templars-crusader-squad-purity-seal-b.jpg",
       "thumb": "img/black-templars-crusader-squad-purity-seal-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-purity-seal-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-purity-seal-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-purity-seal-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-purity-seal-c",
@@ -1907,7 +1974,8 @@
       "image": "img/black-templars-crusader-squad-purity-seal-c.jpg",
       "thumb": "img/black-templars-crusader-squad-purity-seal-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-purity-seal-c.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-purity-seal-c-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-purity-seal-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-tilt-shield-a",
@@ -1935,7 +2003,8 @@
       "image": "img/black-templars-crusader-squad-tilt-shield-a.jpg",
       "thumb": "img/black-templars-crusader-squad-tilt-shield-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-tilt-shield-a.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-tilt-shield-a-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-tilt-shield-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-crusader-squad-tilt-shield-b",
@@ -1963,7 +2032,8 @@
       "image": "img/black-templars-crusader-squad-tilt-shield-b.jpg",
       "thumb": "img/black-templars-crusader-squad-tilt-shield-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-tilt-shield-b.webp",
-      "thumbWebp": "img/black-templars-crusader-squad-tilt-shield-b-thumb.webp"
+      "thumbWebp": "img/black-templars-crusader-squad-tilt-shield-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "black-templars-transfer-sheet",
@@ -1989,7 +2059,8 @@
       "image": "img/black-templars-transfer-sheet.jpg",
       "thumb": "img/black-templars-transfer-sheet-thumb.jpg",
       "imageWebp": "img/black-templars-transfer-sheet.webp",
-      "thumbWebp": "img/black-templars-transfer-sheet-thumb.webp"
+      "thumbWebp": "img/black-templars-transfer-sheet-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bolt-carbine-b",
@@ -2017,7 +2088,8 @@
       "image": "img/bolt-carbine-b.jpg",
       "thumb": "img/bolt-carbine-b-thumb.jpg",
       "imageWebp": "img/bolt-carbine-b.webp",
-      "thumbWebp": "img/bolt-carbine-b-thumb.webp"
+      "thumbWebp": "img/bolt-carbine-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bolt-carbine-c",
@@ -2045,7 +2117,8 @@
       "image": "img/bolt-carbine-c.jpg",
       "thumb": "img/bolt-carbine-c-thumb.jpg",
       "imageWebp": "img/bolt-carbine-c.webp",
-      "thumbWebp": "img/bolt-carbine-c-thumb.webp"
+      "thumbWebp": "img/bolt-carbine-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bolt-rifle-pistol",
@@ -2073,7 +2146,8 @@
       "image": "img/bolt-rifle-pistol.jpg",
       "thumb": "img/bolt-rifle-pistol-thumb.jpg",
       "imageWebp": "img/bolt-rifle-pistol.webp",
-      "thumbWebp": "img/bolt-rifle-pistol-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-pistol-thumb.webp",
+      "qty": 0
     },
     {
       "id": "bolt-rifle-b",
@@ -2101,7 +2175,8 @@
       "image": "img/bolt-rifle-b.jpg",
       "thumb": "img/bolt-rifle-b-thumb.jpg",
       "imageWebp": "img/bolt-rifle-b.webp",
-      "thumbWebp": "img/bolt-rifle-b-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "bolt-rifle-c",
@@ -2129,7 +2204,8 @@
       "image": "img/bolt-rifle-c.jpg",
       "thumb": "img/bolt-rifle-c-thumb.jpg",
       "imageWebp": "img/bolt-rifle-c.webp",
-      "thumbWebp": "img/bolt-rifle-c-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "bolt-rifle-chamber",
@@ -2157,7 +2233,8 @@
       "image": "img/bolt-rifle-chamber.jpg",
       "thumb": "img/bolt-rifle-chamber-thumb.jpg",
       "imageWebp": "img/bolt-rifle-chamber.webp",
-      "thumbWebp": "img/bolt-rifle-chamber-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-chamber-thumb.webp",
+      "qty": 9
     },
     {
       "id": "bolt-rifle-d",
@@ -2185,7 +2262,8 @@
       "image": "img/bolt-rifle-d.jpg",
       "thumb": "img/bolt-rifle-d-thumb.jpg",
       "imageWebp": "img/bolt-rifle-d.webp",
-      "thumbWebp": "img/bolt-rifle-d-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-d-thumb.webp",
+      "qty": 3
     },
     {
       "id": "bolt-rifle-e",
@@ -2213,7 +2291,8 @@
       "image": "img/bolt-rifle-e.jpg",
       "thumb": "img/bolt-rifle-e-thumb.jpg",
       "imageWebp": "img/bolt-rifle-e.webp",
-      "thumbWebp": "img/bolt-rifle-e-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-e-thumb.webp",
+      "qty": 5
     },
     {
       "id": "bolt-rifle-f",
@@ -2241,7 +2320,8 @@
       "image": "img/bolt-rifle-f.jpg",
       "thumb": "img/bolt-rifle-f-thumb.jpg",
       "imageWebp": "img/bolt-rifle-f.webp",
-      "thumbWebp": "img/bolt-rifle-f-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-f-thumb.webp",
+      "qty": 3
     },
     {
       "id": "bolt-rifle-f-3f32db472d7380159b71c398f68a29e0",
@@ -2269,7 +2349,8 @@
       "image": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0.jpg",
       "thumb": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0-thumb.jpg",
       "imageWebp": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0.webp",
-      "thumbWebp": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bolt-rifle-g",
@@ -2297,7 +2378,8 @@
       "image": "img/bolt-rifle-g.jpg",
       "thumb": "img/bolt-rifle-g-thumb.jpg",
       "imageWebp": "img/bolt-rifle-g.webp",
-      "thumbWebp": "img/bolt-rifle-g-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-g-thumb.webp",
+      "qty": 1
     },
     {
       "id": "bolt-rifle-right-arm",
@@ -2325,7 +2407,8 @@
       "image": "img/bolt-rifle-right-arm.jpg",
       "thumb": "img/bolt-rifle-right-arm-thumb.jpg",
       "imageWebp": "img/bolt-rifle-right-arm.webp",
-      "thumbWebp": "img/bolt-rifle-right-arm-thumb.webp"
+      "thumbWebp": "img/bolt-rifle-right-arm-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-deathwing-knights-1-body-4-13",
@@ -2353,7 +2436,8 @@
       "image": "img/dark-angels-deathwing-knights-1-body-4-13.jpg",
       "thumb": "img/dark-angels-deathwing-knights-1-body-4-13-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-body-4-13.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-1-body-4-13-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-1-body-4-13-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-1-mace-of-absolution",
@@ -2381,7 +2465,8 @@
       "image": "img/dark-angels-deathwing-knights-1-mace-of-absolution.jpg",
       "thumb": "img/dark-angels-deathwing-knights-1-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-mace-of-absolution.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-1-mace-of-absolution-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-1-mace-of-absolution-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-1-relic-mace",
@@ -2409,7 +2494,8 @@
       "image": "img/dark-angels-deathwing-knights-1-relic-mace.jpg",
       "thumb": "img/dark-angels-deathwing-knights-1-relic-mace-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-relic-mace.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-1-relic-mace-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-1-relic-mace-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-1-right-shoulder",
@@ -2437,7 +2523,8 @@
       "image": "img/dark-angels-deathwing-knights-1-right-shoulder.jpg",
       "thumb": "img/dark-angels-deathwing-knights-1-right-shoulder-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-right-shoulder.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-1-right-shoulder-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-1-right-shoulder-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-2-mace-of-absolution",
@@ -2465,7 +2552,8 @@
       "image": "img/dark-angels-deathwing-knights-2-mace-of-absolution.jpg",
       "thumb": "img/dark-angels-deathwing-knights-2-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-2-mace-of-absolution.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-2-mace-of-absolution-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-2-mace-of-absolution-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-3-mace-of-absolution",
@@ -2493,7 +2581,8 @@
       "image": "img/dark-angels-deathwing-knights-3-mace-of-absolution.jpg",
       "thumb": "img/dark-angels-deathwing-knights-3-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-3-mace-of-absolution.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-3-mace-of-absolution-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-3-mace-of-absolution-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-3-storm-shield",
@@ -2521,7 +2610,8 @@
       "image": "img/dark-angels-deathwing-knights-3-storm-shield.jpg",
       "thumb": "img/dark-angels-deathwing-knights-3-storm-shield-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-3-storm-shield.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-3-storm-shield-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-3-storm-shield-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-4-mace-of-absolution",
@@ -2549,7 +2639,8 @@
       "image": "img/dark-angels-deathwing-knights-4-mace-of-absolution.jpg",
       "thumb": "img/dark-angels-deathwing-knights-4-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-4-mace-of-absolution.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-4-mace-of-absolution-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-4-mace-of-absolution-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-4-power-sword",
@@ -2577,7 +2668,8 @@
       "image": "img/dark-angels-deathwing-knights-4-power-sword.jpg",
       "thumb": "img/dark-angels-deathwing-knights-4-power-sword-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-4-power-sword.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-4-power-sword-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-4-power-sword-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-5-mace-of-absolution",
@@ -2605,7 +2697,8 @@
       "image": "img/dark-angels-deathwing-knights-5-mace-of-absolution.jpg",
       "thumb": "img/dark-angels-deathwing-knights-5-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-5-mace-of-absolution.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-5-mace-of-absolution-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-5-mace-of-absolution-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-head-a",
@@ -2633,7 +2726,8 @@
       "image": "img/dark-angels-deathwing-knights-head-a.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-a.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-head-e",
@@ -2661,7 +2755,8 @@
       "image": "img/dark-angels-deathwing-knights-head-e.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-e-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-e.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-e-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-head-f",
@@ -2689,7 +2784,8 @@
       "image": "img/dark-angels-deathwing-knights-head-f.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-f-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-f.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-f-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-f-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-head-g",
@@ -2717,7 +2813,8 @@
       "image": "img/dark-angels-deathwing-knights-head-g.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-g-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-g.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-g-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-g-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-head-h",
@@ -2745,7 +2842,8 @@
       "image": "img/dark-angels-deathwing-knights-head-h.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-h-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-h.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-h-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-h-thumb.webp",
+      "qty": 3
     },
     {
       "id": "dark-angels-deathwing-knights-head-m",
@@ -2773,7 +2871,8 @@
       "image": "img/dark-angels-deathwing-knights-head-m.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-m-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-m.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-m-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-m-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-head-n",
@@ -2801,7 +2900,8 @@
       "image": "img/dark-angels-deathwing-knights-head-n.jpg",
       "thumb": "img/dark-angels-deathwing-knights-head-n-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-n.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-head-n-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-head-n-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-deathwing-knights-shoulder-pad-a",
@@ -2829,7 +2929,8 @@
       "image": "img/dark-angels-deathwing-knights-shoulder-pad-a.jpg",
       "thumb": "img/dark-angels-deathwing-knights-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-shoulder-pad-a.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-shoulder-pad-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-deathwing-knights-shoulder-pad-b",
@@ -2857,7 +2958,8 @@
       "image": "img/dark-angels-deathwing-knights-shoulder-pad-b.jpg",
       "thumb": "img/dark-angels-deathwing-knights-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-shoulder-pad-b.webp",
-      "thumbWebp": "img/dark-angels-deathwing-knights-shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-deathwing-knights-shoulder-pad-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-mkvi-heads",
@@ -2881,7 +2983,8 @@
       "image": "img/dark-angels-mkvi-heads.jpg",
       "thumb": "img/dark-angels-mkvi-heads-thumb.jpg",
       "imageWebp": "img/dark-angels-mkvi-heads.webp",
-      "thumbWebp": "img/dark-angels-mkvi-heads-thumb.webp"
+      "thumbWebp": "img/dark-angels-mkvi-heads-thumb.webp",
+      "qty": 9
     },
     {
       "id": "dark-angels-upgrades-accessory-a",
@@ -2907,7 +3010,8 @@
       "image": "img/dark-angels-upgrades-accessory-a.jpg",
       "thumb": "img/dark-angels-upgrades-accessory-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-accessory-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-accessory-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-accessory-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-accessory-b",
@@ -2933,7 +3037,8 @@
       "image": "img/dark-angels-upgrades-accessory-b.jpg",
       "thumb": "img/dark-angels-upgrades-accessory-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-accessory-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-accessory-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-accessory-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-accessory-c",
@@ -2959,7 +3064,8 @@
       "image": "img/dark-angels-upgrades-accessory-c.jpg",
       "thumb": "img/dark-angels-upgrades-accessory-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-accessory-c.webp",
-      "thumbWebp": "img/dark-angels-upgrades-accessory-c-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-accessory-c-thumb.webp",
+      "qty": 4
     },
     {
       "id": "dark-angels-upgrades-aggressors-shoulder-pad-a",
@@ -2985,7 +3091,8 @@
       "image": "img/dark-angels-upgrades-aggressors-shoulder-pad-a.jpg",
       "thumb": "img/dark-angels-upgrades-aggressors-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-a-thumb.webp",
+      "qty": 7
     },
     {
       "id": "dark-angels-upgrades-aggressors-shoulder-pad-b",
@@ -3011,7 +3118,8 @@
       "image": "img/dark-angels-upgrades-aggressors-shoulder-pad-b.jpg",
       "thumb": "img/dark-angels-upgrades-aggressors-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-b-thumb.webp",
+      "qty": 4
     },
     {
       "id": "dark-angels-upgrades-backpack-icon",
@@ -3037,7 +3145,8 @@
       "image": "img/dark-angels-upgrades-backpack-icon.jpg",
       "thumb": "img/dark-angels-upgrades-backpack-icon-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-backpack-icon.webp",
-      "thumbWebp": "img/dark-angels-upgrades-backpack-icon-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-backpack-icon-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-bare-head-a",
@@ -3063,7 +3172,8 @@
       "image": "img/dark-angels-upgrades-bare-head-a.jpg",
       "thumb": "img/dark-angels-upgrades-bare-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-bare-head-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-bare-head-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-bare-head-a-thumb.webp",
+      "qty": 3
     },
     {
       "id": "dark-angels-upgrades-bare-head-b",
@@ -3089,7 +3199,8 @@
       "image": "img/dark-angels-upgrades-bare-head-b.jpg",
       "thumb": "img/dark-angels-upgrades-bare-head-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-bare-head-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-bare-head-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-bare-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "dark-angels-upgrades-bladeguard-shoulder-pad",
@@ -3115,7 +3226,8 @@
       "image": "img/dark-angels-upgrades-bladeguard-shoulder-pad.jpg",
       "thumb": "img/dark-angels-upgrades-bladeguard-shoulder-pad-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-bladeguard-shoulder-pad.webp",
-      "thumbWebp": "img/dark-angels-upgrades-bladeguard-shoulder-pad-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-bladeguard-shoulder-pad-thumb.webp",
+      "qty": 5
     },
     {
       "id": "dark-angels-upgrades-book-relic",
@@ -3141,7 +3253,8 @@
       "image": "img/dark-angels-upgrades-book-relic.jpg",
       "thumb": "img/dark-angels-upgrades-book-relic-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-book-relic.webp",
-      "thumbWebp": "img/dark-angels-upgrades-book-relic-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-book-relic-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-gravis-shoulder-pad-a",
@@ -3167,7 +3280,8 @@
       "image": "img/dark-angels-upgrades-gravis-shoulder-pad-a.jpg",
       "thumb": "img/dark-angels-upgrades-gravis-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-a-thumb.webp",
+      "qty": 11
     },
     {
       "id": "dark-angels-upgrades-gravis-shoulder-pad-b",
@@ -3193,7 +3307,8 @@
       "image": "img/dark-angels-upgrades-gravis-shoulder-pad-b.jpg",
       "thumb": "img/dark-angels-upgrades-gravis-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "dark-angels-upgrades-head-a",
@@ -3219,7 +3334,8 @@
       "image": "img/dark-angels-upgrades-head-a.jpg",
       "thumb": "img/dark-angels-upgrades-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-head-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-head-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-upgrades-head-b",
@@ -3245,7 +3361,8 @@
       "image": "img/dark-angels-upgrades-head-b.jpg",
       "thumb": "img/dark-angels-upgrades-head-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-head-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-head-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "dark-angels-upgrades-head-c",
@@ -3271,7 +3388,8 @@
       "image": "img/dark-angels-upgrades-head-c.jpg",
       "thumb": "img/dark-angels-upgrades-head-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-head-c.webp",
-      "thumbWebp": "img/dark-angels-upgrades-head-c-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-head-c-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-hip-armour-a",
@@ -3297,7 +3415,8 @@
       "image": "img/dark-angels-upgrades-hip-armour-a.jpg",
       "thumb": "img/dark-angels-upgrades-hip-armour-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hip-armour-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hip-armour-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hip-armour-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-hip-armour-b",
@@ -3323,7 +3442,8 @@
       "image": "img/dark-angels-upgrades-hip-armour-b.jpg",
       "thumb": "img/dark-angels-upgrades-hip-armour-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hip-armour-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hip-armour-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hip-armour-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-hooded-head-a",
@@ -3349,7 +3469,8 @@
       "image": "img/dark-angels-upgrades-hooded-head-a.jpg",
       "thumb": "img/dark-angels-upgrades-hooded-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hooded-head-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hooded-head-a-thumb.webp",
+      "qty": 3
     },
     {
       "id": "dark-angels-upgrades-hooded-head-b",
@@ -3375,7 +3496,8 @@
       "image": "img/dark-angels-upgrades-hooded-head-b.jpg",
       "thumb": "img/dark-angels-upgrades-hooded-head-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hooded-head-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hooded-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "dark-angels-upgrades-hooded-head-c",
@@ -3401,7 +3523,8 @@
       "image": "img/dark-angels-upgrades-hooded-head-c.jpg",
       "thumb": "img/dark-angels-upgrades-hooded-head-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-c.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hooded-head-c-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hooded-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "dark-angels-upgrades-hooded-head-d",
@@ -3427,7 +3550,8 @@
       "image": "img/dark-angels-upgrades-hooded-head-d.jpg",
       "thumb": "img/dark-angels-upgrades-hooded-head-d-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-d.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hooded-head-d-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hooded-head-d-thumb.webp",
+      "qty": 3
     },
     {
       "id": "dark-angels-upgrades-hooded-head-e",
@@ -3453,7 +3577,8 @@
       "image": "img/dark-angels-upgrades-hooded-head-e.jpg",
       "thumb": "img/dark-angels-upgrades-hooded-head-e-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-e.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hooded-head-e-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hooded-head-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-upgrades-hooded-head-f",
@@ -3479,7 +3604,8 @@
       "image": "img/dark-angels-upgrades-hooded-head-f.jpg",
       "thumb": "img/dark-angels-upgrades-hooded-head-f-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-f.webp",
-      "thumbWebp": "img/dark-angels-upgrades-hooded-head-f-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-hooded-head-f-thumb.webp",
+      "qty": 3
     },
     {
       "id": "dark-angels-upgrades-phobos-shoulder-pad",
@@ -3505,7 +3631,8 @@
       "image": "img/dark-angels-upgrades-phobos-shoulder-pad.jpg",
       "thumb": "img/dark-angels-upgrades-phobos-shoulder-pad-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-phobos-shoulder-pad.webp",
-      "thumbWebp": "img/dark-angels-upgrades-phobos-shoulder-pad-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-phobos-shoulder-pad-thumb.webp",
+      "qty": 11
     },
     {
       "id": "dark-angels-upgrades-plasma-cannon-3",
@@ -3531,7 +3658,8 @@
       "image": "img/dark-angels-upgrades-plasma-cannon-3.jpg",
       "thumb": "img/dark-angels-upgrades-plasma-cannon-3-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-plasma-cannon-3.webp",
-      "thumbWebp": "img/dark-angels-upgrades-plasma-cannon-3-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-plasma-cannon-3-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-pouches-a",
@@ -3557,7 +3685,8 @@
       "image": "img/dark-angels-upgrades-pouches-a.jpg",
       "thumb": "img/dark-angels-upgrades-pouches-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-pouches-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-pouches-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-pouches-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-pouches-b",
@@ -3583,7 +3712,8 @@
       "image": "img/dark-angels-upgrades-pouches-b.jpg",
       "thumb": "img/dark-angels-upgrades-pouches-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-pouches-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-pouches-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-pouches-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-power-sword-a",
@@ -3609,7 +3739,8 @@
       "image": "img/dark-angels-upgrades-power-sword-a.jpg",
       "thumb": "img/dark-angels-upgrades-power-sword-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-power-sword-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-power-sword-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-power-sword-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-power-sword-b",
@@ -3635,7 +3766,8 @@
       "image": "img/dark-angels-upgrades-power-sword-b.jpg",
       "thumb": "img/dark-angels-upgrades-power-sword-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-power-sword-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-power-sword-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-power-sword-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-ravenwing-rear-wing-2",
@@ -3661,7 +3793,8 @@
       "image": "img/dark-angels-upgrades-ravenwing-rear-wing-2.jpg",
       "thumb": "img/dark-angels-upgrades-ravenwing-rear-wing-2-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-rear-wing-2.webp",
-      "thumbWebp": "img/dark-angels-upgrades-ravenwing-rear-wing-2-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-ravenwing-rear-wing-2-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-a",
@@ -3687,7 +3820,8 @@
       "image": "img/dark-angels-upgrades-ravenwing-symbol-a.jpg",
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-b",
@@ -3713,7 +3847,8 @@
       "image": "img/dark-angels-upgrades-ravenwing-symbol-b.jpg",
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-c",
@@ -3739,7 +3874,8 @@
       "image": "img/dark-angels-upgrades-ravenwing-symbol-c.jpg",
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-c.webp",
-      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-c-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-c-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-d",
@@ -3765,7 +3901,8 @@
       "image": "img/dark-angels-upgrades-ravenwing-symbol-d.jpg",
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-d-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-d.webp",
-      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-d-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-d-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-small-knife",
@@ -3791,7 +3928,8 @@
       "image": "img/dark-angels-upgrades-small-knife.jpg",
       "thumb": "img/dark-angels-upgrades-small-knife-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-small-knife.webp",
-      "thumbWebp": "img/dark-angels-upgrades-small-knife-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-small-knife-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-storm-bolter-half",
@@ -3817,7 +3955,8 @@
       "image": "img/dark-angels-upgrades-storm-bolter-half.jpg",
       "thumb": "img/dark-angels-upgrades-storm-bolter-half-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-storm-bolter-half.webp",
-      "thumbWebp": "img/dark-angels-upgrades-storm-bolter-half-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-storm-bolter-half-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-tacticus-shoulder-pad-a",
@@ -3843,7 +3982,8 @@
       "image": "img/dark-angels-upgrades-tacticus-shoulder-pad-a.jpg",
       "thumb": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-upgrades-tacticus-shoulder-pad-b",
@@ -3869,7 +4009,8 @@
       "image": "img/dark-angels-upgrades-tacticus-shoulder-pad-b.jpg",
       "thumb": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-a",
@@ -3895,7 +4036,8 @@
       "image": "img/dark-angels-upgrades-terminator-shoulder-pad-a.jpg",
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-b",
@@ -3921,7 +4063,8 @@
       "image": "img/dark-angels-upgrades-terminator-shoulder-pad-b.jpg",
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-c",
@@ -3947,7 +4090,8 @@
       "image": "img/dark-angels-upgrades-terminator-shoulder-pad-c.jpg",
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-c.webp",
-      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-c-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-c-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-d",
@@ -3973,7 +4117,8 @@
       "image": "img/dark-angels-upgrades-terminator-shoulder-pad-d.jpg",
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-d-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-d.webp",
-      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-d-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-d-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-terminator-torso-front",
@@ -3999,7 +4144,8 @@
       "image": "img/dark-angels-upgrades-terminator-torso-front.jpg",
       "thumb": "img/dark-angels-upgrades-terminator-torso-front-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-torso-front.webp",
-      "thumbWebp": "img/dark-angels-upgrades-terminator-torso-front-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-terminator-torso-front-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-tilt-shield-a",
@@ -4025,7 +4171,8 @@
       "image": "img/dark-angels-upgrades-tilt-shield-a.jpg",
       "thumb": "img/dark-angels-upgrades-tilt-shield-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tilt-shield-a.webp",
-      "thumbWebp": "img/dark-angels-upgrades-tilt-shield-a-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-tilt-shield-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-tilt-shield-b",
@@ -4051,7 +4198,8 @@
       "image": "img/dark-angels-upgrades-tilt-shield-b.jpg",
       "thumb": "img/dark-angels-upgrades-tilt-shield-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tilt-shield-b.webp",
-      "thumbWebp": "img/dark-angels-upgrades-tilt-shield-b-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-tilt-shield-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-watcher-in-the-dark-3",
@@ -4077,7 +4225,8 @@
       "image": "img/dark-angels-upgrades-watcher-in-the-dark-3.jpg",
       "thumb": "img/dark-angels-upgrades-watcher-in-the-dark-3-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-watcher-in-the-dark-3.webp",
-      "thumbWebp": "img/dark-angels-upgrades-watcher-in-the-dark-3-thumb.webp"
+      "thumbWebp": "img/dark-angels-upgrades-watcher-in-the-dark-3-thumb.webp",
+      "qty": 0
     },
     {
       "id": "grenades-launcher-bolft-rifle",
@@ -4105,7 +4254,8 @@
       "image": "img/grenades-launcher-bolft-rifle.jpg",
       "thumb": "img/grenades-launcher-bolft-rifle-thumb.jpg",
       "imageWebp": "img/grenades-launcher-bolft-rifle.webp",
-      "thumbWebp": "img/grenades-launcher-bolft-rifle-thumb.webp"
+      "thumbWebp": "img/grenades-launcher-bolft-rifle-thumb.webp",
+      "qty": 1
     },
     {
       "id": "head-a",
@@ -4133,7 +4283,8 @@
       "image": "img/head-a.jpg",
       "thumb": "img/head-a-thumb.jpg",
       "imageWebp": "img/head-a.webp",
-      "thumbWebp": "img/head-a-thumb.webp"
+      "thumbWebp": "img/head-a-thumb.webp",
+      "qty": 5
     },
     {
       "id": "head-b",
@@ -4161,7 +4312,8 @@
       "image": "img/head-b.jpg",
       "thumb": "img/head-b-thumb.jpg",
       "imageWebp": "img/head-b.webp",
-      "thumbWebp": "img/head-b-thumb.webp"
+      "thumbWebp": "img/head-b-thumb.webp",
+      "qty": 3
     },
     {
       "id": "head-with-helmet-a",
@@ -4189,7 +4341,8 @@
       "image": "img/head-with-helmet-a.jpg",
       "thumb": "img/head-with-helmet-a-thumb.jpg",
       "imageWebp": "img/head-with-helmet-a.webp",
-      "thumbWebp": "img/head-with-helmet-a-thumb.webp"
+      "thumbWebp": "img/head-with-helmet-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "head-with-helmet-b",
@@ -4217,7 +4370,8 @@
       "image": "img/head-with-helmet-b.jpg",
       "thumb": "img/head-with-helmet-b-thumb.jpg",
       "imageWebp": "img/head-with-helmet-b.webp",
-      "thumbWebp": "img/head-with-helmet-b-thumb.webp"
+      "thumbWebp": "img/head-with-helmet-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "heavy-bolt-pistol-a",
@@ -4245,7 +4399,8 @@
       "image": "img/heavy-bolt-pistol-a.jpg",
       "thumb": "img/heavy-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/heavy-bolt-pistol-a.webp",
-      "thumbWebp": "img/heavy-bolt-pistol-a-thumb.webp"
+      "thumbWebp": "img/heavy-bolt-pistol-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "heavy-bolt-pistol-b",
@@ -4273,7 +4428,8 @@
       "image": "img/heavy-bolt-pistol-b.jpg",
       "thumb": "img/heavy-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/heavy-bolt-pistol-b.webp",
-      "thumbWebp": "img/heavy-bolt-pistol-b-thumb.webp"
+      "thumbWebp": "img/heavy-bolt-pistol-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "heavy-bolt-pistol-c",
@@ -4301,7 +4457,8 @@
       "image": "img/heavy-bolt-pistol-c.jpg",
       "thumb": "img/heavy-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/heavy-bolt-pistol-c.webp",
-      "thumbWebp": "img/heavy-bolt-pistol-c-thumb.webp"
+      "thumbWebp": "img/heavy-bolt-pistol-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "holster-a",
@@ -4329,7 +4486,8 @@
       "image": "img/holster-a.jpg",
       "thumb": "img/holster-a-thumb.jpg",
       "imageWebp": "img/holster-a.webp",
-      "thumbWebp": "img/holster-a-thumb.webp"
+      "thumbWebp": "img/holster-a-thumb.webp",
+      "qty": 4
     },
     {
       "id": "holster-b",
@@ -4357,7 +4515,8 @@
       "image": "img/holster-b.jpg",
       "thumb": "img/holster-b-thumb.jpg",
       "imageWebp": "img/holster-b.webp",
-      "thumbWebp": "img/holster-b-thumb.webp"
+      "thumbWebp": "img/holster-b-thumb.webp",
+      "qty": 6
     },
     {
       "id": "holster-c",
@@ -4385,7 +4544,8 @@
       "image": "img/holster-c.jpg",
       "thumb": "img/holster-c-thumb.jpg",
       "imageWebp": "img/holster-c.webp",
-      "thumbWebp": "img/holster-c-thumb.webp"
+      "thumbWebp": "img/holster-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "horus-heresy-mkiv-assault-squad-heads",
@@ -4409,7 +4569,8 @@
       "image": "img/horus-heresy-mkiv-assault-squad-heads.jpg",
       "thumb": "img/horus-heresy-mkiv-assault-squad-heads-thumb.jpg",
       "imageWebp": "img/horus-heresy-mkiv-assault-squad-heads.webp",
-      "thumbWebp": "img/horus-heresy-mkiv-assault-squad-heads-thumb.webp"
+      "thumbWebp": "img/horus-heresy-mkiv-assault-squad-heads-thumb.webp",
+      "qty": 12
     },
     {
       "id": "horus-heresy-space-marines-mkiii-command-squad-helmets",
@@ -4433,7 +4594,8 @@
       "image": "img/horus-heresy-space-marines-mkiii-command-squad-helmets.jpg",
       "thumb": "img/horus-heresy-space-marines-mkiii-command-squad-helmets-thumb.jpg",
       "imageWebp": "img/horus-heresy-space-marines-mkiii-command-squad-helmets.webp",
-      "thumbWebp": "img/horus-heresy-space-marines-mkiii-command-squad-helmets-thumb.webp"
+      "thumbWebp": "img/horus-heresy-space-marines-mkiii-command-squad-helmets-thumb.webp",
+      "qty": 5
     },
     {
       "id": "kill-team-phobos-strike-team-bare-head-b",
@@ -4459,7 +4621,8 @@
       "image": "img/kill-team-phobos-strike-team-bare-head-b.jpg",
       "thumb": "img/kill-team-phobos-strike-team-bare-head-b-thumb.jpg",
       "imageWebp": "img/kill-team-phobos-strike-team-bare-head-b.webp",
-      "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-b-thumb.webp"
+      "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-phobos-strike-team-bare-head-d",
@@ -4485,7 +4648,8 @@
       "image": "img/kill-team-phobos-strike-team-bare-head-d.jpg",
       "thumb": "img/kill-team-phobos-strike-team-bare-head-d-thumb.jpg",
       "imageWebp": "img/kill-team-phobos-strike-team-bare-head-d.webp",
-      "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-d-thumb.webp"
+      "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-d-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-phobos-strike-team-bare-head-e",
@@ -4511,7 +4675,8 @@
       "image": "img/kill-team-phobos-strike-team-bare-head-e.jpg",
       "thumb": "img/kill-team-phobos-strike-team-bare-head-e-thumb.jpg",
       "imageWebp": "img/kill-team-phobos-strike-team-bare-head-e.webp",
-      "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-e-thumb.webp"
+      "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-auspex",
@@ -4539,7 +4704,8 @@
       "image": "img/kill-team-space-marine-scouts-auspex.jpg",
       "thumb": "img/kill-team-space-marine-scouts-auspex-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-auspex.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-auspex-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-auspex-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-a",
@@ -4567,7 +4733,8 @@
       "image": "img/kill-team-space-marine-scouts-bolt-pistol-a.jpg",
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-a.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-a-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-b",
@@ -4595,7 +4762,8 @@
       "image": "img/kill-team-space-marine-scouts-bolt-pistol-b.jpg",
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-b.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-b-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-c",
@@ -4623,7 +4791,8 @@
       "image": "img/kill-team-space-marine-scouts-bolt-pistol-c.jpg",
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-c.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-c-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-d",
@@ -4651,7 +4820,8 @@
       "image": "img/kill-team-space-marine-scouts-bolt-pistol-d.jpg",
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-d-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-d.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-d-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-d-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-e",
@@ -4679,7 +4849,8 @@
       "image": "img/kill-team-space-marine-scouts-bolt-pistol-e.jpg",
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-e-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-e.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-e-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-e-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun",
@@ -4707,7 +4878,8 @@
       "image": "img/kill-team-space-marine-scouts-boltgun.jpg",
       "thumb": "img/kill-team-space-marine-scouts-boltgun-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-a-3",
@@ -4735,7 +4907,8 @@
       "image": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3.jpg",
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-b-3",
@@ -4763,7 +4936,8 @@
       "image": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3.jpg",
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-c-3",
@@ -4791,7 +4965,8 @@
       "image": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3.jpg",
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-d-4",
@@ -4819,7 +4994,8 @@
       "image": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4.jpg",
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-e-4",
@@ -4847,7 +5023,8 @@
       "image": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4.jpg",
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-chainsword",
@@ -4875,7 +5052,8 @@
       "image": "img/kill-team-space-marine-scouts-chainsword.jpg",
       "thumb": "img/kill-team-space-marine-scouts-chainsword-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-chainsword.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-chainsword-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-chainsword-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-a",
@@ -4903,7 +5081,8 @@
       "image": "img/kill-team-space-marine-scouts-combat-blade-a.jpg",
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-a-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-a.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-a-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-b",
@@ -4931,7 +5110,8 @@
       "image": "img/kill-team-space-marine-scouts-combat-blade-b.jpg",
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-b-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-b.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-b-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-c",
@@ -4959,7 +5139,8 @@
       "image": "img/kill-team-space-marine-scouts-combat-blade-c.jpg",
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-c-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-c.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-c-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-d",
@@ -4987,7 +5168,8 @@
       "image": "img/kill-team-space-marine-scouts-combat-blade-d.jpg",
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-d-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-d.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-d-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-e",
@@ -5015,7 +5197,8 @@
       "image": "img/kill-team-space-marine-scouts-combat-blade-e.jpg",
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-e-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-e.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-e-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-e-thumb.webp",
+      "qty": 2
     },
     {
       "id": "kill-team-space-marine-scouts-grapnel-launcher",
@@ -5043,7 +5226,8 @@
       "image": "img/kill-team-space-marine-scouts-grapnel-launcher.jpg",
       "thumb": "img/kill-team-space-marine-scouts-grapnel-launcher-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-grapnel-launcher.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-grapnel-launcher-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-grapnel-launcher-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-a",
@@ -5071,7 +5255,8 @@
       "image": "img/kill-team-space-marine-scouts-head-a.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-a-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-a.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-a-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-b",
@@ -5099,7 +5284,8 @@
       "image": "img/kill-team-space-marine-scouts-head-b.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-b-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-b.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-b-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-c",
@@ -5127,7 +5313,8 @@
       "image": "img/kill-team-space-marine-scouts-head-c.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-c-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-c.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-c-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-d",
@@ -5155,7 +5342,8 @@
       "image": "img/kill-team-space-marine-scouts-head-d.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-d-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-d.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-d-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-d-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-e",
@@ -5183,7 +5371,8 @@
       "image": "img/kill-team-space-marine-scouts-head-e.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-e-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-e.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-e-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-e-thumb.webp",
+      "qty": 0
     },
     {
       "id": "kill-team-space-marine-scouts-head-f",
@@ -5211,7 +5400,8 @@
       "image": "img/kill-team-space-marine-scouts-head-f.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-f-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-f.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-f-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-f-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-g",
@@ -5239,7 +5429,8 @@
       "image": "img/kill-team-space-marine-scouts-head-g.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-g-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-g.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-g-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-g-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-h",
@@ -5267,7 +5458,8 @@
       "image": "img/kill-team-space-marine-scouts-head-h.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-h-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-h.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-h-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-h-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-head-i-2",
@@ -5295,7 +5487,8 @@
       "image": "img/kill-team-space-marine-scouts-head-i-2.jpg",
       "thumb": "img/kill-team-space-marine-scouts-head-i-2-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-i-2.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-head-i-2-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-head-i-2-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-heavy-bolter-6",
@@ -5323,7 +5516,8 @@
       "image": "img/kill-team-space-marine-scouts-heavy-bolter-6.jpg",
       "thumb": "img/kill-team-space-marine-scouts-heavy-bolter-6-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-heavy-bolter-6.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-heavy-bolter-6-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-heavy-bolter-6-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-left-arm",
@@ -5351,7 +5545,8 @@
       "image": "img/kill-team-space-marine-scouts-left-arm.jpg",
       "thumb": "img/kill-team-space-marine-scouts-left-arm-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-left-arm.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-left-arm-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-left-arm-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-missile-launcher-3",
@@ -5379,7 +5574,8 @@
       "image": "img/kill-team-space-marine-scouts-missile-launcher-3.jpg",
       "thumb": "img/kill-team-space-marine-scouts-missile-launcher-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-missile-launcher-3.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-missile-launcher-3-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-missile-launcher-3-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-missiles",
@@ -5407,7 +5603,8 @@
       "image": "img/kill-team-space-marine-scouts-missiles.jpg",
       "thumb": "img/kill-team-space-marine-scouts-missiles-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-missiles.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-missiles-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-missiles-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-right-arm",
@@ -5435,7 +5632,8 @@
       "image": "img/kill-team-space-marine-scouts-right-arm.jpg",
       "thumb": "img/kill-team-space-marine-scouts-right-arm-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-right-arm.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-right-arm-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-right-arm-thumb.webp",
+      "qty": 1
     },
     {
       "id": "kill-team-space-marine-scouts-sniper-rifle",
@@ -5463,7 +5661,8 @@
       "image": "img/kill-team-space-marine-scouts-sniper-rifle.jpg",
       "thumb": "img/kill-team-space-marine-scouts-sniper-rifle-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-sniper-rifle.webp",
-      "thumbWebp": "img/kill-team-space-marine-scouts-sniper-rifle-thumb.webp"
+      "thumbWebp": "img/kill-team-space-marine-scouts-sniper-rifle-thumb.webp",
+      "qty": 1
     },
     {
       "id": "knife",
@@ -5491,7 +5690,8 @@
       "image": "img/knife.jpg",
       "thumb": "img/knife-thumb.jpg",
       "imageWebp": "img/knife.webp",
-      "thumbWebp": "img/knife-thumb.webp"
+      "thumbWebp": "img/knife-thumb.webp",
+      "qty": 2
     },
     {
       "id": "landspeeder-bits",
@@ -5519,7 +5719,8 @@
       "image": "img/landspeeder-bits.jpg",
       "thumb": "img/landspeeder-bits-thumb.jpg",
       "imageWebp": "img/landspeeder-bits.webp",
-      "thumbWebp": "img/landspeeder-bits-thumb.webp"
+      "thumbWebp": "img/landspeeder-bits-thumb.webp",
+      "qty": 1
     },
     {
       "id": "left-arm-a",
@@ -5547,7 +5748,8 @@
       "image": "img/left-arm-a.jpg",
       "thumb": "img/left-arm-a-thumb.jpg",
       "imageWebp": "img/left-arm-a.webp",
-      "thumbWebp": "img/left-arm-a-thumb.webp"
+      "thumbWebp": "img/left-arm-a-thumb.webp",
+      "qty": 3
     },
     {
       "id": "left-arm-b",
@@ -5575,7 +5777,8 @@
       "image": "img/left-arm-b.jpg",
       "thumb": "img/left-arm-b-thumb.jpg",
       "imageWebp": "img/left-arm-b.webp",
-      "thumbWebp": "img/left-arm-b-thumb.webp"
+      "thumbWebp": "img/left-arm-b-thumb.webp",
+      "qty": 0
     },
     {
       "id": "left-arm-with-handle-sword",
@@ -5603,7 +5806,8 @@
       "image": "img/left-arm-with-handle-sword.jpg",
       "thumb": "img/left-arm-with-handle-sword-thumb.jpg",
       "imageWebp": "img/left-arm-with-handle-sword.webp",
-      "thumbWebp": "img/left-arm-with-handle-sword-thumb.webp"
+      "thumbWebp": "img/left-arm-with-handle-sword-thumb.webp",
+      "qty": 1
     },
     {
       "id": "neo-volkite-pistol",
@@ -5631,7 +5835,8 @@
       "image": "img/neo-volkite-pistol.jpg",
       "thumb": "img/neo-volkite-pistol-thumb.jpg",
       "imageWebp": "img/neo-volkite-pistol.webp",
-      "thumbWebp": "img/neo-volkite-pistol-thumb.webp"
+      "thumbWebp": "img/neo-volkite-pistol-thumb.webp",
+      "qty": 1
     },
     {
       "id": "pouches-a",
@@ -5659,7 +5864,8 @@
       "image": "img/pouches-a.jpg",
       "thumb": "img/pouches-a-thumb.jpg",
       "imageWebp": "img/pouches-a.webp",
-      "thumbWebp": "img/pouches-a-thumb.webp"
+      "thumbWebp": "img/pouches-a-thumb.webp",
+      "qty": 6
     },
     {
       "id": "pouches-b",
@@ -5687,7 +5893,8 @@
       "image": "img/pouches-b.jpg",
       "thumb": "img/pouches-b-thumb.jpg",
       "imageWebp": "img/pouches-b.webp",
-      "thumbWebp": "img/pouches-b-thumb.webp"
+      "thumbWebp": "img/pouches-b-thumb.webp",
+      "qty": 4
     },
     {
       "id": "power-sword-a",
@@ -5715,7 +5922,8 @@
       "image": "img/power-sword-a.jpg",
       "thumb": "img/power-sword-a-thumb.jpg",
       "imageWebp": "img/power-sword-a.webp",
-      "thumbWebp": "img/power-sword-a-thumb.webp"
+      "thumbWebp": "img/power-sword-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "power-sword-c",
@@ -5743,7 +5951,8 @@
       "image": "img/power-sword-c.jpg",
       "thumb": "img/power-sword-c-thumb.jpg",
       "imageWebp": "img/power-sword-c.webp",
-      "thumbWebp": "img/power-sword-c-thumb.webp"
+      "thumbWebp": "img/power-sword-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "power-sword-e",
@@ -5771,7 +5980,8 @@
       "image": "img/power-sword-e.jpg",
       "thumb": "img/power-sword-e-thumb.jpg",
       "imageWebp": "img/power-sword-e.webp",
-      "thumbWebp": "img/power-sword-e-thumb.webp"
+      "thumbWebp": "img/power-sword-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "power-sword-f",
@@ -5799,7 +6009,8 @@
       "image": "img/power-sword-f.jpg",
       "thumb": "img/power-sword-f-thumb.jpg",
       "imageWebp": "img/power-sword-f.webp",
-      "thumbWebp": "img/power-sword-f-thumb.webp"
+      "thumbWebp": "img/power-sword-f-thumb.webp",
+      "qty": 0
     },
     {
       "id": "power-sword-g",
@@ -5827,7 +6038,8 @@
       "image": "img/power-sword-g.jpg",
       "thumb": "img/power-sword-g-thumb.jpg",
       "imageWebp": "img/power-sword-g.webp",
-      "thumbWebp": "img/power-sword-g-thumb.webp"
+      "thumbWebp": "img/power-sword-g-thumb.webp",
+      "qty": 1
     },
     {
       "id": "power-sword-h",
@@ -5855,7 +6067,8 @@
       "image": "img/power-sword-h.jpg",
       "thumb": "img/power-sword-h-thumb.jpg",
       "imageWebp": "img/power-sword-h.webp",
-      "thumbWebp": "img/power-sword-h-thumb.webp"
+      "thumbWebp": "img/power-sword-h-thumb.webp",
+      "qty": 0
     },
     {
       "id": "primaris-helmet",
@@ -5883,7 +6096,8 @@
       "image": "img/primaris-helmet.jpg",
       "thumb": "img/primaris-helmet-thumb.jpg",
       "imageWebp": "img/primaris-helmet.webp",
-      "thumbWebp": "img/primaris-helmet-thumb.webp"
+      "thumbWebp": "img/primaris-helmet-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marine-assault-intercessors-grenade-arm-a",
@@ -5909,7 +6123,8 @@
       "image": "img/primaris-space-marine-assault-intercessors-grenade-arm-a.jpg",
       "thumb": "img/primaris-space-marine-assault-intercessors-grenade-arm-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-assault-intercessors-grenade-arm-a.webp",
-      "thumbWebp": "img/primaris-space-marine-assault-intercessors-grenade-arm-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marine-assault-intercessors-grenade-arm-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-holster-a",
@@ -5937,7 +6152,8 @@
       "image": "img/primaris-space-marine-bladeguard-veterans-holster-a.jpg",
       "thumb": "img/primaris-space-marine-bladeguard-veterans-holster-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-holster-a.webp",
-      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-holster-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-holster-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-holster-b",
@@ -5965,7 +6181,8 @@
       "image": "img/primaris-space-marine-bladeguard-veterans-holster-b.jpg",
       "thumb": "img/primaris-space-marine-bladeguard-veterans-holster-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-holster-b.webp",
-      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-holster-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-holster-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-small-shield-a",
@@ -5993,7 +6210,8 @@
       "image": "img/primaris-space-marine-bladeguard-veterans-small-shield-a.jpg",
       "thumb": "img/primaris-space-marine-bladeguard-veterans-small-shield-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-a.webp",
-      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-small-shield-b",
@@ -6021,7 +6239,8 @@
       "image": "img/primaris-space-marine-bladeguard-veterans-small-shield-b.jpg",
       "thumb": "img/primaris-space-marine-bladeguard-veterans-small-shield-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-b.webp",
-      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-small-shield-c",
@@ -6049,7 +6268,8 @@
       "image": "img/primaris-space-marine-bladeguard-veterans-small-shield-c.jpg",
       "thumb": "img/primaris-space-marine-bladeguard-veterans-small-shield-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-c.webp",
-      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-c-thumb.webp"
+      "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-gravis-captain-accessory-a",
@@ -6077,7 +6297,8 @@
       "image": "img/primaris-space-marines-gravis-captain-accessory-a.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-accessory-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-accessory-a.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-accessory-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-accessory-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-gravis-captain-accessory-b",
@@ -6105,7 +6326,8 @@
       "image": "img/primaris-space-marines-gravis-captain-accessory-b.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-accessory-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-accessory-b.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-accessory-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-accessory-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-gravis-captain-bare-head-a",
@@ -6133,7 +6355,8 @@
       "image": "img/primaris-space-marines-gravis-captain-bare-head-a.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-bare-head-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-bare-head-a.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-bare-head-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-bare-head-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-gravis-captain-bare-head-b",
@@ -6159,7 +6382,8 @@
       "image": "img/primaris-space-marines-gravis-captain-bare-head-b.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-bare-head-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-bare-head-b.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-bare-head-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-bare-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-gravis-captain-chainsword",
@@ -6187,7 +6411,8 @@
       "image": "img/primaris-space-marines-gravis-captain-chainsword.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-chainsword-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-chainsword.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-chainsword-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-chainsword-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-gravis-captain-head",
@@ -6215,7 +6440,8 @@
       "image": "img/primaris-space-marines-gravis-captain-head.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-head-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-head.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-head-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-head-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-gravis-captain-power-fist-right-2",
@@ -6243,7 +6469,8 @@
       "image": "img/primaris-space-marines-gravis-captain-power-fist-right-2.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-power-fist-right-2-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-power-fist-right-2.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-power-fist-right-2-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-power-fist-right-2-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-gravis-captain-power-sword",
@@ -6269,7 +6496,8 @@
       "image": "img/primaris-space-marines-gravis-captain-power-sword.jpg",
       "thumb": "img/primaris-space-marines-gravis-captain-power-sword-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-power-sword.webp",
-      "thumbWebp": "img/primaris-space-marines-gravis-captain-power-sword-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-gravis-captain-power-sword-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-arms-3",
@@ -6297,7 +6525,8 @@
       "image": "img/primaris-space-marines-infiltrators-arms-3.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-arms-3-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-arms-3.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-arms-3-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-arms-3-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-carbine-a-3",
@@ -6325,7 +6554,8 @@
       "image": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-carbine-b-2",
@@ -6353,7 +6583,8 @@
       "image": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-carbine-c",
@@ -6381,7 +6612,8 @@
       "image": "img/primaris-space-marines-infiltrators-bolt-carbine-c.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-bolt-carbine-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-c.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-c-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-pistol",
@@ -6409,7 +6641,8 @@
       "image": "img/primaris-space-marines-infiltrators-bolt-pistol.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-pistol.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.webp",
+      "qty": 3
     },
     {
       "id": "primaris-space-marines-infiltrators-grenades-b",
@@ -6437,7 +6670,8 @@
       "image": "img/primaris-space-marines-infiltrators-grenades-b.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-grenades-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-grenades-b.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-grenades-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-grenades-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-head-a",
@@ -6465,7 +6699,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-a.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-a.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-a-thumb.webp",
+      "qty": 5
     },
     {
       "id": "primaris-space-marines-infiltrators-head-b",
@@ -6493,7 +6728,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-b.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-b.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-head-c",
@@ -6521,7 +6757,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-c.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-c.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-c-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-c-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-head-d",
@@ -6549,7 +6786,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-d.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-d-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-d.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-d-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-head-e",
@@ -6577,7 +6815,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-e.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-e-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-e.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-e-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-e-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-head-f",
@@ -6605,7 +6844,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-f.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-f-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-f.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-f-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-f-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-head-g",
@@ -6633,7 +6873,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-g.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-g-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-g.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-g-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-g-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-head-h",
@@ -6661,7 +6902,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-h.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-h-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-h.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-h-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-h-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-head-i",
@@ -6689,7 +6931,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-i.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-i-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-i.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-i-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-i-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-head-j",
@@ -6717,7 +6960,8 @@
       "image": "img/primaris-space-marines-infiltrators-head-j.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-head-j-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-j.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-head-j-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-head-j-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-marksman-bolt-carbine-piece",
@@ -6745,7 +6989,8 @@
       "image": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-occulus-bolt-carbine-piece",
@@ -6773,7 +7018,8 @@
       "image": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece-thumb.webp",
+      "qty": 10
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-a",
@@ -6801,7 +7047,8 @@
       "image": "img/primaris-space-marines-infiltrators-right-arm-a.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-a.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-a-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-b",
@@ -6829,7 +7076,8 @@
       "image": "img/primaris-space-marines-infiltrators-right-arm-b.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-b.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-b-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-c",
@@ -6857,7 +7105,8 @@
       "image": "img/primaris-space-marines-infiltrators-right-arm-c.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-c.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-c-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-d",
@@ -6885,7 +7134,8 @@
       "image": "img/primaris-space-marines-infiltrators-right-arm-d.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-d-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-d.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-d-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-e",
@@ -6913,7 +7163,8 @@
       "image": "img/primaris-space-marines-infiltrators-right-arm-e.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-e-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-e.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-e-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "primaris-space-marines-infiltrators-shoulder-pad",
@@ -6941,7 +7192,8 @@
       "image": "img/primaris-space-marines-infiltrators-shoulder-pad.jpg",
       "thumb": "img/primaris-space-marines-infiltrators-shoulder-pad-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-shoulder-pad.webp",
-      "thumbWebp": "img/primaris-space-marines-infiltrators-shoulder-pad-thumb.webp"
+      "thumbWebp": "img/primaris-space-marines-infiltrators-shoulder-pad-thumb.webp",
+      "qty": 0
     },
     {
       "id": "purity-seal",
@@ -6965,7 +7217,8 @@
       "image": "img/purity-seal.jpg",
       "thumb": "img/purity-seal-thumb.jpg",
       "imageWebp": "img/purity-seal.webp",
-      "thumbWebp": "img/purity-seal-thumb.webp"
+      "thumbWebp": "img/purity-seal-thumb.webp",
+      "qty": 15
     },
     {
       "id": "right-arm-a",
@@ -6993,7 +7246,8 @@
       "image": "img/right-arm-a.jpg",
       "thumb": "img/right-arm-a-thumb.jpg",
       "imageWebp": "img/right-arm-a.webp",
-      "thumbWebp": "img/right-arm-a-thumb.webp"
+      "thumbWebp": "img/right-arm-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "right-arm-a-3f22db472d73807a870bd77aa93e1a50",
@@ -7021,7 +7275,8 @@
       "image": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50.jpg",
       "thumb": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50-thumb.jpg",
       "imageWebp": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50.webp",
-      "thumbWebp": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50-thumb.webp"
+      "thumbWebp": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50-thumb.webp",
+      "qty": 1
     },
     {
       "id": "right-arm-b",
@@ -7049,7 +7304,8 @@
       "image": "img/right-arm-b.jpg",
       "thumb": "img/right-arm-b-thumb.jpg",
       "imageWebp": "img/right-arm-b.webp",
-      "thumbWebp": "img/right-arm-b-thumb.webp"
+      "thumbWebp": "img/right-arm-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "right-arm-b-3ee2db472d7380648736d8248bcce9cf",
@@ -7077,7 +7333,8 @@
       "image": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf.jpg",
       "thumb": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf-thumb.jpg",
       "imageWebp": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf.webp",
-      "thumbWebp": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf-thumb.webp"
+      "thumbWebp": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf-thumb.webp",
+      "qty": 1
     },
     {
       "id": "right-arm-c",
@@ -7105,7 +7362,8 @@
       "image": "img/right-arm-c.jpg",
       "thumb": "img/right-arm-c-thumb.jpg",
       "imageWebp": "img/right-arm-c.webp",
-      "thumbWebp": "img/right-arm-c-thumb.webp"
+      "thumbWebp": "img/right-arm-c-thumb.webp",
+      "qty": 4
     },
     {
       "id": "right-arm-d",
@@ -7133,7 +7391,8 @@
       "image": "img/right-arm-d.jpg",
       "thumb": "img/right-arm-d-thumb.jpg",
       "imageWebp": "img/right-arm-d.webp",
-      "thumbWebp": "img/right-arm-d-thumb.webp"
+      "thumbWebp": "img/right-arm-d-thumb.webp",
+      "qty": 3
     },
     {
       "id": "scabbard",
@@ -7161,7 +7420,8 @@
       "image": "img/scabbard.jpg",
       "thumb": "img/scabbard-thumb.jpg",
       "imageWebp": "img/scabbard.webp",
-      "thumbWebp": "img/scabbard-thumb.webp"
+      "thumbWebp": "img/scabbard-thumb.webp",
+      "qty": 2
     },
     {
       "id": "shield-a",
@@ -7189,7 +7449,8 @@
       "image": "img/shield-a.jpg",
       "thumb": "img/shield-a-thumb.jpg",
       "imageWebp": "img/shield-a.webp",
-      "thumbWebp": "img/shield-a-thumb.webp"
+      "thumbWebp": "img/shield-a-thumb.webp",
+      "qty": 3
     },
     {
       "id": "shield-b",
@@ -7217,7 +7478,8 @@
       "image": "img/shield-b.jpg",
       "thumb": "img/shield-b-thumb.jpg",
       "imageWebp": "img/shield-b.webp",
-      "thumbWebp": "img/shield-b-thumb.webp"
+      "thumbWebp": "img/shield-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "shoulder-pad-b",
@@ -7245,7 +7507,8 @@
       "image": "img/shoulder-pad-b.jpg",
       "thumb": "img/shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/shoulder-pad-b.webp",
-      "thumbWebp": "img/shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-b-thumb.webp",
+      "qty": 4
     },
     {
       "id": "shoulder-pad-c",
@@ -7273,7 +7536,8 @@
       "image": "img/shoulder-pad-c.jpg",
       "thumb": "img/shoulder-pad-c-thumb.jpg",
       "imageWebp": "img/shoulder-pad-c.webp",
-      "thumbWebp": "img/shoulder-pad-c-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-c-thumb.webp",
+      "qty": 3
     },
     {
       "id": "shoulder-pad-d",
@@ -7301,7 +7565,8 @@
       "image": "img/shoulder-pad-d.jpg",
       "thumb": "img/shoulder-pad-d-thumb.jpg",
       "imageWebp": "img/shoulder-pad-d.webp",
-      "thumbWebp": "img/shoulder-pad-d-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-d-thumb.webp",
+      "qty": 4
     },
     {
       "id": "shoulder-pad-e",
@@ -7329,7 +7594,8 @@
       "image": "img/shoulder-pad-e.jpg",
       "thumb": "img/shoulder-pad-e-thumb.jpg",
       "imageWebp": "img/shoulder-pad-e.webp",
-      "thumbWebp": "img/shoulder-pad-e-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-e-thumb.webp",
+      "qty": 3
     },
     {
       "id": "shoulder-pad-f",
@@ -7357,7 +7623,8 @@
       "image": "img/shoulder-pad-f.jpg",
       "thumb": "img/shoulder-pad-f-thumb.jpg",
       "imageWebp": "img/shoulder-pad-f.webp",
-      "thumbWebp": "img/shoulder-pad-f-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-f-thumb.webp",
+      "qty": 3
     },
     {
       "id": "shoulder-pad-g",
@@ -7385,7 +7652,8 @@
       "image": "img/shoulder-pad-g.jpg",
       "thumb": "img/shoulder-pad-g-thumb.jpg",
       "imageWebp": "img/shoulder-pad-g.webp",
-      "thumbWebp": "img/shoulder-pad-g-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-g-thumb.webp",
+      "qty": 3
     },
     {
       "id": "shoulder-pad-h",
@@ -7413,7 +7681,8 @@
       "image": "img/shoulder-pad-h.jpg",
       "thumb": "img/shoulder-pad-h-thumb.jpg",
       "imageWebp": "img/shoulder-pad-h.webp",
-      "thumbWebp": "img/shoulder-pad-h-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-h-thumb.webp",
+      "qty": 2
     },
     {
       "id": "shoulder-pad-i",
@@ -7441,7 +7710,8 @@
       "image": "img/shoulder-pad-i.jpg",
       "thumb": "img/shoulder-pad-i-thumb.jpg",
       "imageWebp": "img/shoulder-pad-i.webp",
-      "thumbWebp": "img/shoulder-pad-i-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-i-thumb.webp",
+      "qty": 3
     },
     {
       "id": "shoulder-pad-primaris",
@@ -7469,7 +7739,8 @@
       "image": "img/shoulder-pad-primaris.jpg",
       "thumb": "img/shoulder-pad-primaris-thumb.jpg",
       "imageWebp": "img/shoulder-pad-primaris.webp",
-      "thumbWebp": "img/shoulder-pad-primaris-thumb.webp"
+      "thumbWebp": "img/shoulder-pad-primaris-thumb.webp",
+      "qty": 18
     },
     {
       "id": "space-marine-hellblasters-accessory",
@@ -7497,7 +7768,8 @@
       "image": "img/space-marine-hellblasters-accessory.jpg",
       "thumb": "img/space-marine-hellblasters-accessory-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-accessory.webp",
-      "thumbWebp": "img/space-marine-hellblasters-accessory-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-accessory-thumb.webp",
+      "qty": 1
     },
     {
       "id": "space-marine-hellblasters-assault-plasma-incinerator-part-a",
@@ -7525,7 +7797,8 @@
       "image": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a.jpg",
       "thumb": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a.webp",
-      "thumbWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a-thumb.webp",
+      "qty": 6
     },
     {
       "id": "space-marine-hellblasters-assault-plasma-incinerator-part-b",
@@ -7553,7 +7826,8 @@
       "image": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b.jpg",
       "thumb": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b.webp",
-      "thumbWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-a",
@@ -7581,7 +7855,8 @@
       "image": "img/space-marine-hellblasters-bare-head-a.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-a.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-a-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-b",
@@ -7609,7 +7884,8 @@
       "image": "img/space-marine-hellblasters-bare-head-b.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-b.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-b-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-c",
@@ -7637,7 +7913,8 @@
       "image": "img/space-marine-hellblasters-bare-head-c.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-c-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-c.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-c-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-d",
@@ -7665,7 +7942,8 @@
       "image": "img/space-marine-hellblasters-bare-head-d.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-d-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-d.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-d-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-e",
@@ -7693,7 +7971,8 @@
       "image": "img/space-marine-hellblasters-bare-head-e.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-e-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-e.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-e-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-e-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-f",
@@ -7721,7 +8000,8 @@
       "image": "img/space-marine-hellblasters-bare-head-f.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-f-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-f.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-f-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-f-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bare-head-g",
@@ -7749,7 +8029,8 @@
       "image": "img/space-marine-hellblasters-bare-head-g.jpg",
       "thumb": "img/space-marine-hellblasters-bare-head-g-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-g.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bare-head-g-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bare-head-g-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-bolt-pistol",
@@ -7777,7 +8058,8 @@
       "image": "img/space-marine-hellblasters-bolt-pistol.jpg",
       "thumb": "img/space-marine-hellblasters-bolt-pistol-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bolt-pistol.webp",
-      "thumbWebp": "img/space-marine-hellblasters-bolt-pistol-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-bolt-pistol-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-head-a",
@@ -7805,7 +8087,8 @@
       "image": "img/space-marine-hellblasters-head-a.jpg",
       "thumb": "img/space-marine-hellblasters-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-head-a.webp",
-      "thumbWebp": "img/space-marine-hellblasters-head-a-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-head-a-thumb.webp",
+      "qty": 4
     },
     {
       "id": "space-marine-hellblasters-head-b",
@@ -7833,7 +8116,8 @@
       "image": "img/space-marine-hellblasters-head-b.jpg",
       "thumb": "img/space-marine-hellblasters-head-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-head-b.webp",
-      "thumbWebp": "img/space-marine-hellblasters-head-b-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-head-b-thumb.webp",
+      "qty": 1
     },
     {
       "id": "space-marine-hellblasters-heavy-plasma-incinerator-end-2",
@@ -7861,7 +8145,8 @@
       "image": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2.jpg",
       "thumb": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2.webp",
-      "thumbWebp": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2-thumb.webp",
+      "qty": 7
     },
     {
       "id": "space-marine-hellblasters-holster-e",
@@ -7889,7 +8174,8 @@
       "image": "img/space-marine-hellblasters-holster-e.jpg",
       "thumb": "img/space-marine-hellblasters-holster-e-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-holster-e.webp",
-      "thumbWebp": "img/space-marine-hellblasters-holster-e-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-holster-e-thumb.webp",
+      "qty": 1
     },
     {
       "id": "space-marine-hellblasters-holster-f",
@@ -7917,7 +8203,8 @@
       "image": "img/space-marine-hellblasters-holster-f.jpg",
       "thumb": "img/space-marine-hellblasters-holster-f-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-holster-f.webp",
-      "thumbWebp": "img/space-marine-hellblasters-holster-f-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-holster-f-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-a",
@@ -7945,7 +8232,8 @@
       "image": "img/space-marine-hellblasters-plasma-incinerator-a.jpg",
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-a.webp",
-      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-a-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-a-thumb.webp",
+      "qty": 0
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-b",
@@ -7973,7 +8261,8 @@
       "image": "img/space-marine-hellblasters-plasma-incinerator-b.jpg",
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-b.webp",
-      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-b-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-end-parts-2",
@@ -8001,7 +8290,8 @@
       "image": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2.jpg",
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2.webp",
-      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-g",
@@ -8029,7 +8319,8 @@
       "image": "img/space-marine-hellblasters-plasma-incinerator-g.jpg",
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-g-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-g.webp",
-      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-g-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-g-thumb.webp",
+      "qty": 1
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-parts",
@@ -8057,7 +8348,8 @@
       "image": "img/space-marine-hellblasters-plasma-incinerator-parts.jpg",
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-parts-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-parts.webp",
-      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-parts-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-parts-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-plasma-pistol",
@@ -8085,7 +8377,8 @@
       "image": "img/space-marine-hellblasters-plasma-pistol.jpg",
       "thumb": "img/space-marine-hellblasters-plasma-pistol-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-pistol.webp",
-      "thumbWebp": "img/space-marine-hellblasters-plasma-pistol-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-plasma-pistol-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-hellblasters-pointing-arm",
@@ -8113,7 +8406,8 @@
       "image": "img/space-marine-hellblasters-pointing-arm.jpg",
       "thumb": "img/space-marine-hellblasters-pointing-arm-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-pointing-arm.webp",
-      "thumbWebp": "img/space-marine-hellblasters-pointing-arm-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-pointing-arm-thumb.webp",
+      "qty": 0
     },
     {
       "id": "space-marine-hellblasters-shoulder-pad",
@@ -8141,7 +8435,8 @@
       "image": "img/space-marine-hellblasters-shoulder-pad.jpg",
       "thumb": "img/space-marine-hellblasters-shoulder-pad-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-shoulder-pad.webp",
-      "thumbWebp": "img/space-marine-hellblasters-shoulder-pad-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-shoulder-pad-thumb.webp",
+      "qty": 9
     },
     {
       "id": "space-marine-hellblasters-shoulder-pad-a",
@@ -8169,7 +8464,8 @@
       "image": "img/space-marine-hellblasters-shoulder-pad-a.jpg",
       "thumb": "img/space-marine-hellblasters-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-shoulder-pad-a.webp",
-      "thumbWebp": "img/space-marine-hellblasters-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/space-marine-hellblasters-shoulder-pad-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-bare-head-a",
@@ -8197,7 +8493,8 @@
       "image": "img/space-marine-terminator-squad-bare-head-a.jpg",
       "thumb": "img/space-marine-terminator-squad-bare-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-a.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-bare-head-a-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-bare-head-a-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-bare-head-b",
@@ -8225,7 +8522,8 @@
       "image": "img/space-marine-terminator-squad-bare-head-b.jpg",
       "thumb": "img/space-marine-terminator-squad-bare-head-b-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-b.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-bare-head-b-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-bare-head-b-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-bare-head-c",
@@ -8253,7 +8551,8 @@
       "image": "img/space-marine-terminator-squad-bare-head-c.jpg",
       "thumb": "img/space-marine-terminator-squad-bare-head-c-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-c.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-bare-head-c-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-bare-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-bare-head-d",
@@ -8281,7 +8580,8 @@
       "image": "img/space-marine-terminator-squad-bare-head-d.jpg",
       "thumb": "img/space-marine-terminator-squad-bare-head-d-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-d.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-bare-head-d-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-bare-head-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-bare-head-e",
@@ -8309,7 +8609,8 @@
       "image": "img/space-marine-terminator-squad-bare-head-e.jpg",
       "thumb": "img/space-marine-terminator-squad-bare-head-e-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-e.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-bare-head-e-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-bare-head-e-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-head-a",
@@ -8337,7 +8638,8 @@
       "image": "img/space-marine-terminator-squad-head-a.jpg",
       "thumb": "img/space-marine-terminator-squad-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-head-a.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-head-a-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-head-a-thumb.webp",
+      "qty": 4
     },
     {
       "id": "space-marine-terminator-squad-head-c",
@@ -8365,7 +8667,8 @@
       "image": "img/space-marine-terminator-squad-head-c.jpg",
       "thumb": "img/space-marine-terminator-squad-head-c-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-head-c.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-head-c-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-head-c-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-power-sword",
@@ -8393,7 +8696,8 @@
       "image": "img/space-marine-terminator-squad-power-sword.jpg",
       "thumb": "img/space-marine-terminator-squad-power-sword-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-power-sword.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-power-sword-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-power-sword-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-powerfist-and-chainfist-a-3",
@@ -8421,7 +8725,8 @@
       "image": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3.jpg",
       "thumb": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3-thumb.webp",
+      "qty": 0
     },
     {
       "id": "space-marine-terminator-squad-powerfist-and-chainfist-d-3",
@@ -8449,7 +8754,8 @@
       "image": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3.jpg",
       "thumb": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3-thumb.webp",
+      "qty": 1
     },
     {
       "id": "space-marine-terminator-squad-powerfist-and-chainfist-f-4",
@@ -8477,7 +8783,8 @@
       "image": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4.jpg",
       "thumb": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4-thumb.webp",
+      "qty": 2
     },
     {
       "id": "space-marine-terminator-squad-shoulder-pad-a",
@@ -8505,7 +8812,8 @@
       "image": "img/space-marine-terminator-squad-shoulder-pad-a.jpg",
       "thumb": "img/space-marine-terminator-squad-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-shoulder-pad-a.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-a-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-a-thumb.webp",
+      "qty": 1
     },
     {
       "id": "space-marine-terminator-squad-shoulder-pad-b",
@@ -8533,7 +8841,8 @@
       "image": "img/space-marine-terminator-squad-shoulder-pad-b.jpg",
       "thumb": "img/space-marine-terminator-squad-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-shoulder-pad-b.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-b-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-b-thumb.webp",
+      "qty": 10
     },
     {
       "id": "space-marine-terminator-squad-shoulder-pad-d",
@@ -8561,7 +8870,8 @@
       "image": "img/space-marine-terminator-squad-shoulder-pad-d.jpg",
       "thumb": "img/space-marine-terminator-squad-shoulder-pad-d-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-shoulder-pad-d.webp",
-      "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-d-thumb.webp"
+      "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-d-thumb.webp",
+      "qty": 2
     },
     {
       "id": "stalker-bolt-rifle-chamber",
@@ -8589,7 +8899,8 @@
       "image": "img/stalker-bolt-rifle-chamber.jpg",
       "thumb": "img/stalker-bolt-rifle-chamber-thumb.jpg",
       "imageWebp": "img/stalker-bolt-rifle-chamber.webp",
-      "thumbWebp": "img/stalker-bolt-rifle-chamber-thumb.webp"
+      "thumbWebp": "img/stalker-bolt-rifle-chamber-thumb.webp",
+      "qty": 21
     },
     {
       "id": "sword-handle",
@@ -8617,7 +8928,8 @@
       "image": "img/sword-handle.jpg",
       "thumb": "img/sword-handle-thumb.jpg",
       "imageWebp": "img/sword-handle.webp",
-      "thumbWebp": "img/sword-handle-thumb.webp"
+      "thumbWebp": "img/sword-handle-thumb.webp",
+      "qty": 2
     },
     {
       "id": "tilting-shield-s",
@@ -8633,7 +8945,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 1
     },
     {
       "id": "ultramarines-upgrades-aggressors-shoulder-pad-a",
@@ -8649,7 +8962,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-aggressors-shoulder-pad-b",
@@ -8665,7 +8979,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-aggressors-shoulder-pad-c",
@@ -8681,7 +8996,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-bladeguard-shoulder-pad-a",
@@ -8697,7 +9013,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-bladeguard-shoulder-pad-b",
@@ -8713,7 +9030,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-bladeguard-shoulder-pad-c",
@@ -8729,7 +9047,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-gravis-shoulder-pad-b",
@@ -8745,7 +9064,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-a",
@@ -8761,7 +9081,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-c",
@@ -8777,7 +9098,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-d",
@@ -8793,7 +9115,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-e",
@@ -8809,7 +9132,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-f",
@@ -8825,7 +9149,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-g",
@@ -8841,7 +9166,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-h",
@@ -8857,7 +9183,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-shoulder-pad-a",
@@ -8873,7 +9200,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-shoulder-pad-b",
@@ -8889,7 +9217,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-phobos-shoulder-pad-c",
@@ -8905,7 +9234,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-head-a",
@@ -8921,7 +9251,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-head-b",
@@ -8937,7 +9268,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-head-d",
@@ -8953,7 +9285,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-holster",
@@ -8969,7 +9302,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-pouches",
@@ -8985,7 +9319,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-power-sword",
@@ -9001,7 +9336,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-scabbard-a",
@@ -9017,7 +9353,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-scabbard-b",
@@ -9033,7 +9370,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-a",
@@ -9049,7 +9387,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-b",
@@ -9065,7 +9404,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-c",
@@ -9081,7 +9421,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-d",
@@ -9097,7 +9438,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-e",
@@ -9113,7 +9455,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-tacticus-tilt-shield",
@@ -9129,7 +9472,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-terminator-bare-head",
@@ -9145,7 +9489,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-terminator-storm-bolter-half",
@@ -9161,7 +9506,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-terminator-torso-front",
@@ -9177,7 +9523,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-a",
@@ -9193,7 +9540,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-b",
@@ -9209,7 +9557,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-c",
@@ -9225,7 +9574,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-d",
@@ -9241,7 +9591,8 @@
       "image": null,
       "thumb": null,
       "imageWebp": null,
-      "thumbWebp": null
+      "thumbWebp": null,
+      "qty": 0
     }
   ]
 }
