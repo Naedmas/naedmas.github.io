@@ -2804,6 +2804,36 @@ body.lightbox-open { overflow: hidden; }
     }
 }
 
+/* Apothecarion uses the full viewport; other galleries stay at 1120px. */
+.page.gallery-page.apothecarion-page {
+    max-width: none;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.apothecarion-page .gallery-header {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.apothecarion-page .bit-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (max-width: 760px) {
+    .apothecarion-page .bit-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .apothecarion-page .bit-card-body {
+        min-height: 0;
+        padding: 0.7rem 0.7rem 0.85rem;
+    }
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
