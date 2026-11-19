@@ -25,16 +25,35 @@ Raw data (kept outside the public repo by default):
 Writes into the site repo (this script's parent / ..):
 
     armoury/models.json
-    armoury/img/<slug>.jpg
-    armoury/img/<slug>-thumb.jpg
+    armoury/img/<slug>.webp          and .jpg fallback
+    armoury/img/<slug>-thumb.webp    and .jpg fallback
+    armoury/img/<slug>-2.webp/.jpg   and -2-thumb.* for later frames
 
-Pillow resizes the long edge to 1200px (full) and 500px (thumb).
+Pillow resizes the long edge to 1200px (full) and 500px (thumb),
+preserving aspect ratio, and writes webp + JPEG for every frame.
+Every file in the Notion Image property is downloaded and published,
+in Notion order. The first frame is also copied to the legacy
+image / thumb / imageWebp / thumbWebp fields for compatibility.
+Models with no Image, or whose download/resize fails, omit image
+fields so the page can show the themed placeholder.
+
+models.json is rebuilt from the current Notion export only, so a
+model that has left the database is dropped. After writing
+derivatives, the script deletes any armoury/img/*.jpg or *.webp
+that no current model references (placeholder.svg is kept) and
+any orig/ file that does not belong to a current model's Image
+property in Notion order.
 
 Property policy
 ---------------
 My Individual Models (source database):
   Name (title)              INCLUDE  as name / id
-  Image (files)             INCLUDE  downloaded into armoury/img
+  Image (files)             INCLUDE  every file, in Notion order,
+                                     downloaded into armoury/img as
+                                     images[] / thumbs[] plus webp
+                                     counterparts; first frame also
+                                     in image / thumb / imageWebp /
+                                     thumbWebp
   Kit (relation)            INCLUDE  resolved kit name only
   Model (relation)          INCLUDE  resolved unit name; Faction from catalog
   Squads (relation)         INCLUDE  resolved Models Owned name + public fields
@@ -65,6 +84,51 @@ Models Owned (resolved via Squads; inventory/purchase data is never pulled):
   Status, Image             EXCLUDE  (individual model's own fields are used)
   Kits, Model, Squads       EXCLUDE  (relations / back-links)
   All Army List / HQ *      EXCLUDE
+
+Weekly refresh (same time as the Librarium / Apothecarion sync):
+  1. Use only the personal Notion connector (user-Notion--personal),
+     read-only. Never the Vemag Notion, and never write to Notion.
+     Do not sign up for or upgrade a Notion plan.
+  2. Fetch the "My Individual Models" database
+     (id 3fb2db47-2d73-800c-b259-e7c220db5d97,
+     data source collection://3fb2db47-2d73-8003-b7d2-000b46673ebf)
+     if the schema may have changed.
+  3. Export every row into /workspace/notion-models-raw/individual_models.json.
+     Prefer view-mode pagination on
+     view://3fb2db47-2d73-80ec-ab05-000cd49d86ce (page_size 50, follow
+     next_cursor until has_more is false). Prefer file:// Image tokens
+     from view-mode rows over bare SQL UUIDs. Keep every file in the
+     Image property, in Notion order — not only the first. Rows mode
+     also works; avoid SQL if the Query Data Source allowance is low.
+  4. Export the Kit catalog
+     (collection://3e72db47-2d73-8000-a2ad-000bb308fd4b) as
+     kit_catalog.json (url, Name), the Model catalog
+     (collection://3ed2db47-2d73-807d-84b7-000b4036e072) as
+     model_catalog.json (url, Name, Faction), and Models Owned
+     (collection://3e72db47-2d73-800f-831f-000b402abdd8) as
+     models_owned.json with only the public fields (url, Name,
+     Faction, Type, Base size, Keywords). Never export Purchase
+     History, Qty, Assigned, army lists, or HQ relations.
+  5. For each Image file (all of them, in order), resolve a signed
+     download URL (get_file_download_urls with notion-file-block://
+     references built from file:// attachment tokens, up to 25 at a
+     time) and cache missing originals in
+     /workspace/notion-models-raw/orig/ as
+     <Name>__<index>__<original-filename> before the signed URLs
+     expire. Skip originals that are already on disk. Use the large
+     sibling asset files from write_to_file, not the truncated ~6.3KB
+     previews.
+  6. Run: python3 scripts/sync_models.py
+     The script rebuilds armoury/models.json from the current export
+     only (models no longer in Notion are removed). It publishes
+     every remaining Image file as webp+jpeg, then prunes any
+     armoury/img derivative that no current model references and
+     any orig/ file that no longer matches a current Image
+     property. Stage those deletions (git add -u armoury/img) with
+     the rest of the Armoury changes.
+  7. If armoury/models.json or armoury/img/ changed, commit and push
+     to main, then confirm the GitHub Pages build.
+
 """
 
 from __future__ import annotations
@@ -85,6 +149,8 @@ BRISBANE = ZoneInfo("Australia/Brisbane")
 FULL_EDGE = 1200
 THUMB_EDGE = 500
 JPEG_QUALITY = 85
+WEBP_QUALITY = 80
+BG_COLOR = (8, 12, 9)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RAW = Path("/workspace/notion-models-raw")
@@ -194,12 +260,55 @@ def unique(items: list[str]) -> list[str]:
     return out
 
 
+def filename_from_token(token: Any, fallback: str) -> str:
+    if not isinstance(token, str):
+        return fallback + ".bin"
+    if token.startswith("file://"):
+        from urllib.parse import unquote as _unquote
+        inner = _unquote(token[7:])
+        try:
+            data = json.loads(inner)
+        except json.JSONDecodeError:
+            data = {}
+        source = str(data.get("source") or "")
+        if source.startswith("attachment:"):
+            parts = source.split(":", 2)
+            if len(parts) >= 3 and parts[2]:
+                return re.sub(r"[^A-Za-z0-9._-]", "_", parts[2])
+        return fallback + ".bin"
+    if token.startswith("http"):
+        return filename_from_url(token, fallback)
+    return fallback + ".bin"
+
+
 def find_originals(raw_dir: Path, name: str) -> list[Path]:
     orig_dir = raw_dir / "orig"
     if not orig_dir.is_dir():
         return []
     matches = sorted(orig_dir.glob(f"{name}__*"))
     return [p for p in matches if p.is_file()]
+
+
+def originals_for_row(raw_dir: Path, row: dict[str, Any]) -> list[Path]:
+    """Return orig files for this row's Image property, in Notion order."""
+    name = (row.get("Name") or "").strip()
+    tokens = as_list(row.get("Image") or row.get("i"))
+    orig_dir = raw_dir / "orig"
+    ordered: list[Path] = []
+    if tokens and orig_dir.is_dir():
+        for index, token in enumerate(tokens):
+            filename = filename_from_token(token, name or "image")
+            dest = orig_dir / f"{name}__{index}__{filename}"
+            if dest.is_file() and dest.stat().st_size > 0:
+                ordered.append(dest)
+                continue
+            fallback = sorted(orig_dir.glob(f"{name}__{index}__*"))
+            fallback = [p for p in fallback if p.is_file() and p.stat().st_size > 0]
+            if fallback:
+                ordered.append(fallback[0])
+        if ordered:
+            return ordered
+    return find_originals(raw_dir, name)
 
 
 def filename_from_url(url: str, fallback: str) -> str:
@@ -261,20 +370,28 @@ def download_missing(raw_dir: Path, name: str) -> list[Path]:
     return saved
 
 
-def resize_to_jpeg(src: Path, dest: Path, max_edge: int) -> None:
-    with Image.open(src) as im:
-        im = ImageOps.exif_transpose(im)
-        if im.mode not in ("RGB", "L"):
-            im = im.convert("RGB")
-        elif im.mode == "L":
-            im = im.convert("RGB")
-        w, h = im.size
-        long_edge = max(w, h)
-        if long_edge > max_edge:
-            scale = max_edge / long_edge
-            im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.Resampling.LANCZOS)
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        im.save(dest, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+def prepared_image(src: Path, max_edge: int) -> Image.Image:
+    im = ImageOps.exif_transpose(Image.open(src))
+    if im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
+        rgba = im.convert("RGBA")
+        background = Image.new("RGB", rgba.size, BG_COLOR)
+        background.paste(rgba, mask=rgba.split()[-1])
+        im = background
+    elif im.mode != "RGB":
+        im = im.convert("RGB")
+    w, h = im.size
+    long_edge = max(w, h)
+    if long_edge > max_edge:
+        scale = max_edge / long_edge
+        im = im.resize((max(1, round(w * scale)), max(1, round(h * scale))), Image.Resampling.LANCZOS)
+    return im
+
+
+def resize_image(src: Path, dest_jpg: Path, dest_webp: Path, max_edge: int) -> None:
+    im = prepared_image(src, max_edge)
+    dest_jpg.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dest_jpg, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+    im.save(dest_webp, "WEBP", quality=WEBP_QUALITY, method=6)
 
 
 def build_record(
@@ -284,6 +401,8 @@ def build_record(
     owned: dict[str, dict[str, Any]],
     image_files: list[str],
     thumb_files: list[str],
+    image_webp: list[str],
+    thumb_webp: list[str],
 ) -> dict[str, Any]:
     name = (row.get("Name") or "").strip()
     model = first_related(row, "Model", models) or {}
@@ -319,10 +438,103 @@ def build_record(
         "created": brisbane_date(row.get("createdTime")),
         "images": image_files,
         "thumbs": thumb_files,
+        "imagesWebp": image_webp,
+        "thumbsWebp": thumb_webp,
         "image": image_files[0] if image_files else None,
         "thumb": thumb_files[0] if thumb_files else None,
+        "imageWebp": image_webp[0] if image_webp else None,
+        "thumbWebp": thumb_webp[0] if thumb_webp else None,
     }
     return record
+
+
+
+def expected_orig_paths(raw_dir: Path, rows: list[dict[str, Any]]) -> set[Path]:
+    """Orig files that still belong to a current model's Image property."""
+    orig_dir = raw_dir / "orig"
+    keep: set[Path] = set()
+    if not orig_dir.is_dir():
+        return keep
+    for row in rows:
+        name = (row.get("Name") or "").strip()
+        tokens = as_list(row.get("Image") or row.get("i"))
+        for index, token in enumerate(tokens):
+            filename = filename_from_token(token, name or "image")
+            dest = orig_dir / f"{name}__{index}__{filename}"
+            if dest.is_file() and dest.stat().st_size > 0:
+                keep.add(dest.resolve())
+                continue
+            fallback = sorted(orig_dir.glob(f"{name}__{index}__*"))
+            fallback = [p for p in fallback if p.is_file() and p.stat().st_size > 0]
+            if fallback:
+                keep.add(fallback[0].resolve())
+    return keep
+
+
+def prune_originals(raw_dir: Path, rows: list[dict[str, Any]]) -> list[str]:
+    orig_dir = raw_dir / "orig"
+    if not orig_dir.is_dir():
+        return []
+    keep = expected_orig_paths(raw_dir, rows)
+    removed: list[str] = []
+    for path in sorted(orig_dir.iterdir()):
+        if not path.is_file():
+            continue
+        if path.resolve() in keep:
+            continue
+        print(f"  prune orig {path.name}")
+        path.unlink()
+        removed.append(path.name)
+    return removed
+
+
+def referenced_img_names(records: list[dict[str, Any]]) -> set[str]:
+    keys = (
+        "images", "thumbs", "imagesWebp", "thumbsWebp",
+        "image", "thumb", "imageWebp", "thumbWebp",
+    )
+    names: set[str] = set()
+    for rec in records:
+        for key in keys:
+            val = rec.get(key)
+            if isinstance(val, list):
+                for item in val:
+                    if item:
+                        names.add(Path(item).name)
+            elif val:
+                names.add(Path(val).name)
+    return names
+
+
+def prune_public_images(records: list[dict[str, Any]]) -> list[str]:
+    keep = referenced_img_names(records) | {"placeholder.svg"}
+    removed: list[str] = []
+    if not IMG_DIR.is_dir():
+        return removed
+    for path in sorted(IMG_DIR.iterdir()):
+        if not path.is_file():
+            continue
+        if path.suffix.lower() not in {".jpg", ".jpeg", ".webp", ".png"}:
+            continue
+        if path.name in keep:
+            continue
+        print(f"  prune img {path.name}")
+        path.unlink()
+        removed.append(path.name)
+    return removed
+
+
+def previous_model_names(path: Path) -> set[str]:
+    if not path.is_file():
+        return set()
+    try:
+        payload = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return set()
+    return {
+        m.get("name") for m in (payload.get("models") or [])
+        if isinstance(m, dict) and m.get("name")
+    }
 
 
 def main() -> int:
@@ -348,32 +560,51 @@ def main() -> int:
     owned = index_by_url(load_results(required["models_owned.json"]))
 
     IMG_DIR.mkdir(parents=True, exist_ok=True)
-    # Remove previously generated jpgs so renamed/deleted models don't linger.
-    for stale in IMG_DIR.glob("*.jpg"):
-        stale.unlink()
+    out_json = OUT_DIR / "models.json"
+    dropped_models = previous_model_names(out_json)
 
     records: list[dict[str, Any]] = []
     with_images = 0
+    failed = 0
+    multi = 0
+    max_frames = 0
     for row in individuals:
         name = (row.get("Name") or "").strip()
         if not name:
             continue
         slug = slugify(name)
-        originals = download_missing(raw_dir, name) or find_originals(raw_dir, name)
+        originals = originals_for_row(raw_dir, row) or download_missing(raw_dir, name)
         image_files: list[str] = []
         thumb_files: list[str] = []
-        for index, src in enumerate(originals):
-            suffix = "" if index == 0 else f"-{index+1}"
-            full_rel = f"img/{slug}{suffix}.jpg"
-            thumb_rel = f"img/{slug}{suffix}-thumb.jpg"
-            print(f"  resize {name} {src.name} -> {full_rel}")
-            resize_to_jpeg(src, IMG_DIR / f"{slug}{suffix}.jpg", FULL_EDGE)
-            resize_to_jpeg(src, IMG_DIR / f"{slug}{suffix}-thumb.jpg", THUMB_EDGE)
-            image_files.append(full_rel)
-            thumb_files.append(thumb_rel)
+        image_webp: list[str] = []
+        thumb_webp: list[str] = []
+        try:
+            for index, src in enumerate(originals):
+                suffix = "" if index == 0 else f"-{index + 1}"
+                full_jpg = IMG_DIR / f"{slug}{suffix}.jpg"
+                full_webp_path = IMG_DIR / f"{slug}{suffix}.webp"
+                thumb_jpg = IMG_DIR / f"{slug}{suffix}-thumb.jpg"
+                thumb_webp_path = IMG_DIR / f"{slug}{suffix}-thumb.webp"
+                print(f"  resize {name} [{index}] {src.name} -> img/{full_jpg.name}")
+                resize_image(src, full_jpg, full_webp_path, FULL_EDGE)
+                resize_image(src, thumb_jpg, thumb_webp_path, THUMB_EDGE)
+                image_files.append(f"img/{full_jpg.name}")
+                image_webp.append(f"img/{full_webp_path.name}")
+                thumb_files.append(f"img/{thumb_jpg.name}")
+                thumb_webp.append(f"img/{thumb_webp_path.name}")
+        except Exception as exc:
+            failed += 1
+            print(f"  FAIL resize for {name}: {exc}", file=sys.stderr)
+            image_files, thumb_files, image_webp, thumb_webp = [], [], [], []
         if image_files:
             with_images += 1
-        records.append(build_record(row, models, kits, owned, image_files, thumb_files))
+            max_frames = max(max_frames, len(image_files))
+            if len(image_files) > 1:
+                multi += 1
+        records.append(build_record(
+            row, models, kits, owned,
+            image_files, thumb_files, image_webp, thumb_webp,
+        ))
 
     records.sort(key=lambda r: ((r.get("unit") or "zzz").lower(), r.get("name") or ""))
     payload = {
@@ -382,10 +613,22 @@ def main() -> int:
         "count": len(records),
         "models": records,
     }
-    out_json = OUT_DIR / "models.json"
+    current_names = {r.get("name") for r in records if r.get("name")}
+    dropped_models = sorted(dropped_models - current_names)
     out_json.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
-    print(f"Wrote {out_json} ({len(records)} models, {with_images} with images)")
-    return 0
+    pruned_img = prune_public_images(records)
+    pruned_orig = prune_originals(raw_dir, individuals)
+    print(
+        f"Wrote {out_json} ({len(records)} models, {with_images} with images, "
+        f"{multi} with multiple, max {max_frames} frames, {failed} failed)"
+    )
+    print(
+        f"Pruned {len(dropped_models)} models from models.json, "
+        f"{len(pruned_img)} armoury/img files, {len(pruned_orig)} orig files"
+    )
+    for name in dropped_models:
+        print(f"  dropped model {name}")
+    return 0 if records else 1
 
 
 if __name__ == "__main__":

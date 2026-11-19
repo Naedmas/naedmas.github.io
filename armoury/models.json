@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-16T21:26:19+10:00",
+  "updatedAt": "2026-11-19T19:23:02+10:00",
   "source": "My Individual Models",
-  "count": 18,
+  "count": 51,
   "models": [
     {
       "id": "azrael-002",
@@ -22,8 +22,16 @@
       "thumbs": [
         "img/azrael-002-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/azrael-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/azrael-002-thumb.webp"
+      ],
       "image": "img/azrael-002.jpg",
-      "thumb": "img/azrael-002-thumb.jpg"
+      "thumb": "img/azrael-002-thumb.jpg",
+      "imageWebp": "img/azrael-002.webp",
+      "thumbWebp": "img/azrael-002-thumb.webp"
     },
     {
       "id": "belial-002",
@@ -44,8 +52,16 @@
       "thumbs": [
         "img/belial-002-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/belial-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/belial-002-thumb.webp"
+      ],
       "image": "img/belial-002.jpg",
-      "thumb": "img/belial-002-thumb.jpg"
+      "thumb": "img/belial-002-thumb.jpg",
+      "imageWebp": "img/belial-002.webp",
+      "thumbWebp": "img/belial-002-thumb.webp"
     },
     {
       "id": "bgv-001",
@@ -75,8 +91,16 @@
       "thumbs": [
         "img/bgv-001-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-001-thumb.webp"
+      ],
       "image": "img/bgv-001.jpg",
-      "thumb": "img/bgv-001-thumb.jpg"
+      "thumb": "img/bgv-001-thumb.jpg",
+      "imageWebp": "img/bgv-001.webp",
+      "thumbWebp": "img/bgv-001-thumb.webp"
     },
     {
       "id": "bgv-002",
@@ -106,8 +130,16 @@
       "thumbs": [
         "img/bgv-002-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-002-thumb.webp"
+      ],
       "image": "img/bgv-002.jpg",
-      "thumb": "img/bgv-002-thumb.jpg"
+      "thumb": "img/bgv-002-thumb.jpg",
+      "imageWebp": "img/bgv-002.webp",
+      "thumbWebp": "img/bgv-002-thumb.webp"
     },
     {
       "id": "bgv-003",
@@ -137,8 +169,16 @@
       "thumbs": [
         "img/bgv-003-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-003.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-003-thumb.webp"
+      ],
       "image": "img/bgv-003.jpg",
-      "thumb": "img/bgv-003-thumb.jpg"
+      "thumb": "img/bgv-003-thumb.jpg",
+      "imageWebp": "img/bgv-003.webp",
+      "thumbWebp": "img/bgv-003-thumb.webp"
     },
     {
       "id": "bgv-004",
@@ -159,8 +199,16 @@
       "thumbs": [
         "img/bgv-004-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-004.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-004-thumb.webp"
+      ],
       "image": "img/bgv-004.jpg",
-      "thumb": "img/bgv-004-thumb.jpg"
+      "thumb": "img/bgv-004-thumb.jpg",
+      "imageWebp": "img/bgv-004.webp",
+      "thumbWebp": "img/bgv-004-thumb.webp"
     },
     {
       "id": "bgv-005",
@@ -181,8 +229,16 @@
       "thumbs": [
         "img/bgv-005-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-005.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-005-thumb.webp"
+      ],
       "image": "img/bgv-005.jpg",
-      "thumb": "img/bgv-005-thumb.jpg"
+      "thumb": "img/bgv-005-thumb.jpg",
+      "imageWebp": "img/bgv-005.webp",
+      "thumbWebp": "img/bgv-005-thumb.webp"
     },
     {
       "id": "bgv-006",
@@ -203,8 +259,16 @@
       "thumbs": [
         "img/bgv-006-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-006.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-006-thumb.webp"
+      ],
       "image": "img/bgv-006.jpg",
-      "thumb": "img/bgv-006-thumb.jpg"
+      "thumb": "img/bgv-006-thumb.jpg",
+      "imageWebp": "img/bgv-006.webp",
+      "thumbWebp": "img/bgv-006-thumb.webp"
     },
     {
       "id": "bgv-007",
@@ -234,8 +298,16 @@
       "thumbs": [
         "img/bgv-007-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/bgv-007.webp"
+      ],
+      "thumbsWebp": [
+        "img/bgv-007-thumb.webp"
+      ],
       "image": "img/bgv-007.jpg",
-      "thumb": "img/bgv-007-thumb.jpg"
+      "thumb": "img/bgv-007-thumb.jpg",
+      "imageWebp": "img/bgv-007.webp",
+      "thumbWebp": "img/bgv-007-thumb.webp"
     },
     {
       "id": "bgv-008",
@@ -258,8 +330,12 @@
       "created": "2026-10-16",
       "images": [],
       "thumbs": [],
+      "imagesWebp": [],
+      "thumbsWebp": [],
       "image": null,
-      "thumb": null
+      "thumb": null,
+      "imageWebp": null,
+      "thumbWebp": null
     },
     {
       "id": "bgv-009",
@@ -282,8 +358,12 @@
       "created": "2026-10-16",
       "images": [],
       "thumbs": [],
+      "imagesWebp": [],
+      "thumbsWebp": [],
       "image": null,
-      "thumb": null
+      "thumb": null,
+      "imageWebp": null,
+      "thumbWebp": null
     },
     {
       "id": "gvc-001",
@@ -314,8 +394,16 @@
       "thumbs": [
         "img/gvc-001-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/gvc-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/gvc-001-thumb.webp"
+      ],
       "image": "img/gvc-001.jpg",
-      "thumb": "img/gvc-001-thumb.jpg"
+      "thumb": "img/gvc-001-thumb.jpg",
+      "imageWebp": "img/gvc-001.webp",
+      "thumbWebp": "img/gvc-001-thumb.webp"
     },
     {
       "id": "gvc-002",
@@ -339,13 +427,465 @@
       "thumbs": [
         "img/gvc-002-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/gvc-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/gvc-002-thumb.webp"
+      ],
       "image": "img/gvc-002.jpg",
-      "thumb": "img/gvc-002-thumb.jpg"
+      "thumb": "img/gvc-002-thumb.jpg",
+      "imageWebp": "img/gvc-002.webp",
+      "thumbWebp": "img/gvc-002-thumb.webp"
+    },
+    {
+      "id": "hwm-001",
+      "name": "HWM-001",
+      "unit": "Haywire Mine",
+      "faction": "Space Marines",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/hwm-001.jpg"
+      ],
+      "thumbs": [
+        "img/hwm-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/hwm-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/hwm-001-thumb.webp"
+      ],
+      "image": "img/hwm-001.jpg",
+      "thumb": "img/hwm-001-thumb.jpg",
+      "imageWebp": "img/hwm-001.webp",
+      "thumbWebp": "img/hwm-001-thumb.webp"
+    },
+    {
+      "id": "hwm-002",
+      "name": "HWM-002",
+      "unit": "Haywire Mine",
+      "faction": "Space Marines",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/hwm-002.jpg"
+      ],
+      "thumbs": [
+        "img/hwm-002-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/hwm-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/hwm-002-thumb.webp"
+      ],
+      "image": "img/hwm-002.jpg",
+      "thumb": "img/hwm-002-thumb.jpg",
+      "imageWebp": "img/hwm-002.webp",
+      "thumbWebp": "img/hwm-002-thumb.webp"
+    },
+    {
+      "id": "inf-001",
+      "name": "INF-001",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-001.jpg"
+      ],
+      "thumbs": [
+        "img/inf-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-001-thumb.webp"
+      ],
+      "image": "img/inf-001.jpg",
+      "thumb": "img/inf-001-thumb.jpg",
+      "imageWebp": "img/inf-001.webp",
+      "thumbWebp": "img/inf-001-thumb.webp"
+    },
+    {
+      "id": "inf-002",
+      "name": "INF-002",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-002.jpg"
+      ],
+      "thumbs": [
+        "img/inf-002-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-002-thumb.webp"
+      ],
+      "image": "img/inf-002.jpg",
+      "thumb": "img/inf-002-thumb.jpg",
+      "imageWebp": "img/inf-002.webp",
+      "thumbWebp": "img/inf-002-thumb.webp"
+    },
+    {
+      "id": "inf-003",
+      "name": "INF-003",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-003.jpg"
+      ],
+      "thumbs": [
+        "img/inf-003-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-003.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-003-thumb.webp"
+      ],
+      "image": "img/inf-003.jpg",
+      "thumb": "img/inf-003-thumb.jpg",
+      "imageWebp": "img/inf-003.webp",
+      "thumbWebp": "img/inf-003-thumb.webp"
+    },
+    {
+      "id": "inf-004",
+      "name": "INF-004",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-004.jpg"
+      ],
+      "thumbs": [
+        "img/inf-004-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-004.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-004-thumb.webp"
+      ],
+      "image": "img/inf-004.jpg",
+      "thumb": "img/inf-004-thumb.jpg",
+      "imageWebp": "img/inf-004.webp",
+      "thumbWebp": "img/inf-004-thumb.webp"
+    },
+    {
+      "id": "inf-005",
+      "name": "INF-005",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-005.jpg"
+      ],
+      "thumbs": [
+        "img/inf-005-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-005.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-005-thumb.webp"
+      ],
+      "image": "img/inf-005.jpg",
+      "thumb": "img/inf-005-thumb.jpg",
+      "imageWebp": "img/inf-005.webp",
+      "thumbWebp": "img/inf-005-thumb.webp"
+    },
+    {
+      "id": "inf-006",
+      "name": "INF-006",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-006.jpg"
+      ],
+      "thumbs": [
+        "img/inf-006-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-006.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-006-thumb.webp"
+      ],
+      "image": "img/inf-006.jpg",
+      "thumb": "img/inf-006-thumb.jpg",
+      "imageWebp": "img/inf-006.webp",
+      "thumbWebp": "img/inf-006-thumb.webp"
+    },
+    {
+      "id": "inf-007",
+      "name": "INF-007",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-007.jpg"
+      ],
+      "thumbs": [
+        "img/inf-007-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-007.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-007-thumb.webp"
+      ],
+      "image": "img/inf-007.jpg",
+      "thumb": "img/inf-007-thumb.jpg",
+      "imageWebp": "img/inf-007.webp",
+      "thumbWebp": "img/inf-007-thumb.webp"
+    },
+    {
+      "id": "inf-008",
+      "name": "INF-008",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-008.jpg"
+      ],
+      "thumbs": [
+        "img/inf-008-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-008.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-008-thumb.webp"
+      ],
+      "image": "img/inf-008.jpg",
+      "thumb": "img/inf-008-thumb.jpg",
+      "imageWebp": "img/inf-008.webp",
+      "thumbWebp": "img/inf-008-thumb.webp"
+    },
+    {
+      "id": "inf-009",
+      "name": "INF-009",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-009.jpg"
+      ],
+      "thumbs": [
+        "img/inf-009-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-009.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-009-thumb.webp"
+      ],
+      "image": "img/inf-009.jpg",
+      "thumb": "img/inf-009-thumb.jpg",
+      "imageWebp": "img/inf-009.webp",
+      "thumbWebp": "img/inf-009-thumb.webp"
+    },
+    {
+      "id": "inf-010",
+      "name": "INF-010",
+      "unit": "Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/inf-010.jpg"
+      ],
+      "thumbs": [
+        "img/inf-010-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-010.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-010-thumb.webp"
+      ],
+      "image": "img/inf-010.jpg",
+      "thumb": "img/inf-010-thumb.jpg",
+      "imageWebp": "img/inf-010.webp",
+      "thumbWebp": "img/inf-010-thumb.webp"
     },
     {
       "id": "icc-001",
       "name": "ICC-001",
-      "unit": "Inner Circle Companions",
+      "unit": "Inner Circle Companion",
       "faction": "Dark Angels",
       "status": "Painted",
       "kit": "Dark Angels - Inner Circle Companions",
@@ -370,13 +910,21 @@
       "thumbs": [
         "img/icc-001-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/icc-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/icc-001-thumb.webp"
+      ],
       "image": "img/icc-001.jpg",
-      "thumb": "img/icc-001-thumb.jpg"
+      "thumb": "img/icc-001-thumb.jpg",
+      "imageWebp": "img/icc-001.webp",
+      "thumbWebp": "img/icc-001-thumb.webp"
     },
     {
       "id": "icc-002",
       "name": "ICC-002",
-      "unit": "Inner Circle Companions",
+      "unit": "Inner Circle Companion",
       "faction": "Dark Angels",
       "status": "Painted",
       "kit": "Dark Angels - Inner Circle Companions",
@@ -401,8 +949,16 @@
       "thumbs": [
         "img/icc-002-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/icc-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/icc-002-thumb.webp"
+      ],
       "image": "img/icc-002.jpg",
-      "thumb": "img/icc-002-thumb.jpg"
+      "thumb": "img/icc-002-thumb.jpg",
+      "imageWebp": "img/icc-002.webp",
+      "thumbWebp": "img/icc-002-thumb.webp"
     },
     {
       "id": "ich",
@@ -426,8 +982,56 @@
       "thumbs": [
         "img/ich-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/ich.webp"
+      ],
+      "thumbsWebp": [
+        "img/ich-thumb.webp"
+      ],
       "image": "img/ich.jpg",
-      "thumb": "img/ich-thumb.jpg"
+      "thumb": "img/ich-thumb.jpg",
+      "imageWebp": "img/ich.webp",
+      "thumbWebp": "img/ich-thumb.webp"
+    },
+    {
+      "id": "lut-001",
+      "name": "LUT-001",
+      "unit": "Lieutenant",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Lieutenant",
+      "squad": "Lieutenant (1)",
+      "wargear": [
+        "Powerfist",
+        "Bolt Rifle"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Tacticus",
+        "Lieutenant",
+        "Grenades"
+      ],
+      "created": null,
+      "images": [
+        "img/lut-001.jpg"
+      ],
+      "thumbs": [
+        "img/lut-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/lut-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/lut-001-thumb.webp"
+      ],
+      "image": "img/lut-001.jpg",
+      "thumb": "img/lut-001-thumb.jpg",
+      "imageWebp": "img/lut-001.webp",
+      "thumbWebp": "img/lut-001-thumb.webp"
     },
     {
       "id": "hlb-001",
@@ -456,12 +1060,57 @@
       "thumbs": [
         "img/hlb-001-thumb.jpg"
       ],
+      "imagesWebp": [
+        "img/hlb-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/hlb-001-thumb.webp"
+      ],
       "image": "img/hlb-001.jpg",
-      "thumb": "img/hlb-001-thumb.jpg"
+      "thumb": "img/hlb-001-thumb.jpg",
+      "imageWebp": "img/hlb-001.webp",
+      "thumbWebp": "img/hlb-001-thumb.webp"
     },
     {
-      "id": "int-001",
-      "name": "INT-001",
+      "id": "i-001",
+      "name": "I-001",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/i-001.jpg"
+      ],
+      "thumbs": [
+        "img/i-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/i-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/i-001-thumb.webp"
+      ],
+      "image": "img/i-001.jpg",
+      "thumb": "img/i-001-thumb.jpg",
+      "imageWebp": "img/i-001.webp",
+      "thumbWebp": "img/i-001-thumb.webp"
+    },
+    {
+      "id": "pmi-001",
+      "name": "PMI-001",
       "unit": "Primaris Intercessor",
       "faction": "Adeptus Astartes",
       "status": "Painted",
@@ -481,15 +1130,726 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": "2026-10-16",
+      "created": null,
       "images": [
-        "img/int-001.jpg"
+        "img/pmi-001.jpg"
       ],
       "thumbs": [
-        "img/int-001-thumb.jpg"
+        "img/pmi-001-thumb.jpg"
       ],
-      "image": "img/int-001.jpg",
-      "thumb": "img/int-001-thumb.jpg"
+      "imagesWebp": [
+        "img/pmi-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-001-thumb.webp"
+      ],
+      "image": "img/pmi-001.jpg",
+      "thumb": "img/pmi-001-thumb.jpg",
+      "imageWebp": "img/pmi-001.webp",
+      "thumbWebp": "img/pmi-001-thumb.webp"
+    },
+    {
+      "id": "pmi-002",
+      "name": "PMI-002",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-002.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-002-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-002-thumb.webp"
+      ],
+      "image": "img/pmi-002.jpg",
+      "thumb": "img/pmi-002-thumb.jpg",
+      "imageWebp": "img/pmi-002.webp",
+      "thumbWebp": "img/pmi-002-thumb.webp"
+    },
+    {
+      "id": "pmi-003",
+      "name": "PMI-003",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-003.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-003-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-003.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-003-thumb.webp"
+      ],
+      "image": "img/pmi-003.jpg",
+      "thumb": "img/pmi-003-thumb.jpg",
+      "imageWebp": "img/pmi-003.webp",
+      "thumbWebp": "img/pmi-003-thumb.webp"
+    },
+    {
+      "id": "pmi-004",
+      "name": "PMI-004",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-004.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-004-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-004.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-004-thumb.webp"
+      ],
+      "image": "img/pmi-004.jpg",
+      "thumb": "img/pmi-004-thumb.jpg",
+      "imageWebp": "img/pmi-004.webp",
+      "thumbWebp": "img/pmi-004-thumb.webp"
+    },
+    {
+      "id": "pmi-005",
+      "name": "PMI-005",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-005.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-005-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-005.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-005-thumb.webp"
+      ],
+      "image": "img/pmi-005.jpg",
+      "thumb": "img/pmi-005-thumb.jpg",
+      "imageWebp": "img/pmi-005.webp",
+      "thumbWebp": "img/pmi-005-thumb.webp"
+    },
+    {
+      "id": "pmi-006",
+      "name": "PMI-006",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-006.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-006-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-006.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-006-thumb.webp"
+      ],
+      "image": "img/pmi-006.jpg",
+      "thumb": "img/pmi-006-thumb.jpg",
+      "imageWebp": "img/pmi-006.webp",
+      "thumbWebp": "img/pmi-006-thumb.webp"
+    },
+    {
+      "id": "pmi-007",
+      "name": "PMI-007",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-007.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-007-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-007.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-007-thumb.webp"
+      ],
+      "image": "img/pmi-007.jpg",
+      "thumb": "img/pmi-007-thumb.jpg",
+      "imageWebp": "img/pmi-007.webp",
+      "thumbWebp": "img/pmi-007-thumb.webp"
+    },
+    {
+      "id": "pmi-008",
+      "name": "PMI-008",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-008.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-008-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-008.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-008-thumb.webp"
+      ],
+      "image": "img/pmi-008.jpg",
+      "thumb": "img/pmi-008-thumb.jpg",
+      "imageWebp": "img/pmi-008.webp",
+      "thumbWebp": "img/pmi-008-thumb.webp"
+    },
+    {
+      "id": "pmi-009",
+      "name": "PMI-009",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-009.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-009-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-009.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-009-thumb.webp"
+      ],
+      "image": "img/pmi-009.jpg",
+      "thumb": "img/pmi-009-thumb.jpg",
+      "imageWebp": "img/pmi-009.webp",
+      "thumbWebp": "img/pmi-009-thumb.webp"
+    },
+    {
+      "id": "pmi-010",
+      "name": "PMI-010",
+      "unit": "Primaris Intercessor",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Intercessors",
+      "squad": "Intercessor Squad (3)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Imperium",
+        "Tacticus",
+        "Grenades",
+        "Intercessor Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/pmi-010.jpg"
+      ],
+      "thumbs": [
+        "img/pmi-010-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/pmi-010.webp"
+      ],
+      "thumbsWebp": [
+        "img/pmi-010-thumb.webp"
+      ],
+      "image": "img/pmi-010.jpg",
+      "thumb": "img/pmi-010-thumb.jpg",
+      "imageWebp": "img/pmi-010.webp",
+      "thumbWebp": "img/pmi-010-thumb.webp"
+    },
+    {
+      "id": "sqt-001",
+      "name": "SQT-001",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-001.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-001-thumb.webp"
+      ],
+      "image": "img/sqt-001.jpg",
+      "thumb": "img/sqt-001-thumb.jpg",
+      "imageWebp": "img/sqt-001.webp",
+      "thumbWebp": "img/sqt-001-thumb.webp"
+    },
+    {
+      "id": "sqt-002",
+      "name": "SQT-002",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-002.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-002-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-002-thumb.webp"
+      ],
+      "image": "img/sqt-002.jpg",
+      "thumb": "img/sqt-002-thumb.jpg",
+      "imageWebp": "img/sqt-002.webp",
+      "thumbWebp": "img/sqt-002-thumb.webp"
+    },
+    {
+      "id": "sqt-003",
+      "name": "SQT-003",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-003.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-003-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-003.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-003-thumb.webp"
+      ],
+      "image": "img/sqt-003.jpg",
+      "thumb": "img/sqt-003-thumb.jpg",
+      "imageWebp": "img/sqt-003.webp",
+      "thumbWebp": "img/sqt-003-thumb.webp"
+    },
+    {
+      "id": "sqt-004",
+      "name": "SQT-004",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-004.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-004-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-004.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-004-thumb.webp"
+      ],
+      "image": "img/sqt-004.jpg",
+      "thumb": "img/sqt-004-thumb.jpg",
+      "imageWebp": "img/sqt-004.webp",
+      "thumbWebp": "img/sqt-004-thumb.webp"
+    },
+    {
+      "id": "sqt-005",
+      "name": "SQT-005",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-005.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-005-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-005.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-005-thumb.webp"
+      ],
+      "image": "img/sqt-005.jpg",
+      "thumb": "img/sqt-005-thumb.jpg",
+      "imageWebp": "img/sqt-005.webp",
+      "thumbWebp": "img/sqt-005-thumb.webp"
+    },
+    {
+      "id": "sqt-006",
+      "name": "SQT-006",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-006.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-006-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-006.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-006-thumb.webp"
+      ],
+      "image": "img/sqt-006.jpg",
+      "thumb": "img/sqt-006-thumb.jpg",
+      "imageWebp": "img/sqt-006.webp",
+      "thumbWebp": "img/sqt-006-thumb.webp"
+    },
+    {
+      "id": "sqt-007",
+      "name": "SQT-007",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-007.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-007-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-007.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-007-thumb.webp"
+      ],
+      "image": "img/sqt-007.jpg",
+      "thumb": "img/sqt-007-thumb.jpg",
+      "imageWebp": "img/sqt-007.webp",
+      "thumbWebp": "img/sqt-007-thumb.webp"
+    },
+    {
+      "id": "sqt-008",
+      "name": "SQT-008",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-008.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-008-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-008.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-008-thumb.webp"
+      ],
+      "image": "img/sqt-008.jpg",
+      "thumb": "img/sqt-008-thumb.jpg",
+      "imageWebp": "img/sqt-008.webp",
+      "thumbWebp": "img/sqt-008-thumb.webp"
+    },
+    {
+      "id": "sqt-009",
+      "name": "SQT-009",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-009.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-009-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-009.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-009-thumb.webp"
+      ],
+      "image": "img/sqt-009.jpg",
+      "thumb": "img/sqt-009-thumb.jpg",
+      "imageWebp": "img/sqt-009.webp",
+      "thumbWebp": "img/sqt-009-thumb.webp"
+    },
+    {
+      "id": "sqt-010",
+      "name": "SQT-010",
+      "unit": "Scout",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Kill Team - Scout Squad",
+      "squad": "Scout Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "28.5mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Scout",
+        "Grenades",
+        "Smoke",
+        "Scout Squad"
+      ],
+      "created": null,
+      "images": [
+        "img/sqt-010.jpg"
+      ],
+      "thumbs": [
+        "img/sqt-010-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/sqt-010.webp"
+      ],
+      "thumbsWebp": [
+        "img/sqt-010-thumb.webp"
+      ],
+      "image": "img/sqt-010.jpg",
+      "thumb": "img/sqt-010-thumb.jpg",
+      "imageWebp": "img/sqt-010.webp",
+      "thumbWebp": "img/sqt-010-thumb.webp"
     }
   ]
 }

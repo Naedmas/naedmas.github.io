@@ -1610,6 +1610,135 @@ mark.kb-hit.is-current {
     display: block;
 }
 
+.model-card-art picture,
+.model-card-art picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.model-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.model-carousel-track,
+.model-carousel-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.model-carousel-slide {
+    display: none;
+}
+
+.model-carousel-slide.is-active {
+    display: block;
+}
+
+.model-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.15rem;
+    height: 2.15rem;
+    border: 1px solid var(--gold);
+    background: rgba(5, 8, 6, 0.86);
+    color: var(--gold);
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-family: Cinzel, "Times New Roman", serif;
+    box-shadow: 0 0 0 1px rgba(5, 8, 6, 0.45);
+}
+
+.model-carousel-btn.prev { left: 0.35rem; }
+.model-carousel-btn.next { right: 0.35rem; }
+
+.model-carousel-btn:hover,
+.model-carousel-btn:focus-visible {
+    color: var(--gold);
+    border-color: var(--gold);
+    outline: none;
+}
+
+.model-carousel.is-single .model-carousel-btn,
+.model-carousel.is-single .model-carousel-count,
+.model-carousel.is-single .model-carousel-dots {
+    display: none;
+}
+
+.model-carousel-count {
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.45rem;
+    z-index: 2;
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    color: var(--bone);
+    background: rgba(5, 8, 6, 0.7);
+    border: 1px solid rgba(201, 162, 39, 0.28);
+    padding: 0.12rem 0.38rem;
+}
+
+.model-carousel-dots {
+    position: absolute;
+    bottom: 0.45rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.35rem;
+    z-index: 2;
+}
+
+.model-carousel-dot {
+    width: 0.48rem;
+    height: 0.48rem;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 162, 39, 0.55);
+    background: rgba(5, 8, 6, 0.55);
+    cursor: pointer;
+}
+
+.model-carousel-dot.is-active {
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+.lightbox-art {
+    position: relative;
+}
+
+.lightbox-art .model-carousel {
+    max-height: 56vh;
+}
+
+.lightbox-art .model-carousel-slide img,
+.lightbox-art .model-carousel-slide picture,
+.lightbox-art .model-carousel-slide picture img {
+    width: 100%;
+    height: 100%;
+    max-height: 56vh;
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-art .model-carousel-count {
+    top: 0.45rem;
+    bottom: auto;
+    right: 0.45rem;
+}
+
+
 .model-placeholder {
     object-fit: cover;
 }
@@ -1842,6 +1971,10 @@ mark.kb-hit.is-current {
     }
     .lightbox-art { min-height: 14rem; max-height: 42vh; }
     .lightbox-art img { max-height: 42vh; }
+    .lightbox-art .model-carousel { max-height: 42vh; }
+    .lightbox-art .model-carousel-slide img,
+    .lightbox-art .model-carousel-slide picture img { max-height: 42vh; }
+    .model-carousel-btn { width: 1.85rem; height: 1.85rem; }
     .detail-list li { grid-template-columns: 1fr; gap: 0.15rem; }
     .comments { padding: 1.15rem 1rem 1.3rem; }
     .comment-form { max-width: none; }
