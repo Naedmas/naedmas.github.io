@@ -56,15 +56,24 @@
         return html;
     }
 
-    function haystack(bit) {
-        return [
-            bit.name,
-            bit.armourType,
-            bit.faction,
-            (bit.kits || []).join(" "),
-            (bit.models || []).join(" "),
-            (bit.keywords || []).join(" ")
-        ].join(" ").toLowerCase();
+    function escapeRegExp(value) {
+        return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+
+    function searchFields(bit) {
+        return [bit.name, bit.armourType, bit.faction]
+            .concat(bit.kits || [], bit.models || [], bit.keywords || [])
+            .filter(Boolean)
+            .map(function (value) { return String(value); });
+    }
+
+    function matchesQuery(bit, query) {
+        const q = String(query || "").trim().replace(/\s+/g, " ");
+        if (!q) return true;
+        const pattern = new RegExp("\\b" + escapeRegExp(q) + "\\b", "i");
+        return searchFields(bit).some(function (field) {
+            return pattern.test(field);
+        });
     }
 
     function byName(a, b) {
@@ -77,7 +86,7 @@
             if (state.armourType && (bit.armourType || "Unspecified") !== state.armourType) return false;
             if (state.faction && bit.faction !== state.faction) return false;
             if (state.kit && (bit.kits || []).indexOf(state.kit) === -1) return false;
-            if (q && haystack(bit).indexOf(q) === -1) return false;
+            if (q && !matchesQuery(bit, q)) return false;
             return true;
         });
         if (state.sort !== "qty-desc") return bits;
