@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T19:23:02+10:00",
+  "updatedAt": "2026-11-22T18:21:35+10:00",
   "source": "My Individual Models",
   "count": 51,
   "models": [
@@ -457,7 +457,7 @@
         "Smoke",
         "Infiltrator Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/hwm-001.jpg"
       ],
@@ -494,7 +494,7 @@
         "Smoke",
         "Infiltrator Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/hwm-002.jpg"
       ],
@@ -511,376 +511,6 @@
       "thumb": "img/hwm-002-thumb.jpg",
       "imageWebp": "img/hwm-002.webp",
       "thumbWebp": "img/hwm-002-thumb.webp"
-    },
-    {
-      "id": "inf-001",
-      "name": "INF-001",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-001.jpg"
-      ],
-      "thumbs": [
-        "img/inf-001-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-001.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-001-thumb.webp"
-      ],
-      "image": "img/inf-001.jpg",
-      "thumb": "img/inf-001-thumb.jpg",
-      "imageWebp": "img/inf-001.webp",
-      "thumbWebp": "img/inf-001-thumb.webp"
-    },
-    {
-      "id": "inf-002",
-      "name": "INF-002",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-002.jpg"
-      ],
-      "thumbs": [
-        "img/inf-002-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-002.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-002-thumb.webp"
-      ],
-      "image": "img/inf-002.jpg",
-      "thumb": "img/inf-002-thumb.jpg",
-      "imageWebp": "img/inf-002.webp",
-      "thumbWebp": "img/inf-002-thumb.webp"
-    },
-    {
-      "id": "inf-003",
-      "name": "INF-003",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-003.jpg"
-      ],
-      "thumbs": [
-        "img/inf-003-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-003.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-003-thumb.webp"
-      ],
-      "image": "img/inf-003.jpg",
-      "thumb": "img/inf-003-thumb.jpg",
-      "imageWebp": "img/inf-003.webp",
-      "thumbWebp": "img/inf-003-thumb.webp"
-    },
-    {
-      "id": "inf-004",
-      "name": "INF-004",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-004.jpg"
-      ],
-      "thumbs": [
-        "img/inf-004-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-004.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-004-thumb.webp"
-      ],
-      "image": "img/inf-004.jpg",
-      "thumb": "img/inf-004-thumb.jpg",
-      "imageWebp": "img/inf-004.webp",
-      "thumbWebp": "img/inf-004-thumb.webp"
-    },
-    {
-      "id": "inf-005",
-      "name": "INF-005",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-005.jpg"
-      ],
-      "thumbs": [
-        "img/inf-005-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-005.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-005-thumb.webp"
-      ],
-      "image": "img/inf-005.jpg",
-      "thumb": "img/inf-005-thumb.jpg",
-      "imageWebp": "img/inf-005.webp",
-      "thumbWebp": "img/inf-005-thumb.webp"
-    },
-    {
-      "id": "inf-006",
-      "name": "INF-006",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-006.jpg"
-      ],
-      "thumbs": [
-        "img/inf-006-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-006.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-006-thumb.webp"
-      ],
-      "image": "img/inf-006.jpg",
-      "thumb": "img/inf-006-thumb.jpg",
-      "imageWebp": "img/inf-006.webp",
-      "thumbWebp": "img/inf-006-thumb.webp"
-    },
-    {
-      "id": "inf-007",
-      "name": "INF-007",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-007.jpg"
-      ],
-      "thumbs": [
-        "img/inf-007-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-007.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-007-thumb.webp"
-      ],
-      "image": "img/inf-007.jpg",
-      "thumb": "img/inf-007-thumb.jpg",
-      "imageWebp": "img/inf-007.webp",
-      "thumbWebp": "img/inf-007-thumb.webp"
-    },
-    {
-      "id": "inf-008",
-      "name": "INF-008",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-008.jpg"
-      ],
-      "thumbs": [
-        "img/inf-008-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-008.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-008-thumb.webp"
-      ],
-      "image": "img/inf-008.jpg",
-      "thumb": "img/inf-008-thumb.jpg",
-      "imageWebp": "img/inf-008.webp",
-      "thumbWebp": "img/inf-008-thumb.webp"
-    },
-    {
-      "id": "inf-009",
-      "name": "INF-009",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-009.jpg"
-      ],
-      "thumbs": [
-        "img/inf-009-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-009.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-009-thumb.webp"
-      ],
-      "image": "img/inf-009.jpg",
-      "thumb": "img/inf-009-thumb.jpg",
-      "imageWebp": "img/inf-009.webp",
-      "thumbWebp": "img/inf-009-thumb.webp"
-    },
-    {
-      "id": "inf-010",
-      "name": "INF-010",
-      "unit": "Infiltrator",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Primaris Infiltrators",
-      "squad": "Infiltrator Squad (1)",
-      "wargear": [],
-      "type": "Infantry",
-      "baseSize": "32mm",
-      "keywords": [
-        "Infantry",
-        "Imperium",
-        "Phobos",
-        "Grenades",
-        "Smoke",
-        "Infiltrator Squad"
-      ],
-      "created": null,
-      "images": [
-        "img/inf-010.jpg"
-      ],
-      "thumbs": [
-        "img/inf-010-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/inf-010.webp"
-      ],
-      "thumbsWebp": [
-        "img/inf-010-thumb.webp"
-      ],
-      "image": "img/inf-010.jpg",
-      "thumb": "img/inf-010-thumb.jpg",
-      "imageWebp": "img/inf-010.webp",
-      "thumbWebp": "img/inf-010-thumb.webp"
     },
     {
       "id": "icc-001",
@@ -994,46 +624,6 @@
       "thumbWebp": "img/ich-thumb.webp"
     },
     {
-      "id": "lut-001",
-      "name": "LUT-001",
-      "unit": "Lieutenant",
-      "faction": "Adeptus Astartes",
-      "status": "Painted",
-      "kit": "Space Marines - Lieutenant",
-      "squad": "Lieutenant (1)",
-      "wargear": [
-        "Powerfist",
-        "Bolt Rifle"
-      ],
-      "type": "Infantry",
-      "baseSize": "40mm",
-      "keywords": [
-        "Infantry",
-        "Character",
-        "Imperium",
-        "Tacticus",
-        "Lieutenant",
-        "Grenades"
-      ],
-      "created": null,
-      "images": [
-        "img/lut-001.jpg"
-      ],
-      "thumbs": [
-        "img/lut-001-thumb.jpg"
-      ],
-      "imagesWebp": [
-        "img/lut-001.webp"
-      ],
-      "thumbsWebp": [
-        "img/lut-001-thumb.webp"
-      ],
-      "image": "img/lut-001.jpg",
-      "thumb": "img/lut-001-thumb.jpg",
-      "imageWebp": "img/lut-001.webp",
-      "thumbWebp": "img/lut-001-thumb.webp"
-    },
-    {
       "id": "hlb-001",
       "name": "HLB-001",
       "unit": "Primaris Hellblaster",
@@ -1072,6 +662,376 @@
       "thumbWebp": "img/hlb-001-thumb.webp"
     },
     {
+      "id": "inf-001",
+      "name": "INF-001",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-001.jpg"
+      ],
+      "thumbs": [
+        "img/inf-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-001-thumb.webp"
+      ],
+      "image": "img/inf-001.jpg",
+      "thumb": "img/inf-001-thumb.jpg",
+      "imageWebp": "img/inf-001.webp",
+      "thumbWebp": "img/inf-001-thumb.webp"
+    },
+    {
+      "id": "inf-002",
+      "name": "INF-002",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-002.jpg"
+      ],
+      "thumbs": [
+        "img/inf-002-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-002.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-002-thumb.webp"
+      ],
+      "image": "img/inf-002.jpg",
+      "thumb": "img/inf-002-thumb.jpg",
+      "imageWebp": "img/inf-002.webp",
+      "thumbWebp": "img/inf-002-thumb.webp"
+    },
+    {
+      "id": "inf-003",
+      "name": "INF-003",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-003.jpg"
+      ],
+      "thumbs": [
+        "img/inf-003-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-003.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-003-thumb.webp"
+      ],
+      "image": "img/inf-003.jpg",
+      "thumb": "img/inf-003-thumb.jpg",
+      "imageWebp": "img/inf-003.webp",
+      "thumbWebp": "img/inf-003-thumb.webp"
+    },
+    {
+      "id": "inf-004",
+      "name": "INF-004",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-004.jpg"
+      ],
+      "thumbs": [
+        "img/inf-004-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-004.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-004-thumb.webp"
+      ],
+      "image": "img/inf-004.jpg",
+      "thumb": "img/inf-004-thumb.jpg",
+      "imageWebp": "img/inf-004.webp",
+      "thumbWebp": "img/inf-004-thumb.webp"
+    },
+    {
+      "id": "inf-005",
+      "name": "INF-005",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-005.jpg"
+      ],
+      "thumbs": [
+        "img/inf-005-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-005.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-005-thumb.webp"
+      ],
+      "image": "img/inf-005.jpg",
+      "thumb": "img/inf-005-thumb.jpg",
+      "imageWebp": "img/inf-005.webp",
+      "thumbWebp": "img/inf-005-thumb.webp"
+    },
+    {
+      "id": "inf-006",
+      "name": "INF-006",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-006.jpg"
+      ],
+      "thumbs": [
+        "img/inf-006-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-006.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-006-thumb.webp"
+      ],
+      "image": "img/inf-006.jpg",
+      "thumb": "img/inf-006-thumb.jpg",
+      "imageWebp": "img/inf-006.webp",
+      "thumbWebp": "img/inf-006-thumb.webp"
+    },
+    {
+      "id": "inf-007",
+      "name": "INF-007",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-007.jpg"
+      ],
+      "thumbs": [
+        "img/inf-007-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-007.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-007-thumb.webp"
+      ],
+      "image": "img/inf-007.jpg",
+      "thumb": "img/inf-007-thumb.jpg",
+      "imageWebp": "img/inf-007.webp",
+      "thumbWebp": "img/inf-007-thumb.webp"
+    },
+    {
+      "id": "inf-008",
+      "name": "INF-008",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-008.jpg"
+      ],
+      "thumbs": [
+        "img/inf-008-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-008.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-008-thumb.webp"
+      ],
+      "image": "img/inf-008.jpg",
+      "thumb": "img/inf-008-thumb.jpg",
+      "imageWebp": "img/inf-008.webp",
+      "thumbWebp": "img/inf-008-thumb.webp"
+    },
+    {
+      "id": "inf-009",
+      "name": "INF-009",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-009.jpg"
+      ],
+      "thumbs": [
+        "img/inf-009-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-009.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-009-thumb.webp"
+      ],
+      "image": "img/inf-009.jpg",
+      "thumb": "img/inf-009-thumb.jpg",
+      "imageWebp": "img/inf-009.webp",
+      "thumbWebp": "img/inf-009-thumb.webp"
+    },
+    {
+      "id": "inf-010",
+      "name": "INF-010",
+      "unit": "Primaris Infiltrator",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Primaris Infiltrators",
+      "squad": "Infiltrator Squad (1)",
+      "wargear": [],
+      "type": "Infantry",
+      "baseSize": "32mm",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Phobos",
+        "Grenades",
+        "Smoke",
+        "Infiltrator Squad"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/inf-010.jpg"
+      ],
+      "thumbs": [
+        "img/inf-010-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/inf-010.webp"
+      ],
+      "thumbsWebp": [
+        "img/inf-010-thumb.webp"
+      ],
+      "image": "img/inf-010.jpg",
+      "thumb": "img/inf-010-thumb.jpg",
+      "imageWebp": "img/inf-010.webp",
+      "thumbWebp": "img/inf-010-thumb.webp"
+    },
+    {
       "id": "i-001",
       "name": "I-001",
       "unit": "Primaris Intercessor",
@@ -1090,7 +1050,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/i-001.jpg"
       ],
@@ -1130,7 +1090,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-10-16",
       "images": [
         "img/pmi-001.jpg"
       ],
@@ -1167,7 +1127,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-002.jpg"
       ],
@@ -1204,7 +1164,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-003.jpg"
       ],
@@ -1241,7 +1201,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-004.jpg"
       ],
@@ -1278,7 +1238,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-005.jpg"
       ],
@@ -1315,7 +1275,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-006.jpg"
       ],
@@ -1352,7 +1312,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-007.jpg"
       ],
@@ -1389,7 +1349,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-008.jpg"
       ],
@@ -1426,7 +1386,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-009.jpg"
       ],
@@ -1463,7 +1423,7 @@
         "Grenades",
         "Intercessor Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/pmi-010.jpg"
       ],
@@ -1480,6 +1440,46 @@
       "thumb": "img/pmi-010-thumb.jpg",
       "imageWebp": "img/pmi-010.webp",
       "thumbWebp": "img/pmi-010-thumb.webp"
+    },
+    {
+      "id": "lut-001",
+      "name": "LUT-001",
+      "unit": "Primaris Lieutenant",
+      "faction": "Adeptus Astartes",
+      "status": "Painted",
+      "kit": "Space Marines - Lieutenant",
+      "squad": "Lieutenant (1)",
+      "wargear": [
+        "Powerfist",
+        "Bolt Rifle"
+      ],
+      "type": "Infantry",
+      "baseSize": "40mm",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Tacticus",
+        "Lieutenant",
+        "Grenades"
+      ],
+      "created": "2026-11-19",
+      "images": [
+        "img/lut-001.jpg"
+      ],
+      "thumbs": [
+        "img/lut-001-thumb.jpg"
+      ],
+      "imagesWebp": [
+        "img/lut-001.webp"
+      ],
+      "thumbsWebp": [
+        "img/lut-001-thumb.webp"
+      ],
+      "image": "img/lut-001.jpg",
+      "thumb": "img/lut-001-thumb.jpg",
+      "imageWebp": "img/lut-001.webp",
+      "thumbWebp": "img/lut-001-thumb.webp"
     },
     {
       "id": "sqt-001",
@@ -1500,7 +1500,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-001.jpg"
       ],
@@ -1537,7 +1537,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-002.jpg"
       ],
@@ -1574,7 +1574,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-003.jpg"
       ],
@@ -1611,7 +1611,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-004.jpg"
       ],
@@ -1648,7 +1648,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-005.jpg"
       ],
@@ -1685,7 +1685,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-006.jpg"
       ],
@@ -1722,7 +1722,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-007.jpg"
       ],
@@ -1759,7 +1759,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-008.jpg"
       ],
@@ -1796,7 +1796,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-009.jpg"
       ],
@@ -1833,7 +1833,7 @@
         "Smoke",
         "Scout Squad"
       ],
-      "created": null,
+      "created": "2026-11-19",
       "images": [
         "img/sqt-010.jpg"
       ],

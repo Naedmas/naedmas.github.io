@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T10:39:16+10:00",
+  "updatedAt": "2026-11-22T18:25:27+10:00",
   "source": "Bits",
   "sourceId": "3ee2db47-2d73-8028-a9fd-f1ed0879e636",
   "dataSourceId": "3ee2db47-2d73-8011-9a38-000bd87f21bf",
@@ -32,7 +32,11 @@
       "thumb": "img/accessories-thumb.jpg",
       "imageWebp": "img/accessories.webp",
       "thumbWebp": "img/accessories-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "armageddon-captain-bare-head-a",
@@ -61,7 +65,11 @@
       "thumb": "img/armageddon-captain-bare-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-captain-bare-head-a.webp",
       "thumbWebp": "img/armageddon-captain-bare-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "armageddon-captain-head-a",
@@ -90,7 +98,11 @@
       "thumb": "img/armageddon-captain-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-captain-head-a.webp",
       "thumbWebp": "img/armageddon-captain-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-captain-head-b",
@@ -119,7 +131,11 @@
       "thumb": "img/armageddon-captain-head-b-thumb.jpg",
       "imageWebp": "img/armageddon-captain-head-b.webp",
       "thumbWebp": "img/armageddon-captain-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-land-speeder-spares",
@@ -148,7 +164,14 @@
       "thumb": "img/armageddon-land-speeder-spares-thumb.jpg",
       "imageWebp": "img/armageddon-land-speeder-spares.webp",
       "thumbWebp": "img/armageddon-land-speeder-spares-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Heavy Flamer",
+        "Accessory",
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-librarian-bare-head-a",
@@ -177,7 +200,11 @@
       "thumb": "img/armageddon-librarian-bare-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-librarian-bare-head-a.webp",
       "thumbWebp": "img/armageddon-librarian-bare-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "armageddon-librarian-head-a",
@@ -206,7 +233,11 @@
       "thumb": "img/armageddon-librarian-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-librarian-head-a.webp",
       "thumbWebp": "img/armageddon-librarian-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-space-marine-bare-head-a",
@@ -235,7 +266,11 @@
       "thumb": "img/armageddon-space-marine-bare-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-bare-head-a.webp",
       "thumbWebp": "img/armageddon-space-marine-bare-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "armageddon-space-marine-bolt-rifle",
@@ -264,7 +299,12 @@
       "thumb": "img/armageddon-space-marine-bolt-rifle-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-bolt-rifle.webp",
       "thumbWebp": "img/armageddon-space-marine-bolt-rifle-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "armageddon-space-marine-chainsword",
@@ -293,7 +333,12 @@
       "thumb": "img/armageddon-space-marine-chainsword-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-chainsword.webp",
       "thumbWebp": "img/armageddon-space-marine-chainsword-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "armageddon-space-marine-head-a",
@@ -322,7 +367,11 @@
       "thumb": "img/armageddon-space-marine-head-a-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-a.webp",
       "thumbWebp": "img/armageddon-space-marine-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-space-marine-head-b",
@@ -351,7 +400,11 @@
       "thumb": "img/armageddon-space-marine-head-b-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-b.webp",
       "thumbWebp": "img/armageddon-space-marine-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-space-marine-head-c",
@@ -380,7 +433,11 @@
       "thumb": "img/armageddon-space-marine-head-c-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-c.webp",
       "thumbWebp": "img/armageddon-space-marine-head-c-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-space-marine-head-d",
@@ -409,7 +466,11 @@
       "thumb": "img/armageddon-space-marine-head-d-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-d.webp",
       "thumbWebp": "img/armageddon-space-marine-head-d-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-space-marine-head-e",
@@ -438,7 +499,11 @@
       "thumb": "img/armageddon-space-marine-head-e-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-e.webp",
       "thumbWebp": "img/armageddon-space-marine-head-e-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "armageddon-space-marine-head-f",
@@ -467,7 +532,11 @@
       "thumb": "img/armageddon-space-marine-head-f-thumb.jpg",
       "imageWebp": "img/armageddon-space-marine-head-f.webp",
       "thumbWebp": "img/armageddon-space-marine-head-f-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "auto-bolt-rifle-chamber",
@@ -496,7 +565,11 @@
       "thumb": "img/auto-bolt-rifle-chamber-thumb.jpg",
       "imageWebp": "img/auto-bolt-rifle-chamber.webp",
       "thumbWebp": "img/auto-bolt-rifle-chamber-thumb.webp",
-      "qty": 14
+      "qty": 14,
+      "keywords": [
+        "Weapon",
+        "Auto Bolt Rifle"
+      ]
     },
     {
       "id": "bare-head-a",
@@ -525,7 +598,11 @@
       "thumb": "img/bare-head-a-thumb.jpg",
       "imageWebp": "img/bare-head-a.webp",
       "thumbWebp": "img/bare-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-a-3ee2db472d7380d5a149e3bd195eda57",
@@ -554,7 +631,11 @@
       "thumb": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57-thumb.jpg",
       "imageWebp": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57.webp",
       "thumbWebp": "img/bare-head-a-3ee2db472d7380d5a149e3bd195eda57-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-b",
@@ -583,7 +664,11 @@
       "thumb": "img/bare-head-b-thumb.jpg",
       "imageWebp": "img/bare-head-b.webp",
       "thumbWebp": "img/bare-head-b-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9",
@@ -612,7 +697,11 @@
       "thumb": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9-thumb.jpg",
       "imageWebp": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9.webp",
       "thumbWebp": "img/bare-head-b-3ee2db472d7380eab3aae0abf51fc4b9-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-c",
@@ -641,7 +730,11 @@
       "thumb": "img/bare-head-c-thumb.jpg",
       "imageWebp": "img/bare-head-c.webp",
       "thumbWebp": "img/bare-head-c-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-d",
@@ -670,7 +763,11 @@
       "thumb": "img/bare-head-d-thumb.jpg",
       "imageWebp": "img/bare-head-d.webp",
       "thumbWebp": "img/bare-head-d-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-e",
@@ -699,7 +796,11 @@
       "thumb": "img/bare-head-e-thumb.jpg",
       "imageWebp": "img/bare-head-e.webp",
       "thumbWebp": "img/bare-head-e-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "bare-head-f",
@@ -728,7 +829,11 @@
       "thumb": "img/bare-head-f-thumb.jpg",
       "imageWebp": "img/bare-head-f.webp",
       "thumbWebp": "img/bare-head-f-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-accessory-a",
@@ -740,7 +845,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-accessory-a.jpg"
       ],
@@ -757,7 +862,10 @@
       "thumb": "img/black-templars-crusader-squad-accessory-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-accessory-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-accessory-b",
@@ -769,7 +877,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-accessory-b.jpg"
       ],
@@ -786,7 +894,10 @@
       "thumb": "img/black-templars-crusader-squad-accessory-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-accessory-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-accessory-c",
@@ -798,7 +909,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-accessory-c.jpg"
       ],
@@ -815,7 +926,10 @@
       "thumb": "img/black-templars-crusader-squad-accessory-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-accessory-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-accessory-d",
@@ -827,7 +941,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-accessory-d.jpg"
       ],
@@ -844,7 +958,10 @@
       "thumb": "img/black-templars-crusader-squad-accessory-d-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-accessory-d.webp",
       "thumbWebp": "img/black-templars-crusader-squad-accessory-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-bare-head-a",
@@ -856,7 +973,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-bare-head-a.jpg"
       ],
@@ -873,7 +990,11 @@
       "thumb": "img/black-templars-crusader-squad-bare-head-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bare-head-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-bare-head-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-bare-head-b",
@@ -885,7 +1006,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-bare-head-b.jpg"
       ],
@@ -902,7 +1023,11 @@
       "thumb": "img/black-templars-crusader-squad-bare-head-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bare-head-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-bare-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-bare-head-c",
@@ -914,7 +1039,7 @@
       "models": [
         "Primaris Sword Brother"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-bare-head-c.jpg"
       ],
@@ -931,7 +1056,11 @@
       "thumb": "img/black-templars-crusader-squad-bare-head-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bare-head-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-bare-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-bolt-rifle-a-3",
@@ -943,7 +1072,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-bolt-rifle-a-3.jpg"
       ],
@@ -960,7 +1089,12 @@
       "thumb": "img/black-templars-crusader-squad-bolt-rifle-a-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bolt-rifle-a-3.webp",
       "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-a-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-bolt-rifle-b-3",
@@ -972,7 +1106,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-bolt-rifle-b-3.jpg"
       ],
@@ -989,7 +1123,12 @@
       "thumb": "img/black-templars-crusader-squad-bolt-rifle-b-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bolt-rifle-b-3.webp",
       "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-b-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-bolt-rifle-c-3",
@@ -1001,7 +1140,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-bolt-rifle-c-3.jpg"
       ],
@@ -1018,7 +1157,12 @@
       "thumb": "img/black-templars-crusader-squad-bolt-rifle-c-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-bolt-rifle-c-3.webp",
       "thumbWebp": "img/black-templars-crusader-squad-bolt-rifle-c-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-chainsword-a",
@@ -1030,7 +1174,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-chainsword-a.jpg"
       ],
@@ -1047,7 +1191,12 @@
       "thumb": "img/black-templars-crusader-squad-chainsword-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-chainsword-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-chainsword-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-chainsword-b",
@@ -1059,7 +1208,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-chainsword-b.jpg"
       ],
@@ -1076,7 +1225,12 @@
       "thumb": "img/black-templars-crusader-squad-chainsword-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-chainsword-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-chainsword-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-chainsword-c",
@@ -1088,7 +1242,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-chainsword-c.jpg"
       ],
@@ -1105,7 +1259,12 @@
       "thumb": "img/black-templars-crusader-squad-chainsword-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-chainsword-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-chainsword-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-head-a",
@@ -1117,7 +1276,7 @@
       "models": [
         "Primaris Sword Brother"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-head-a.jpg"
       ],
@@ -1134,7 +1293,11 @@
       "thumb": "img/black-templars-crusader-squad-head-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-head-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-head-b",
@@ -1146,7 +1309,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-head-b.jpg"
       ],
@@ -1163,7 +1326,11 @@
       "thumb": "img/black-templars-crusader-squad-head-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-head-c",
@@ -1175,7 +1342,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-head-c.jpg"
       ],
@@ -1192,7 +1359,11 @@
       "thumb": "img/black-templars-crusader-squad-head-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-head-d",
@@ -1204,7 +1375,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-head-d.jpg"
       ],
@@ -1221,7 +1392,11 @@
       "thumb": "img/black-templars-crusader-squad-head-d-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-head-d.webp",
       "thumbWebp": "img/black-templars-crusader-squad-head-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-heavy-bolt-pistol-a",
@@ -1233,7 +1408,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-heavy-bolt-pistol-a.jpg"
       ],
@@ -1250,7 +1425,12 @@
       "thumb": "img/black-templars-crusader-squad-heavy-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Heavy Bolt Pistol"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-heavy-bolt-pistol-b",
@@ -1262,7 +1442,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-heavy-bolt-pistol-b.jpg"
       ],
@@ -1279,7 +1459,12 @@
       "thumb": "img/black-templars-crusader-squad-heavy-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Heavy Bolt Pistol"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-heavy-bolt-pistol-c",
@@ -1291,7 +1476,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-heavy-bolt-pistol-c.jpg"
       ],
@@ -1308,7 +1493,12 @@
       "thumb": "img/black-templars-crusader-squad-heavy-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-heavy-bolt-pistol-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Heavy Bolt Pistol"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-holster",
@@ -1320,7 +1510,7 @@
       "models": [
         "Primaris Sword Brother"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-holster.jpg"
       ],
@@ -1337,7 +1527,10 @@
       "thumb": "img/black-templars-crusader-squad-holster-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-holster.webp",
       "thumbWebp": "img/black-templars-crusader-squad-holster-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-left-arm",
@@ -1349,7 +1542,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-left-arm.jpg"
       ],
@@ -1366,7 +1559,10 @@
       "thumb": "img/black-templars-crusader-squad-left-arm-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-left-arm.webp",
       "thumbWebp": "img/black-templars-crusader-squad-left-arm-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-a",
@@ -1378,7 +1574,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bare-head-a.jpg"
       ],
@@ -1395,7 +1591,11 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-b",
@@ -1407,7 +1607,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bare-head-b.jpg"
       ],
@@ -1424,7 +1624,11 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-c",
@@ -1436,7 +1640,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bare-head-c.jpg"
       ],
@@ -1453,7 +1657,11 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bare-head-d",
@@ -1465,7 +1673,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bare-head-d.jpg"
       ],
@@ -1482,7 +1690,11 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bare-head-d-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bare-head-d.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bare-head-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-carbine-a-2",
@@ -1494,7 +1706,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2.jpg"
       ],
@@ -1511,7 +1723,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-a-2-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-carbine-b-3",
@@ -1523,7 +1740,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3.jpg"
       ],
@@ -1540,7 +1757,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-b-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-carbine-c-3",
@@ -1552,7 +1774,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3.jpg"
       ],
@@ -1569,7 +1791,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-carbine-c-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-pistol-a",
@@ -1581,7 +1808,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bolt-pistol-a.jpg"
       ],
@@ -1598,7 +1825,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-pistol-b",
@@ -1610,7 +1842,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bolt-pistol-b.jpg"
       ],
@@ -1627,7 +1859,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-bolt-pistol-c",
@@ -1639,7 +1876,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-bolt-pistol-c.jpg"
       ],
@@ -1656,7 +1893,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-bolt-pistol-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-chainsword-a",
@@ -1668,7 +1910,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-chainsword-a.jpg"
       ],
@@ -1685,7 +1927,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-chainsword-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-chainsword-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-chainsword-b",
@@ -1697,7 +1944,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-chainsword-b.jpg"
       ],
@@ -1714,7 +1961,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-chainsword-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-chainsword-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-chainsword-c",
@@ -1726,7 +1978,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-chainsword-c.jpg"
       ],
@@ -1743,7 +1995,12 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-chainsword-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-chainsword-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-chainsword-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-neophyte-shoulder-pad",
@@ -1755,7 +2012,7 @@
       "models": [
         "Primaris Neophyte"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-neophyte-shoulder-pad.jpg"
       ],
@@ -1772,7 +2029,10 @@
       "thumb": "img/black-templars-crusader-squad-neophyte-shoulder-pad-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-neophyte-shoulder-pad.webp",
       "thumbWebp": "img/black-templars-crusader-squad-neophyte-shoulder-pad-thumb.webp",
-      "qty": 8
+      "qty": 8,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-parchment",
@@ -1784,7 +2044,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-parchment.jpg"
       ],
@@ -1801,7 +2061,10 @@
       "thumb": "img/black-templars-crusader-squad-parchment-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-parchment.webp",
       "thumbWebp": "img/black-templars-crusader-squad-parchment-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-power-axe",
@@ -1813,7 +2076,7 @@
       "models": [
         "Primaris Sword Brother"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-power-axe.jpg"
       ],
@@ -1830,7 +2093,12 @@
       "thumb": "img/black-templars-crusader-squad-power-axe-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-power-axe.webp",
       "thumbWebp": "img/black-templars-crusader-squad-power-axe-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Power Axe"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-power-sword-3",
@@ -1842,7 +2110,7 @@
       "models": [
         "Primaris Sword Brother"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-power-sword-3.jpg"
       ],
@@ -1859,7 +2127,13 @@
       "thumb": "img/black-templars-crusader-squad-power-sword-3-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-power-sword-3.webp",
       "thumbWebp": "img/black-templars-crusader-squad-power-sword-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Right Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-powerfist",
@@ -1871,7 +2145,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-powerfist.jpg"
       ],
@@ -1888,7 +2162,13 @@
       "thumb": "img/black-templars-crusader-squad-powerfist-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-powerfist.webp",
       "thumbWebp": "img/black-templars-crusader-squad-powerfist-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Hand",
+        "Weapon",
+        "Power Fist"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-purity-seal-a",
@@ -1900,7 +2180,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-purity-seal-a.jpg"
       ],
@@ -1917,7 +2197,11 @@
       "thumb": "img/black-templars-crusader-squad-purity-seal-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-purity-seal-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-purity-seal-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Purity Seal",
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-purity-seal-b",
@@ -1929,7 +2213,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-purity-seal-b.jpg"
       ],
@@ -1946,7 +2230,11 @@
       "thumb": "img/black-templars-crusader-squad-purity-seal-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-purity-seal-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-purity-seal-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Purity Seal",
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-purity-seal-c",
@@ -1958,7 +2246,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-purity-seal-c.jpg"
       ],
@@ -1975,7 +2263,11 @@
       "thumb": "img/black-templars-crusader-squad-purity-seal-c-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-purity-seal-c.webp",
       "thumbWebp": "img/black-templars-crusader-squad-purity-seal-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Purity Seal",
+        "Accessory"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-tilt-shield-a",
@@ -1987,7 +2279,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-tilt-shield-a.jpg"
       ],
@@ -2004,7 +2296,10 @@
       "thumb": "img/black-templars-crusader-squad-tilt-shield-a-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-tilt-shield-a.webp",
       "thumbWebp": "img/black-templars-crusader-squad-tilt-shield-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "black-templars-crusader-squad-tilt-shield-b",
@@ -2016,7 +2311,7 @@
       "models": [
         "Primaris Initiate"
       ],
-      "faction": null,
+      "faction": "Black Templars",
       "images": [
         "img/black-templars-crusader-squad-tilt-shield-b.jpg"
       ],
@@ -2033,7 +2328,10 @@
       "thumb": "img/black-templars-crusader-squad-tilt-shield-b-thumb.jpg",
       "imageWebp": "img/black-templars-crusader-squad-tilt-shield-b.webp",
       "thumbWebp": "img/black-templars-crusader-squad-tilt-shield-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "black-templars-transfer-sheet",
@@ -2060,7 +2358,10 @@
       "thumb": "img/black-templars-transfer-sheet-thumb.jpg",
       "imageWebp": "img/black-templars-transfer-sheet.webp",
       "thumbWebp": "img/black-templars-transfer-sheet-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "bolt-carbine-b",
@@ -2070,7 +2371,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -2089,7 +2390,12 @@
       "thumb": "img/bolt-carbine-b-thumb.jpg",
       "imageWebp": "img/bolt-carbine-b.webp",
       "thumbWebp": "img/bolt-carbine-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "bolt-carbine-c",
@@ -2099,7 +2405,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -2118,7 +2424,12 @@
       "thumb": "img/bolt-carbine-c-thumb.jpg",
       "imageWebp": "img/bolt-carbine-c.webp",
       "thumbWebp": "img/bolt-carbine-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "bolt-rifle-pistol",
@@ -2147,7 +2458,13 @@
       "thumb": "img/bolt-rifle-pistol-thumb.jpg",
       "imageWebp": "img/bolt-rifle-pistol.webp",
       "thumbWebp": "img/bolt-rifle-pistol-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-b",
@@ -2176,7 +2493,12 @@
       "thumb": "img/bolt-rifle-b-thumb.jpg",
       "imageWebp": "img/bolt-rifle-b.webp",
       "thumbWebp": "img/bolt-rifle-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-c",
@@ -2205,7 +2527,12 @@
       "thumb": "img/bolt-rifle-c-thumb.jpg",
       "imageWebp": "img/bolt-rifle-c.webp",
       "thumbWebp": "img/bolt-rifle-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-chamber",
@@ -2234,7 +2561,11 @@
       "thumb": "img/bolt-rifle-chamber-thumb.jpg",
       "imageWebp": "img/bolt-rifle-chamber.webp",
       "thumbWebp": "img/bolt-rifle-chamber-thumb.webp",
-      "qty": 9
+      "qty": 9,
+      "keywords": [
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-d",
@@ -2263,7 +2594,12 @@
       "thumb": "img/bolt-rifle-d-thumb.jpg",
       "imageWebp": "img/bolt-rifle-d.webp",
       "thumbWebp": "img/bolt-rifle-d-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-e",
@@ -2292,7 +2628,12 @@
       "thumb": "img/bolt-rifle-e-thumb.jpg",
       "imageWebp": "img/bolt-rifle-e.webp",
       "thumbWebp": "img/bolt-rifle-e-thumb.webp",
-      "qty": 5
+      "qty": 5,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-f",
@@ -2321,7 +2662,12 @@
       "thumb": "img/bolt-rifle-f-thumb.jpg",
       "imageWebp": "img/bolt-rifle-f.webp",
       "thumbWebp": "img/bolt-rifle-f-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-f-3f32db472d7380159b71c398f68a29e0",
@@ -2350,7 +2696,12 @@
       "thumb": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0-thumb.jpg",
       "imageWebp": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0.webp",
       "thumbWebp": "img/bolt-rifle-f-3f32db472d7380159b71c398f68a29e0-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-g",
@@ -2379,7 +2730,12 @@
       "thumb": "img/bolt-rifle-g-thumb.jpg",
       "imageWebp": "img/bolt-rifle-g.webp",
       "thumbWebp": "img/bolt-rifle-g-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "bolt-rifle-right-arm",
@@ -2408,7 +2764,12 @@
       "thumb": "img/bolt-rifle-right-arm-thumb.jpg",
       "imageWebp": "img/bolt-rifle-right-arm.webp",
       "thumbWebp": "img/bolt-rifle-right-arm-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-1-body-4-13",
@@ -2437,7 +2798,10 @@
       "thumb": "img/dark-angels-deathwing-knights-1-body-4-13-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-body-4-13.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-1-body-4-13-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Torso"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-1-mace-of-absolution",
@@ -2466,7 +2830,12 @@
       "thumb": "img/dark-angels-deathwing-knights-1-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-mace-of-absolution.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-1-mace-of-absolution-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Mace of Absolution"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-1-relic-mace",
@@ -2495,7 +2864,12 @@
       "thumb": "img/dark-angels-deathwing-knights-1-relic-mace-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-relic-mace.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-1-relic-mace-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Relic Mace"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-1-right-shoulder",
@@ -2524,7 +2898,10 @@
       "thumb": "img/dark-angels-deathwing-knights-1-right-shoulder-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-1-right-shoulder.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-1-right-shoulder-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-2-mace-of-absolution",
@@ -2553,7 +2930,12 @@
       "thumb": "img/dark-angels-deathwing-knights-2-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-2-mace-of-absolution.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-2-mace-of-absolution-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Mace of Absolution"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-3-mace-of-absolution",
@@ -2582,7 +2964,12 @@
       "thumb": "img/dark-angels-deathwing-knights-3-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-3-mace-of-absolution.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-3-mace-of-absolution-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Mace of Absolution"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-3-storm-shield",
@@ -2611,7 +2998,10 @@
       "thumb": "img/dark-angels-deathwing-knights-3-storm-shield-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-3-storm-shield.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-3-storm-shield-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-4-mace-of-absolution",
@@ -2640,7 +3030,12 @@
       "thumb": "img/dark-angels-deathwing-knights-4-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-4-mace-of-absolution.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-4-mace-of-absolution-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Mace of Absolution"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-4-power-sword",
@@ -2669,7 +3064,12 @@
       "thumb": "img/dark-angels-deathwing-knights-4-power-sword-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-4-power-sword.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-4-power-sword-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-5-mace-of-absolution",
@@ -2698,7 +3098,12 @@
       "thumb": "img/dark-angels-deathwing-knights-5-mace-of-absolution-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-5-mace-of-absolution.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-5-mace-of-absolution-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Mace of Absolution"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-a",
@@ -2727,7 +3132,11 @@
       "thumb": "img/dark-angels-deathwing-knights-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-a.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-e",
@@ -2756,7 +3165,11 @@
       "thumb": "img/dark-angels-deathwing-knights-head-e-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-e.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-e-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-f",
@@ -2785,7 +3198,10 @@
       "thumb": "img/dark-angels-deathwing-knights-head-f-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-f.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-f-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-g",
@@ -2814,7 +3230,11 @@
       "thumb": "img/dark-angels-deathwing-knights-head-g-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-g.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-g-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-h",
@@ -2843,7 +3263,11 @@
       "thumb": "img/dark-angels-deathwing-knights-head-h-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-h.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-h-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-m",
@@ -2872,7 +3296,11 @@
       "thumb": "img/dark-angels-deathwing-knights-head-m-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-m.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-m-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-head-n",
@@ -2901,7 +3329,10 @@
       "thumb": "img/dark-angels-deathwing-knights-head-n-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-head-n.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-head-n-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-shoulder-pad-a",
@@ -2930,7 +3361,10 @@
       "thumb": "img/dark-angels-deathwing-knights-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-shoulder-pad-a.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-shoulder-pad-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-deathwing-knights-shoulder-pad-b",
@@ -2959,7 +3393,10 @@
       "thumb": "img/dark-angels-deathwing-knights-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-deathwing-knights-shoulder-pad-b.webp",
       "thumbWebp": "img/dark-angels-deathwing-knights-shoulder-pad-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-mkvi-heads",
@@ -2984,7 +3421,11 @@
       "thumb": "img/dark-angels-mkvi-heads-thumb.jpg",
       "imageWebp": "img/dark-angels-mkvi-heads.webp",
       "thumbWebp": "img/dark-angels-mkvi-heads-thumb.webp",
-      "qty": 9
+      "qty": 9,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-upgrades-accessory-a",
@@ -3011,7 +3452,10 @@
       "thumb": "img/dark-angels-upgrades-accessory-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-accessory-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-accessory-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-accessory-b",
@@ -3038,7 +3482,10 @@
       "thumb": "img/dark-angels-upgrades-accessory-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-accessory-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-accessory-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-accessory-c",
@@ -3065,7 +3512,10 @@
       "thumb": "img/dark-angels-upgrades-accessory-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-accessory-c.webp",
       "thumbWebp": "img/dark-angels-upgrades-accessory-c-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-aggressors-shoulder-pad-a",
@@ -3092,7 +3542,10 @@
       "thumb": "img/dark-angels-upgrades-aggressors-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-a-thumb.webp",
-      "qty": 7
+      "qty": 7,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-aggressors-shoulder-pad-b",
@@ -3119,7 +3572,10 @@
       "thumb": "img/dark-angels-upgrades-aggressors-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-aggressors-shoulder-pad-b-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-backpack-icon",
@@ -3146,7 +3602,10 @@
       "thumb": "img/dark-angels-upgrades-backpack-icon-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-backpack-icon.webp",
       "thumbWebp": "img/dark-angels-upgrades-backpack-icon-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-bare-head-a",
@@ -3173,7 +3632,11 @@
       "thumb": "img/dark-angels-upgrades-bare-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-bare-head-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-bare-head-a-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-bare-head-b",
@@ -3200,7 +3663,11 @@
       "thumb": "img/dark-angels-upgrades-bare-head-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-bare-head-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-bare-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-bladeguard-shoulder-pad",
@@ -3227,7 +3694,10 @@
       "thumb": "img/dark-angels-upgrades-bladeguard-shoulder-pad-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-bladeguard-shoulder-pad.webp",
       "thumbWebp": "img/dark-angels-upgrades-bladeguard-shoulder-pad-thumb.webp",
-      "qty": 5
+      "qty": 5,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-book-relic",
@@ -3254,7 +3724,10 @@
       "thumb": "img/dark-angels-upgrades-book-relic-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-book-relic.webp",
       "thumbWebp": "img/dark-angels-upgrades-book-relic-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-gravis-shoulder-pad-a",
@@ -3281,7 +3754,10 @@
       "thumb": "img/dark-angels-upgrades-gravis-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-a-thumb.webp",
-      "qty": 11
+      "qty": 11,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-gravis-shoulder-pad-b",
@@ -3308,7 +3784,10 @@
       "thumb": "img/dark-angels-upgrades-gravis-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-gravis-shoulder-pad-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-head-a",
@@ -3335,7 +3814,11 @@
       "thumb": "img/dark-angels-upgrades-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-head-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-upgrades-head-b",
@@ -3362,7 +3845,11 @@
       "thumb": "img/dark-angels-upgrades-head-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-head-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-upgrades-head-c",
@@ -3389,7 +3876,11 @@
       "thumb": "img/dark-angels-upgrades-head-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-head-c.webp",
       "thumbWebp": "img/dark-angels-upgrades-head-c-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hip-armour-a",
@@ -3416,7 +3907,10 @@
       "thumb": "img/dark-angels-upgrades-hip-armour-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hip-armour-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-hip-armour-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hip-armour-b",
@@ -3443,7 +3937,10 @@
       "thumb": "img/dark-angels-upgrades-hip-armour-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hip-armour-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-hip-armour-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hooded-head-a",
@@ -3470,7 +3967,10 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-a-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hooded-head-b",
@@ -3497,7 +3997,10 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hooded-head-c",
@@ -3524,7 +4027,10 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-c.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hooded-head-d",
@@ -3551,7 +4057,10 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-d-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-d.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-d-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hooded-head-e",
@@ -3578,7 +4087,10 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-e-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-e.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-e-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-hooded-head-f",
@@ -3605,7 +4117,10 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-f-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-f.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-f-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "dark-angels-upgrades-phobos-shoulder-pad",
@@ -3632,7 +4147,10 @@
       "thumb": "img/dark-angels-upgrades-phobos-shoulder-pad-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-phobos-shoulder-pad.webp",
       "thumbWebp": "img/dark-angels-upgrades-phobos-shoulder-pad-thumb.webp",
-      "qty": 11
+      "qty": 11,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-plasma-cannon-3",
@@ -3659,7 +4177,11 @@
       "thumb": "img/dark-angels-upgrades-plasma-cannon-3-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-plasma-cannon-3.webp",
       "thumbWebp": "img/dark-angels-upgrades-plasma-cannon-3-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Weapon",
+        "Plasma Cannon"
+      ]
     },
     {
       "id": "dark-angels-upgrades-pouches-a",
@@ -3686,7 +4208,11 @@
       "thumb": "img/dark-angels-upgrades-pouches-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-pouches-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-pouches-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-pouches-b",
@@ -3713,7 +4239,11 @@
       "thumb": "img/dark-angels-upgrades-pouches-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-pouches-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-pouches-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-power-sword-a",
@@ -3740,7 +4270,12 @@
       "thumb": "img/dark-angels-upgrades-power-sword-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-power-sword-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-power-sword-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "dark-angels-upgrades-power-sword-b",
@@ -3767,7 +4302,12 @@
       "thumb": "img/dark-angels-upgrades-power-sword-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-power-sword-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-power-sword-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "dark-angels-upgrades-ravenwing-rear-wing-2",
@@ -3794,7 +4334,11 @@
       "thumb": "img/dark-angels-upgrades-ravenwing-rear-wing-2-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-rear-wing-2.webp",
       "thumbWebp": "img/dark-angels-upgrades-ravenwing-rear-wing-2-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-a",
@@ -3821,7 +4365,11 @@
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-b",
@@ -3848,7 +4396,11 @@
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-c",
@@ -3875,7 +4427,11 @@
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-c.webp",
       "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-c-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-ravenwing-symbol-d",
@@ -3902,7 +4458,11 @@
       "thumb": "img/dark-angels-upgrades-ravenwing-symbol-d-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-ravenwing-symbol-d.webp",
       "thumbWebp": "img/dark-angels-upgrades-ravenwing-symbol-d-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "dark-angels-upgrades-small-knife",
@@ -3929,7 +4489,11 @@
       "thumb": "img/dark-angels-upgrades-small-knife-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-small-knife.webp",
       "thumbWebp": "img/dark-angels-upgrades-small-knife-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "dark-angels-upgrades-storm-bolter-half",
@@ -3956,7 +4520,11 @@
       "thumb": "img/dark-angels-upgrades-storm-bolter-half-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-storm-bolter-half.webp",
       "thumbWebp": "img/dark-angels-upgrades-storm-bolter-half-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Weapon",
+        "Storm Bolter"
+      ]
     },
     {
       "id": "dark-angels-upgrades-tacticus-shoulder-pad-a",
@@ -3983,7 +4551,10 @@
       "thumb": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-tacticus-shoulder-pad-b",
@@ -4010,7 +4581,10 @@
       "thumb": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-a",
@@ -4037,7 +4611,10 @@
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-b",
@@ -4064,7 +4641,10 @@
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-c",
@@ -4091,7 +4671,10 @@
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-c-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-c.webp",
       "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-c-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-d",
@@ -4118,7 +4701,10 @@
       "thumb": "img/dark-angels-upgrades-terminator-shoulder-pad-d-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-d.webp",
       "thumbWebp": "img/dark-angels-upgrades-terminator-shoulder-pad-d-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "dark-angels-upgrades-terminator-torso-front",
@@ -4145,7 +4731,10 @@
       "thumb": "img/dark-angels-upgrades-terminator-torso-front-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-terminator-torso-front.webp",
       "thumbWebp": "img/dark-angels-upgrades-terminator-torso-front-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Torso"
+      ]
     },
     {
       "id": "dark-angels-upgrades-tilt-shield-a",
@@ -4172,7 +4761,10 @@
       "thumb": "img/dark-angels-upgrades-tilt-shield-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tilt-shield-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-tilt-shield-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "dark-angels-upgrades-tilt-shield-b",
@@ -4199,7 +4791,10 @@
       "thumb": "img/dark-angels-upgrades-tilt-shield-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tilt-shield-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-tilt-shield-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "dark-angels-upgrades-watcher-in-the-dark-3",
@@ -4255,7 +4850,14 @@
       "thumb": "img/grenades-launcher-bolft-rifle-thumb.jpg",
       "imageWebp": "img/grenades-launcher-bolft-rifle.webp",
       "thumbWebp": "img/grenades-launcher-bolft-rifle-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Rifle",
+        "Grenade Launcher",
+        "Grenade"
+      ]
     },
     {
       "id": "head-a",
@@ -4284,7 +4886,11 @@
       "thumb": "img/head-a-thumb.jpg",
       "imageWebp": "img/head-a.webp",
       "thumbWebp": "img/head-a-thumb.webp",
-      "qty": 5
+      "qty": 5,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "head-b",
@@ -4313,7 +4919,11 @@
       "thumb": "img/head-b-thumb.jpg",
       "imageWebp": "img/head-b.webp",
       "thumbWebp": "img/head-b-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "head-with-helmet-a",
@@ -4342,7 +4952,11 @@
       "thumb": "img/head-with-helmet-a-thumb.jpg",
       "imageWebp": "img/head-with-helmet-a.webp",
       "thumbWebp": "img/head-with-helmet-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "head-with-helmet-b",
@@ -4371,7 +4985,11 @@
       "thumb": "img/head-with-helmet-b-thumb.jpg",
       "imageWebp": "img/head-with-helmet-b.webp",
       "thumbWebp": "img/head-with-helmet-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "heavy-bolt-pistol-a",
@@ -4400,7 +5018,12 @@
       "thumb": "img/heavy-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/heavy-bolt-pistol-a.webp",
       "thumbWebp": "img/heavy-bolt-pistol-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Heavy Bolt Pistol"
+      ]
     },
     {
       "id": "heavy-bolt-pistol-b",
@@ -4429,7 +5052,12 @@
       "thumb": "img/heavy-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/heavy-bolt-pistol-b.webp",
       "thumbWebp": "img/heavy-bolt-pistol-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Heavy Bolt Pistol"
+      ]
     },
     {
       "id": "heavy-bolt-pistol-c",
@@ -4458,7 +5086,11 @@
       "thumb": "img/heavy-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/heavy-bolt-pistol-c.webp",
       "thumbWebp": "img/heavy-bolt-pistol-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Heavy Bolt Pistol"
+      ]
     },
     {
       "id": "holster-a",
@@ -4487,7 +5119,10 @@
       "thumb": "img/holster-a-thumb.jpg",
       "imageWebp": "img/holster-a.webp",
       "thumbWebp": "img/holster-a-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "holster-b",
@@ -4516,7 +5151,10 @@
       "thumb": "img/holster-b-thumb.jpg",
       "imageWebp": "img/holster-b.webp",
       "thumbWebp": "img/holster-b-thumb.webp",
-      "qty": 6
+      "qty": 6,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "holster-c",
@@ -4545,7 +5183,10 @@
       "thumb": "img/holster-c-thumb.jpg",
       "imageWebp": "img/holster-c.webp",
       "thumbWebp": "img/holster-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "horus-heresy-mkiv-assault-squad-heads",
@@ -4570,7 +5211,11 @@
       "thumb": "img/horus-heresy-mkiv-assault-squad-heads-thumb.jpg",
       "imageWebp": "img/horus-heresy-mkiv-assault-squad-heads.webp",
       "thumbWebp": "img/horus-heresy-mkiv-assault-squad-heads-thumb.webp",
-      "qty": 12
+      "qty": 12,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "horus-heresy-space-marines-mkiii-command-squad-helmets",
@@ -4595,7 +5240,11 @@
       "thumb": "img/horus-heresy-space-marines-mkiii-command-squad-helmets-thumb.jpg",
       "imageWebp": "img/horus-heresy-space-marines-mkiii-command-squad-helmets.webp",
       "thumbWebp": "img/horus-heresy-space-marines-mkiii-command-squad-helmets-thumb.webp",
-      "qty": 5
+      "qty": 5,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "kill-team-phobos-strike-team-bare-head-b",
@@ -4622,7 +5271,11 @@
       "thumb": "img/kill-team-phobos-strike-team-bare-head-b-thumb.jpg",
       "imageWebp": "img/kill-team-phobos-strike-team-bare-head-b.webp",
       "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-phobos-strike-team-bare-head-d",
@@ -4649,7 +5302,11 @@
       "thumb": "img/kill-team-phobos-strike-team-bare-head-d-thumb.jpg",
       "imageWebp": "img/kill-team-phobos-strike-team-bare-head-d.webp",
       "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-d-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-phobos-strike-team-bare-head-e",
@@ -4676,7 +5333,11 @@
       "thumb": "img/kill-team-phobos-strike-team-bare-head-e-thumb.jpg",
       "imageWebp": "img/kill-team-phobos-strike-team-bare-head-e.webp",
       "thumbWebp": "img/kill-team-phobos-strike-team-bare-head-e-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-auspex",
@@ -4686,7 +5347,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4705,7 +5366,10 @@
       "thumb": "img/kill-team-space-marine-scouts-auspex-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-auspex.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-auspex-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-a",
@@ -4715,7 +5379,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4734,7 +5398,12 @@
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-a-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-a.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-b",
@@ -4744,7 +5413,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4763,7 +5432,12 @@
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-b-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-b.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-c",
@@ -4773,7 +5447,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4792,7 +5466,12 @@
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-c-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-c.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-d",
@@ -4802,7 +5481,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4821,7 +5500,12 @@
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-d-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-d.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-d-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-bolt-pistol-e",
@@ -4831,7 +5515,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4850,7 +5534,12 @@
       "thumb": "img/kill-team-space-marine-scouts-bolt-pistol-e-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-bolt-pistol-e.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-bolt-pistol-e-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun",
@@ -4860,7 +5549,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4879,7 +5568,11 @@
       "thumb": "img/kill-team-space-marine-scouts-boltgun-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Boltgun"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-a-3",
@@ -4889,7 +5582,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4908,7 +5601,13 @@
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-a-3-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Boltgun",
+        "Shotgun"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-b-3",
@@ -4918,7 +5617,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4937,7 +5636,13 @@
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-b-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Boltgun",
+        "Shotgun"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-c-3",
@@ -4947,7 +5652,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4966,7 +5671,13 @@
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-c-3-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Boltgun",
+        "Shotgun"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-d-4",
@@ -4976,7 +5687,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -4995,7 +5706,13 @@
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-d-4-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Boltgun",
+        "Shotgun"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-boltgun-and-shotgun-e-4",
@@ -5005,7 +5722,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5024,7 +5741,13 @@
       "thumb": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-boltgun-and-shotgun-e-4-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Boltgun",
+        "Shotgun"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-chainsword",
@@ -5034,7 +5757,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5053,7 +5776,12 @@
       "thumb": "img/kill-team-space-marine-scouts-chainsword-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-chainsword.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-chainsword-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-a",
@@ -5063,7 +5791,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5082,7 +5810,12 @@
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-a-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-a.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-b",
@@ -5092,7 +5825,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5111,7 +5844,12 @@
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-b-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-b.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-c",
@@ -5121,7 +5859,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5140,7 +5878,12 @@
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-c-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-c.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-d",
@@ -5150,7 +5893,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5169,7 +5912,12 @@
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-d-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-d.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-combat-blade-e",
@@ -5179,7 +5927,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5198,7 +5946,12 @@
       "thumb": "img/kill-team-space-marine-scouts-combat-blade-e-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-combat-blade-e.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-combat-blade-e-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-grapnel-launcher",
@@ -5208,7 +5961,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5227,7 +5980,12 @@
       "thumb": "img/kill-team-space-marine-scouts-grapnel-launcher-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-grapnel-launcher.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-grapnel-launcher-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Grapnel Launcher"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-a",
@@ -5237,7 +5995,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5256,7 +6014,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-a-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-a.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-b",
@@ -5266,7 +6028,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5285,7 +6047,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-b-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-b.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-c",
@@ -5295,7 +6061,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5314,7 +6080,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-c-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-c.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-d",
@@ -5324,7 +6094,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5343,7 +6113,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-d-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-d.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-d-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-e",
@@ -5353,7 +6127,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5372,7 +6146,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-e-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-e.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-e-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-f",
@@ -5382,7 +6160,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5401,7 +6179,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-f-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-f.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-f-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-g",
@@ -5411,7 +6193,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5430,7 +6212,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-g-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-g.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-g-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-h",
@@ -5440,7 +6226,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5459,7 +6245,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-h-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-h.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-h-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-head-i-2",
@@ -5469,7 +6259,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5488,7 +6278,11 @@
       "thumb": "img/kill-team-space-marine-scouts-head-i-2-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-head-i-2.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-head-i-2-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-heavy-bolter-6",
@@ -5498,7 +6292,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5517,7 +6311,12 @@
       "thumb": "img/kill-team-space-marine-scouts-heavy-bolter-6-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-heavy-bolter-6.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-heavy-bolter-6-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Heavy Bolter"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-left-arm",
@@ -5527,7 +6326,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5546,7 +6345,10 @@
       "thumb": "img/kill-team-space-marine-scouts-left-arm-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-left-arm.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-left-arm-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-missile-launcher-3",
@@ -5556,7 +6358,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5575,7 +6377,12 @@
       "thumb": "img/kill-team-space-marine-scouts-missile-launcher-3-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-missile-launcher-3.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-missile-launcher-3-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Missile Launcher"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-missiles",
@@ -5585,7 +6392,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5604,7 +6411,11 @@
       "thumb": "img/kill-team-space-marine-scouts-missiles-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-missiles.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-missiles-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Missiles"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-right-arm",
@@ -5614,7 +6425,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5633,7 +6444,10 @@
       "thumb": "img/kill-team-space-marine-scouts-right-arm-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-right-arm.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-right-arm-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "kill-team-space-marine-scouts-sniper-rifle",
@@ -5643,7 +6457,7 @@
         "Kill Team - Scout Squad"
       ],
       "models": [
-        "Scout Squad"
+        "Scout"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -5662,7 +6476,12 @@
       "thumb": "img/kill-team-space-marine-scouts-sniper-rifle-thumb.jpg",
       "imageWebp": "img/kill-team-space-marine-scouts-sniper-rifle.webp",
       "thumbWebp": "img/kill-team-space-marine-scouts-sniper-rifle-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Sniper Rifle"
+      ]
     },
     {
       "id": "knife",
@@ -5691,7 +6510,11 @@
       "thumb": "img/knife-thumb.jpg",
       "imageWebp": "img/knife.webp",
       "thumbWebp": "img/knife-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "landspeeder-bits",
@@ -5720,7 +6543,14 @@
       "thumb": "img/landspeeder-bits-thumb.jpg",
       "imageWebp": "img/landspeeder-bits.webp",
       "thumbWebp": "img/landspeeder-bits-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Heavy Flamer",
+        "Accessory",
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "left-arm-a",
@@ -5749,7 +6579,10 @@
       "thumb": "img/left-arm-a-thumb.jpg",
       "imageWebp": "img/left-arm-a.webp",
       "thumbWebp": "img/left-arm-a-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Left Arm"
+      ]
     },
     {
       "id": "left-arm-b",
@@ -5778,7 +6611,10 @@
       "thumb": "img/left-arm-b-thumb.jpg",
       "imageWebp": "img/left-arm-b.webp",
       "thumbWebp": "img/left-arm-b-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm"
+      ]
     },
     {
       "id": "left-arm-with-handle-sword",
@@ -5807,7 +6643,12 @@
       "thumb": "img/left-arm-with-handle-sword-thumb.jpg",
       "imageWebp": "img/left-arm-with-handle-sword.webp",
       "thumbWebp": "img/left-arm-with-handle-sword-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Sword Handle"
+      ]
     },
     {
       "id": "neo-volkite-pistol",
@@ -5836,7 +6677,11 @@
       "thumb": "img/neo-volkite-pistol-thumb.jpg",
       "imageWebp": "img/neo-volkite-pistol.webp",
       "thumbWebp": "img/neo-volkite-pistol-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Neo-Volkite Pistol"
+      ]
     },
     {
       "id": "pouches-a",
@@ -5865,7 +6710,11 @@
       "thumb": "img/pouches-a-thumb.jpg",
       "imageWebp": "img/pouches-a.webp",
       "thumbWebp": "img/pouches-a-thumb.webp",
-      "qty": 6
+      "qty": 6,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "pouches-b",
@@ -5894,7 +6743,11 @@
       "thumb": "img/pouches-b-thumb.jpg",
       "imageWebp": "img/pouches-b.webp",
       "thumbWebp": "img/pouches-b-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "power-sword-a",
@@ -5923,7 +6776,12 @@
       "thumb": "img/power-sword-a-thumb.jpg",
       "imageWebp": "img/power-sword-a.webp",
       "thumbWebp": "img/power-sword-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "power-sword-c",
@@ -5952,7 +6810,12 @@
       "thumb": "img/power-sword-c-thumb.jpg",
       "imageWebp": "img/power-sword-c.webp",
       "thumbWebp": "img/power-sword-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "power-sword-e",
@@ -5981,7 +6844,12 @@
       "thumb": "img/power-sword-e-thumb.jpg",
       "imageWebp": "img/power-sword-e.webp",
       "thumbWebp": "img/power-sword-e-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "power-sword-f",
@@ -6010,7 +6878,12 @@
       "thumb": "img/power-sword-f-thumb.jpg",
       "imageWebp": "img/power-sword-f.webp",
       "thumbWebp": "img/power-sword-f-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "power-sword-g",
@@ -6039,7 +6912,12 @@
       "thumb": "img/power-sword-g-thumb.jpg",
       "imageWebp": "img/power-sword-g.webp",
       "thumbWebp": "img/power-sword-g-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "power-sword-h",
@@ -6068,7 +6946,12 @@
       "thumb": "img/power-sword-h-thumb.jpg",
       "imageWebp": "img/power-sword-h.webp",
       "thumbWebp": "img/power-sword-h-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "primaris-helmet",
@@ -6097,7 +6980,11 @@
       "thumb": "img/primaris-helmet-thumb.jpg",
       "imageWebp": "img/primaris-helmet.webp",
       "thumbWebp": "img/primaris-helmet-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marine-assault-intercessors-grenade-arm-a",
@@ -6124,7 +7011,12 @@
       "thumb": "img/primaris-space-marine-assault-intercessors-grenade-arm-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-assault-intercessors-grenade-arm-a.webp",
       "thumbWebp": "img/primaris-space-marine-assault-intercessors-grenade-arm-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Grenade"
+      ]
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-holster-a",
@@ -6153,7 +7045,10 @@
       "thumb": "img/primaris-space-marine-bladeguard-veterans-holster-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-holster-a.webp",
       "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-holster-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-holster-b",
@@ -6182,7 +7077,10 @@
       "thumb": "img/primaris-space-marine-bladeguard-veterans-holster-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-holster-b.webp",
       "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-holster-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-small-shield-a",
@@ -6211,7 +7109,10 @@
       "thumb": "img/primaris-space-marine-bladeguard-veterans-small-shield-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-a.webp",
       "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-small-shield-b",
@@ -6240,7 +7141,10 @@
       "thumb": "img/primaris-space-marine-bladeguard-veterans-small-shield-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-b.webp",
       "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "primaris-space-marine-bladeguard-veterans-small-shield-c",
@@ -6269,7 +7173,10 @@
       "thumb": "img/primaris-space-marine-bladeguard-veterans-small-shield-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-c.webp",
       "thumbWebp": "img/primaris-space-marine-bladeguard-veterans-small-shield-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-accessory-a",
@@ -6298,7 +7205,10 @@
       "thumb": "img/primaris-space-marines-gravis-captain-accessory-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-accessory-a.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-accessory-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-accessory-b",
@@ -6327,7 +7237,10 @@
       "thumb": "img/primaris-space-marines-gravis-captain-accessory-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-accessory-b.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-accessory-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-bare-head-a",
@@ -6356,7 +7269,11 @@
       "thumb": "img/primaris-space-marines-gravis-captain-bare-head-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-bare-head-a.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-bare-head-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-bare-head-b",
@@ -6383,7 +7300,11 @@
       "thumb": "img/primaris-space-marines-gravis-captain-bare-head-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-bare-head-b.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-bare-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-chainsword",
@@ -6412,7 +7333,12 @@
       "thumb": "img/primaris-space-marines-gravis-captain-chainsword-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-chainsword.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-chainsword-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Chainsword"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-head",
@@ -6441,7 +7367,11 @@
       "thumb": "img/primaris-space-marines-gravis-captain-head-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-head.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-head-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-power-fist-right-2",
@@ -6470,7 +7400,13 @@
       "thumb": "img/primaris-space-marines-gravis-captain-power-fist-right-2-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-power-fist-right-2.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-power-fist-right-2-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Hand",
+        "Weapon",
+        "Power Fist"
+      ]
     },
     {
       "id": "primaris-space-marines-gravis-captain-power-sword",
@@ -6497,7 +7433,12 @@
       "thumb": "img/primaris-space-marines-gravis-captain-power-sword-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-gravis-captain-power-sword.webp",
       "thumbWebp": "img/primaris-space-marines-gravis-captain-power-sword-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-arms-3",
@@ -6507,7 +7448,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6526,7 +7467,13 @@
       "thumb": "img/primaris-space-marines-infiltrators-arms-3-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-arms-3.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-arms-3-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Left Arm",
+        "Right Arm",
+        "Weapon",
+        "Bolt Rifle"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-carbine-a-3",
@@ -6536,7 +7483,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6555,7 +7502,12 @@
       "thumb": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-a-3-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Both Hands",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-carbine-b-2",
@@ -6565,7 +7517,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6584,7 +7536,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-b-2-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-carbine-c",
@@ -6594,7 +7550,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6613,7 +7569,12 @@
       "thumb": "img/primaris-space-marines-infiltrators-bolt-carbine-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-c.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-carbine-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Carbine"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-bolt-pistol",
@@ -6623,7 +7584,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6642,7 +7603,12 @@
       "thumb": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-pistol.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-grenades-b",
@@ -6652,7 +7618,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6671,7 +7637,10 @@
       "thumb": "img/primaris-space-marines-infiltrators-grenades-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-grenades-b.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-grenades-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Grenade"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-a",
@@ -6681,7 +7650,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6700,7 +7669,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-a.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-a-thumb.webp",
-      "qty": 5
+      "qty": 5,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-b",
@@ -6710,7 +7683,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6729,7 +7702,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-b.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-c",
@@ -6739,7 +7716,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6758,7 +7735,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-c.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-c-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-d",
@@ -6768,7 +7749,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6787,7 +7768,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-d-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-d.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-e",
@@ -6797,7 +7782,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6816,7 +7801,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-e-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-e.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-e-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-f",
@@ -6826,7 +7815,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6845,7 +7834,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-f-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-f.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-f-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-g",
@@ -6855,7 +7848,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6874,7 +7867,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-g-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-g.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-g-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-h",
@@ -6884,7 +7881,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6903,7 +7900,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-h-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-h.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-h-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-i",
@@ -6913,7 +7914,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6932,7 +7933,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-i-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-i.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-i-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-head-j",
@@ -6942,7 +7947,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6961,7 +7966,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-head-j-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-head-j.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-head-j-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-marksman-bolt-carbine-piece",
@@ -6971,7 +7980,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -6990,7 +7999,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-marksman-bolt-carbine-piece-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Marksman Bolt Carbine"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-occulus-bolt-carbine-piece",
@@ -7000,7 +8013,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7019,7 +8032,11 @@
       "thumb": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-occulus-bolt-carbine-piece-thumb.webp",
-      "qty": 10
+      "qty": 10,
+      "keywords": [
+        "Weapon",
+        "Occulus Bolt Carbine"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-a",
@@ -7029,7 +8046,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7048,7 +8065,10 @@
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-a-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-a.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-b",
@@ -7058,7 +8078,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7077,7 +8097,12 @@
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-b-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-b.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-c",
@@ -7087,7 +8112,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7106,7 +8131,10 @@
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-c-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-c.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-d",
@@ -7116,7 +8144,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7135,7 +8163,12 @@
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-d-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-d.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Weapon",
+        "Combat Blade"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-right-arm-e",
@@ -7145,7 +8178,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7164,7 +8197,10 @@
       "thumb": "img/primaris-space-marines-infiltrators-right-arm-e-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-right-arm-e.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-right-arm-e-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "primaris-space-marines-infiltrators-shoulder-pad",
@@ -7174,7 +8210,7 @@
         "Space Marines - Primaris Infiltrators"
       ],
       "models": [
-        "Infiltrator Squad"
+        "Primaris Infiltrator"
       ],
       "faction": "Adeptus Astartes",
       "images": [
@@ -7193,7 +8229,10 @@
       "thumb": "img/primaris-space-marines-infiltrators-shoulder-pad-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-shoulder-pad.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-shoulder-pad-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "purity-seal",
@@ -7218,7 +8257,11 @@
       "thumb": "img/purity-seal-thumb.jpg",
       "imageWebp": "img/purity-seal.webp",
       "thumbWebp": "img/purity-seal-thumb.webp",
-      "qty": 15
+      "qty": 15,
+      "keywords": [
+        "Purity Seal",
+        "Accessory"
+      ]
     },
     {
       "id": "right-arm-a",
@@ -7247,7 +8290,10 @@
       "thumb": "img/right-arm-a-thumb.jpg",
       "imageWebp": "img/right-arm-a.webp",
       "thumbWebp": "img/right-arm-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "right-arm-a-3f22db472d73807a870bd77aa93e1a50",
@@ -7276,7 +8322,10 @@
       "thumb": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50-thumb.jpg",
       "imageWebp": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50.webp",
       "thumbWebp": "img/right-arm-a-3f22db472d73807a870bd77aa93e1a50-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "right-arm-b",
@@ -7305,7 +8354,10 @@
       "thumb": "img/right-arm-b-thumb.jpg",
       "imageWebp": "img/right-arm-b.webp",
       "thumbWebp": "img/right-arm-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "right-arm-b-3ee2db472d7380648736d8248bcce9cf",
@@ -7334,7 +8386,10 @@
       "thumb": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf-thumb.jpg",
       "imageWebp": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf.webp",
       "thumbWebp": "img/right-arm-b-3ee2db472d7380648736d8248bcce9cf-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "right-arm-c",
@@ -7363,7 +8418,10 @@
       "thumb": "img/right-arm-c-thumb.jpg",
       "imageWebp": "img/right-arm-c.webp",
       "thumbWebp": "img/right-arm-c-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "right-arm-d",
@@ -7392,7 +8450,10 @@
       "thumb": "img/right-arm-d-thumb.jpg",
       "imageWebp": "img/right-arm-d.webp",
       "thumbWebp": "img/right-arm-d-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Right Arm"
+      ]
     },
     {
       "id": "scabbard",
@@ -7421,7 +8482,10 @@
       "thumb": "img/scabbard-thumb.jpg",
       "imageWebp": "img/scabbard.webp",
       "thumbWebp": "img/scabbard-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "shield-a",
@@ -7450,7 +8514,10 @@
       "thumb": "img/shield-a-thumb.jpg",
       "imageWebp": "img/shield-a.webp",
       "thumbWebp": "img/shield-a-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "shield-b",
@@ -7479,7 +8546,10 @@
       "thumb": "img/shield-b-thumb.jpg",
       "imageWebp": "img/shield-b.webp",
       "thumbWebp": "img/shield-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "shoulder-pad-b",
@@ -7508,7 +8578,10 @@
       "thumb": "img/shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/shoulder-pad-b.webp",
       "thumbWebp": "img/shoulder-pad-b-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-c",
@@ -7537,7 +8610,10 @@
       "thumb": "img/shoulder-pad-c-thumb.jpg",
       "imageWebp": "img/shoulder-pad-c.webp",
       "thumbWebp": "img/shoulder-pad-c-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-d",
@@ -7566,7 +8642,10 @@
       "thumb": "img/shoulder-pad-d-thumb.jpg",
       "imageWebp": "img/shoulder-pad-d.webp",
       "thumbWebp": "img/shoulder-pad-d-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-e",
@@ -7595,7 +8674,10 @@
       "thumb": "img/shoulder-pad-e-thumb.jpg",
       "imageWebp": "img/shoulder-pad-e.webp",
       "thumbWebp": "img/shoulder-pad-e-thumb.webp",
-      "qty": 3
+      "qty": 2,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-f",
@@ -7624,7 +8706,10 @@
       "thumb": "img/shoulder-pad-f-thumb.jpg",
       "imageWebp": "img/shoulder-pad-f.webp",
       "thumbWebp": "img/shoulder-pad-f-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-g",
@@ -7653,7 +8738,10 @@
       "thumb": "img/shoulder-pad-g-thumb.jpg",
       "imageWebp": "img/shoulder-pad-g.webp",
       "thumbWebp": "img/shoulder-pad-g-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-h",
@@ -7682,7 +8770,10 @@
       "thumb": "img/shoulder-pad-h-thumb.jpg",
       "imageWebp": "img/shoulder-pad-h.webp",
       "thumbWebp": "img/shoulder-pad-h-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-i",
@@ -7711,7 +8802,10 @@
       "thumb": "img/shoulder-pad-i-thumb.jpg",
       "imageWebp": "img/shoulder-pad-i.webp",
       "thumbWebp": "img/shoulder-pad-i-thumb.webp",
-      "qty": 3
+      "qty": 3,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "shoulder-pad-primaris",
@@ -7740,7 +8834,10 @@
       "thumb": "img/shoulder-pad-primaris-thumb.jpg",
       "imageWebp": "img/shoulder-pad-primaris.webp",
       "thumbWebp": "img/shoulder-pad-primaris-thumb.webp",
-      "qty": 18
+      "qty": 18,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "space-marine-hellblasters-accessory",
@@ -7769,7 +8866,11 @@
       "thumb": "img/space-marine-hellblasters-accessory-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-accessory.webp",
       "thumbWebp": "img/space-marine-hellblasters-accessory-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "space-marine-hellblasters-assault-plasma-incinerator-part-a",
@@ -7798,7 +8899,11 @@
       "thumb": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a.webp",
       "thumbWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-a-thumb.webp",
-      "qty": 6
+      "qty": 6,
+      "keywords": [
+        "Weapon",
+        "Assault Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-assault-plasma-incinerator-part-b",
@@ -7827,7 +8932,11 @@
       "thumb": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b.webp",
       "thumbWebp": "img/space-marine-hellblasters-assault-plasma-incinerator-part-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Weapon",
+        "Assault Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-a",
@@ -7856,7 +8965,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-a.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-b",
@@ -7885,7 +8998,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-b.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-c",
@@ -7914,7 +9031,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-c-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-c.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-d",
@@ -7943,7 +9064,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-d-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-d.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-e",
@@ -7972,7 +9097,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-e-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-e.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-e-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-f",
@@ -8001,7 +9130,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-f-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-f.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-f-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bare-head-g",
@@ -8030,7 +9163,11 @@
       "thumb": "img/space-marine-hellblasters-bare-head-g-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bare-head-g.webp",
       "thumbWebp": "img/space-marine-hellblasters-bare-head-g-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-hellblasters-bolt-pistol",
@@ -8059,7 +9196,12 @@
       "thumb": "img/space-marine-hellblasters-bolt-pistol-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bolt-pistol.webp",
       "thumbWebp": "img/space-marine-hellblasters-bolt-pistol-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Bolt Pistol"
+      ]
     },
     {
       "id": "space-marine-hellblasters-head-a",
@@ -8088,7 +9230,11 @@
       "thumb": "img/space-marine-hellblasters-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-head-a.webp",
       "thumbWebp": "img/space-marine-hellblasters-head-a-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "space-marine-hellblasters-head-b",
@@ -8117,7 +9263,11 @@
       "thumb": "img/space-marine-hellblasters-head-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-head-b.webp",
       "thumbWebp": "img/space-marine-hellblasters-head-b-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "space-marine-hellblasters-heavy-plasma-incinerator-end-2",
@@ -8146,7 +9296,11 @@
       "thumb": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2.webp",
       "thumbWebp": "img/space-marine-hellblasters-heavy-plasma-incinerator-end-2-thumb.webp",
-      "qty": 7
+      "qty": 7,
+      "keywords": [
+        "Weapon",
+        "Heavy Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-holster-e",
@@ -8175,7 +9329,10 @@
       "thumb": "img/space-marine-hellblasters-holster-e-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-holster-e.webp",
       "thumbWebp": "img/space-marine-hellblasters-holster-e-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "space-marine-hellblasters-holster-f",
@@ -8204,7 +9361,10 @@
       "thumb": "img/space-marine-hellblasters-holster-f-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-holster-f.webp",
       "thumbWebp": "img/space-marine-hellblasters-holster-f-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-a",
@@ -8233,7 +9393,11 @@
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-a.webp",
       "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-a-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Weapon",
+        "Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-b",
@@ -8262,7 +9426,11 @@
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-b-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-b.webp",
       "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Weapon",
+        "Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-end-parts-2",
@@ -8291,7 +9459,11 @@
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2.webp",
       "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-end-parts-2-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Weapon",
+        "Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-g",
@@ -8320,7 +9492,11 @@
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-g-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-g.webp",
       "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-g-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Weapon",
+        "Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-plasma-incinerator-parts",
@@ -8349,7 +9525,11 @@
       "thumb": "img/space-marine-hellblasters-plasma-incinerator-parts-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-incinerator-parts.webp",
       "thumbWebp": "img/space-marine-hellblasters-plasma-incinerator-parts-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Weapon",
+        "Plasma Incinerator"
+      ]
     },
     {
       "id": "space-marine-hellblasters-plasma-pistol",
@@ -8378,7 +9558,12 @@
       "thumb": "img/space-marine-hellblasters-plasma-pistol-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-plasma-pistol.webp",
       "thumbWebp": "img/space-marine-hellblasters-plasma-pistol-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Plasma Pistol"
+      ]
     },
     {
       "id": "space-marine-hellblasters-pointing-arm",
@@ -8407,7 +9592,10 @@
       "thumb": "img/space-marine-hellblasters-pointing-arm-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-pointing-arm.webp",
       "thumbWebp": "img/space-marine-hellblasters-pointing-arm-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Left Arm"
+      ]
     },
     {
       "id": "space-marine-hellblasters-shoulder-pad",
@@ -8436,7 +9624,10 @@
       "thumb": "img/space-marine-hellblasters-shoulder-pad-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-shoulder-pad.webp",
       "thumbWebp": "img/space-marine-hellblasters-shoulder-pad-thumb.webp",
-      "qty": 9
+      "qty": 9,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "space-marine-hellblasters-shoulder-pad-a",
@@ -8465,7 +9656,10 @@
       "thumb": "img/space-marine-hellblasters-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-shoulder-pad-a.webp",
       "thumbWebp": "img/space-marine-hellblasters-shoulder-pad-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-bare-head-a",
@@ -8494,7 +9688,11 @@
       "thumb": "img/space-marine-terminator-squad-bare-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-a.webp",
       "thumbWebp": "img/space-marine-terminator-squad-bare-head-a-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-bare-head-b",
@@ -8523,7 +9721,11 @@
       "thumb": "img/space-marine-terminator-squad-bare-head-b-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-b.webp",
       "thumbWebp": "img/space-marine-terminator-squad-bare-head-b-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-bare-head-c",
@@ -8552,7 +9754,11 @@
       "thumb": "img/space-marine-terminator-squad-bare-head-c-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-c.webp",
       "thumbWebp": "img/space-marine-terminator-squad-bare-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-bare-head-d",
@@ -8581,7 +9787,11 @@
       "thumb": "img/space-marine-terminator-squad-bare-head-d-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-d.webp",
       "thumbWebp": "img/space-marine-terminator-squad-bare-head-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-bare-head-e",
@@ -8610,7 +9820,11 @@
       "thumb": "img/space-marine-terminator-squad-bare-head-e-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-bare-head-e.webp",
       "thumbWebp": "img/space-marine-terminator-squad-bare-head-e-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-head-a",
@@ -8639,7 +9853,11 @@
       "thumb": "img/space-marine-terminator-squad-head-a-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-head-a.webp",
       "thumbWebp": "img/space-marine-terminator-squad-head-a-thumb.webp",
-      "qty": 4
+      "qty": 4,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-head-c",
@@ -8668,7 +9886,11 @@
       "thumb": "img/space-marine-terminator-squad-head-c-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-head-c.webp",
       "thumbWebp": "img/space-marine-terminator-squad-head-c-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Head",
+        "Helmet"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-power-sword",
@@ -8697,7 +9919,12 @@
       "thumb": "img/space-marine-terminator-squad-power-sword-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-power-sword.webp",
       "thumbWebp": "img/space-marine-terminator-squad-power-sword-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Left Arm",
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-powerfist-and-chainfist-a-3",
@@ -8726,7 +9953,14 @@
       "thumb": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3.webp",
       "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-a-3-thumb.webp",
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Right Arm",
+        "Hand",
+        "Weapon",
+        "Power Fist",
+        "Chainfist"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-powerfist-and-chainfist-d-3",
@@ -8755,7 +9989,14 @@
       "thumb": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3.webp",
       "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-d-3-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Right Arm",
+        "Hand",
+        "Weapon",
+        "Power Fist",
+        "Chainfist"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-powerfist-and-chainfist-f-4",
@@ -8784,7 +10025,14 @@
       "thumb": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4.webp",
       "thumbWebp": "img/space-marine-terminator-squad-powerfist-and-chainfist-f-4-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Right Arm",
+        "Hand",
+        "Weapon",
+        "Power Fist",
+        "Chainfist"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-shoulder-pad-a",
@@ -8813,7 +10061,10 @@
       "thumb": "img/space-marine-terminator-squad-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-shoulder-pad-a.webp",
       "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-a-thumb.webp",
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-shoulder-pad-b",
@@ -8842,7 +10093,10 @@
       "thumb": "img/space-marine-terminator-squad-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-shoulder-pad-b.webp",
       "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-b-thumb.webp",
-      "qty": 10
+      "qty": 10,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "space-marine-terminator-squad-shoulder-pad-d",
@@ -8871,7 +10125,10 @@
       "thumb": "img/space-marine-terminator-squad-shoulder-pad-d-thumb.jpg",
       "imageWebp": "img/space-marine-terminator-squad-shoulder-pad-d.webp",
       "thumbWebp": "img/space-marine-terminator-squad-shoulder-pad-d-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "stalker-bolt-rifle-chamber",
@@ -8900,7 +10157,11 @@
       "thumb": "img/stalker-bolt-rifle-chamber-thumb.jpg",
       "imageWebp": "img/stalker-bolt-rifle-chamber.webp",
       "thumbWebp": "img/stalker-bolt-rifle-chamber-thumb.webp",
-      "qty": 21
+      "qty": 21,
+      "keywords": [
+        "Weapon",
+        "Stalker Bolt Rifle"
+      ]
     },
     {
       "id": "sword-handle",
@@ -8929,7 +10190,11 @@
       "thumb": "img/sword-handle-thumb.jpg",
       "imageWebp": "img/sword-handle.webp",
       "thumbWebp": "img/sword-handle-thumb.webp",
-      "qty": 2
+      "qty": 2,
+      "keywords": [
+        "Weapon",
+        "Sword Handle"
+      ]
     },
     {
       "id": "tilting-shield-s",
@@ -8946,7 +10211,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 1
+      "qty": 1,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "ultramarines-upgrades-aggressors-shoulder-pad-a",
@@ -8963,7 +10231,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-aggressors-shoulder-pad-b",
@@ -8980,7 +10251,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-aggressors-shoulder-pad-c",
@@ -8997,7 +10271,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-bladeguard-shoulder-pad-a",
@@ -9014,7 +10291,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-bladeguard-shoulder-pad-b",
@@ -9031,7 +10311,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-bladeguard-shoulder-pad-c",
@@ -9048,7 +10331,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-gravis-shoulder-pad-b",
@@ -9065,7 +10351,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-a",
@@ -9082,7 +10371,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-c",
@@ -9099,7 +10392,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-d",
@@ -9116,7 +10413,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-e",
@@ -9133,7 +10434,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-f",
@@ -9150,7 +10455,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-g",
@@ -9167,7 +10476,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-bare-head-h",
@@ -9184,7 +10497,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-shoulder-pad-a",
@@ -9201,7 +10518,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-shoulder-pad-b",
@@ -9218,7 +10538,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-phobos-shoulder-pad-c",
@@ -9235,7 +10558,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-head-a",
@@ -9252,7 +10578,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-head-b",
@@ -9269,7 +10598,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-head-d",
@@ -9286,7 +10618,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-holster",
@@ -9303,7 +10638,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-pouches",
@@ -9320,7 +10658,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Pouch",
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-power-sword",
@@ -9337,7 +10679,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Weapon",
+        "Power Sword"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-scabbard-a",
@@ -9354,7 +10700,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-scabbard-b",
@@ -9371,7 +10720,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-a",
@@ -9388,7 +10740,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-b",
@@ -9405,7 +10760,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-c",
@@ -9422,7 +10780,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-d",
@@ -9439,7 +10800,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-shoulder-pad-e",
@@ -9456,7 +10820,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shoulder Pad"
+      ]
     },
     {
       "id": "ultramarines-upgrades-tacticus-tilt-shield",
@@ -9473,7 +10840,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Shield"
+      ]
     },
     {
       "id": "ultramarines-upgrades-terminator-bare-head",
@@ -9490,7 +10860,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Head",
+        "Bare Head"
+      ]
     },
     {
       "id": "ultramarines-upgrades-terminator-storm-bolter-half",
@@ -9507,7 +10881,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Weapon",
+        "Storm Bolter"
+      ]
     },
     {
       "id": "ultramarines-upgrades-terminator-torso-front",
@@ -9524,7 +10902,10 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Torso"
+      ]
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-a",
@@ -9541,7 +10922,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-b",
@@ -9558,7 +10943,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-c",
@@ -9575,7 +10964,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     },
     {
       "id": "ultramarines-upgrades-vehicle-symbol-d",
@@ -9592,7 +10985,11 @@
       "thumb": null,
       "imageWebp": null,
       "thumbWebp": null,
-      "qty": 0
+      "qty": 0,
+      "keywords": [
+        "Vehicle",
+        "Accessory"
+      ]
     }
   ]
 }
