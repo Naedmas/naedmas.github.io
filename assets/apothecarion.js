@@ -62,7 +62,8 @@
             bit.armourType,
             bit.faction,
             (bit.kits || []).join(" "),
-            (bit.models || []).join(" ")
+            (bit.models || []).join(" "),
+            (bit.keywords || []).join(" ")
         ].join(" ").toLowerCase();
     }
 
@@ -140,13 +141,16 @@
             const qtyBadge = typeof bit.qty === "number"
                 ? '<span class="bit-qty" aria-label="Quantity ' + bit.qty + '">x' + bit.qty + "</span>"
                 : "";
-            return '<button type="button" class="bit-card" data-id="' + escapeHtml(bit.id) + '">' +
+            const keywords = (bit.keywords || []).slice(0, 4).map(function (word) {
+                return keywordChip(word, true);
+            }).join("");
+            return '<article class="bit-card" data-id="' + escapeHtml(bit.id) + '" tabindex="0" role="button" aria-label="' + escapeHtml(bit.name) + '">' +
                 '<span class="bit-card-art">' + artTag(bit, "thumb") + qtyBadge + "</span>" +
                 '<span class="bit-card-body">' +
                 "<h2>" + escapeHtml(bit.name) + "</h2>" +
                 (subtitle ? '<span class="bit-kit">' + escapeHtml(subtitle) + "</span>" : "") +
-                '<span class="bit-card-tags">' + armour + "</span>" +
-                "</span></button>";
+                '<span class="bit-card-tags">' + armour + keywords + "</span>" +
+                "</span></article>";
         }).join("");
     }
 
@@ -168,9 +172,15 @@
         const modelHtml = (bit.models || []).length
             ? "<ul class=\"bit-list\">" + bit.models.map(function (n) { return "<li>" + escapeHtml(n) + "</li>"; }).join("") + "</ul>"
             : "";
+        const keywordHtml = (bit.keywords || []).length
+            ? '<div class="bit-keyword-list">' + bit.keywords.map(function (word) {
+                return keywordChip(word, false);
+            }).join("") + "</div>"
+            : "";
         lightboxFields.innerHTML =
             fieldRow("Armour type", bit.armourType ? escapeHtml(bit.armourType) : "") +
             fieldRow("Quantity", typeof bit.qty === "number" ? String(bit.qty) : "") +
+            fieldRow("Keywords", keywordHtml) +
             fieldRow("Kit", kitHtml) +
             fieldRow("Model", modelHtml) +
             fieldRow("Faction", bit.faction ? escapeHtml(bit.faction) : "");
@@ -190,10 +200,53 @@
         history.replaceState(null, "", url.pathname + url.search);
     }
 
+    function keywordChip(label, subtle) {
+        return '<button type="button" class="bit-keyword' + (subtle ? " is-subtle" : "") +
+            '" data-keyword="' + escapeHtml(label) + '">' + escapeHtml(label) + "</button>";
+    }
+
+    function searchByKeyword(term) {
+        if (!term) return;
+        searchInput.value = term;
+        state.query = term;
+        if (state.openId) closeLightbox();
+        renderGrid();
+        try { searchInput.focus(); } catch (err) {}
+        const tools = document.querySelector(".gallery-tools");
+        if (tools && typeof tools.scrollIntoView === "function") {
+            tools.scrollIntoView({ block: "start" });
+        }
+    }
+
+    function onKeywordClick(event) {
+        const btn = event.target.closest("[data-keyword]");
+        if (!btn) return;
+        event.preventDefault();
+        event.stopPropagation();
+        searchByKeyword(btn.getAttribute("data-keyword") || "");
+    }
+
     function onGridClick(event) {
+        const keywordBtn = event.target.closest("[data-keyword]");
+        if (keywordBtn) {
+            event.preventDefault();
+            event.stopPropagation();
+            searchByKeyword(keywordBtn.getAttribute("data-keyword") || "");
+            return;
+        }
         const card = event.target.closest(".bit-card");
         if (!card) return;
         openLightbox(card.getAttribute("data-id"));
+    }
+
+    function onGridKeydown(event) {
+        if (event.target.closest("[data-keyword]")) return;
+        const card = event.target.closest(".bit-card");
+        if (!card || !grid.contains(card)) return;
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openLightbox(card.getAttribute("data-id"));
+        }
     }
 
     function onChipClick(event) {
@@ -215,6 +268,8 @@
 
     document.querySelector(".gallery-tools").addEventListener("click", onChipClick);
     grid.addEventListener("click", onGridClick);
+    grid.addEventListener("keydown", onGridKeydown);
+    lightbox.addEventListener("click", onKeywordClick);
     searchInput.addEventListener("input", function () {
         state.query = searchInput.value;
         renderGrid();

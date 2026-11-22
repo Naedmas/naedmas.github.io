@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T20:21:44+10:00",
+  "updatedAt": "2026-11-22T10:39:16+10:00",
   "source": "Bits",
   "sourceId": "3ee2db47-2d73-8028-a9fd-f1ed0879e636",
   "dataSourceId": "3ee2db47-2d73-8011-9a38-000bd87f21bf",
@@ -3578,7 +3578,7 @@
       "thumb": "img/dark-angels-upgrades-hooded-head-e-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-hooded-head-e.webp",
       "thumbWebp": "img/dark-angels-upgrades-hooded-head-e-thumb.webp",
-      "qty": 1
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-hooded-head-f",
@@ -3983,7 +3983,7 @@
       "thumb": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a.webp",
       "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-a-thumb.webp",
-      "qty": 1
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-tacticus-shoulder-pad-b",
@@ -4010,7 +4010,7 @@
       "thumb": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.jpg",
       "imageWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b.webp",
       "thumbWebp": "img/dark-angels-upgrades-tacticus-shoulder-pad-b-thumb.webp",
-      "qty": 1
+      "qty": 0
     },
     {
       "id": "dark-angels-upgrades-terminator-shoulder-pad-a",
@@ -6642,7 +6642,7 @@
       "thumb": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.jpg",
       "imageWebp": "img/primaris-space-marines-infiltrators-bolt-pistol.webp",
       "thumbWebp": "img/primaris-space-marines-infiltrators-bolt-pistol-thumb.webp",
-      "qty": 3
+      "qty": 4
     },
     {
       "id": "primaris-space-marines-infiltrators-grenades-b",
@@ -8059,7 +8059,7 @@
       "thumb": "img/space-marine-hellblasters-bolt-pistol-thumb.jpg",
       "imageWebp": "img/space-marine-hellblasters-bolt-pistol.webp",
       "thumbWebp": "img/space-marine-hellblasters-bolt-pistol-thumb.webp",
-      "qty": 2
+      "qty": 0
     },
     {
       "id": "space-marine-hellblasters-head-a",

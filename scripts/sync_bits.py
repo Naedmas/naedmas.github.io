@@ -46,6 +46,7 @@ Bits (source database):
                                      Faction from the model catalog
   Euro (number)             EXCLUDE  (price)
   Qty (number)              INCLUDE  as qty (integer); omitted if blank
+  Keywords (multi_select)   INCLUDE  as keywords (option names, Notion order)
   Bitz Box Code (text)      EXCLUDE  (private storage location)
   url (system)              EXCLUDE  (private Notion page links)
   createdTime (system)      EXCLUDE
@@ -68,8 +69,10 @@ Weekly refresh (same time as the Armoury / Librarium sync):
   3. Export every Bits row into /workspace/notion-bits-raw/bits.json.
      Prefer view-mode pagination on
      view://3ee2db47-2d73-8052-b959-000ce5981487 (page_size 50, follow
-     next_cursor until has_more is false). SQL/rows queries also work
-     when the workspace Query Data Source allowance remains.
+     next_cursor until has_more is false). Include the public Keywords
+     multi-select (option names, in Notion order) along with Name,
+     Image, Armour Type, Kits, Model, and Qty. SQL/rows queries also
+     work when the workspace Query Data Source allowance remains.
   4. Export the Kits catalog
      (collection://3e72db47-2d73-8000-a2ad-000bb308fd4b) as
      kit_catalog.json (url, Name) and the Model catalog
@@ -400,6 +403,20 @@ def parse_qty(value: Any) -> int | None:
     return None
 
 
+def parse_keywords(value: Any) -> list[str]:
+    """Return Keywords option names in Notion order, skipping blanks."""
+    names: list[str] = []
+    for item in as_list(value):
+        if isinstance(item, dict):
+            text = item.get("name") or item.get("value") or item.get("text") or ""
+        else:
+            text = item
+        name = strip_html(str(text)).strip()
+        if name:
+            names.append(name)
+    return unique(names)
+
+
 def build_record(
     name: str,
     bit_id: str,
@@ -408,6 +425,7 @@ def build_record(
     models: list[str],
     faction: str | None,
     qty: int | None,
+    keywords: list[str],
     image_files: list[str],
     thumb_files: list[str],
     image_webp: list[str],
@@ -431,6 +449,8 @@ def build_record(
     }
     if qty is not None:
         record["qty"] = qty
+    if keywords:
+        record["keywords"] = keywords
     return record
 
 
@@ -512,6 +532,7 @@ def main() -> int:
         records.append(build_record(
             name, bit_id, armour, kit_names, model_names, faction,
             parse_qty(row.get("Qty") if "Qty" in row else row.get("q")),
+            parse_keywords(row.get("Keywords")),
             image_files, thumb_files, image_webp, thumb_webp,
         ))
 

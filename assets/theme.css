@@ -2919,6 +2919,40 @@ body.lightbox-open { overflow: hidden; }
     color: var(--bone-dim);
 }
 
+.bit-keyword {
+    font-family: Cinzel, "Times New Roman", serif;
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.18rem 0.42rem;
+    border: 1px solid rgba(201, 162, 39, 0.28);
+    background: rgba(8, 12, 9, 0.35);
+    color: var(--bone-dim);
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.bit-keyword.is-subtle {
+    font-size: 0.48rem;
+    letter-spacing: 0.1em;
+    padding: 0.12rem 0.32rem;
+    background: transparent;
+    border-color: rgba(201, 162, 39, 0.2);
+}
+
+.bit-keyword:hover,
+.bit-keyword:focus-visible {
+    color: var(--gold);
+    border-color: var(--gold);
+    outline: none;
+}
+
+.bit-keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
 .bit-lightbox.lightbox-panel {
     align-items: stretch;
 }
